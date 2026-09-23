@@ -38,7 +38,7 @@ def pages():
             content += f'<section class="info"><h2>{title}</h2><p{chr(32)+"class=\"highlight\"" if key=="fact" else ""}>{e(b[key])}</p></section>'
         content += '<section class="info sources"><h2>Quellen und Weiterlesen</h2><p>Eigenständig formuliertes Besucherporträt auf Grundlage der folgenden Quellen. Recherchestand: 23. September 2026. Genannte Farbenschläge sind Beispiele, keine vollständige Standardliste.</p><ul>'
         content += ''.join(f'<li><a href="{e(url)}">{e(label)}</a></li>' for label,url in b['sources'])
-        content += f'</ul></section><section class="info"><h2>Für die Ausstellung</h2><div class="downloads"><a href="schilder/{b["slug"]}.pdf">Rasseschild (PDF, 90 × 60 mm)</a><a href="qr-codes/{b["slug"]}.png">QR-Code (PNG)</a></div></section><a class="back" href="index.html">← Alle Rassen entdecken</a>'
+        content += f'</ul></section><a class="back" href="index.html">← Alle Rassen entdecken</a>'
         (ROOT / (b['slug']+'.html')).write_text(shell(b['name'],b['short'],content),encoding='utf-8')
     groups = [('huehner','Hühner','Großhuhn'),('zwerghuehner','Zwerghühner','Zwerghuhn'),('tauben','Tauben','Taube'),('wachteln','Wachteln','Wachtel')]
     content = '<div class="info"><h2>Unsere Rassen entdecken</h2><p>Willkommen beim RGZV Hagen und Umgebung seit 1903 e.V. Lernen Sie 21 Geflügelrassen kennen: ihre Herkunft, ihr Aussehen und ihre Besonderheiten.</p></div><nav class="groups" aria-label="Tiergruppen">'
