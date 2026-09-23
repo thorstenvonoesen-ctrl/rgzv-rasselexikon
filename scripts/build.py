@@ -49,9 +49,6 @@ def pages():
             if b['group']==group:
                 content += f'<article class="card"><span class="badge">{e(group)}</span><h3>{e(b["name"])}</h3><p>{e(b["short"])}</p><a class="button" href="{b["slug"]}.html" aria-label="{e(b["name"])}: Rasse entdecken">Rasse entdecken</a></article>'
         content += '</div></section>'
-    content += '<section class="info"><h2>Rasseschilder zum Ausdrucken</h2><p>Alle 21 Schilder sind 90 × 60 mm groß. Die drei A4-Bögen enthalten acht, acht und fünf Schilder. Bitte mit „Tatsächliche Größe / 100 %“ drucken und die automatische Seitenanpassung ausschalten.</p><div class="downloads">'
-    content += ''.join(f'<a href="druckboegen/rasseschild-bogen-{i:02}.pdf">A4-Druckbogen {i} (PDF)</a>' for i in range(1,4))
-    content += '</div><p><a href="schilder/ayam-cemani.pdf">Ayam-Cemani-Schild (PDF)</a> · <a href="qr-codes/ayam-cemani.png">Ayam-Cemani-QR-Code (PNG)</a></p></section>'
     (ROOT/'index.html').write_text(shell('Digitales Rasselexikon','RGZV Hagen und Umgebung seit 1903 e.V.',content),encoding='utf-8')
 
 def wrap(text, font, size, width):
