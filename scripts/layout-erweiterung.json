@@ -1,0 +1,488 @@
+{
+  "labels": [
+    {
+      "slug": "brahma",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/brahma.html",
+      "name_lines": [
+        "Brahma"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "orpington",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/orpington.html",
+      "name_lines": [
+        "Orpington"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "australorps",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/australorps.html",
+      "name_lines": [
+        "Australorps"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "amrocks",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/amrocks.html",
+      "name_lines": [
+        "Amrocks"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "vorwerkhuehner",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/vorwerkhuehner.html",
+      "name_lines": [
+        "Vorwerkhühner"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "deutsche-sperber",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/deutsche-sperber.html",
+      "name_lines": [
+        "Deutsche Sperber"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "lakenfelder",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/lakenfelder.html",
+      "name_lines": [
+        "Lakenfelder"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "hamburger",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/hamburger.html",
+      "name_lines": [
+        "Hamburger"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "italiener",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/italiener.html",
+      "name_lines": [
+        "Italiener"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "rheinlaender",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/rheinlaender.html",
+      "name_lines": [
+        "Rheinländer"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "sachsenhuehner",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/sachsenhuehner.html",
+      "name_lines": [
+        "Sachsenhühner"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "ramelsloher",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/ramelsloher.html",
+      "name_lines": [
+        "Ramelsloher"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "araucana",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/araucana.html",
+      "name_lines": [
+        "Araucana"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "barnevelder",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/barnevelder.html",
+      "name_lines": [
+        "Barnevelder"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "new-hampshire",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/new-hampshire.html",
+      "name_lines": [
+        "New Hampshire"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "welsumer",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/welsumer.html",
+      "name_lines": [
+        "Welsumer"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "wyandotten",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/wyandotten.html",
+      "name_lines": [
+        "Wyandotten"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "deutsche-lachshuehner",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/deutsche-lachshuehner.html",
+      "name_lines": [
+        "Deutsche",
+        "Lachshühner"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "seidenhuehner",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/seidenhuehner.html",
+      "name_lines": [
+        "Seidenhühner"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "antwerpener-bartzwerge",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/antwerpener-bartzwerge.html",
+      "name_lines": [
+        "Antwerpener",
+        "Bartzwerge"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    }
+  ],
+  "placements": [
+    {
+      "slug": "brahma",
+      "sheet": 1,
+      "x_mm": 12.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "orpington",
+      "sheet": 1,
+      "x_mm": 108.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "australorps",
+      "sheet": 1,
+      "x_mm": 12.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "amrocks",
+      "sheet": 1,
+      "x_mm": 108.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "vorwerkhuehner",
+      "sheet": 1,
+      "x_mm": 12.0,
+      "y_mm": 80.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "deutsche-sperber",
+      "sheet": 1,
+      "x_mm": 108.0,
+      "y_mm": 80.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "lakenfelder",
+      "sheet": 1,
+      "x_mm": 12.0,
+      "y_mm": 15.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "hamburger",
+      "sheet": 1,
+      "x_mm": 108.0,
+      "y_mm": 15.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "italiener",
+      "sheet": 2,
+      "x_mm": 12.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "rheinlaender",
+      "sheet": 2,
+      "x_mm": 108.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "sachsenhuehner",
+      "sheet": 2,
+      "x_mm": 12.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "ramelsloher",
+      "sheet": 2,
+      "x_mm": 108.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "araucana",
+      "sheet": 2,
+      "x_mm": 12.0,
+      "y_mm": 80.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "barnevelder",
+      "sheet": 2,
+      "x_mm": 108.0,
+      "y_mm": 80.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "new-hampshire",
+      "sheet": 2,
+      "x_mm": 12.0,
+      "y_mm": 15.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "welsumer",
+      "sheet": 2,
+      "x_mm": 108.0,
+      "y_mm": 15.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "wyandotten",
+      "sheet": 3,
+      "x_mm": 12.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "deutsche-lachshuehner",
+      "sheet": 3,
+      "x_mm": 108.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "seidenhuehner",
+      "sheet": 3,
+      "x_mm": 12.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "antwerpener-bartzwerge",
+      "sheet": 3,
+      "x_mm": 108.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    }
+  ]
+}

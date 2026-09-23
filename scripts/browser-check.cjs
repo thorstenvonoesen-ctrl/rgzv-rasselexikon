@@ -14,7 +14,8 @@ const { pathToFileURL } = require('url');
    await page.goto(pathToFileURL(path.resolve(file)).href);
    const result=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth,h1:document.querySelectorAll('h1').length,broken:[...document.images].some(i=>!i.complete||!i.naturalWidth)}));
    if(result.overflow||result.h1!==1||result.broken)failures.push({width,file,...result});
-   if(width===390&&['index.html','bielefelder-zwerg-kennhuehner.html','ayam-cemani.html'].includes(file))await page.screenshot({path:`tmp/${file}-mobile.png`,fullPage:true});
+   if(width===390&&['index.html','antwerpener-bartzwerge.html','deutsche-lachshuehner.html','vorwerkhuehner.html'].includes(file))await page.screenshot({path:`tmp/${file}-mobile.png`,fullPage:file!=='index.html'});
+   if(width===1280&&['index.html','antwerpener-bartzwerge.html'].includes(file))await page.screenshot({path:`tmp/${file}-desktop.png`,fullPage:false});
   }
  }
  await page.goto(pathToFileURL(path.resolve('index.html')).href);

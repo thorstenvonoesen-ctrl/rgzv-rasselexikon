@@ -4,6 +4,8 @@ import sys, html, json, re
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / '.tools/python'))
 from breeds import BREEDS
+from new_breeds import NEW_BREEDS
+ALL_BREEDS = BREEDS + NEW_BREEDS
 import qrcode
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import mm
@@ -28,24 +30,31 @@ def shell(title, subtitle, content):
 <main id="inhalt">{content}</main><footer><strong>RGZV Hagen und Umgebung seit 1903 e.V.</strong><br>Digitales Rasselexikon für Besucher unserer Ausstellungen</footer></body></html>
 '''
 
-def pages():
-    for b in BREEDS[1:]:
+def pages(selection):
+    for b in selection:
         content = '<a class="back" href="index.html">← Zurück zum Rasselexikon</a><section class="info"><h2>Auf einen Blick</h2><div class="facts">'
         for key, value in [('Herkunft',b['origin']),('Tiergruppe',b['group'])]:
             content += f'<div class="fact"><strong>{key}</strong>{e(value)}</div>'
-        content += '</div></section>'
-        for key, title in [('history','Herkunft und Geschichte'),('appearance','Körperbau und Rassemerkmale'),('colors','Gefieder und Zeichnung'),('nature','Wesen und Eigenschaften'),('use','Nutzung und Zuchtzweck'),('fact','Schon gewusst?')]:
+        if 'weights' in b:
+            for key, value in [('Gewicht Hahn', b['weights'][0]), ('Gewicht Henne', b['weights'][1]), ('Eier', b['egg'])]:
+                content += f'<div class="fact"><strong>{key}</strong>{e(value)}</div>'
+        content += '</div>'
+        if 'weights' in b:
+            content += '<p>Gewichte sind Richtwerte für ausgewachsene Zuchttiere. Bruteier-Mindestgewichte bezeichnen die Untergrenze für die Zuchtauswahl, nicht das durchschnittliche Eigewicht. Legeleistungen sind Orientierungswerte und hängen auch von Alter, Linie und Haltung ab.</p>'
+        content += '</section>'
+        for key, title in [('history','Herkunft und Geschichte'),('appearance','Körperbau und Rassemerkmale'),('colors','Gefieder und Zeichnung'),('nature','Wesen und Eigenschaften'),('husbandry','Haltung und Alltag'),('use','Nutzung und Zuchtzweck'),('fact','Schon gewusst?')]:
+            if key not in b: continue
             content += f'<section class="info"><h2>{title}</h2><p{chr(32)+"class=\"highlight\"" if key=="fact" else ""}>{e(b[key])}</p></section>'
         content += '<section class="info sources"><h2>Quellen und Weiterlesen</h2><p>Eigenständig formuliertes Besucherporträt auf Grundlage der folgenden Quellen. Recherchestand: 23. September 2026. Genannte Farbenschläge sind Beispiele, keine vollständige Standardliste.</p><ul>'
         content += ''.join(f'<li><a href="{e(url)}">{e(label)}</a></li>' for label,url in b['sources'])
         content += f'</ul></section><a class="back" href="index.html">← Alle Rassen entdecken</a>'
         (ROOT / (b['slug']+'.html')).write_text(shell(b['name'],b['short'],content),encoding='utf-8')
     groups = [('huehner','Hühner','Großhuhn'),('zwerghuehner','Zwerghühner','Zwerghuhn'),('tauben','Tauben','Taube'),('wachteln','Wachteln','Wachtel')]
-    content = '<div class="info"><h2>Unsere Rassen entdecken</h2><p>Willkommen beim RGZV Hagen und Umgebung seit 1903 e.V. Lernen Sie 21 Geflügelrassen kennen: ihre Herkunft, ihr Aussehen und ihre Besonderheiten.</p></div><nav class="groups" aria-label="Tiergruppen">'
+    content = f'<div class="info"><h2>Unsere Rassen entdecken</h2><p>Willkommen beim RGZV Hagen und Umgebung seit 1903 e.V. Lernen Sie {len(ALL_BREEDS)} Geflügelrassen kennen: ihre Herkunft, ihr Aussehen und ihre Besonderheiten.</p></div><nav class="groups" aria-label="Tiergruppen">'
     content += ''.join(f'<a href="#{slug}">{name}</a>' for slug,name,_ in groups)+'</nav>'
     for slug,name,group in groups:
         content += f'<section id="{slug}"><h2>{name}</h2><div class="cards">'
-        for b in BREEDS:
+        for b in ALL_BREEDS:
             if b['group']==group:
                 content += f'<article class="card"><span class="badge">{e(group)}</span><h3>{e(b["name"])}</h3><p>{e(b["short"])}</p><a class="button" href="{b["slug"]}.html" aria-label="{e(b["name"])}: Rasse entdecken">Rasse entdecken</a></article>'
         content += '</div></section>'
@@ -101,15 +110,17 @@ def label(b):
     c.showPage(); c.save()
     LAYOUT.append(dict(slug=b['slug'],url=url,name_lines=lines,font_size=size,qr_mm=[51,12.5,35,35],text_right_mm=48))
 
-def sheets():
+def sheets(selection, prefix, layout_name):
     placements=[]
-    for batch in range(3):
+    batches=(len(selection)+7)//8
+    for batch in range(batches):
         overlay=ROOT/'tmp/pdfs'/f'marks-{batch}.pdf'
         c=canvas.Canvas(str(overlay),pagesize=A4,invariant=1)
-        c.setFont('Label',9); c.drawString(12*mm,284*mm,f'RGZV Hagen | Rasseschilder | Bogen {batch+1}/3')
+        series='Ergänzung' if selection is NEW_BREEDS else 'Rasseschilder'
+        c.setFont('Label',9); c.drawString(12*mm,284*mm,f'RGZV Hagen | {series} | Bogen {batch+1}/{batches}')
         c.setFont('Label',8); c.drawString(12*mm,278*mm,'90 x 60 mm je Schild | Tatsächliche Größe / 100 % | Keine Seitenanpassung')
         positions=[]
-        for n,b in enumerate(BREEDS[batch*8:batch*8+8]):
+        for n,b in enumerate(selection[batch*8:batch*8+8]):
             x=(12+(n%2)*96)*mm; y=(210-(n//2)*65)*mm
             positions.append((b,x,y)); c.setLineWidth(.3)
             for px in [x,x+90*mm]:
@@ -124,15 +135,23 @@ def sheets():
             page.merge_transformed_page(source,Transformation().translate(x,y))
             placements.append(dict(slug=b['slug'],sheet=batch+1,x_mm=x/mm,y_mm=y/mm,width_mm=90,height_mm=60,scale=1))
         writer=PdfWriter(); writer.add_page(page)
-        with (ROOT/'druckboegen'/f'rasseschild-bogen-{batch+1:02}.pdf').open('wb') as f: writer.write(f)
-    (ROOT/'scripts/layout.json').write_text(json.dumps(dict(labels=LAYOUT,placements=placements),ensure_ascii=False,indent=2),encoding='utf-8')
+        with (ROOT/'druckboegen'/f'{prefix}-{batch+1:02}.pdf').open('wb') as f: writer.write(f)
+    slugs={b['slug'] for b in selection}
+    (ROOT/'scripts'/layout_name).write_text(json.dumps(dict(labels=[p for p in LAYOUT if p['slug'] in slugs],placements=placements),ensure_ascii=False,indent=2),encoding='utf-8')
 
 if __name__=='__main__':
     import argparse
-    parser=argparse.ArgumentParser(); parser.add_argument('--reference-only',action='store_true'); args=parser.parse_args()
-    label(BREEDS[0])
-    if not args.reference_only:
-        pages()
-        for b in BREEDS[1:]: label(b)
-        sheets()
-    print('Ayam-Cemani-Referenz erzeugt.' if args.reference_only else '21 Rassen, 21 QR-Codes, 21 Schilder, 3 A4-Bögen erzeugt.')
+    parser=argparse.ArgumentParser()
+    modes=parser.add_mutually_exclusive_group()
+    modes.add_argument('--reference-only',action='store_true')
+    modes.add_argument('--extension-only',action='store_true',help='Nur die 20 neuen Rassen und die Übersicht erzeugen.')
+    args=parser.parse_args()
+    if args.reference_only:
+        label(BREEDS[0])
+        print('Ayam-Cemani-Referenz erzeugt.')
+    else:
+        pages(NEW_BREEDS if args.extension_only else BREEDS[1:]+NEW_BREEDS)
+        for b in (NEW_BREEDS if args.extension_only else ALL_BREEDS): label(b)
+        if not args.extension_only: sheets(BREEDS,'rasseschild-bogen','layout.json')
+        sheets(NEW_BREEDS,'rasseschild-erweiterung','layout-erweiterung.json')
+        print('20 neue Rassen, QR-Codes und Schilder; 3 ergänzende A4-Bögen.' if args.extension_only else '41 Rassen, 41 QR-Codes, 41 Schilder, 6 A4-Bögen erzeugt.')
