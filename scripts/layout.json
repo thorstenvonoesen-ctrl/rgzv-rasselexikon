@@ -1,0 +1,520 @@
+{
+  "labels": [
+    {
+      "slug": "ayam-cemani",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/ayam-cemani.html",
+      "name_lines": [
+        "Ayam Cemani"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "zwerg-new-hampshire",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/zwerg-new-hampshire.html",
+      "name_lines": [
+        "Zwerg-New-",
+        "Hampshire"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "zwerg-cochin",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/zwerg-cochin.html",
+      "name_lines": [
+        "Zwerg-Cochin"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "altenglische-zwerg-kaempfer",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/altenglische-zwerg-kaempfer.html",
+      "name_lines": [
+        "Altenglische",
+        "Zwerg-Kämpfer"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "zwerg-barnevelder",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/zwerg-barnevelder.html",
+      "name_lines": [
+        "Zwerg-Barnevelder"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "marans",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/marans.html",
+      "name_lines": [
+        "Marans"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "deutsches-reichshuhn",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/deutsches-reichshuhn.html",
+      "name_lines": [
+        "Deutsches",
+        "Reichshuhn"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "orientalische-roller",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/orientalische-roller.html",
+      "name_lines": [
+        "Orientalische",
+        "Roller"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "bielefelder-kennhuehner",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/bielefelder-kennhuehner.html",
+      "name_lines": [
+        "Bielefelder",
+        "Kennhühner"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "bielefelder-zwerg-kennhuehner",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/bielefelder-zwerg-kennhuehner.html",
+      "name_lines": [
+        "Bielefelder Zwerg-",
+        "Kennhühner"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "zwerg-sussex",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/zwerg-sussex.html",
+      "name_lines": [
+        "Zwerg-Sussex"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "zwerg-phoenix",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/zwerg-phoenix.html",
+      "name_lines": [
+        "Zwerg-Phönix"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "chabo",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/chabo.html",
+      "name_lines": [
+        "Chabo"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "zwerg-araucana",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/zwerg-araucana.html",
+      "name_lines": [
+        "Zwerg-Araucana"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "sundheimer",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/sundheimer.html",
+      "name_lines": [
+        "Sundheimer"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "zwerg-welsumer",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/zwerg-welsumer.html",
+      "name_lines": [
+        "Zwerg-Welsumer"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "deutsche-zwerg-wyandotten",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/deutsche-zwerg-wyandotten.html",
+      "name_lines": [
+        "Deutsche Zwerg-",
+        "Wyandotten"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "deutsche-zwerg-lachshuehner",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/deutsche-zwerg-lachshuehner.html",
+      "name_lines": [
+        "Deutsche Zwerg-",
+        "Lachshühner"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "japanische-legewachtel",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/japanische-legewachtel.html",
+      "name_lines": [
+        "Japanische",
+        "Legewachtel"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "mechelner",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/mechelner.html",
+      "name_lines": [
+        "Mechelner"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    },
+    {
+      "slug": "westfaelische-totleger",
+      "url": "https://thorstenvonoesen-ctrl.github.io/rgzv-rasselexikon/westfaelische-totleger.html",
+      "name_lines": [
+        "Westfälische",
+        "Totleger"
+      ],
+      "font_size": 13,
+      "qr_mm": [
+        51,
+        12.5,
+        35,
+        35
+      ],
+      "text_right_mm": 48
+    }
+  ],
+  "placements": [
+    {
+      "slug": "ayam-cemani",
+      "sheet": 1,
+      "x_mm": 12.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "zwerg-new-hampshire",
+      "sheet": 1,
+      "x_mm": 108.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "zwerg-cochin",
+      "sheet": 1,
+      "x_mm": 12.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "altenglische-zwerg-kaempfer",
+      "sheet": 1,
+      "x_mm": 108.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "zwerg-barnevelder",
+      "sheet": 1,
+      "x_mm": 12.0,
+      "y_mm": 80.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "marans",
+      "sheet": 1,
+      "x_mm": 108.0,
+      "y_mm": 80.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "deutsches-reichshuhn",
+      "sheet": 1,
+      "x_mm": 12.0,
+      "y_mm": 15.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "orientalische-roller",
+      "sheet": 1,
+      "x_mm": 108.0,
+      "y_mm": 15.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "bielefelder-kennhuehner",
+      "sheet": 2,
+      "x_mm": 12.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "bielefelder-zwerg-kennhuehner",
+      "sheet": 2,
+      "x_mm": 108.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "zwerg-sussex",
+      "sheet": 2,
+      "x_mm": 12.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "zwerg-phoenix",
+      "sheet": 2,
+      "x_mm": 108.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "chabo",
+      "sheet": 2,
+      "x_mm": 12.0,
+      "y_mm": 80.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "zwerg-araucana",
+      "sheet": 2,
+      "x_mm": 108.0,
+      "y_mm": 80.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "sundheimer",
+      "sheet": 2,
+      "x_mm": 12.0,
+      "y_mm": 15.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "zwerg-welsumer",
+      "sheet": 2,
+      "x_mm": 108.0,
+      "y_mm": 15.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "deutsche-zwerg-wyandotten",
+      "sheet": 3,
+      "x_mm": 12.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "deutsche-zwerg-lachshuehner",
+      "sheet": 3,
+      "x_mm": 108.0,
+      "y_mm": 210.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "japanische-legewachtel",
+      "sheet": 3,
+      "x_mm": 12.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "mechelner",
+      "sheet": 3,
+      "x_mm": 108.0,
+      "y_mm": 145.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    },
+    {
+      "slug": "westfaelische-totleger",
+      "sheet": 3,
+      "x_mm": 12.0,
+      "y_mm": 80.0,
+      "width_mm": 90,
+      "height_mm": 60,
+      "scale": 1
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "rasseseiten": 21,
+  "qr_png": 21,
+  "einzel_pdf": 21,
+  "a4_bogen": 3,
+  "interne_links_geprueft": 153,
+  "png_decodiert": 21,
+  "einzel_pdf_decodiert_150_und_300_dpi": 42,
+  "a4_qr_decodiert_300_dpi": 21,
+  "pdf_groessen": "90 x 60 mm / 210 x 297 mm",
+  "a4_originalgroesse": "Alle Textpositionen und Schriftgrößen mit Einzel-PDF verglichen; nur Translation, keine Skalierung.",
+  "textgrenzen": "Alle PDF-Wörter innerhalb des linken Bereichs; vollständige Rassenamen extrahiert."
+}
