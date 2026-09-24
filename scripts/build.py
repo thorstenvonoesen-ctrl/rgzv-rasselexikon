@@ -5,7 +5,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / '.tools/python'))
 from breeds import BREEDS
 from new_breeds import NEW_BREEDS
-ALL_BREEDS = BREEDS + NEW_BREEDS
+from breeds_series3 import SERIES3
+ALL_BREEDS = BREEDS + NEW_BREEDS + SERIES3
 import qrcode
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import mm
@@ -45,7 +46,8 @@ def pages(selection):
         for key, title in [('history','Herkunft und Geschichte'),('appearance','Körperbau und Rassemerkmale'),('colors','Gefieder und Zeichnung'),('nature','Wesen und Eigenschaften'),('husbandry','Haltung und Alltag'),('use','Nutzung und Zuchtzweck'),('fact','Schon gewusst?')]:
             if key not in b: continue
             content += f'<section class="info"><h2>{title}</h2><p{chr(32)+"class=\"highlight\"" if key=="fact" else ""}>{e(b[key])}</p></section>'
-        content += '<section class="info sources"><h2>Quellen und Weiterlesen</h2><p>Eigenständig formuliertes Besucherporträt auf Grundlage der folgenden Quellen. Recherchestand: 23. September 2026. Genannte Farbenschläge sind Beispiele, keine vollständige Standardliste.</p><ul>'
+        researched=b.get('researched','23. September 2026')
+        content += f'<section class="info sources"><h2>Quellen und Weiterlesen</h2><p>Eigenständig formuliertes Besucherporträt auf Grundlage der folgenden Quellen. Recherchestand: {researched}. Genannte Farbenschläge sind Beispiele, keine vollständige Standardliste.</p><ul>'
         content += ''.join(f'<li><a href="{e(url)}">{e(label)}</a></li>' for label,url in b['sources'])
         content += f'</ul></section><a class="back" href="index.html">← Alle Rassen entdecken</a>'
         (ROOT / (b['slug']+'.html')).write_text(shell(b['name'],b['short'],content),encoding='utf-8')
@@ -145,10 +147,22 @@ if __name__=='__main__':
     modes=parser.add_mutually_exclusive_group()
     modes.add_argument('--reference-only',action='store_true')
     modes.add_argument('--extension-only',action='store_true',help='Nur die 20 neuen Rassen und die Übersicht erzeugen.')
+    modes.add_argument('--series3-only',action='store_true',help='Nur fehlende Rassen der dritten Serie; keine A4-Bögen.')
     args=parser.parse_args()
     if args.reference_only:
         label(BREEDS[0])
         print('Ayam-Cemani-Referenz erzeugt.')
+    elif args.series3_only:
+        selection=[b for b in SERIES3 if not (ROOT/(b['slug']+'.html')).exists()]
+        # Fail before writing if a supposedly missing page has existing print assets.
+        for b in selection:
+            assert not (ROOT/'schilder'/(b['slug']+'.pdf')).exists(), b['slug']
+            assert not (ROOT/'qr-codes'/(b['slug']+'.png')).exists(), b['slug']
+        if selection:
+            pages(selection)
+            for b in selection: label(b)
+        (ROOT/'scripts/series3-created.json').write_text(json.dumps([b['slug'] for b in selection],indent=2),encoding='utf-8')
+        print(f'{len(selection)} neue Seiten, QR-Codes und Schilder; keine A4-Bögen.')
     else:
         pages(NEW_BREEDS if args.extension_only else BREEDS[1:]+NEW_BREEDS)
         for b in (NEW_BREEDS if args.extension_only else ALL_BREEDS): label(b)

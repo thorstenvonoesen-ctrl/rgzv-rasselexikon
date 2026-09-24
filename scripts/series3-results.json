@@ -1,0 +1,15 @@
+{
+  "new_html": 20,
+  "new_qr": 20,
+  "new_labels": 20,
+  "qr_decoded": 20,
+  "pdf_qr_decoded": 20,
+  "label_mm": [
+    90,
+    60
+  ],
+  "correct_page_titles": true,
+  "index_entries": true,
+  "public_print_links": 0,
+  "public_deployment": "Nicht Bestandteil dieses lokalen Prüflaufs."
+}
