@@ -1,5 +1,5 @@
 const ausstellung = {
-  aktiv: false,
+  aktiv: true,
   titel: "Unsere Ausstellung",
   ort: "Bürgerhalle Hagen-Dahl",
   datum: "",
