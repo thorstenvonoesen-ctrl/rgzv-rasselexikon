@@ -1,24 +1,27 @@
-const ausstellung = {
-  aktiv: false,
-  titel: "Unsere Ausstellung",
-  ort: "Bürgerhalle Hagen-Dahl",
-  datum: "",
-  rassen: []
-};
-
-(() => {
+(async () => {
   'use strict';
   const teaser = document.getElementById('ausstellung-start');
-  if (teaser) teaser.hidden = ausstellung.aktiv !== true;
+  if (teaser) teaser.hidden = true;
   const host = document.getElementById('ausstellung-inhalt');
-  if (!host) return;
+  if (!host && !teaser) return;
   const node = (tag, text, cls) => {
     const el = document.createElement(tag);
     if (text) el.textContent = text;
     if (cls) el.className = cls;
     return el;
   };
+  let ausstellung;
+  try {
+    const response = await fetch('assets/ausstellung.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error('Laden fehlgeschlagen');
+    ausstellung = await response.json();
+    if (!ausstellung || typeof ausstellung.aktiv !== 'boolean' || !Array.isArray(ausstellung.rassen)) throw new Error('Ungültige Daten');
+  } catch {
+    if (host) host.append(node('p','Die Ausstellungsdaten konnten nicht geladen werden. Bitte versuchen Sie es später erneut.'));
+    return;
+  }
   if (ausstellung.aktiv !== true) {
+    if (!host) return;
     host.append(node('p','Derzeit ist keine Ausstellung aktiviert.'));
     const back = node('a','Zurück zum Rasselexikon','button'); back.href='index.html'; host.append(back);
     return;
@@ -29,6 +32,16 @@ const ausstellung = {
   const ranges = entries.map(r=>[r.kaefigVon,r.kaefigBis]).sort((a,b)=>a[0]-b[0]);
   let occupied=0, end=0;
   for (const [from,to] of ranges) { if (to>end) occupied+=to-Math.max(end,from-1); end=Math.max(end,to); }
+  if (teaser) {
+    teaser.replaceChildren(node('p','🏆 HERZLICH WILLKOMMEN','badge'),node('h2',ausstellung.titel));
+    if (ausstellung.ort) teaser.append(node('p','Schön, dass Sie bei uns in der '+ausstellung.ort+' zu Gast sind.'));
+    if (ausstellung.datum) teaser.append(node('p',ausstellung.datum));
+    teaser.append(node('p',ausstellung.begruessung || 'Entdecken Sie unsere Ausstellung auch digital: Lernen Sie die ausgestellten Rassen näher kennen, finden Sie die passenden Käfige und erfahren Sie Wissenswertes über Herkunft, Geschichte und Besonderheiten der Tiere.','ausstellung-begruessung'));
+    teaser.append(node('p',slugs.length+' ausgestellte Rassen · '+occupied+' Ausstellungskäfige','highlight'));
+    const link=node('a','Ausstellung entdecken','button');link.href='ausstellung.html';teaser.append(link);
+    teaser.hidden=false;
+  }
+  if (!host) return;
   const key='rgzv-ausstellung:'+JSON.stringify([ausstellung.titel,ausstellung.ort,ausstellung.datum,entries.map(r=>[r.slug,r.kaefigVon,r.kaefigBis]).sort()]);
   let discovered=new Set(), storageOK=true;
   try { const stored=JSON.parse(localStorage.getItem(key)||'[]'); if(Array.isArray(stored)) discovered=new Set(stored.filter(s=>slugs.includes(s))); } catch { storageOK=false; }
@@ -47,7 +60,7 @@ const ausstellung = {
   const search=node('div','','ausstellung-search');
   const [nameWrap,nameInput]=field('Rasse suchen','Rasse suchen …','rasse-suche');
   const [cageWrap,cageInput]=field('Käfignummer suchen','Käfignummer eingeben','kaefig-suche');cageInput.inputMode='numeric';
-  search.append(nameWrap,cageWrap);host.append(search,node('h2','Ausgestellte Rassen'));
+  search.append(cageWrap,nameWrap);host.append(search,node('h2','Ausgestellte Rassen'));
   const message=node('p');message.setAttribute('role','status');const list=node('div','','ausstellung-cards');host.append(message,list);
   const normal=s=>s.toLocaleLowerCase('de').normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
   function render(){
