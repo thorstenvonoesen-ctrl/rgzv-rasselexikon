@@ -7,22 +7,31 @@ on:
         required: true
         type: choice
         options:
-          - Ausstellung veröffentlichen/aktualisieren
+          - Ausstellung anlegen/Grunddaten ändern
+          - Rasse hinzufügen
+          - Rasse/Käfige ändern
+          - Rasse entfernen
           - Ausstellung deaktivieren
       titel:
-        description: Titel der Ausstellung
+        description: Titel (Grunddaten speichern aktiviert die Ausstellung; leer = unverändert)
         type: string
       ort:
-        description: Ort
+        description: Ort (leer = unverändert)
         type: string
       datum:
-        description: Datum (freier Text)
+        description: Datum (freier Text; leer = unverändert)
         type: string
       begruessung:
-        description: Begrüßungstext (optional)
+        description: Begrüßungstext (leer = unverändert)
         type: string
-      rassen:
-        description: 'Rasse | von | bis; nächste Rasse | von | bis (Semikolon oder Zeilenumbruch)'
+      rasse:
+        description: Rasse (für Hinzufügen, Ändern oder Entfernen)
+        type: string
+      kaefigVon:
+        description: Käfig von (für Hinzufügen oder Ändern)
+        type: string
+      kaefigBis:
+        description: Käfig bis (leer = einzelner Käfig)
         type: string
 permissions:
   contents: write
