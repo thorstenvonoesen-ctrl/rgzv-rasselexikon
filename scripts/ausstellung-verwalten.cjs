@@ -43,7 +43,9 @@ function generate(inputs, source, previous = { aktiv: false, titel: '', ort: '',
       if (!/^[a-z0-9-]+\.html$/.test(breed.url)) throw new Error('Ungültige Rassenseite: ' + breed.name);
       return { name: breed.name, slug: breed.url, kaefigVon, kaefigBis };
     });
-    const sorted = [...rassen].sort((a, b) => a.kaefigVon - b.kaefigVon);
+    const sorted = rassen.flatMap(r => Array.isArray(r.kaefige)
+    ? r.kaefige.map(k => ({ name: r.name, kaefigVon: k.von, kaefigBis: k.bis }))
+    : [r]).sort((a, b) => a.kaefigVon - b.kaefigVon);
     let total = 0;
     sorted.forEach((r, i) => {
       if (i && r.kaefigVon <= sorted[i - 1].kaefigBis) throw new Error('Käfigbereich überschneidet sich: ' + sorted[i - 1].name + ' und ' + r.name);
@@ -69,8 +71,14 @@ function generate(inputs, source, previous = { aktiv: false, titel: '', ort: '',
   if (!/^[a-z0-9-]+\.html$/.test(breed.url)) throw new Error('Ungültige Rassenseite: ' + breed.name);
   const rassen = inputs.aktion === 'Rasse hinzufügen'
     ? [...previous.rassen, { name: breed.name, slug: breed.url, kaefigVon, kaefigBis }]
-    : previous.rassen.map(r => r.slug === breed.url ? { ...r, kaefigVon, kaefigBis } : r);
-  const sorted = [...rassen].sort((a, b) => a.kaefigVon - b.kaefigVon);
+    : previous.rassen.map(r => {
+      if (r.slug !== breed.url) return r;
+      const { kaefige, ...rest } = r;
+      return { ...rest, kaefigVon, kaefigBis };
+    });
+  const sorted = rassen.flatMap(r => Array.isArray(r.kaefige)
+    ? r.kaefige.map(k => ({ name: r.name, kaefigVon: k.von, kaefigBis: k.bis }))
+    : [r]).sort((a, b) => a.kaefigVon - b.kaefigVon);
   let total = 0;
   sorted.forEach((r, i) => {
     if (i && r.kaefigVon <= sorted[i - 1].kaefigBis) throw new Error('Käfigbereiche überschneiden sich bei: ' + r.name);

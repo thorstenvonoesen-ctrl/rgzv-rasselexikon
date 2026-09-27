@@ -1,8 +1,241 @@
 {
-  "aktiv": false,
-  "titel": "",
-  "ort": "",
-  "datum": "",
-  "begruessung": "",
-  "rassen": []
+  "aktiv": true,
+  "titel": "Lokalschau 2026",
+  "ort": "Bürgerhalle Hagen-Dahl",
+  "datum": "26. und 27. September 2026",
+  "begruessung": "Herzlich willkommen zu unserer Lokalschau 2026! Entdecken Sie die faszinierende Vielfalt des Rassegeflügels auch digital. Lernen Sie die ausgestellten Rassen näher kennen, erfahren Sie Wissenswertes über ihre Herkunft, Geschichte und Besonderheiten und finden Sie über die Käfignummer schnell die Tiere, die Sie besonders interessieren. Wir wünschen Ihnen viel Freude beim Entdecken und einen schönen Aufenthalt bei unserer Ausstellung!",
+  "rassen": [
+    {
+      "name": "Zwerg-Phönix",
+      "slug": "zwerg-phoenix.html",
+      "kaefige": [
+        {
+          "von": 1,
+          "bis": 3
+        },
+        {
+          "von": 43,
+          "bis": 50
+        }
+      ]
+    },
+    {
+      "name": "Zwerg-New-Hampshire",
+      "slug": "zwerg-new-hampshire.html",
+      "kaefige": [
+        {
+          "von": 4,
+          "bis": 4
+        },
+        {
+          "von": 177,
+          "bis": 206
+        }
+      ]
+    },
+    {
+      "name": "Sundheimer",
+      "slug": "sundheimer.html",
+      "kaefige": [
+        {
+          "von": 24,
+          "bis": 29
+        }
+      ]
+    },
+    {
+      "name": "Chabo",
+      "slug": "chabo.html",
+      "kaefige": [
+        {
+          "von": 63,
+          "bis": 87
+        }
+      ]
+    },
+    {
+      "name": "Bielefelder Zwerg-Kennhühner",
+      "slug": "bielefelder-zwerg-kennhuehner.html",
+      "kaefige": [
+        {
+          "von": 97,
+          "bis": 112
+        }
+      ]
+    },
+    {
+      "name": "Deutsche Zwerg-Lachshühner",
+      "slug": "deutsche-zwerg-lachshuehner.html",
+      "kaefige": [
+        {
+          "von": 118,
+          "bis": 137
+        }
+      ]
+    },
+    {
+      "name": "Zwerg-Araucana",
+      "slug": "zwerg-araucana.html",
+      "kaefige": [
+        {
+          "von": 207,
+          "bis": 212
+        }
+      ]
+    },
+    {
+      "name": "Japanische Legewachtel",
+      "slug": "japanische-legewachtel.html",
+      "kaefige": [
+        {
+          "von": 14,
+          "bis": 14
+        },
+        {
+          "von": 213,
+          "bis": 220
+        }
+      ]
+    },
+    {
+      "name": "Bielefelder Kennhühner",
+      "slug": "bielefelder-kennhuehner.html",
+      "kaefige": [
+        {
+          "von": 15,
+          "bis": 18
+        }
+      ]
+    },
+    {
+      "name": "Mechelner",
+      "slug": "mechelner.html",
+      "kaefige": [
+        {
+          "von": 19,
+          "bis": 21
+        }
+      ]
+    },
+    {
+      "name": "Marans",
+      "slug": "marans.html",
+      "kaefige": [
+        {
+          "von": 22,
+          "bis": 23
+        }
+      ]
+    },
+    {
+      "name": "Deutsches Reichshuhn",
+      "slug": "deutsches-reichshuhn.html",
+      "kaefige": [
+        {
+          "von": 30,
+          "bis": 31
+        }
+      ]
+    },
+    {
+      "name": "Ayam Cemani",
+      "slug": "ayam-cemani.html",
+      "kaefige": [
+        {
+          "von": 32,
+          "bis": 38
+        }
+      ]
+    },
+    {
+      "name": "Westfälische Totleger",
+      "slug": "westfaelische-totleger.html",
+      "kaefige": [
+        {
+          "von": 39,
+          "bis": 42
+        }
+      ]
+    },
+    {
+      "name": "Zwerg-Cochin",
+      "slug": "zwerg-cochin.html",
+      "kaefige": [
+        {
+          "von": 51,
+          "bis": 62
+        }
+      ]
+    },
+    {
+      "name": "Watermaalsche Bartzwerge",
+      "slug": "watermaalsche-bartzwerge.html",
+      "kaefige": [
+        {
+          "von": 88,
+          "bis": 90
+        }
+      ]
+    },
+    {
+      "name": "Altenglische Zwerg-Kämpfer",
+      "slug": "altenglische-zwerg-kaempfer.html",
+      "kaefige": [
+        {
+          "von": 91,
+          "bis": 96
+        }
+      ]
+    },
+    {
+      "name": "Zwerg-Sussex",
+      "slug": "zwerg-sussex.html",
+      "kaefige": [
+        {
+          "von": 113,
+          "bis": 117
+        }
+      ]
+    },
+    {
+      "name": "Deutsche Zwerg-Wyandotten",
+      "slug": "deutsche-zwerg-wyandotten.html",
+      "kaefige": [
+        {
+          "von": 138,
+          "bis": 158
+        }
+      ]
+    },
+    {
+      "name": "Zwerg-Barnevelder",
+      "slug": "zwerg-barnevelder.html",
+      "kaefige": [
+        {
+          "von": 159,
+          "bis": 171
+        }
+      ]
+    },
+    {
+      "name": "Zwerg-Welsumer",
+      "slug": "zwerg-welsumer.html",
+      "kaefige": [
+        {
+          "von": 172,
+          "bis": 176
+        }
+      ]
+    },
+    {
+      "name": "Orientalische Roller",
+      "slug": "orientalische-roller.html",
+      "kaefige": [
+        {
+          "von": 221,
+          "bis": 232
+        }
+      ]
+    }
+  ]
 }

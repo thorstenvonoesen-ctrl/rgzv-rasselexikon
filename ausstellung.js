@@ -27,9 +27,9 @@
     return;
   }
   // Only explicitly configured entries are used. Reject invalid ranges and non-local URLs.
-  const entries = ausstellung.rassen.filter(r => r && typeof r.name === 'string' && /^[a-z0-9-]+\.html$/.test(r.slug) && Number.isSafeInteger(r.kaefigVon) && Number.isSafeInteger(r.kaefigBis) && r.kaefigVon > 0 && r.kaefigBis >= r.kaefigVon);
+  const entries = ausstellung.rassen.map(r => r && ({ ...r, kaefige: Array.isArray(r.kaefige) ? r.kaefige : [{ von: r.kaefigVon, bis: r.kaefigBis }] })).filter(r => r && typeof r.name === 'string' && /^[a-z0-9-]+\.html$/.test(r.slug) && r.kaefige.length > 0 && r.kaefige.every(k => k && Number.isSafeInteger(k.von) && Number.isSafeInteger(k.bis) && k.von > 0 && k.bis >= k.von));
   const slugs = [...new Set(entries.map(r=>r.slug))];
-  const ranges = entries.map(r=>[r.kaefigVon,r.kaefigBis]).sort((a,b)=>a[0]-b[0]);
+  const ranges = entries.flatMap(r=>r.kaefige.map(k=>[k.von,k.bis])).sort((a,b)=>a[0]-b[0]);
   let occupied=0, end=0;
   for (const [from,to] of ranges) { if (to>end) occupied+=to-Math.max(end,from-1); end=Math.max(end,to); }
   if (teaser) {
@@ -42,7 +42,7 @@
     teaser.hidden=false;
   }
   if (!host) return;
-  const key='rgzv-ausstellung:'+JSON.stringify([ausstellung.titel,ausstellung.ort,ausstellung.datum,entries.map(r=>[r.slug,r.kaefigVon,r.kaefigBis]).sort()]);
+  const key='rgzv-ausstellung:'+JSON.stringify([ausstellung.titel,ausstellung.ort,ausstellung.datum,entries.map(r=>[r.slug,r.kaefige]).sort()]);
   let discovered=new Set(), storageOK=true;
   try { const stored=JSON.parse(localStorage.getItem(key)||'[]'); if(Array.isArray(stored)) discovered=new Set(stored.filter(s=>slugs.includes(s))); } catch { storageOK=false; }
   host.append(node('h2',ausstellung.titel));
@@ -66,11 +66,11 @@
   function render(){
     const term=normal(nameInput.value), query=cageInput.value.trim();
     const number=/^\d+$/.test(query)?Number(query):NaN;
-    const matches=entries.filter(r=>(!term||normal(r.name).includes(term))&&(!query||(r.kaefigVon<=number&&number<=r.kaefigBis)));
+    const matches=entries.filter(r=>(!term||normal(r.name).includes(term))&&(!query||r.kaefige.some(k=>k.von<=number&&number<=k.bis)));
     list.replaceChildren();
     message.textContent=matches.length ? (query?'Käfig '+number+' · ':'')+matches.length+' passende Einträge' : query?'Für diese Käfignummer wurde keine Rasse gefunden.':'Keine passende ausgestellte Rasse gefunden.';
     for(const r of matches){
-      const card=node('article','','card');card.append(node('h3',r.name),node('p',r.kaefigVon===r.kaefigBis?'Käfig '+r.kaefigVon:'Käfige '+r.kaefigVon+'–'+r.kaefigBis,'ausstellung-cage'));
+      const card=node('article','','card');card.append(node('h3',r.name),node('p',(r.kaefige.length===1&&r.kaefige[0].von===r.kaefige[0].bis?'Käfig ':'Käfige ')+r.kaefige.map(k=>k.von===k.bis?String(k.von):k.von+'–'+k.bis).join(', '),'ausstellung-cage'));
       const link=node('a','Rasse entdecken','button');link.href=r.slug;card.append(link);
       const label=node('label','','ausstellung-discovered');const checkbox=node('input');checkbox.type='checkbox';checkbox.checked=discovered.has(r.slug);
       checkbox.addEventListener('change',()=>{checkbox.checked?discovered.add(r.slug):discovered.delete(r.slug);save();update();list.querySelectorAll('input[type=checkbox]').forEach(c=>{if(c.dataset.slug===r.slug)c.checked=checkbox.checked;});});
