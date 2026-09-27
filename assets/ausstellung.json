@@ -1,15 +1,8 @@
 {
-  "aktiv": true,
-  "titel": "Offene Lokalschau des RGZV Hagen und Umgebung",
-  "ort": "Burgerhalle Hagen-Dahl",
-  "datum": "26-/27.09.2026",
-  "begruessung": "Schön, dass Sie bei uns zu Gast sind!   Entdecken Sie die faszinierende Vielfalt des Rassegeflügels auch digital. Lernen Sie die ausgestellten Rassen näher kennen, erfahren Sie Wissenswertes über ihre Herkunft, Geschichte und Besonderheiten und finden Sie über die Käfignummer schnell die Tiere, die Sie besonders interessieren.   Nehmen Sie sich Zeit, schauen Sie genauer hin und entdecken Sie vielleicht eine Rasse, die Sie bisher noch gar nicht kannten.   Wir wünschen Ihnen viel Freude beim Entdecken und einen schönen Aufenthalt bei unserer Ausstellung!   Ihr RGZV Hagen und Umgebung seit 1903 e.V.",
-  "rassen": [
-    {
-      "name": "Ayam Cemani",
-      "slug": "ayam-cemani.html",
-      "kaefigVon": 32,
-      "kaefigBis": 38
-    }
-  ]
+  "aktiv": false,
+  "titel": "",
+  "ort": "",
+  "datum": "",
+  "begruessung": "",
+  "rassen": []
 }
