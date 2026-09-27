@@ -28,6 +28,8 @@
   }
   // Only explicitly configured entries are used. Reject invalid ranges and non-local URLs.
   const entries = ausstellung.rassen.map(r => r && ({ ...r, kaefige: Array.isArray(r.kaefige) ? r.kaefige : [{ von: r.kaefigVon, bis: r.kaefigBis }] })).filter(r => r && typeof r.name === 'string' && /^[a-z0-9-]+\.html$/.test(r.slug) && r.kaefige.length > 0 && r.kaefige.every(k => k && Number.isSafeInteger(k.von) && Number.isSafeInteger(k.bis) && k.von > 0 && k.bis >= k.von));
+  for (const entry of entries) entry.kaefige = [...entry.kaefige].sort((a,b)=>a.von-b.von);
+  entries.sort((a,b)=>a.kaefige[0].von-b.kaefige[0].von);
   const slugs = [...new Set(entries.map(r=>r.slug))];
   const ranges = entries.flatMap(r=>r.kaefige.map(k=>[k.von,k.bis])).sort((a,b)=>a[0]-b[0]);
   let occupied=0, end=0;
