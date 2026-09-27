@@ -8,6 +8,7 @@ on:
         type: choice
         options:
           - Ausstellung anlegen/Grunddaten ändern
+          - Mehrere Rassen hinzufügen/ersetzen
           - Rasse hinzufügen
           - Rasse/Käfige ändern
           - Rasse entfernen
@@ -26,6 +27,9 @@ on:
         type: string
       rasse:
         description: Rasse (für Hinzufügen, Ändern oder Entfernen)
+        type: string
+      masseneingabe:
+        description: 'Rassen und Käfige – Masseneingabe (ersetzt ALLE Rassen): Ayam Cemani 32-38; Marans 58'
         type: string
       kaefigVon:
         description: Käfig von (für Hinzufügen oder Ändern)

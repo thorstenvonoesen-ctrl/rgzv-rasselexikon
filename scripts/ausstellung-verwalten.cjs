@@ -14,7 +14,7 @@ function generate(inputs, source, previous = { aktiv: false, titel: '', ort: '',
     if (!result.titel) throw new Error('Bitte einen Titel eingeben.');
     return result;
   }
-  if (!['Rasse hinzufügen', 'Rasse/Käfige ändern', 'Rasse entfernen'].includes(inputs.aktion)) throw new Error('Unbekannte Aktion.');
+  if (!['Mehrere Rassen hinzufügen/ersetzen', 'Rasse hinzufügen', 'Rasse/Käfige ändern', 'Rasse entfernen'].includes(inputs.aktion)) throw new Error('Unbekannte Aktion.');
   const match = source.match(/window\.FINDER_BREEDS\s*=\s*(\[[\s\S]*\]);?\s*$/);
   if (!match) throw new Error('Rassenquelle konnte nicht gelesen werden.');
   const breeds = JSON.parse(match[1]);
@@ -23,6 +23,34 @@ function generate(inputs, source, previous = { aktiv: false, titel: '', ort: '',
     const key = normalize(breed.name);
     if (catalog.has(key)) throw new Error('Mehrdeutiger Rassenname: ' + breed.name);
     catalog.set(key, breed);
+  }
+  if (inputs.aktion === 'Mehrere Rassen hinzufügen/ersetzen') {
+    const seen = new Set();
+    const rassen = (inputs.masseneingabe || '').split(';').map(entry => {
+      const text = entry.trim();
+      if (!text) throw new Error('Leerer Eintrag in der Masseneingabe. Bitte zwischen Semikolons jeweils Rasse und Käfigbereich angeben.');
+      const parsed = text.match(/^(.+?)\s+(\d+)(?:\s*-\s*(\d+))?$/u);
+      if (!parsed) throw new Error('Ungültige Eingabe: ' + text + '. Erwartet: Rassename 32-38 oder Rassename 58.');
+      const breed = catalog.get(normalize(parsed[1]));
+      if (!breed) throw new Error('Rasse nicht gefunden: ' + parsed[1]);
+      if (seen.has(breed.url)) throw new Error('Doppelte Rasse in der Masseneingabe: ' + breed.name);
+      seen.add(breed.url);
+      const kaefigVon = Number(parsed[2]);
+      const kaefigBis = Number(parsed[3] || parsed[2]);
+      if (![kaefigVon, kaefigBis].every(n => Number.isSafeInteger(n) && n > 0) || kaefigVon > kaefigBis) {
+        throw new Error('Ungültiger Käfigbereich bei ' + breed.name + ': ' + parsed[2] + (parsed[3] ? '-' + parsed[3] : ''));
+      }
+      if (!/^[a-z0-9-]+\.html$/.test(breed.url)) throw new Error('Ungültige Rassenseite: ' + breed.name);
+      return { name: breed.name, slug: breed.url, kaefigVon, kaefigBis };
+    });
+    const sorted = [...rassen].sort((a, b) => a.kaefigVon - b.kaefigVon);
+    let total = 0;
+    sorted.forEach((r, i) => {
+      if (i && r.kaefigVon <= sorted[i - 1].kaefigBis) throw new Error('Käfigbereich überschneidet sich: ' + sorted[i - 1].name + ' und ' + r.name);
+      total += r.kaefigBis - r.kaefigVon + 1;
+    });
+    if (!Number.isSafeInteger(total)) throw new Error('Zu viele Käfige.');
+    return { ...previous, rassen };
   }
   const name = (inputs.rasse || '').trim();
   if (!name) throw new Error('Bitte eine Rasse eingeben.');
