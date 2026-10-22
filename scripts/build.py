@@ -24,9 +24,10 @@ pdfmetrics.registerFont(TTFont('Label', str(font_dir / 'arial.ttf')))
 pdfmetrics.registerFont(TTFont('LabelBold', str(font_dir / 'arialbd.ttf')))
 
 def shell(title, subtitle, content):
+    catalog_scripts = '<script src="assets/finder-data.js" defer></script><script src="assets/rassen-bestand.js" defer></script><script src="assets/rassen-gesamt.js" defer></script>' if title == 'Digitales Rasselexikon' else ''
     return f'''<!DOCTYPE html>
 <html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{e(title)} | Rasselexikon RGZV Hagen</title><meta name="description" content="{e(subtitle)}"><link rel="stylesheet" href="assets/style.css"></head>
+<title>{e(title)} | Rasselexikon RGZV Hagen</title><meta name="description" content="{e(subtitle)}"><link rel="stylesheet" href="assets/style.css">{catalog_scripts}</head>
 <body><a class="skip" href="#inhalt">Zum Inhalt</a><header><div class="small">Digitales Rasselexikon</div><h1>{e(title)}</h1><p>{e(subtitle)}</p></header>
 <main id="inhalt">{content}</main><footer><strong>RGZV Hagen und Umgebung seit 1903 e.V.</strong><br>Digitales Rasselexikon für Besucher unserer Ausstellungen</footer></body></html>
 '''
@@ -52,7 +53,7 @@ def pages(selection):
         content += f'</ul></section><a class="back" href="index.html">← Alle Rassen entdecken</a>'
         (ROOT / (b['slug']+'.html')).write_text(shell(b['name'],b['short'],content),encoding='utf-8')
     groups = [('huehner','Hühner','Großhuhn'),('zwerghuehner','Zwerghühner','Zwerghuhn'),('tauben','Tauben','Taube'),('wachteln','Wachteln','Wachtel')]
-    content = f'<div class="info"><h2>Unsere Rassen entdecken</h2><p>Willkommen beim RGZV Hagen und Umgebung seit 1903 e.V. Lernen Sie {len(ALL_BREEDS)} Geflügelrassen kennen: ihre Herkunft, ihr Aussehen und ihre Besonderheiten.</p></div><nav class="groups" aria-label="Tiergruppen">'
+    content = '<div class="info"><h2>Unsere Rassen entdecken</h2><p>Willkommen beim RGZV Hagen und Umgebung seit 1903 e.V. Lernen Sie <span data-rassen-anzahl>…</span> Geflügelrassen kennen: ihre Herkunft, ihr Aussehen und ihre Besonderheiten.</p></div><nav class="groups" aria-label="Tiergruppen">'
     content += ''.join(f'<a href="#{slug}">{name}</a>' for slug,name,_ in groups)+'</nav>'
     for slug,name,group in groups:
         content += f'<section id="{slug}"><h2>{name}</h2><div class="cards">'

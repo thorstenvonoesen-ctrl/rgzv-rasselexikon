@@ -1,5 +1,30 @@
 # Digitales Rasselexikon – RGZV Hagen
 
+## Automatische Rasseanzahl
+
+Die zentrale Datenquelle für Gesamtanzeigen und Finder ist `assets/finder-data.js`.
+`assets/rassen-bestand.js` prüft Struktur, Tiergruppe, lokale Seiten-URLs und
+Namens-/URL-Dubletten einschließlich Umlautschreibweisen und bekannter Synonyme.
+Scherzeinträge der Gruppe `Dekorationshuhn` bleiben erhalten, zählen jedoch nicht
+als Geflügelrassen und erscheinen nicht im Finder.
+
+Jede Gesamtanzeige verwendet `data-rassen-anzahl` und erhält ihre Zahl ausschließlich
+von `window.RASSE_BESTAND.count`; auch das bisherige Element `#rassen-gesamt` wird
+unterstützt. Im HTML steht keine manuell gepflegte Ersatzzahl. Neue Rassen werden
+wie bisher mit Detailseite, Übersichtskarte und zentralem Datensatz integriert.
+Danach aktualisieren sich alle Gesamtanzeigen beim Laden automatisch.
+
+`python scripts/check_catalog.py` gleicht den Katalog gegen sämtliche tatsächlichen
+Rassedateien und die Navigation ab und prüft die 30 beauftragten Rassen. Der Check
+erkennt auch neue, noch nicht registrierte Detailseiten und fehlende Dateien.
+`node scripts/check-count.cjs` prüft die automatische Erhöhung bei Erweiterungen,
+mehrere Anzeigen sowie das Abweisen ungültiger und doppelter Einträge.
+Beide Prüfungen laufen über `.github/workflows/rassen-bestand-pruefen.yml` bei
+jedem Push und Pull Request. Die Prüfungen benötigen keine manuelle Gesamtzahl.
+
+Die nachfolgenden Angaben dokumentieren den ursprünglichen Ausbau und sind keine
+weitere Datenquelle für die aktuelle Gesamtanzeige.
+
 Statische Erweiterung des bestehenden GitHub-Pages-Projekts. Die vorhandene
 `ayam-cemani.html` ist unverändert. Keine Änderung an der Pages-Konfiguration.
 

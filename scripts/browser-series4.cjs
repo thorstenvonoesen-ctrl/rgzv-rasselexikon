@@ -18,13 +18,14 @@ const {pathToFileURL}=require('url');
   }
  }
  await page.goto(pathToFileURL(path.resolve('index.html')).href);
- if(await page.locator('#rassen-gesamt').innerText()!=='193')throw Error('Zähler');
+ const count=await page.evaluate(()=>window.RASSE_BESTAND.count);
+ if(await page.locator('#rassen-gesamt').innerText()!==String(count))throw Error('Zähler');
  for(const slug of added){
   await page.locator(`a[href="${slug}.html"]`).click();
   if(await page.locator('h1').innerText()==='')throw Error('Navigation');
   await page.locator('a.back').first().click();
  }
  if(errors.length)throw Error(errors.join('\n'));
- fs.writeFileSync('scripts/series4-browser-results.json',JSON.stringify({viewportChecks:checks,newPageRoundTrips:5,counter:193,pageErrors:errors},null,2));
+ fs.writeFileSync('scripts/series4-browser-results.json',JSON.stringify({viewportChecks:checks,newPageRoundTrips:5,counter:count,pageErrors:errors},null,2));
  await browser.close();console.log('28 Layoutprüfungen, fünf Navigationen und Gesamtzähler bestanden.');
 })().catch(e=>{console.error(e);process.exit(1)});

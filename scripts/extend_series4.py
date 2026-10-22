@@ -76,7 +76,7 @@ def main():
             qr.make_image(fill_color='black',back_color='white').save(qrpath)
     # Keep each card byte-for-byte, changing only its order within its existing group.
     index=re.sub(r'(<div class="cards">)(.*?)(</div>)',lambda m:m[1]+''.join(sorted(cards(m[2]),key=lambda c:sortkey(name(c))))+m[3],index,flags=re.S)
-    index=re.sub(r'(<span id="rassen-gesamt">)\d+(</span>)',lambda m:m[1]+str(len(cards(index)))+m[2],index)
+    index=re.sub(r'(<span id="rassen-gesamt"[^>]*>).*?(</span>)',r'\1…\2',index)
     for card in cards(index):
         url=re.search(r'href="([^"]+)"',card)[1]
         if url not in {r['url'] for r in finder}:

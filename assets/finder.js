@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const breeds = window.FINDER_BREEDS.filter(b => b.url !== 'hagener-goldhals-langhuhn.html');
+  const breeds = window.RASSE_BESTAND.entries;
   const questions = [
     ['Welche Geflügelart interessiert Sie?', [['Großhuhn','Hühner'],['Zwerghuhn','Zwerghühner'],['Ente','Enten'],['Gans','Gänse'],['Taube','Tauben'],['Wachtel','Wachteln'],['any','Ich bin offen für alles']]],
     ['Wie viel Platz steht zur Verfügung?', [['small','Eher wenig'],['garden','Normaler Garten'],['large','Viel Platz'],['any','Spielt keine Rolle']]],
