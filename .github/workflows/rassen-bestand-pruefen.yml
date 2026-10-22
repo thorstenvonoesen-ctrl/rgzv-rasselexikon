@@ -15,3 +15,5 @@ jobs:
         with:
           node-version: '22'
       - run: node scripts/check-count.cjs
+      - run: node scripts/check_events.cjs
+      - run: node scripts/check_event_admin.cjs

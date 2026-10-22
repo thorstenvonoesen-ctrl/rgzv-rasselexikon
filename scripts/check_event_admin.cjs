@@ -1,0 +1,22 @@
+const fs=require('node:fs'),path=require('node:path'),{execFileSync}=require('node:child_process'),assert=require('node:assert/strict');
+fs.mkdirSync('tmp/event-admin-test',{recursive:true});
+const root=fs.mkdtempSync(path.resolve('tmp/event-admin-test/run-'));
+for(const folder of ['assets/ausstellungen','scripts'])fs.mkdirSync(path.join(root,folder),{recursive:true});
+for(const file of ['scripts/ausstellung-verwalten.cjs','assets/veranstaltungen.js','assets/veranstaltungen.json','assets/finder-data.js','assets/ausstellungen/rassetaubenschau-2027.json'])fs.copyFileSync(file,path.join(root,file));
+fs.writeFileSync(path.join(root,'assets/veranstaltungen.json'),JSON.stringify({aktuelleVeranstaltung:'rassetaubenschau-2027',veranstaltungen:[{id:'rassetaubenschau-2027',titel:'Vorherige Testveranstaltung',beginn:'2027-01-30',ende:'2027-01-30',status:'angekuendigt',erkundungFreigegeben:false}]}));
+const read=file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
+function run(inputs){const input=path.join(root,'input.json');fs.writeFileSync(input,JSON.stringify({inputs}));return execFileSync(process.execPath,[path.join(root,'scripts/ausstellung-verwalten.cjs')],{env:{...process.env,GITHUB_EVENT_PATH:input},stdio:'pipe'});}
+const newId='test-taubenschau-2028';
+run({aktion:'Ausstellung anlegen/Grunddaten ändern',veranstaltungId:newId,titel:'Testschau 2028',beginn:'2028-01-29',ende:'2028-01-30'});
+let config=read('assets/veranstaltungen.json');assert.equal(config.aktuelleVeranstaltung,newId);assert.equal(config.veranstaltungen.length,2);
+assert.deepEqual(read('assets/ausstellungen/'+newId+'.json').rassen,[]);
+assert.throws(()=>run({aktion:'Erkundung freigeben'}));
+run({aktion:'Rasse hinzufügen',rasse:'Orientalische Roller',kaefigVon:'11',kaefigBis:'15'});
+run({aktion:'Erkundung freigeben'});assert.equal(read('assets/veranstaltungen.json').veranstaltungen.find(e=>e.id===newId).erkundungFreigegeben,true);
+const before=fs.readFileSync(path.join(root,'assets/ausstellungen/'+newId+'.json'),'utf8');
+assert.throws(()=>run({aktion:'Rasse hinzufügen',rasse:'Deutsche Modeneser',kaefigVon:'15',kaefigBis:'20'}));
+assert.equal(fs.readFileSync(path.join(root,'assets/ausstellungen/'+newId+'.json'),'utf8'),before);
+run({aktion:'Erkundung sperren'});assert.equal(read('assets/veranstaltungen.json').veranstaltungen.find(e=>e.id===newId).erkundungFreigegeben,false);
+run({aktion:'Ausstellung deaktivieren'});assert.equal(read('assets/veranstaltungen.json').veranstaltungen.find(e=>e.id===newId).status,'beendet');
+run({aktion:'Ausstellung anlegen/Grunddaten ändern',status:'angekuendigt'});assert.equal(read('assets/veranstaltungen.json').veranstaltungen.find(e=>e.id===newId).status,'angekuendigt');
+console.log('Verwaltung: neue Veranstaltung ohne Altbelegung, Freigabe/Sperre, Überschneidungsschutz und Reaktivierung geprüft.');

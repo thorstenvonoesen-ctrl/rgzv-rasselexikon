@@ -1,0 +1,22 @@
+{
+  "layoutChecks": 16,
+  "viewports": [
+    320,
+    390,
+    768,
+    1280
+  ],
+  "count": 192,
+  "eventOrder": true,
+  "expiredHidden": true,
+  "notReleasedHidden": true,
+  "wrongEventBlocked": true,
+  "cageSearch": true,
+  "breedSearch": true,
+  "finder": true,
+  "selectionPDFs": [
+    "a7",
+    "a4"
+  ],
+  "errors": []
+}

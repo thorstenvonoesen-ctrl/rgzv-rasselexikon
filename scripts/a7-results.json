@@ -1,0 +1,15 @@
+{
+  "races": 192,
+  "existing_pngs": 193,
+  "existing_sign_pdfs": 188,
+  "new_a7_pdfs": 192,
+  "a4_pages": 24,
+  "a4_example_codes": 8,
+  "qr_decode_dpi": 200,
+  "example_dpi": 300,
+  "dimensions_mm": [
+    74,
+    105
+  ],
+  "scale": 1
+}

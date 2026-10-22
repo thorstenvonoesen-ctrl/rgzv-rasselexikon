@@ -91,11 +91,52 @@ function generate(inputs, source, previous = { aktiv: false, titel: '', ort: '',
 if (require.main === module) {
   try {
     const root = path.resolve(__dirname, '..');
-    const target = path.join(root, 'assets/ausstellung.json');
     const inputs = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8')).inputs;
-    const previous = fs.existsSync(target) ? JSON.parse(fs.readFileSync(target, 'utf8')) : undefined;
-    const result = generate(inputs, fs.readFileSync(path.join(root, 'assets/finder-data.js'), 'utf8'), previous);
+    const {validDate, entries} = require('../assets/veranstaltungen.js');
+    const configPath=path.join(root,'assets/veranstaltungen.json');
+    const config=JSON.parse(fs.readFileSync(configPath,'utf8'));
+    const id=(inputs.veranstaltungId || config.aktuelleVeranstaltung || '').trim();
+    if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) throw Error('Gültige Veranstaltungs-ID erforderlich.');
+    let event=config.veranstaltungen.find(e=>e.id===id);
+    const target = path.join(root, 'assets/ausstellungen',id+'.json');
+    if(!event && fs.existsSync(target)) throw Error('Für diese ID existiert bereits eine Belegung. Bitte eine neue Veranstaltungs-ID verwenden.');
+    let previous=fs.existsSync(target)?JSON.parse(fs.readFileSync(target,'utf8')):{veranstaltungId:id,rassen:[]};
+    if(previous.veranstaltungId!==id) throw Error('Belegung gehört zu einer anderen Veranstaltung.');
+    let result=previous;
+    const source=fs.readFileSync(path.join(root, 'assets/finder-data.js'), 'utf8');
+    if(inputs.aktion==='Ausstellung anlegen/Grunddaten ändern'){
+      const isNew=!event;
+      event={...(event || {id,status:'angekuendigt',erkundungFreigegeben:false})};
+      for(const key of ['titel','beginn','ende','ort','oeffnungszeiten','beschreibung']){
+        if(inputs[key]?.trim()) event[key]=inputs[key].trim()==='-'?'':inputs[key].trim();
+      }
+      if(inputs.status){
+        if(!['angekuendigt','aktuell','beendet','abgesagt'].includes(inputs.status)) throw Error('Ungültiger Ausstellungsstatus.');
+        event.status=inputs.status;
+      }
+      if(!event.titel || !validDate(event.beginn) || !validDate(event.ende) || event.beginn>event.ende) throw Error('Titel und gültige ISO-Daten Beginn/Ende erforderlich.');
+      event.datum=event.beginn===event.ende?new Intl.DateTimeFormat('de-DE',{timeZone:'Europe/Berlin',weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(new Date(event.beginn)):event.beginn+' bis '+event.ende;
+      if(inputs.datum?.trim()) event.datum=inputs.datum.trim();
+      if(inputs.begruessung?.trim() && !inputs.beschreibung?.trim()) event.beschreibung=inputs.begruessung.trim();
+      event.erkundungFreigegeben=false;
+      if(isNew) config.veranstaltungen.push(event);else config.veranstaltungen=config.veranstaltungen.map(e=>e.id===id?event:e);
+      config.aktuelleVeranstaltung=id;
+    }else{
+      if(!event) throw Error('Veranstaltung zuerst mit Grunddaten anlegen.');
+      if(inputs.aktion==='Erkundung freigeben'){
+        const breeds=JSON.parse(source.match(/window\.FINDER_BREEDS\s*=\s*(\[[\s\S]*\]);?\s*$/)[1]).filter(b=>b.group!=='Dekorationshuhn');
+        if(!entries({...event,erkundungFreigegeben:true},previous,breeds).length) throw Error('Keine gültige, überschneidungsfreie Käfigbelegung vorhanden.');
+        event.erkundungFreigegeben=true;
+      }else if(inputs.aktion==='Erkundung sperren') event.erkundungFreigegeben=false;
+      else if(inputs.aktion==='Ausstellung deaktivieren'){event.status='beendet';event.erkundungFreigegeben=false;}
+      else{
+        result={...generate(inputs,source,{...previous,aktiv:false}),veranstaltungId:id};
+        event.erkundungFreigegeben=false;
+      }
+    }
+    delete result.aktiv;
     fs.writeFileSync(target, JSON.stringify(result, null, 2) + '\n');
+    fs.writeFileSync(configPath,JSON.stringify(config,null,2)+'\n');
   } catch (error) {
     console.error('Ausstellung nicht gespeichert: ' + error.message);
     process.exitCode = 1;

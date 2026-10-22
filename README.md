@@ -1,5 +1,11 @@
 # Digitales Rasselexikon – RGZV Hagen
 
+Der aktuelle Gesamtauftrag (Startseite, Taubenschau 2027, Veranstaltungsfreigabe,
+A7-Druck und Abschlussprüfungen) ist in [ERGEBNISBERICHT.md](ERGEBNISBERICHT.md)
+dokumentiert. Druckauswahl: `schilder-drucken.html`. Veranstaltungspflege:
+GitHub Actions → **Ausstellung verwalten**. Die neuen A7-Ausgaben liegen unter
+`output/pdf/`; die bisherigen QR-Codes und Druckdateien bleiben unverändert.
+
 ## Automatische Rasseanzahl
 
 Die zentrale Datenquelle für Gesamtanzeigen und Finder ist `assets/finder-data.js`.

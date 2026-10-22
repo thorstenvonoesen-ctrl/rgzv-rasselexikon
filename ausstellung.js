@@ -10,41 +10,49 @@
     if (cls) el.className = cls;
     return el;
   };
-  let ausstellung;
+  let ausstellung, event, config, data;
   try {
-    const response = await fetch('assets/ausstellung.json', { cache: 'no-store' });
+    const response = await fetch('assets/veranstaltungen.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('Laden fehlgeschlagen');
-    ausstellung = await response.json();
-    if (!ausstellung || typeof ausstellung.aktiv !== 'boolean' || !Array.isArray(ausstellung.rassen)) throw new Error('Ungültige Daten');
+    config = await response.json();
+    event = RGZV_EVENTS.current(config);
+    if(event){
+      const response = await fetch('assets/ausstellungen/'+event.id+'.json', { cache:'no-store' });
+      if(response.ok) data=await response.json();
+    }
   } catch {
-    if (host) host.append(node('p','Die Ausstellungsdaten konnten nicht geladen werden. Bitte versuchen Sie es später erneut.'));
+    if (host) host.append(node('p','Die Veranstaltungsdaten konnten nicht geladen werden. Bitte versuchen Sie es später erneut.'));
     return;
   }
-  if (ausstellung.aktiv !== true) {
-    if (!host) return;
-    host.append(node('p','Derzeit ist keine Ausstellung aktiviert.'));
-    const back = node('a','Zurück zum Rasselexikon','button'); back.href='index.html'; host.append(back);
+  const entries = RGZV_EVENTS.entries(event,data,window.RASSE_BESTAND?.entries);
+  // Auch eine bereits geöffnete Seite gibt nach Ablauf keine alte Belegung mehr frei.
+  const openedDay=RGZV_EVENTS.today();
+  setInterval(()=>{ if(RGZV_EVENTS.today()!==openedDay) location.reload(); },60000);
+  if(teaser && event){
+    teaser.replaceChildren(node('p','Unsere nächste Ausstellung','badge'),node('h2',event.titel),node('p',event.datum || event.beginn,'event-date'));
+    teaser.append(node('p',event.beschreibung || ''),node('p','Veranstalter: RGZV Hagen und Umgebung seit 1903 e. V.'));
+    if(event.ort) teaser.append(node('p','Ort: '+event.ort));
+    if(event.oeffnungszeiten) teaser.append(node('p','Öffnungszeiten: '+event.oeffnungszeiten));
+    if(entries.length){ const link=node('a','Ausstellung erkunden','button');link.href='ausstellung.html';teaser.append(link); }
+    teaser.hidden=false;
+  }
+  if(!entries.length){
+    if(host){
+      host.append(node('h2',event ? event.titel : 'Ausstellung erkunden'));
+      host.append(node('p',event ? 'Die Erkundung wird nach Freigabe der Käfigbelegung verfügbar.' : 'Derzeit ist keine aktuelle Ausstellung zur Erkundung freigegeben.'));
+      const back=node('a','Zum Rasselexikon','button');back.href='index.html#rassen-entdecken';host.append(back);
+    }
     return;
   }
-  // Only explicitly configured entries are used. Reject invalid ranges and non-local URLs.
-  const entries = ausstellung.rassen.map(r => r && ({ ...r, kaefige: Array.isArray(r.kaefige) ? r.kaefige : [{ von: r.kaefigVon, bis: r.kaefigBis }] })).filter(r => r && typeof r.name === 'string' && /^[a-z0-9-]+\.html$/.test(r.slug) && r.kaefige.length > 0 && r.kaefige.every(k => k && Number.isSafeInteger(k.von) && Number.isSafeInteger(k.bis) && k.von > 0 && k.bis >= k.von));
+  ausstellung={titel:event.titel,ort:event.ort,datum:event.datum || event.beginn};
   for (const entry of entries) entry.kaefige = [...entry.kaefige].sort((a,b)=>a.von-b.von);
   entries.sort((a,b)=>a.kaefige[0].von-b.kaefige[0].von);
   const slugs = [...new Set(entries.map(r=>r.slug))];
   const ranges = entries.flatMap(r=>r.kaefige.map(k=>[k.von,k.bis])).sort((a,b)=>a[0]-b[0]);
   let occupied=0, end=0;
   for (const [from,to] of ranges) { if (to>end) occupied+=to-Math.max(end,from-1); end=Math.max(end,to); }
-  if (teaser) {
-    teaser.replaceChildren(node('p','🏆 HERZLICH WILLKOMMEN','badge'),node('h2',ausstellung.titel));
-    if (ausstellung.ort) teaser.append(node('p','Schön, dass Sie bei uns in der '+ausstellung.ort+' zu Gast sind.'));
-    if (ausstellung.datum) teaser.append(node('p',ausstellung.datum));
-    teaser.append(node('p',ausstellung.begruessung || 'Entdecken Sie unsere Ausstellung auch digital: Lernen Sie die ausgestellten Rassen näher kennen, finden Sie die passenden Käfige und erfahren Sie Wissenswertes über Herkunft, Geschichte und Besonderheiten der Tiere.','ausstellung-begruessung'));
-    teaser.append(node('p',slugs.length+' ausgestellte Rassen · '+occupied+' Ausstellungskäfige','highlight'));
-    const link=node('a','Ausstellung entdecken','button');link.href='ausstellung.html';teaser.append(link);
-    teaser.hidden=false;
-  }
   if (!host) return;
-  const key='rgzv-ausstellung:'+JSON.stringify([ausstellung.titel,ausstellung.ort,ausstellung.datum,entries.map(r=>[r.slug,r.kaefige]).sort()]);
+  const key='rgzv-ausstellung:'+JSON.stringify([event.id,ausstellung.titel,ausstellung.ort,ausstellung.datum,entries.map(r=>[r.slug,r.kaefige]).sort()]);
   let discovered=new Set(), storageOK=true;
   try { const stored=JSON.parse(localStorage.getItem(key)||'[]'); if(Array.isArray(stored)) discovered=new Set(stored.filter(s=>slugs.includes(s))); } catch { storageOK=false; }
   host.append(node('h2',ausstellung.titel));

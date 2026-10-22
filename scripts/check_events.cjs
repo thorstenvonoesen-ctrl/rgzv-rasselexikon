@@ -1,0 +1,25 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const {current,entries,today}=require('../assets/veranstaltungen.js');
+// Deterministische Testveranstaltung; echte Veranstaltungsdaten dürfen sich ändern.
+const config={aktuelleVeranstaltung:'test-2027',veranstaltungen:[{id:'test-2027',titel:'Testschau',beginn:'2027-01-30',ende:'2027-01-30',status:'angekuendigt',erkundungFreigegeben:false}]};
+const event=config.veranstaltungen[0];
+const ctx=vm.createContext({window:{}});vm.runInContext(fs.readFileSync('assets/finder-data.js','utf8'),ctx);vm.runInContext(fs.readFileSync('assets/rassen-bestand.js','utf8'),ctx);
+const catalog=ctx.window.RASSE_BESTAND.entries;
+assert.equal(current(config,'2026-10-22').id,event.id);
+assert.equal(current(config,'2027-01-30').id,event.id);
+assert.equal(current(config,'2027-01-31'),null);
+assert.equal(today(new Date('2027-01-30T22:59:59Z')),'2027-01-30');
+assert.equal(today(new Date('2027-01-30T23:00:00Z')),'2027-01-31');
+for(const status of ['abgesagt','beendet','entwurf'])assert.equal(current({...config,veranstaltungen:[{...event,status}]},'2027-01-30'),null);
+assert.equal(current({...config,aktuelleVeranstaltung:'lokalschau-2026'},'2027-01-30'),null);
+const data={veranstaltungId:event.id,rassen:[{slug:'orientalische-roller.html',kaefige:[{von:1,bis:3},{von:10,bis:12}]}]};
+assert.equal(entries(event,data,catalog).length,0);
+assert.equal(entries({...event,erkundungFreigegeben:true},data,catalog).length,1);
+assert.equal(entries({...event,erkundungFreigegeben:true},{...data,veranstaltungId:'lokalschau-2026'},catalog).length,0);
+assert.equal(entries({...event,erkundungFreigegeben:true},{...data,rassen:[{slug:'orientalische-roller.html',kaefige:[{von:1,bis:3},{von:3,bis:4}]}]},catalog).length,0);
+assert.equal(entries({...event,erkundungFreigegeben:true},{...data,rassen:[{slug:'unbekannt.html',kaefige:[{von:1,bis:3}]}]},catalog).length,0);
+assert.equal(entries({...event,erkundungFreigegeben:true},{...data,rassen:[]},catalog).length,0);
+assert.equal(JSON.parse(fs.readFileSync('assets/ausstellung.json','utf8')).aktiv,false);
+console.log('Veranstaltung, Ablauf in Europe/Berlin, Sperre, Freigabe, Zuordnung und Käfigvalidierung geprüft.');

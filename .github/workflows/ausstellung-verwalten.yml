@@ -13,17 +13,42 @@ on:
           - Rasse/Käfige ändern
           - Rasse entfernen
           - Ausstellung deaktivieren
+          - Erkundung freigeben
+          - Erkundung sperren
+      veranstaltungId:
+        description: Eindeutige Veranstaltungs-ID (leer = ausgewählte Veranstaltung; neue ID startet mit leerer Belegung)
+        type: string
+      beginn:
+        description: Beginn im Format JJJJ-MM-TT
+        type: string
+      ende:
+        description: Letzter Veranstaltungstag im Format JJJJ-MM-TT
+        type: string
+      oeffnungszeiten:
+        description: Öffnungszeiten (leer = unverändert, - = entfernen)
+        type: string
+      beschreibung:
+        description: Beschreibung (leer = unverändert, - = entfernen)
+        type: string
+      status:
+        description: Status (nur bei Grunddaten ändern)
+        type: choice
+        options:
+          - angekuendigt
+          - aktuell
+          - beendet
+          - abgesagt
       titel:
-        description: Titel (Grunddaten speichern aktiviert die Ausstellung; leer = unverändert)
+        description: Titel der Veranstaltung (leer = unverändert)
         type: string
       ort:
         description: Ort (leer = unverändert)
         type: string
       datum:
-        description: Datum (freier Text; leer = unverändert)
+        description: Optionale Datumsanzeige (leer = automatisch aus Beginn/Ende)
         type: string
       begruessung:
-        description: Begrüßungstext (leer = unverändert)
+        description: Alternativer Beschreibungstext (nur wenn Beschreibung leer)
         type: string
       rasse:
         description: Rasse (für Hinzufügen, Ändern oder Entfernen)
@@ -63,7 +88,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- assets/ausstellung.json
+          git add -- assets/veranstaltungen.json assets/ausstellungen/
           if ! git diff --cached --quiet; then
             if [ "$ACTION" = 'Ausstellung deaktivieren' ]; then
               git commit -m 'Ausstellung deaktiviert'

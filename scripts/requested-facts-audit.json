@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Altsteirer",
+    "url": "altsteirer.html",
+    "original_sha256": "611ff69bba19c1f7d234332744f355345a789f8a8bea0e689a99de7af729b9e5",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 2,
+    "facts": {
+      "Gewicht Hahn": "2,5 bis 3,0 kg",
+      "Gewicht Henne": "2,0 bis 2,25 kg",
+      "Jährliche Legeleistung (Richtwert)": "180 Eier",
+      "Eierschalenfarbe": "Elfenbeinweiß",
+      "Eiergewicht laut Rassetafel": "55 g"
+    }
+  },
+  {
+    "name": "Andalusier",
+    "url": "andalusier.html",
+    "original_sha256": "61f38b2e2da9ae3aafa1976aa46876f2f0d2aa5d97d6d6886a9bac32940779ea",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 4,
+    "facts": {
+      "Gewicht Hahn": "2,5 bis 3,0 kg",
+      "Gewicht Henne": "2,0 bis 2,5 kg",
+      "Jährliche Legeleistung (Richtwert)": "160 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "58 g"
+    }
+  },
+  {
+    "name": "Appenzeller Barthühner",
+    "url": "appenzeller-barthuehner.html",
+    "original_sha256": "f617c15f700e8afe263727dedabc04b640ebb524905ed3219787432e4919c4a2",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 6,
+    "facts": {
+      "Gewicht Hahn": "2,0 bis 2,3 kg",
+      "Gewicht Henne": "1,6 bis 1,8 kg",
+      "Jährliche Legeleistung (Richtwert)": "150 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "55 g"
+    }
+  },
+  {
+    "name": "Appenzeller Spitzhauben",
+    "url": "appenzeller-spitzhauben.html",
+    "original_sha256": "9569f70782a19d4bb103b8aca5fa6efabcc5e1f698fa61ac30680e3020c8b9d7",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 7,
+    "facts": {
+      "Gewicht Hahn": "1,5 bis 1,8 kg",
+      "Gewicht Henne": "1,2 bis 1,5 kg",
+      "Jährliche Legeleistung (Richtwert)": "150 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "55 g"
+    }
+  },
+  {
+    "name": "Bergische Kräher",
+    "url": "bergische-kraeher.html",
+    "original_sha256": "241720d1053603a974b11ddb262a5a748abd986c3a81e1bbfd97f8cefa765b8c",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 13,
+    "facts": {
+      "Gewicht Hahn": "3,0 bis 3,5 kg",
+      "Gewicht Henne": "2,0 bis 2,5 kg",
+      "Jährliche Legeleistung (Richtwert)": "130 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "56 g"
+    }
+  },
+  {
+    "name": "Bergische Schlotterkämme",
+    "url": "bergische-schlotterkaemme.html",
+    "original_sha256": "19920e6bf1f2c86ae444c2d6e020d1ff1e54ae682f33282cb5fd5a03b63eac74",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 14,
+    "facts": {
+      "Gewicht Hahn": "2,0 bis 2,75 kg",
+      "Gewicht Henne": "1,75 bis 2,25 kg",
+      "Jährliche Legeleistung (Richtwert)": "150 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "55 g"
+    }
+  },
+  {
+    "name": "Brabanter",
+    "url": "brabanter.html",
+    "original_sha256": "fbcb85cbf396a21ed124e7f579ef317109796165f8e654871f9812abe57e4bd5",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 16,
+    "facts": {
+      "Gewicht Hahn": "1,9 bis 2,5 kg",
+      "Gewicht Henne": "1,5 bis 2,0 kg",
+      "Jährliche Legeleistung (Richtwert)": "170 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "52 g"
+    }
+  },
+  {
+    "name": "Brakel",
+    "url": "brakel.html",
+    "original_sha256": "4470c1035aefb55252450a6e6b7031d9e15565d25dd5b3472cb8c50152e80a51",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 19,
+    "facts": {
+      "Gewicht Hahn": "2,0 bis 2,75 kg",
+      "Gewicht Henne": "1,75 bis 2,25 kg",
+      "Jährliche Legeleistung (Richtwert)": "180 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "55 g"
+    }
+  },
+  {
+    "name": "Breda",
+    "url": "breda.html",
+    "original_sha256": "882939b48cffafef01b46ceeac09683b4d5f794b4814018d0060a4ca0d8a75fa",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 20,
+    "facts": {
+      "Gewicht Hahn": "2,5 bis 3,0 kg",
+      "Gewicht Henne": "1,75 bis 2,25 kg",
+      "Jährliche Legeleistung (Richtwert)": "160 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "55 g"
+    }
+  },
+  {
+    "name": "Dorking",
+    "url": "dorking.html",
+    "original_sha256": "024b399d0d3fc8c4332202bdfa9e1bf0116de2a48b37309d9faec2503da83478",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 34,
+    "facts": {
+      "Gewicht Hahn": "3,5 bis 4,5 kg",
+      "Gewicht Henne": "2,5 bis 3,5 kg",
+      "Jährliche Legeleistung (Richtwert)": "140 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "55 g"
+    }
+  },
+  {
+    "name": "Friesenhühner",
+    "url": "friesenhuehner.html",
+    "original_sha256": "001720f8e20453b05447c5af4c17e9f665d551a160592d267764b4d133592a68",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 38,
+    "facts": {
+      "Gewicht Hahn": "1,5 bis 1,6 kg",
+      "Gewicht Henne": "1,2 bis 1,3 kg",
+      "Jährliche Legeleistung (Richtwert)": "200 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "52 g"
+    }
+  },
+  {
+    "name": "Holländer Haubenhühner",
+    "url": "hollaender-haubenhuehner.html",
+    "original_sha256": "b8dfebca95afee0f4c672053764c090b4b6bf4058d3596e99457c65bb6e49996",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 40,
+    "facts": {
+      "Gewicht Hahn": "2,0 bis 2,5 kg",
+      "Gewicht Henne": "1,5 bis 2,0 kg",
+      "Jährliche Legeleistung (Richtwert)": "140 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "45 g"
+    }
+  },
+  {
+    "name": "Houdan",
+    "url": "houdan.html",
+    "original_sha256": "500f4ac48fb59696d7f872b647dce118b208d679a85b9c92cdfc2b2142c473b0",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 41,
+    "facts": {
+      "Gewicht Hahn": "2,5 bis 3,5 kg",
+      "Gewicht Henne": "2,0 bis 3,0 kg",
+      "Jährliche Legeleistung (Richtwert)": "160 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "53 g"
+    }
+  },
+  {
+    "name": "Kastilianer",
+    "url": "kastilianer.html",
+    "original_sha256": "4c321ccb7e25bb9f9a5f96f67ab3bcef8511212c5e508fe729ba0ade6af532ce",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 45,
+    "facts": {
+      "Gewicht Hahn": "2,0 bis 2,5 kg",
+      "Gewicht Henne": "1,75 bis 2,0 kg",
+      "Jährliche Legeleistung (Richtwert)": "170 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "56 g"
+    }
+  },
+  {
+    "name": "Kraienköppe",
+    "url": "kraienkoeppe.html",
+    "original_sha256": "7ed5f4ac6e09772ea9af371a0cf169655b0a2433582e25ebe32b892b8673aeec",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 48,
+    "facts": {
+      "Gewicht Hahn": "2,5 bis 3,0 kg",
+      "Gewicht Henne": "1,75 bis 2,5 kg",
+      "Jährliche Legeleistung (Richtwert)": "230 Eier",
+      "Eierschalenfarbe": "Weiß bis hellgelb",
+      "Eiergewicht laut Rassetafel": "55 g"
+    }
+  },
+  {
+    "name": "La Flèche",
+    "url": "la-fleche.html",
+    "original_sha256": "1232648ec53f0ce6be5ed3a4187cfb151335d8138742c5a0dcfb6d0c09eacfe1",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 50,
+    "facts": {
+      "Gewicht Hahn": "3,0 bis 3,5 kg",
+      "Gewicht Henne": "2,5 bis 3,0 kg",
+      "Jährliche Legeleistung (Richtwert)": "180 Eier",
+      "Eierschalenfarbe": "Weiß, auch mit rosa Hauch",
+      "Eiergewicht laut Rassetafel": "60 g"
+    }
+  },
+  {
+    "name": "Minorka",
+    "url": "minorka.html",
+    "original_sha256": "46f4f1a32f6617f02eb95e69185cb2a0bc1a9d2116e381725deb921c3c77bceb",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 58,
+    "facts": {
+      "Gewicht Hahn": "2,5 bis 3,5 kg",
+      "Gewicht Henne": "2,25 bis 3,0 kg",
+      "Jährliche Legeleistung (Richtwert)": "170 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "65 g"
+    }
+  },
+  {
+    "name": "Nackthalshühner",
+    "url": "nackthalshuehner.html",
+    "original_sha256": "6317eb81a69139f61a581faeee08f9e8e9ed9e5219ed6dda9ef74be6891d3656",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 60,
+    "facts": {
+      "Gewicht Hahn": "2,5 bis 3,0 kg",
+      "Gewicht Henne": "2,0 bis 2,5 kg",
+      "Jährliche Legeleistung (Richtwert)": "180 Eier",
+      "Eierschalenfarbe": "Weiß bis gelblich",
+      "Eiergewicht laut Rassetafel": "55 g"
+    }
+  },
+  {
+    "name": "Paduaner",
+    "url": "paduaner.html",
+    "original_sha256": "baedca82355c32affc9df4430945e9882f2e72d30b5b948f7561315b000164a3",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 68,
+    "facts": {
+      "Gewicht Hahn": "2,0 bis 2,5 kg",
+      "Gewicht Henne": "1,5 bis 2,0 kg",
+      "Jährliche Legeleistung (Richtwert)": "120 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "48 g"
+    }
+  },
+  {
+    "name": "Penedesenca",
+    "url": "penedesenca.html",
+    "original_sha256": "384e421c786b8c235d9a2248bbaf83e676fe09ceb8312d322f7f87b45af917c2",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 69,
+    "facts": {
+      "Gewicht Hahn": "2,0 bis 2,7 kg",
+      "Gewicht Henne": "1,7 bis 2,0 kg",
+      "Jährliche Legeleistung (Richtwert)": "190 Eier",
+      "Eierschalenfarbe": "Sehr dunkles Rotbraun",
+      "Eiergewicht laut Rassetafel": "58 g"
+    }
+  },
+  {
+    "name": "Tuzo",
+    "url": "tuzo.html",
+    "original_sha256": "73eba508d13e3fa8f6e37f3ed28b9781a493eea3dd327717cb299af2f53ee324",
+    "source": "https://www.bdrg.de/media/docs/Rassetafeln_Huehner.pdf",
+    "page": 93,
+    "facts": {
+      "Gewicht Hahn": "1,3 bis 1,5 kg",
+      "Gewicht Henne": "1,0 bis 1,2 kg",
+      "Jährliche Legeleistung (Richtwert)": "80 Eier",
+      "Eierschalenfarbe": "Weiß oder gelblich",
+      "Eiergewicht laut Rassetafel": "35 g"
+    }
+  },
+  {
+    "name": "Bantam",
+    "url": "bantam.html",
+    "original_sha256": "0dfdfc4ed58f682a61b6f6634f06a495654f648a6675896fa6eff9a12c6575c3",
+    "source": "https://www.bdrg.de/media/docs/zwerghuehner_2011_A6.pdf",
+    "page": 11,
+    "facts": {
+      "Gewicht Hahn": "ca. 600 Gramm",
+      "Gewicht Henne": "ca. 500 Gramm",
+      "Jährliche Legeleistung (Richtwert)": "90 Eier",
+      "Eierschalenfarbe": "Weiß bis cremefarbig",
+      "Eiergewicht laut Rassetafel": "28 g"
+    }
+  },
+  {
+    "name": "Deutsche Zwerg-Lachshühner",
+    "url": "deutsche-zwerg-lachshuehner.html",
+    "original_sha256": "8f4bfe6f06744f7cdf8627b0913f7983e7311ce6b7643b1ea831c52ba1c2110a",
+    "source": "https://www.bdrg.de/media/docs/zwerghuehner_2011_A6.pdf",
+    "page": 27,
+    "facts": {
+      "Gewicht Hahn": "1300 Gramm",
+      "Gewicht Henne": "1100 Gramm",
+      "Jährliche Legeleistung (Richtwert)": "135 Eier",
+      "Eierschalenfarbe": "Gelblich",
+      "Eiergewicht laut Rassetafel": "40 g"
+    }
+  },
+  {
+    "name": "Federfüßige Zwerghühner",
+    "url": "federfuessige-zwerghuehner.html",
+    "original_sha256": "c7b79a8b04746bc268310448769cc9dc1aa3c594d004485415e5eb6aca395593",
+    "source": "https://www.bdrg.de/media/docs/zwerghuehner_2011_A6.pdf",
+    "page": 35,
+    "facts": {
+      "Gewicht Hahn": "750 Gramm",
+      "Gewicht Henne": "650 Gramm",
+      "Jährliche Legeleistung (Richtwert)": "120 Eier",
+      "Eierschalenfarbe": "Weiß bis bräunlich",
+      "Eiergewicht laut Rassetafel": "30 g"
+    }
+  },
+  {
+    "name": "Holländische Zwerghühner",
+    "url": "hollaendische-zwerghuehner.html",
+    "original_sha256": "d476f5694d7c9686d0664cca7797fdb2e9955d6dad1c9e1ae4765c04f15888e3",
+    "source": "https://www.bdrg.de/media/docs/zwerghuehner_2011_A6.pdf",
+    "page": 41,
+    "facts": {
+      "Gewicht Hahn": "500 bis 550 Gramm",
+      "Gewicht Henne": "400 bis 450 Gramm",
+      "Jährliche Legeleistung (Richtwert)": "80 Eier",
+      "Eierschalenfarbe": "Weiß",
+      "Eiergewicht laut Rassetafel": "28 g"
+    }
+  }
+]

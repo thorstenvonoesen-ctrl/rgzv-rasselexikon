@@ -1,0 +1,17 @@
+{
+  "aktuelleVeranstaltung": "rassetaubenschau-2027",
+  "veranstaltungen": [
+    {
+      "id": "rassetaubenschau-2027",
+      "titel": "1. Offene Rassetaubenschau 2027",
+      "beginn": "2027-01-30",
+      "ende": "2027-01-30",
+      "datum": "Samstag, 30. Januar 2027",
+      "ort": "",
+      "oeffnungszeiten": "",
+      "beschreibung": "Entdecken Sie die Vielfalt der Rassetauben und kommen Sie mit Züchterinnen, Züchtern und Geflügelfreunden ins Gespräch. Der RGZV Hagen und Umgebung seit 1903 e. V. lädt Sie herzlich zur ersten Offenen Rassetaubenschau ein.",
+      "status": "angekuendigt",
+      "erkundungFreigegeben": false
+    }
+  ]
+}
