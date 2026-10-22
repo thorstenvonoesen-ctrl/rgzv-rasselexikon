@@ -17,7 +17,7 @@ def main():
     assert len(set(audit['replacements']))==42
     for key in ['history','appearance','nature','husbandry','use']:
         assert len({b[key] for b in TEXTS.values()})==50,('Identische Texte',key)
-    index=(ROOT/'index.html').read_text(encoding='utf-8')
+    index=(ROOT/'lexikon.html').read_text(encoding='utf-8')
     for card in audit['original_cards']:assert card in index,'Vorhandene Karte verändert'
     raw=(ROOT/'assets/finder-data.js').read_text(encoding='utf-8')
     finder=json.loads(raw.split('window.FINDER_BREEDS = ',1)[1].strip().rstrip(';'))
