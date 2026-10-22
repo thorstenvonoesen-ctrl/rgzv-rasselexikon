@@ -70,7 +70,10 @@ def check(root=ROOT):
         assert name_key(title)==name_key(b['name']) and group==b['group'],b['url']
     assert urls==set(files), f'Katalog und Dateien weichen ab: {urls.symmetric_difference(files)}'
     index=(root/'index.html').read_text(encoding='utf-8')
-    cards=re.findall(r'<article class="card">.*?</article>',index,re.S)
+    lexikon=(root/'lexikon.html').read_text(encoding='utf-8')
+    assert '<article class="card">' not in index and 'assets/lexikon-suche.js' not in index,'Rassenliste auf Startseite'
+    assert 'href="lexikon.html"' in index,'Lexikonlink fehlt'
+    cards=re.findall(r'<article class="card">.*?</article>',lexikon,re.S)
     targets=[re.search(r'href="([^"]+)"',c)[1] for c in cards if re.search(r'<span class="badge">(.*?)</span>',c)[1] in GROUPS]
     assert len(targets)==len(set(targets)) and set(targets)==urls,'Navigation und Katalog weichen ab'
     assert not re.search(r'id="rassen-gesamt"[^>]*>\s*\d+',index),'Fest hinterlegte Rasseanzahl'

@@ -16,7 +16,7 @@ const server=http.createServer((req,res)=>{
   let layoutChecks=0;
   for(const width of [320,390,768,1280]){
    await page.setViewportSize({width,height:900});
-   for(const file of ['index.html','ausstellung.html','rasse-finder.html','schilder-drucken.html']){
+   for(const file of ['index.html','lexikon.html','ausstellung.html','rasse-finder.html','schilder-drucken.html']){
     await page.goto(base+file);await page.waitForLoadState('networkidle');
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,file+' '+width);layoutChecks++;
    }
@@ -25,12 +25,14 @@ const server=http.createServer((req,res)=>{
   const raw=fs.readFileSync('assets/finder-data.js','utf8');
   const expected=JSON.parse(raw.split('window.FINDER_BREEDS = ')[1].trim().replace(/;$/,'')).filter(b=>['Großhuhn','Zwerghuhn','Taube','Wachtel','Gans','Ente'].includes(b.group)).length;
   assert.equal(await page.locator('#rassen-gesamt').innerText(),String(expected));
-  assert.deepEqual((await page.locator('main h2').allTextContents()).slice(0,6),['1. Offene Rassetaubenschau 2027','Rassen entdecken','Welche Rasse passt zu mir?','Willkommen in der Welt des Rassegeflügels','Mehr vom RGZV Hagen','Alle Rassen im Überblick']);
+  assert.deepEqual((await page.locator('main h2').allTextContents()).slice(0,5),['1. Offene Rassetaubenschau 2027','Rassen entdecken','Welche Rasse passt zu mir?','Willkommen in der Welt des Rassegeflügels','Mehr vom RGZV Hagen']);
   assert.equal(await page.locator('main').innerText().then(t=>t.includes('Lokalschau 2026')),false);
   assert.equal(await page.locator('#ausstellung-start a').count(),0);
+  assert.equal(await page.locator('.cards .card').count(),0);
+  await page.locator('a[href="lexikon.html"]').click();
   await page.locator('#lexikon-suche').fill('Kraienkoeppe');assert.equal(await page.locator('.cards .card:visible').count(),2);
   await page.locator('#lexikon-suche').fill('');
-  fs.mkdirSync('tmp/project',{recursive:true});await page.setViewportSize({width:390,height:844});await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:'tmp/project/start-mobile.png',fullPage:false});
+  await page.goto(base);fs.mkdirSync('tmp/project',{recursive:true});await page.setViewportSize({width:390,height:844});await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:'tmp/project/start-mobile.png',fullPage:false});
   await page.clock.setSystemTime(new Date('2027-01-31T12:00:00Z'));await page.reload();await page.waitForLoadState('networkidle');assert.equal(await page.locator('#ausstellung-start').isVisible(),false);
   await page.goto(base+'ausstellung.html');await page.waitForLoadState('networkidle');assert.equal(await page.locator('#kaefig-suche').count(),0);
   await page.clock.setSystemTime(new Date('2027-01-30T12:00:00Z'));
@@ -79,7 +81,7 @@ const server=http.createServer((req,res)=>{
      await page.goto(base+b.slug+'.html');assert.equal(await page.locator('h1').innerText(),b.name);
      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,b.name+' '+width);newPages++;
      if(width===320){
-      await page.locator('a.back').first().click();await page.locator('#lexikon-suche').fill(b.name);
+      await page.locator('a.back').first().click();await page.locator('a[href="lexikon.html"]').click();await page.locator('#lexikon-suche').fill(b.name);
       assert.equal(await page.locator(`.cards a[href="${b.slug}.html"]`).isVisible(),true,b.name);newSearches++;
      }
     }

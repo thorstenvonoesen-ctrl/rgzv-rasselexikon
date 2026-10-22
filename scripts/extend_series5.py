@@ -48,7 +48,7 @@ def render(b,template):
 def main():
     refresh='--refresh-new' in sys.argv
     rows=load();slugs={b['slug'] for b in rows};assert len(slugs)==50
-    indexpath=ROOT/'index.html';index=indexpath.read_text(encoding='utf-8');original_cards=cards(index)
+    indexpath=ROOT/'lexikon.html';index=indexpath.read_text(encoding='utf-8');original_cards=cards(index)
     finderpath=ROOT/'assets/finder-data.js';raw=finderpath.read_text(encoding='utf-8');prefix=raw.split('window.FINDER_BREEDS = ',1)[0]
     finder=json.loads(raw.split('window.FINDER_BREEDS = ',1)[1].strip().rstrip(';'))
     oldnames={name_key(b['name']):b for b in finder};newnames={name_key(b['name']) for b in rows};assert len(newnames)==50
@@ -100,7 +100,7 @@ def main():
     index=re.sub(r'(<div class="cards">)(.*?)(</div>)',lambda m:m[1]+''.join(sorted(cards(m[2]),key=lambda c:sortkey(card_name(c))))+m[3],index,flags=re.S)
     indexpath.write_text(index,encoding='utf-8');finderpath.write_text(prefix+'window.FINDER_BREEDS = '+json.dumps(finder,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
     for file,digest in audit['preserved_files'].items():
-        if file=='index.html':continue
+        if file in {'index.html',indexpath.name}:continue
         assert hashlib.sha256((ROOT/file).read_bytes()).hexdigest()==digest,file
     audit['new_page_hashes']={b['slug']+'.html':hashlib.sha256((ROOT/(b['slug']+'.html')).read_bytes()).hexdigest() for b in rows}
     reportpath.write_text(json.dumps(audit,ensure_ascii=False,indent=2),encoding='utf-8')

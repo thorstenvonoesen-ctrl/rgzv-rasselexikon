@@ -1,6 +1,6 @@
 """A7-Hochformat 74 x 105 mm; A4: acht gedrehte Schilder ohne Skalierung."""
 from pathlib import Path
-import sys,json,re,hashlib
+import sys,json,re,hashlib,tempfile
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'.tools/python'))
 import qrcode
@@ -73,22 +73,52 @@ def pdf(path,selection,a4=False):
     c.save()
 
 def main():
-    breeds=catalog();(OUT/'a7').mkdir(parents=True,exist_ok=True)
+    from io import BytesIO
+    from check_catalog import check
+    from pypdf import PdfReader,PdfWriter,Transformation
+    from pypdf.generic import DictionaryObject,NameObject
+    check();breeds=catalog();(OUT/'a7').mkdir(parents=True,exist_ok=True)
+    (ROOT/'tmp/pdfs').mkdir(parents=True,exist_ok=True)
+    layout_path=ROOT/'scripts/a7-layout.json'
+    previous=json.loads(layout_path.read_text(encoding='utf-8')) if layout_path.exists() else {}
+    entries={b['url']:b['name'] for b in breeds}
+    expected={url.replace('.html','.pdf') for url in entries}
+    existing={p.name for p in (OUT/'a7').glob('*.pdf')}
     before={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (ROOT/'qr-codes').glob('*.png')}
-    for b in breeds:pdf(OUT/'a7'/(b['url'].removesuffix('.html')+'.pdf'),[b])
-    pdf(OUT/'alle-rasseschilder-a7.pdf',breeds)
-    pdf(OUT/'alle-rasseschilder-a4.pdf',breeds,True)
-    slugs=['ayam-cemani','deutsche-zwerg-lachshuehner','appenzeller-spitzhauben','bergische-schlotterkaemme','orientalische-roller','zwerg-kraienkoeppe','japanische-legewachtel','hollaender-haubenhuehner']
-    example=[next(b for b in breeds if b['url']==s+'.html') for s in slugs]
-    pdf(OUT/'beispiel-acht-rasseschilder-a4.pdf',example,True)
-    series5=ROOT/'scripts/series5-audit.json'
-    if series5.exists():
-        selected=set(json.loads(series5.read_text(encoding='utf-8'))['new_names'])
-        extension=[b for b in breeds if b['name'] in selected]
-        assert len(extension)==len(selected)
-        pdf(OUT/'erweiterung-50-a7.pdf',extension)
-        pdf(OUT/'erweiterung-50-a4.pdf',extension,True)
+    changed=[]
+    with tempfile.TemporaryDirectory(prefix='a7-',dir=ROOT/'tmp/pdfs') as work:
+        stage=Path(work)
+        for b in breeds:
+            filename=b['url'].replace('.html','.pdf');target=OUT/'a7'/filename
+            if not target.exists() or previous.get('entries',{}).get(b['url'],b['name'])!=b['name']:
+                pdf(stage/filename,[b]);changed.append(filename)
+        totals=['alle-rasseschilder-a7.pdf','alle-rasseschilder-a4.pdf']
+        refresh=bool(changed) or existing!=expected or previous.get('count')!=len(breeds) or any(not (OUT/f).is_file() for f in totals)
+        if refresh:
+            a7=PdfWriter();a4=PdfWriter();sheet=None
+            for i,b in enumerate(breeds):
+                filename=b['url'].replace('.html','.pdf')
+                source=stage/filename if filename in changed else OUT/'a7'/filename
+                page=PdfReader(source).pages[0];a7.add_page(page)
+                if i%8==0:sheet=a4.add_blank_page(210*mm,297*mm)
+                cell=i%8
+                transform=Transformation().rotate(-90).translate((cell%2)*105*mm,((4-cell//2)*74+.5)*mm)
+                sheet.merge_transformed_page(page,transform)
+            grid=BytesIO();marks=canvas.Canvas(grid,pagesize=A4,invariant=1)
+            marks.setStrokeColor(HexColor('#a0aaa3'));marks.setLineWidth(.25)
+            marks.line(105*mm,.5*mm,105*mm,296.5*mm)
+            for y in [74.5,148.5,222.5]:marks.line(0,y*mm,210*mm,y*mm)
+            marks.showPage();marks.save();grid.seek(0)
+            overlay=PdfReader(grid).pages[0]
+            for sheet in a4.pages:sheet.merge_page(overlay)
+            for writer,filename in [(a7,totals[0]),(a4,totals[1])]:
+                writer._root_object[NameObject('/ViewerPreferences')]=DictionaryObject({NameObject('/PrintScaling'):NameObject('/None')})
+                with (stage/filename).open('wb') as stream:writer.write(stream)
+            for filename in totals:(OUT/filename).write_bytes((stage/filename).read_bytes())
+        for filename in changed:(OUT/'a7'/filename).write_bytes((stage/filename).read_bytes())
+    for filename in existing-expected:(OUT/'a7'/filename).unlink()
     assert before=={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (ROOT/'qr-codes').glob('*.png')}
-    (ROOT/'scripts/a7-layout.json').write_text(json.dumps(dict(count=len(breeds),size_mm=[74,105],qr_mm=[7,22,60,60],a4_cells_mm=[105,74],rotation=-90,scale=1,example=slugs,qr_hashes=before),ensure_ascii=False,indent=2),encoding='utf-8')
-    print(f'{len(breeds)} A7-Einzel-PDFs, zwei Gesamtausgaben und ein A4-Beispiel erstellt.')
+    previous.update(count=len(breeds),entries=entries,size_mm=[74,105],qr_hashes=before,a4_cells_mm=[105,74],rotation=-90,scale=1)
+    layout_path.write_text(json.dumps(previous,ensure_ascii=False,indent=2),encoding='utf-8')
+    print(f'{len(breeds)} A7-Schilder zentral vorhanden; {len(changed)} ergänzt oder inhaltlich aktualisiert; Gesamtausgaben aktualisiert: {refresh}.')
 if __name__=='__main__':main()

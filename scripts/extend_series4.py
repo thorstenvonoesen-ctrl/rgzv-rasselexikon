@@ -40,14 +40,14 @@ def render(b, template):
     return re.sub(r'(<main id="inhalt">).*?(</main>)',lambda m:m[1]+content+m[2],result,flags=re.S)
 
 def main():
-    index = (ROOT/'index.html').read_text(encoding='utf-8')
+    index = (ROOT/'lexikon.html').read_text(encoding='utf-8')
     existing = cards(index)
     names = [normalized(name(c)) for c in existing]
     assert len(set(names)) == len(names), 'Doppelte vorhandene Namen'
     urls = [re.search(r'href="([^"]+)"',c).group(1) for c in existing]
     assert len(set(urls)) == len(urls), 'Doppelte vorhandene URLs'
     template = (ROOT/'bantam.html').read_text(encoding='utf-8')
-    before = {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in ROOT.glob('*.html') if p.name!='index.html' and p.stem not in {b['slug'] for b in SERIES4}}
+    before = {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in ROOT.glob('*.html') if p.name not in {'index.html','lexikon.html'} and p.stem not in {b['slug'] for b in SERIES4}}
     finderpath=ROOT/'assets/finder-data.js'
     findertext=finderpath.read_text(encoding='utf-8')
     finder=json.loads(findertext.split('window.FINDER_BREEDS = ',1)[1].strip().rstrip(';'))
@@ -81,7 +81,7 @@ def main():
         url=re.search(r'href="([^"]+)"',card)[1]
         if url not in {r['url'] for r in finder}:
             finder.append(dict(name=name(card),description=html.unescape(re.search(r'<p>(.*?)</p>',card)[1]),url=url,group=html.unescape(re.search(r'<span class="badge">(.*?)</span>',card)[1]),traits={'space':None},specialist=False))
-    (ROOT/'index.html').write_text(index,encoding='utf-8')
+    (ROOT/'lexikon.html').write_text(index,encoding='utf-8')
     finderpath.write_text(findertext.split('window.FINDER_BREEDS = ',1)[0]+'window.FINDER_BREEDS = '+json.dumps(finder,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
     for filename,digest in before.items():
         assert hashlib.sha256((ROOT/filename).read_bytes()).hexdigest()==digest,filename

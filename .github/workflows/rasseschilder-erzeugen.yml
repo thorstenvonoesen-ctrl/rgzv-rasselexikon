@@ -4,6 +4,8 @@ on:
     paths:
       - assets/finder-data.js
       - scripts/build_a7.py
+      - scripts/build.py
+      - scripts/check_pdf_storage.py
       - .github/workflows/rasseschilder-erzeugen.yml
   workflow_dispatch:
 permissions:
@@ -23,8 +25,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install reportlab==4.4.9 qrcode==8.2 pillow==12.3.0
+      - run: python -m pip install reportlab==4.4.9 qrcode==8.2 pillow==12.3.0 pypdf
       - run: python scripts/build_a7.py
+      - run: python scripts/check_pdf_storage.py
       - name: Aktualisierte Druckdateien speichern
         shell: pwsh
         env:

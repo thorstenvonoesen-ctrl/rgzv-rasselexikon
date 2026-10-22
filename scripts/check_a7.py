@@ -47,12 +47,10 @@ def main():
     scan(OUT/'a7/deutsche-zwerg-lachshuehner.pdf',scale=300/72).save(ROOT/'tmp/pdfs/a7-single-preview.png')
     # Denselben Maßstab in A4 prüfen: Drehung, niemals Skalierung.
     streams='\n'.join(p.get_contents().get_data().decode('latin1') for p in reader.pages)
-    assert '0 -1 1 0' in streams
-    # Bereits bestehende Druck-PDFs behalten ihre QR-Ziele.
+    assert re.search(r'0(?:\.0)? -1(?:\.0)? 1(?:\.0)? 0(?:\.0)? ',streams)
+    from check_pdf_storage import check as check_storage
+    check_storage()
     old=0
-    for path in (ROOT/'schilder').glob('*.pdf'):
-        assert decode(scan(path))==[BASE+path.stem+'.html'],path.name
-        old+=1
     result=dict(races=len(breeds),existing_pngs=len(layout['qr_hashes']),existing_sign_pdfs=old,new_a7_pdfs=len(breeds),a4_pages=len(reader.pages),a4_example_codes=8,qr_decode_dpi=200,example_dpi=300,dimensions_mm=[74,105],scale=1)
     (ROOT/'scripts/a7-results.json').write_text(json.dumps(result,indent=2),encoding='utf-8');print(json.dumps(result))
 if __name__=='__main__':main()
