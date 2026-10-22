@@ -1,0 +1,2100 @@
+[
+  {
+    "original": "Angebot_Neue Vorlage_GlobaleVorgänge.vlg",
+    "output": "Angebot_Gefluegelzuchtbedarf_PRUEFVERSION.vlg",
+    "sha256_original": "1c68d13d88ae00e2be6bd4bc2fb9689c6bdb1deb17b7d6a27090db341697028b",
+    "sha256_output": "35081a928f7c8b25c78f1f53cd8ffbd2d0bdc67ba4567416877fb0bb9dd6495c",
+    "zip_integrity": "PASS",
+    "xml_and_descriptors": "PASS",
+    "repository_references": "PASS",
+    "lst_structure": "PASS",
+    "jtl_import": "NOT_TESTED",
+    "jtl_designer": "NOT_TESTED",
+    "preview": "NOT_TESTED",
+    "print": "NOT_TESTED",
+    "entries": [
+      {
+        "name": "index.xml",
+        "before_bytes": 4670,
+        "after_bytes": 4670,
+        "sha256_before": "21fe9ac4ca46c5ecf734a141ccbb4182ea5d9b398e78813f963085b69c8900ce",
+        "sha256_after": "21fe9ac4ca46c5ecf734a141ccbb4182ea5d9b398e78813f963085b69c8900ce",
+        "changed": false,
+        "crc32": "fff1aafd"
+      },
+      {
+        "name": "7788C933-12B7-4DFB-9711-A23EB1246291.xml",
+        "before_bytes": 72417,
+        "after_bytes": 72417,
+        "sha256_before": "674caa7a0575f6a8b774b0437c66701d726cf82a331a8073b4bc6815031525b6",
+        "sha256_after": "674caa7a0575f6a8b774b0437c66701d726cf82a331a8073b4bc6815031525b6",
+        "changed": false,
+        "crc32": "b65c5d9c"
+      },
+      {
+        "name": "37CB5216-AE09-4854-B9C2-F669425A0CDD.xml",
+        "before_bytes": 1197,
+        "after_bytes": 1197,
+        "sha256_before": "44f2a6a8ed43176388300c7a89285d6112f88dd952357c2c586516b50af20565",
+        "sha256_after": "44f2a6a8ed43176388300c7a89285d6112f88dd952357c2c586516b50af20565",
+        "changed": false,
+        "crc32": "849ccc8c"
+      },
+      {
+        "name": "43899D5A-44BF-4B9E-A9FA-97DD41048073.lst",
+        "before_bytes": 284180,
+        "after_bytes": 284182,
+        "sha256_before": "9ae473ad32113af1f73e94da879791b80b2993c237c9d025af0cabd5ed4ef663",
+        "sha256_after": "84b98806291bbf11c552d8a8a10fa5f5ace094192b0713a1b89d2f6fedef5589",
+        "changed": true,
+        "crc32": "f9b594ee"
+      },
+      {
+        "name": "2F141E6F-8BF6-493E-BFA0-E60F0885765B.image",
+        "before_bytes": 760712,
+        "after_bytes": 393428,
+        "sha256_before": "9cfeb4fb46a55e8cae32564792e1a9c50cbf52ec53a49cc170f4269b42aa0178",
+        "sha256_after": "7826c1473c5814a16bbe34319e7fcff09709dd8a2ccc193d8c8929efb802901a",
+        "changed": true,
+        "crc32": "b28ffcd1"
+      },
+      {
+        "name": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "before_bytes": 46680,
+        "after_bytes": 46648,
+        "sha256_before": "7dd67a7f716f50c5be3decd09995a39d4078113032328e47d82ae9f88b9b7576",
+        "sha256_after": "266e85f75797c5f2fed622284b0638edb2c42eaf9bbe7500775e7616bb04f4db",
+        "changed": true,
+        "crc32": "95feec3e"
+      }
+    ],
+    "changes": [
+      {
+        "entry": "43899D5A-44BF-4B9E-A9FA-97DD41048073.lst",
+        "section": "Table",
+        "identifier": "Total block",
+        "line": 5545,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "43899D5A-44BF-4B9E-A9FA-97DD41048073.lst",
+        "section": "Table",
+        "identifier": "Vat block",
+        "line": 6199,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "43899D5A-44BF-4B9E-A9FA-97DD41048073.lst",
+        "section": "UserVariables",
+        "identifier": null,
+        "line": 8207,
+        "property": "User5",
+        "before": "@PositionsColumnWidthVAT;13",
+        "after": "@PositionsColumnWidthVAT;0"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 81,
+        "property": "Position/Left",
+        "before": "-1000",
+        "after": "20000"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 83,
+        "property": "Position/Width",
+        "before": "#Ceil(LL.Device.Page.Size.cx) + 2",
+        "after": "#LL.Device.Page.Size.cx - @BorderLeft - @BorderRight"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 84,
+        "property": "Position/Height",
+        "before": "#@FooterHeight + 1",
+        "after": "#@FooterHeight - 5"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 93,
+        "property": "bFrame",
+        "before": "1",
+        "after": "0"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 177,
+        "property": "Text",
+        "before": "\"Ust-IdNr: \" +Report.Company.ValueAddedTaxId",
+        "after": "\"Steuerfrei gemäß § 19 Abs. 1 UStG (Kleinunternehmer).\""
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 173,
+        "property": "Condition",
+        "before": "Not IsNullOrEmpty(Report.Company.ValueAddedTaxId)",
+        "after": "True"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Object",
+        "identifier": "",
+        "line": 1160,
+        "property": "Position/Height",
+        "before": "22000",
+        "after": "30000"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Foreground",
+        "line": 1243,
+        "property": "Color",
+        "before": "(97,80,81)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Foreground",
+        "line": 1244,
+        "property": "Color",
+        "before": "(202,138,84)",
+        "after": "(145,108,35)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Foreground",
+        "line": 1245,
+        "property": "Color",
+        "before": "(0,104,126)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Foreground",
+        "line": 1246,
+        "property": "Color",
+        "before": "(235,93,129)",
+        "after": "(64,64,64)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Foreground",
+        "line": 1247,
+        "property": "Color",
+        "before": "(75,152,184)",
+        "after": "(75,75,75)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Foreground",
+        "line": 1248,
+        "property": "Color",
+        "before": "(91,179,213)",
+        "after": "(90,90,90)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Foreground",
+        "line": 1249,
+        "property": "Color",
+        "before": "(171,214,226)",
+        "after": "(120,120,120)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Foreground",
+        "line": 1250,
+        "property": "Color",
+        "before": "(153,153,153)",
+        "after": "(153,153,153)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Foreground",
+        "line": 1251,
+        "property": "Color",
+        "before": "(102,102,102)",
+        "after": "(102,102,102)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Foreground",
+        "line": 1252,
+        "property": "Color",
+        "before": "(204,204,204)",
+        "after": "(204,204,204)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Background",
+        "line": 1256,
+        "property": "Color",
+        "before": "(251,251,251)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Background",
+        "line": 1257,
+        "property": "Color",
+        "before": "(245,231,220)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Background",
+        "line": 1258,
+        "property": "Color",
+        "before": "(77,77,77)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "section": "Background",
+        "line": 1259,
+        "property": "Color",
+        "before": "(51,51,51)",
+        "after": "(255,255,255)"
+      }
+    ],
+    "references": [
+      "40400370-7896-4CB4-8687-ED522C31B21B",
+      "2F141E6F-8BF6-493E-BFA0-E60F0885765B"
+    ]
+  },
+  {
+    "original": "Auftrag_Neue Vorlage_GlobaleVorgänge.vlg",
+    "output": "Auftrag_Gefluegelzuchtbedarf_PRUEFVERSION.vlg",
+    "sha256_original": "cb9cae8d5ed263784588148e31bb048c77c2f6a73434ca4423141d7e116465d2",
+    "sha256_output": "d8d2ffa102cde5deebe3162f423a60aad11940f8d5dab22c674791ba18b388ac",
+    "zip_integrity": "PASS",
+    "xml_and_descriptors": "PASS",
+    "repository_references": "PASS",
+    "lst_structure": "PASS",
+    "jtl_import": "NOT_TESTED",
+    "jtl_designer": "NOT_TESTED",
+    "preview": "NOT_TESTED",
+    "print": "NOT_TESTED",
+    "entries": [
+      {
+        "name": "index.xml",
+        "before_bytes": 4664,
+        "after_bytes": 4664,
+        "sha256_before": "ff7e38d21a9b477c071055b22e898b550181c05dcbf1c7c296635ce12c4aef06",
+        "sha256_after": "ff7e38d21a9b477c071055b22e898b550181c05dcbf1c7c296635ce12c4aef06",
+        "changed": false,
+        "crc32": "444239a6"
+      },
+      {
+        "name": "B9A88B5C-2BEE-4FC8-ACAB-F147BB10CFDD.xml",
+        "before_bytes": 75813,
+        "after_bytes": 75813,
+        "sha256_before": "a2a779fc1c0d12cca147299895887571e9836d01ab2380373f3e831601b06546",
+        "sha256_after": "a2a779fc1c0d12cca147299895887571e9836d01ab2380373f3e831601b06546",
+        "changed": false,
+        "crc32": "7a84488e"
+      },
+      {
+        "name": "1B9C5CC2-779A-4EDC-B611-59B31201B2AF.xml",
+        "before_bytes": 1193,
+        "after_bytes": 1193,
+        "sha256_before": "579311660d1de58f86f1a7d59288d0d89e5fc3481394cff8e74804579e5f2c3c",
+        "sha256_after": "579311660d1de58f86f1a7d59288d0d89e5fc3481394cff8e74804579e5f2c3c",
+        "changed": false,
+        "crc32": "4d7d358a"
+      },
+      {
+        "name": "9785D964-FC15-43BC-A707-3C5F9E9A5EC9.lst",
+        "before_bytes": 331768,
+        "after_bytes": 331770,
+        "sha256_before": "702044e1b4b530d48e608b79bfe61f8f6919753f43bae76d97140679fdab6965",
+        "sha256_after": "4df44035ebfcc931b34002a1ef6db67965d93775d95f60802669f39afc0afd6c",
+        "changed": true,
+        "crc32": "3216a119"
+      },
+      {
+        "name": "B2D2E9D8-D2D8-427A-8B68-E673F2278345.image",
+        "before_bytes": 760712,
+        "after_bytes": 393428,
+        "sha256_before": "9cfeb4fb46a55e8cae32564792e1a9c50cbf52ec53a49cc170f4269b42aa0178",
+        "sha256_after": "7826c1473c5814a16bbe34319e7fcff09709dd8a2ccc193d8c8929efb802901a",
+        "changed": true,
+        "crc32": "b28ffcd1"
+      },
+      {
+        "name": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "before_bytes": 46696,
+        "after_bytes": 46664,
+        "sha256_before": "c5aa692d2654708724448154c153ba3b3e266c75202b819594758731f0dc367b",
+        "sha256_after": "59b3dc31a953de3e37a8812cccb79dffed5dd0240d2e970f1fae450b83de4f3e",
+        "changed": true,
+        "crc32": "b4ad49e7"
+      }
+    ],
+    "changes": [
+      {
+        "entry": "9785D964-FC15-43BC-A707-3C5F9E9A5EC9.lst",
+        "section": "Table",
+        "identifier": "Total block",
+        "line": 5652,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "9785D964-FC15-43BC-A707-3C5F9E9A5EC9.lst",
+        "section": "Table",
+        "identifier": "Vat block",
+        "line": 6306,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "9785D964-FC15-43BC-A707-3C5F9E9A5EC9.lst",
+        "section": "UserVariables",
+        "identifier": null,
+        "line": 9603,
+        "property": "User5",
+        "before": "@PositionsColumnWidthVAT;13",
+        "after": "@PositionsColumnWidthVAT;0"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 81,
+        "property": "Position/Left",
+        "before": "-1000",
+        "after": "20000"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 83,
+        "property": "Position/Width",
+        "before": "#Ceil(LL.Device.Page.Size.cx) + 2",
+        "after": "#LL.Device.Page.Size.cx - @BorderLeft - @BorderRight"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 84,
+        "property": "Position/Height",
+        "before": "#@FooterHeight + 1",
+        "after": "#@FooterHeight - 5"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 93,
+        "property": "bFrame",
+        "before": "1",
+        "after": "0"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 177,
+        "property": "Text",
+        "before": "\"Ust-IdNr: \" +Report.Company.ValueAddedTaxId",
+        "after": "\"Steuerfrei gemäß § 19 Abs. 1 UStG (Kleinunternehmer).\""
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 173,
+        "property": "Condition",
+        "before": "Not IsNullOrEmpty(Report.Company.ValueAddedTaxId)",
+        "after": "True"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Object",
+        "identifier": "",
+        "line": 1160,
+        "property": "Position/Height",
+        "before": "22000",
+        "after": "30000"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Foreground",
+        "line": 1243,
+        "property": "Color",
+        "before": "(97,80,81)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Foreground",
+        "line": 1244,
+        "property": "Color",
+        "before": "(202,138,84)",
+        "after": "(145,108,35)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Foreground",
+        "line": 1245,
+        "property": "Color",
+        "before": "(0,104,126)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Foreground",
+        "line": 1246,
+        "property": "Color",
+        "before": "(235,93,129)",
+        "after": "(64,64,64)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Foreground",
+        "line": 1247,
+        "property": "Color",
+        "before": "(75,152,184)",
+        "after": "(75,75,75)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Foreground",
+        "line": 1248,
+        "property": "Color",
+        "before": "(91,179,213)",
+        "after": "(90,90,90)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Foreground",
+        "line": 1249,
+        "property": "Color",
+        "before": "(171,214,226)",
+        "after": "(120,120,120)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Foreground",
+        "line": 1250,
+        "property": "Color",
+        "before": "(153,153,153)",
+        "after": "(153,153,153)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Foreground",
+        "line": 1251,
+        "property": "Color",
+        "before": "(102,102,102)",
+        "after": "(102,102,102)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Foreground",
+        "line": 1252,
+        "property": "Color",
+        "before": "(204,204,204)",
+        "after": "(204,204,204)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Background",
+        "line": 1256,
+        "property": "Color",
+        "before": "(251,251,251)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Background",
+        "line": 1257,
+        "property": "Color",
+        "before": "(245,231,220)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Background",
+        "line": 1258,
+        "property": "Color",
+        "before": "(77,77,77)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "section": "Background",
+        "line": 1259,
+        "property": "Color",
+        "before": "(51,51,51)",
+        "after": "(255,255,255)"
+      }
+    ],
+    "references": [
+      "A696120D-223D-495F-8062-1B7EB7D306D5",
+      "B2D2E9D8-D2D8-427A-8B68-E673F2278345"
+    ]
+  },
+  {
+    "original": "Lieferantenbestellung_Standard_GlobaleVorgänge.vlg",
+    "output": "Lieferantenbestellung_Gefluegelzuchtbedarf_PRUEFVERSION.vlg",
+    "sha256_original": "11d28240d3f5d156aecb37a315c5904ed4fe800e0c71f24e7afd27d4de00b6ee",
+    "sha256_output": "f8db73500dd00ddf7d67dd1b63ce3877018a4b095768d0b93732bff2324d3726",
+    "zip_integrity": "PASS",
+    "xml_and_descriptors": "PASS",
+    "repository_references": "PASS",
+    "lst_structure": "PASS",
+    "jtl_import": "NOT_TESTED",
+    "jtl_designer": "NOT_TESTED",
+    "preview": "NOT_TESTED",
+    "print": "NOT_TESTED",
+    "entries": [
+      {
+        "name": "index.xml",
+        "before_bytes": 2574,
+        "after_bytes": 3402,
+        "sha256_before": "53df2870a2bba184efd5bf76aa4f66c120f8cad5d9b0c9ed6196fefca58b3bc1",
+        "sha256_after": "9e771d305fe4a1332ff5a23ee12f3cdbf7101a53561272e99bbcf4fbb095c34e",
+        "changed": true,
+        "crc32": "bf075158"
+      },
+      {
+        "name": "77FDD611-4E4E-4E3B-AD89-7C03900A1488.xml",
+        "before_bytes": 62773,
+        "after_bytes": 62773,
+        "sha256_before": "052f1114073ee7f6ac68e0bc4bb3abd4b722b689d842be73a1de65617110c4f3",
+        "sha256_after": "052f1114073ee7f6ac68e0bc4bb3abd4b722b689d842be73a1de65617110c4f3",
+        "changed": false,
+        "crc32": "1df62765"
+      },
+      {
+        "name": "86D2B9F9-9C1E-4E38-B71B-9CA088B775F5.xml",
+        "before_bytes": 151,
+        "after_bytes": 151,
+        "sha256_before": "d131bb5aabc1a3de448c68b0c3883f25f67448bb701a2382b18aac99dacfe7fc",
+        "sha256_after": "d131bb5aabc1a3de448c68b0c3883f25f67448bb701a2382b18aac99dacfe7fc",
+        "changed": false,
+        "crc32": "d13b28b0"
+      },
+      {
+        "name": "BCFCDEF1-0B6E-4839-BCFC-ECDF4CCFA68B.xml",
+        "before_bytes": 152,
+        "after_bytes": 152,
+        "sha256_before": "aa53480277dcf2ceb21fe75f373cad2fead88a10627c26fba22b0d5167d06032",
+        "sha256_after": "aa53480277dcf2ceb21fe75f373cad2fead88a10627c26fba22b0d5167d06032",
+        "changed": false,
+        "crc32": "a34cc7e4"
+      },
+      {
+        "name": "A0E1A199-D903-42AE-A326-4813C334B82B.xml",
+        "before_bytes": 1174,
+        "after_bytes": 1174,
+        "sha256_before": "86aa4967ce64a28a1eafe80449f66079e3dd5e09df585192884d2a0468bcc288",
+        "sha256_after": "86aa4967ce64a28a1eafe80449f66079e3dd5e09df585192884d2a0468bcc288",
+        "changed": false,
+        "crc32": "c19a9318"
+      },
+      {
+        "name": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "before_bytes": 184566,
+        "after_bytes": 186406,
+        "sha256_before": "55c27896ca5421f84164895ddf5ab3f37f2961500261b9267412f0f65225f496",
+        "sha256_after": "98fc45348de7d05f28e1da5a2c6d776339c4270920a1947c2ef46a5287b2326e",
+        "changed": true,
+        "crc32": "ce3b8aee"
+      },
+      {
+        "name": "BAEA3150-7C4E-5CC1-9001-90C77B7F13AD.image",
+        "before_bytes": null,
+        "after_bytes": 393428,
+        "sha256_before": null,
+        "sha256_after": "7826c1473c5814a16bbe34319e7fcff09709dd8a2ccc193d8c8929efb802901a",
+        "changed": true,
+        "crc32": "b28ffcd1"
+      }
+    ],
+    "changes": [
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Object",
+        "identifier": "Bestellung",
+        "line": 308,
+        "property": "Position/Width",
+        "before": "174800",
+        "after": "167000"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 365,
+        "property": "Text",
+        "before": "\"Bestellung\"",
+        "after": "\"Lieferantenbestellung\""
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Object",
+        "identifier": "JTL.WaWi.Firma.Name",
+        "line": 549,
+        "property": "Position/Height",
+        "before": "57050",
+        "after": "43000"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Object",
+        "identifier": "JTL.WaWi.Firma.Bankverbindung.Bank",
+        "line": 1231,
+        "property": "Position/Left",
+        "before": "0",
+        "after": "20000"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Object",
+        "identifier": "JTL.WaWi.Firma.Bankverbindung.Bank",
+        "line": 1232,
+        "property": "Position/Top",
+        "before": "287500",
+        "after": "281000"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Object",
+        "identifier": "JTL.WaWi.Firma.Bankverbindung.Bank",
+        "line": 1233,
+        "property": "Position/Width",
+        "before": "210000",
+        "after": "170000"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Object",
+        "identifier": "JTL.WaWi.Firma.Bankverbindung.Bank",
+        "line": 1234,
+        "property": "Position/Height",
+        "before": "10000",
+        "after": "6000"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Object",
+        "identifier": "",
+        "line": 1476,
+        "property": "Position/Width",
+        "before": "178000",
+        "after": "167000"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 2135,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 2042,
+        "property": "Width",
+        "before": "10000",
+        "after": "0"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 2809,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 2734,
+        "property": "Width",
+        "before": "10000",
+        "after": "0"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Table",
+        "identifier": "Nettogesamt",
+        "line": 3266,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 3362,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Table",
+        "identifier": "USt.Gesamt",
+        "line": 3883,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Foreground",
+        "line": 5631,
+        "property": "Color",
+        "before": "(173,215,227)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Foreground",
+        "line": 5632,
+        "property": "Color",
+        "before": "(167,195,209)",
+        "after": "(145,108,35)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Foreground",
+        "line": 5633,
+        "property": "Color",
+        "before": "(165,170,199)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Foreground",
+        "line": 5634,
+        "property": "Color",
+        "before": "(155,122,153)",
+        "after": "(64,64,64)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Foreground",
+        "line": 5635,
+        "property": "Color",
+        "before": "(135,95,119)",
+        "after": "(75,75,75)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Foreground",
+        "line": 5636,
+        "property": "Color",
+        "before": "(255,230,179)",
+        "after": "(90,90,90)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Foreground",
+        "line": 5637,
+        "property": "Color",
+        "before": "(238,190,93)",
+        "after": "(120,120,120)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Foreground",
+        "line": 5638,
+        "property": "Color",
+        "before": "(242,167,17)",
+        "after": "(153,153,153)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Foreground",
+        "line": 5639,
+        "property": "Color",
+        "before": "(166,178,102)",
+        "after": "(102,102,102)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Foreground",
+        "line": 5640,
+        "property": "Color",
+        "before": "(102,204,199)",
+        "after": "(204,204,204)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Background",
+        "line": 5644,
+        "property": "Color",
+        "before": "(240,249,255)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Background",
+        "line": 5645,
+        "property": "Color",
+        "before": "(255,230,179)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Background",
+        "line": 5646,
+        "property": "Color",
+        "before": "(173,215,227)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Background",
+        "line": 5647,
+        "property": "Color",
+        "before": "(167,195,209)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Layout",
+        "identifier": null,
+        "line": 59,
+        "property": "ObjectCount",
+        "before": "13",
+        "after": "14"
+      },
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 5005,
+        "property": "Text",
+        "before": "\"Wir danken für eine schnellstmögliche Abwicklung.\"",
+        "after": "\"Wir danken für eine schnellstmögliche Abwicklung.¶Unser Unternehmen ist Kleinunternehmer gemäß § 19 Abs. 1 UStG.\""
+      }
+    ],
+    "references": [
+      "BAEA3150-7C4E-5CC1-9001-90C77B7F13AD"
+    ]
+  },
+  {
+    "original": "Lieferschein_Neue Vorlage_GlobaleVorgänge.vlg",
+    "output": "Lieferschein_Gefluegelzuchtbedarf_PRUEFVERSION.vlg",
+    "sha256_original": "930e6d9dec178ec15760384069625c84380d763860d44ee49f07d2b4568bb81d",
+    "sha256_output": "a5d35b1629e2a6322f264e122930224c9e19840731a034a600b0d2860cfab146",
+    "zip_integrity": "PASS",
+    "xml_and_descriptors": "PASS",
+    "repository_references": "PASS",
+    "lst_structure": "PASS",
+    "jtl_import": "NOT_TESTED",
+    "jtl_designer": "NOT_TESTED",
+    "preview": "NOT_TESTED",
+    "print": "NOT_TESTED",
+    "entries": [
+      {
+        "name": "index.xml",
+        "before_bytes": 5829,
+        "after_bytes": 5829,
+        "sha256_before": "a1afb6cb262c14cdaae0748689fabf9572808733966b2eb6e35d92f9af0fe8b4",
+        "sha256_after": "a1afb6cb262c14cdaae0748689fabf9572808733966b2eb6e35d92f9af0fe8b4",
+        "changed": false,
+        "crc32": "6aadf977"
+      },
+      {
+        "name": "F01CF96F-50A9-492C-98C6-FDC53C3EA915.xml",
+        "before_bytes": 53129,
+        "after_bytes": 53129,
+        "sha256_before": "bdd9dee19d174dc8fad756ea89ea08d0aaa42f1808dfa6e3269d67d2b4994fc7",
+        "sha256_after": "bdd9dee19d174dc8fad756ea89ea08d0aaa42f1808dfa6e3269d67d2b4994fc7",
+        "changed": false,
+        "crc32": "74e50fef"
+      },
+      {
+        "name": "F26CE8D6-FE94-491B-95ED-9153DCF1876C.xml",
+        "before_bytes": 1195,
+        "after_bytes": 1195,
+        "sha256_before": "33a6b33bcbaf867ce9cf788471001e370845434b6a645533efd32650760578b6",
+        "sha256_after": "33a6b33bcbaf867ce9cf788471001e370845434b6a645533efd32650760578b6",
+        "changed": false,
+        "crc32": "c608ff34"
+      },
+      {
+        "name": "92E9710F-F505-4177-B063-2CD97AB3CC1A.lst",
+        "before_bytes": 162602,
+        "after_bytes": 162602,
+        "sha256_before": "04ee84b66f12cf789cb8f0b98a48b5d01456cfb5b62a186ae0cc3bbf738e8db7",
+        "sha256_after": "04ee84b66f12cf789cb8f0b98a48b5d01456cfb5b62a186ae0cc3bbf738e8db7",
+        "changed": false,
+        "crc32": "2b9a7f47"
+      },
+      {
+        "name": "91E2BA19-A68B-4BAC-ABAB-FB9E8679DB17.image",
+        "before_bytes": 760712,
+        "after_bytes": 393428,
+        "sha256_before": "9cfeb4fb46a55e8cae32564792e1a9c50cbf52ec53a49cc170f4269b42aa0178",
+        "sha256_after": "7826c1473c5814a16bbe34319e7fcff09709dd8a2ccc193d8c8929efb802901a",
+        "changed": true,
+        "crc32": "b28ffcd1"
+      },
+      {
+        "name": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "before_bytes": 46696,
+        "after_bytes": 46664,
+        "sha256_before": "c9a5cedb5a3fbff3fea4e443c136e6631c747a852679a8d56976c1b728ddc72d",
+        "sha256_after": "c9b96cbf33de79e6d7e843be7f73cb09ea468de66f79423bcdb5dd42130767a8",
+        "changed": true,
+        "crc32": "3fa00ec8"
+      },
+      {
+        "name": "EA3D4F6B-2BAE-4D72-921A-22DD1FCDF747.printerconfig",
+        "before_bytes": 6868,
+        "after_bytes": 6868,
+        "sha256_before": "fcb04f89e4699125a6fdb27f9b6f58841d91bbe05858b068417cca220d2c70a2",
+        "sha256_after": "fcb04f89e4699125a6fdb27f9b6f58841d91bbe05858b068417cca220d2c70a2",
+        "changed": false,
+        "crc32": "d250bc83"
+      }
+    ],
+    "changes": [
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 81,
+        "property": "Position/Left",
+        "before": "-1000",
+        "after": "20000"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 83,
+        "property": "Position/Width",
+        "before": "#Ceil(LL.Device.Page.Size.cx) + 2",
+        "after": "#LL.Device.Page.Size.cx - @BorderLeft - @BorderRight"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 84,
+        "property": "Position/Height",
+        "before": "#@FooterHeight + 1",
+        "after": "#@FooterHeight - 5"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 93,
+        "property": "bFrame",
+        "before": "1",
+        "after": "0"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 177,
+        "property": "Text",
+        "before": "\"Ust-IdNr: \" +Report.Company.ValueAddedTaxId",
+        "after": "\"Steuerfrei gemäß § 19 Abs. 1 UStG (Kleinunternehmer).\""
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 173,
+        "property": "Condition",
+        "before": "Not IsNullOrEmpty(Report.Company.ValueAddedTaxId)",
+        "after": "True"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Object",
+        "identifier": "",
+        "line": 1160,
+        "property": "Position/Height",
+        "before": "22000",
+        "after": "30000"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Foreground",
+        "line": 1243,
+        "property": "Color",
+        "before": "(97,80,81)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Foreground",
+        "line": 1244,
+        "property": "Color",
+        "before": "(202,138,84)",
+        "after": "(145,108,35)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Foreground",
+        "line": 1245,
+        "property": "Color",
+        "before": "(0,104,126)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Foreground",
+        "line": 1246,
+        "property": "Color",
+        "before": "(235,93,129)",
+        "after": "(64,64,64)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Foreground",
+        "line": 1247,
+        "property": "Color",
+        "before": "(75,152,184)",
+        "after": "(75,75,75)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Foreground",
+        "line": 1248,
+        "property": "Color",
+        "before": "(91,179,213)",
+        "after": "(90,90,90)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Foreground",
+        "line": 1249,
+        "property": "Color",
+        "before": "(171,214,226)",
+        "after": "(120,120,120)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Foreground",
+        "line": 1250,
+        "property": "Color",
+        "before": "(153,153,153)",
+        "after": "(153,153,153)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Foreground",
+        "line": 1251,
+        "property": "Color",
+        "before": "(102,102,102)",
+        "after": "(102,102,102)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Foreground",
+        "line": 1252,
+        "property": "Color",
+        "before": "(204,204,204)",
+        "after": "(204,204,204)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Background",
+        "line": 1256,
+        "property": "Color",
+        "before": "(251,251,251)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Background",
+        "line": 1257,
+        "property": "Color",
+        "before": "(245,231,220)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Background",
+        "line": 1258,
+        "property": "Color",
+        "before": "(77,77,77)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "section": "Background",
+        "line": 1259,
+        "property": "Color",
+        "before": "(51,51,51)",
+        "after": "(255,255,255)"
+      }
+    ],
+    "references": [
+      "405017F3-6F02-497D-9197-ABB78212427C",
+      "91E2BA19-A68B-4BAC-ABAB-FB9E8679DB17"
+    ]
+  },
+  {
+    "original": "Mahnung_Neue Vorlage_GlobaleVorgänge.vlg",
+    "output": "Mahnung_Gefluegelzuchtbedarf_PRUEFVERSION.vlg",
+    "sha256_original": "454644d5d633d9a23c19550db5e5ca3010e5f9071e16691197b81e30611f802b",
+    "sha256_output": "bb011f0cf21710f85074f5aafe17fbf9774fa68454be6dc2df86c9c22c277df6",
+    "zip_integrity": "PASS",
+    "xml_and_descriptors": "PASS",
+    "repository_references": "PASS",
+    "lst_structure": "PASS",
+    "jtl_import": "NOT_TESTED",
+    "jtl_designer": "NOT_TESTED",
+    "preview": "NOT_TESTED",
+    "print": "NOT_TESTED",
+    "entries": [
+      {
+        "name": "index.xml",
+        "before_bytes": 4672,
+        "after_bytes": 4672,
+        "sha256_before": "78b0f771e592c06f319464e69c5efa30cc7b2f4f56da96a359d5686e06ed860e",
+        "sha256_after": "78b0f771e592c06f319464e69c5efa30cc7b2f4f56da96a359d5686e06ed860e",
+        "changed": false,
+        "crc32": "fe8bed0a"
+      },
+      {
+        "name": "5C86800E-A0C7-4995-B9EB-7CA132D80DFE.xml",
+        "before_bytes": 39424,
+        "after_bytes": 39424,
+        "sha256_before": "f81340625ae3e142d81ac8470757e29dbe8f41e5d7602925d5823db7917bce2d",
+        "sha256_after": "f81340625ae3e142d81ac8470757e29dbe8f41e5d7602925d5823db7917bce2d",
+        "changed": false,
+        "crc32": "773e6c6e"
+      },
+      {
+        "name": "067A1367-313D-4F29-BB9E-C4822A2B3E50.xml",
+        "before_bytes": 1177,
+        "after_bytes": 1177,
+        "sha256_before": "3238786e61579a9b9ec2607cd091cc7118221370d756a40dee91d3df8777bc31",
+        "sha256_after": "3238786e61579a9b9ec2607cd091cc7118221370d756a40dee91d3df8777bc31",
+        "changed": false,
+        "crc32": "cf6d1b19"
+      },
+      {
+        "name": "77408498-BC10-4E12-8096-E537FECEABCF.lst",
+        "before_bytes": 23670,
+        "after_bytes": 23668,
+        "sha256_before": "85fb8461a8b20b9203a221b837ad371fda214b6956f74b003e6360f21c2c48a0",
+        "sha256_after": "d6c6b4e4f2aa9a4a4e17b0686a078d47f4330df81d0c5aa55db51be68dff24a6",
+        "changed": true,
+        "crc32": "5ee5f15f"
+      },
+      {
+        "name": "D0468EA2-AAAF-4C7A-84BD-43227746180F.image",
+        "before_bytes": 760712,
+        "after_bytes": 393428,
+        "sha256_before": "9cfeb4fb46a55e8cae32564792e1a9c50cbf52ec53a49cc170f4269b42aa0178",
+        "sha256_after": "7826c1473c5814a16bbe34319e7fcff09709dd8a2ccc193d8c8929efb802901a",
+        "changed": true,
+        "crc32": "b28ffcd1"
+      },
+      {
+        "name": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "before_bytes": 46696,
+        "after_bytes": 46664,
+        "sha256_before": "7ead861058a12a354658c4a1d888e9a00dca4d9e05191f38e62e5f2e40160953",
+        "sha256_after": "9db65095533dbcfb2e470c20362cfef28c623758858ee56624ee957b26cff343",
+        "changed": true,
+        "crc32": "3218ffe6"
+      }
+    ],
+    "changes": [
+      {
+        "entry": "77408498-BC10-4E12-8096-E537FECEABCF.lst",
+        "section": "UserVariables",
+        "identifier": null,
+        "line": 479,
+        "property": "User5",
+        "before": "@PositionsColumnWidthVAT;13",
+        "after": "@PositionsColumnWidthVAT;0"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 81,
+        "property": "Position/Left",
+        "before": "-1000",
+        "after": "20000"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 83,
+        "property": "Position/Width",
+        "before": "#Ceil(LL.Device.Page.Size.cx) + 2",
+        "after": "#LL.Device.Page.Size.cx - @BorderLeft - @BorderRight"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 84,
+        "property": "Position/Height",
+        "before": "#@FooterHeight + 1",
+        "after": "#@FooterHeight - 5"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 93,
+        "property": "bFrame",
+        "before": "1",
+        "after": "0"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 177,
+        "property": "Text",
+        "before": "\"Ust-IdNr: \" +Report.Company.ValueAddedTaxId",
+        "after": "\"Steuerfrei gemäß § 19 Abs. 1 UStG (Kleinunternehmer).\""
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 173,
+        "property": "Condition",
+        "before": "Not IsNullOrEmpty(Report.Company.ValueAddedTaxId)",
+        "after": "True"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Object",
+        "identifier": "",
+        "line": 1160,
+        "property": "Position/Height",
+        "before": "22000",
+        "after": "30000"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Foreground",
+        "line": 1243,
+        "property": "Color",
+        "before": "(97,80,81)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Foreground",
+        "line": 1244,
+        "property": "Color",
+        "before": "(202,138,84)",
+        "after": "(145,108,35)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Foreground",
+        "line": 1245,
+        "property": "Color",
+        "before": "(0,104,126)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Foreground",
+        "line": 1246,
+        "property": "Color",
+        "before": "(235,93,129)",
+        "after": "(64,64,64)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Foreground",
+        "line": 1247,
+        "property": "Color",
+        "before": "(75,152,184)",
+        "after": "(75,75,75)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Foreground",
+        "line": 1248,
+        "property": "Color",
+        "before": "(91,179,213)",
+        "after": "(90,90,90)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Foreground",
+        "line": 1249,
+        "property": "Color",
+        "before": "(171,214,226)",
+        "after": "(120,120,120)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Foreground",
+        "line": 1250,
+        "property": "Color",
+        "before": "(153,153,153)",
+        "after": "(153,153,153)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Foreground",
+        "line": 1251,
+        "property": "Color",
+        "before": "(102,102,102)",
+        "after": "(102,102,102)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Foreground",
+        "line": 1252,
+        "property": "Color",
+        "before": "(204,204,204)",
+        "after": "(204,204,204)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Background",
+        "line": 1256,
+        "property": "Color",
+        "before": "(251,251,251)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Background",
+        "line": 1257,
+        "property": "Color",
+        "before": "(245,231,220)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Background",
+        "line": 1258,
+        "property": "Color",
+        "before": "(77,77,77)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "section": "Background",
+        "line": 1259,
+        "property": "Color",
+        "before": "(51,51,51)",
+        "after": "(255,255,255)"
+      }
+    ],
+    "references": [
+      "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42",
+      "D0468EA2-AAAF-4C7A-84BD-43227746180F"
+    ]
+  },
+  {
+    "original": "Rechnung_Neue Vorlage_GlobaleVorgänge.vlg",
+    "output": "Rechnung_Gefluegelzuchtbedarf_PRUEFVERSION.vlg",
+    "sha256_original": "866c512a9ffa4ec19e5da5989342911fce8177dd9d00027d88d9012dbff95651",
+    "sha256_output": "27d1ad5aa9715b84c9ebb8b469ba064f38a49957a2fade0c2ee5dd0cf216f282",
+    "zip_integrity": "PASS",
+    "xml_and_descriptors": "PASS",
+    "repository_references": "PASS",
+    "lst_structure": "PASS",
+    "jtl_import": "NOT_TESTED",
+    "jtl_designer": "NOT_TESTED",
+    "preview": "NOT_TESTED",
+    "print": "NOT_TESTED",
+    "entries": [
+      {
+        "name": "index.xml",
+        "before_bytes": 4718,
+        "after_bytes": 4718,
+        "sha256_before": "a80e3d4872042bac2b2d6c842697320d94b3899df4b1a270753f19b32b686a1e",
+        "sha256_after": "a80e3d4872042bac2b2d6c842697320d94b3899df4b1a270753f19b32b686a1e",
+        "changed": false,
+        "crc32": "4415b422"
+      },
+      {
+        "name": "F7A1E07F-6CB6-4BBE-BE98-AA013756B606.xml",
+        "before_bytes": 65779,
+        "after_bytes": 65779,
+        "sha256_before": "9c9de91a8eaada65bfd9b3409218c7854188eb3579466966f384139aa09c48c7",
+        "sha256_after": "9c9de91a8eaada65bfd9b3409218c7854188eb3579466966f384139aa09c48c7",
+        "changed": false,
+        "crc32": "e34bf2a7"
+      },
+      {
+        "name": "563BD154-ED62-42D3-90A0-9CACAB3FB7DF.xml",
+        "before_bytes": 1249,
+        "after_bytes": 1249,
+        "sha256_before": "af408bae93fd48fa24ceec7ece67e85f1c0b063a6e0c654083a3af8252ef0f46",
+        "sha256_after": "af408bae93fd48fa24ceec7ece67e85f1c0b063a6e0c654083a3af8252ef0f46",
+        "changed": false,
+        "crc32": "d66a52d5"
+      },
+      {
+        "name": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "before_bytes": 424466,
+        "after_bytes": 423260,
+        "sha256_before": "f0cc69a2414ce680b2b7e016b2a6b8b1ca9dab4e7884c3c595310e5d49b2326c",
+        "sha256_after": "bb8cbe36e055cbdcf2ec40b52c79ae991037a2b5d1a7a4f34467e692dd03624e",
+        "changed": true,
+        "crc32": "384a8c01"
+      },
+      {
+        "name": "112980E1-89D3-4897-BF75-A4EBE3EC63EB.image",
+        "before_bytes": 760712,
+        "after_bytes": 393428,
+        "sha256_before": "9cfeb4fb46a55e8cae32564792e1a9c50cbf52ec53a49cc170f4269b42aa0178",
+        "sha256_after": "7826c1473c5814a16bbe34319e7fcff09709dd8a2ccc193d8c8929efb802901a",
+        "changed": true,
+        "crc32": "b28ffcd1"
+      },
+      {
+        "name": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "before_bytes": 46696,
+        "after_bytes": 46664,
+        "sha256_before": "4debd439cca549f2b5e89288646e4aa33e911a0098699cc3f443731608d9129d",
+        "sha256_after": "36880746d947ffa4affde01142ff23fc4fabf64dae913a33c4ae5ce5bbf8604a",
+        "changed": true,
+        "crc32": "ff798b36"
+      }
+    ],
+    "changes": [
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Table",
+        "identifier": "Total block",
+        "line": 5784,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Table",
+        "identifier": "Vat block",
+        "line": 6438,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Table",
+        "identifier": "Note on intra-Community delivery",
+        "line": 9000,
+        "property": "Condition",
+        "before": "Report.ExemptFromVAT == 'IGL'",
+        "after": "False"
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Table",
+        "identifier": "Note on reverse charge",
+        "line": 9240,
+        "property": "Condition",
+        "before": "Report.ExemptFromVAT == 'ReverseCharge'",
+        "after": "False"
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Table",
+        "identifier": "Note on VAT-exempt outside EU",
+        "line": 9480,
+        "property": "Condition",
+        "before": "Report.ExemptFromVAT == 'ExemptFromVATnotEU'",
+        "after": "False"
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 9889,
+        "property": "Text",
+        "before": "\"Bitte begleichen Sie den offenen Rechnungsbetrag in Höhe von \" + LocCurrL$(Report.OpenGrossPrice, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤\" bis zum \" + LocDate$(Report.InvoicePaymentInformation.TransferDueDate, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + \" auf unser Konto mit der IBAN: \" +¤NullSafe(Report.InvoicePaymentInformation.TransferIBAN, \"\") + \" bei der \" + NullSafe(Report.InvoicePaymentInformation.TransferBank, \"\") + \" (BIC: \" + NullSafe(Report.InvoicePaymentInformation.TransferBIC, \"\")+¤\") unter Angabe des Verwendungszwecks '\"+ NullSafe(Report.InvoicePaymentInformation.TransferSubject, \"\") +\"'. ¶\"+¤\"Sie können den QR-GiroCode auf der rechten Seite nutzen, um die Zahlung unkompliziert über Ihre Online-Banking-App durchzuführen.¶\" +¤\"Wir weisen darauf hin, dass die oben aufgeführten Artikel bis zur vollständigen Bezahlung in unserem Eigentum verbleiben.\"",
+        "after": "\"Bitte begleichen Sie den offenen Rechnungsbetrag in Höhe von \" + LocCurrL$(Report.OpenGrossPrice, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤\" bis zum \" + LocDate$(Report.InvoicePaymentInformation.TransferDueDate, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + \" auf unser Konto mit der IBAN: \" +¤NullSafe(Report.InvoicePaymentInformation.TransferIBAN, \"\") + \" bei der \" + NullSafe(Report.InvoicePaymentInformation.TransferBank, \"\") + \" (BIC: \" + NullSafe(Report.InvoicePaymentInformation.TransferBIC, \"\")+¤\") unter Angabe des Verwendungszwecks '\"+ NullSafe(Report.InvoicePaymentInformation.TransferSubject, \"\") +\"'. ¶\"+¤\"\" +¤\"Wir weisen darauf hin, dass die oben aufgeführten Artikel bis zur vollständigen Bezahlung in unserem Eigentum verbleiben.\""
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 10085,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 10374,
+        "property": "Text",
+        "before": "\"Bitte begleichen Sie den offenen Rechnungsbetrag in Höhe von \" + LocCurrL$(Report.OpenGrossPrice, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤\" bis zum \" + LocDate$(Report.InvoicePaymentInformation.TransferDueDate, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + \" auf unser Konto mit der IBAN: \" +¤NullSafe(Report.InvoicePaymentInformation.TransferIBAN, \"\") + \" bei der \" + NullSafe(Report.InvoicePaymentInformation.TransferBank, \"\") + \" (BIC: \" + NullSafe(Report.InvoicePaymentInformation.TransferBIC, \"\")+¤\") unter Angabe des Verwendungszwecks '\"+NullSafe(Report.InvoicePaymentInformation.TransferSubject, \"\")+\"'. ¶\"+¤\"Bei Zahlung bis zum \" + LocDate$(AddDays(Report.CreationDate, NullSafe(Report.CashDiscountValidity, 0)), JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤\" gewähren wir Ihnen ein Skonto in Höhe von \" + LocNumber$(NullSafe(Report.CashDiscount, 0)) + \" % des Rechnungsbetrages.¶\"+¤\"Sie können den QR-GiroCode auf der rechten Seite nutzen, um die Zahlung unkompliziert über Ihre Online-Banking-App durchzuführen.¶\" +¤\"Wir weisen darauf hin, dass die oben aufgeführten Artikel bis zur vollständigen Bezahlung in unserem Eigentum verbleiben.\"",
+        "after": "\"Bitte begleichen Sie den offenen Rechnungsbetrag in Höhe von \" + LocCurrL$(Report.OpenGrossPrice, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤\" bis zum \" + LocDate$(Report.InvoicePaymentInformation.TransferDueDate, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + \" auf unser Konto mit der IBAN: \" +¤NullSafe(Report.InvoicePaymentInformation.TransferIBAN, \"\") + \" bei der \" + NullSafe(Report.InvoicePaymentInformation.TransferBank, \"\") + \" (BIC: \" + NullSafe(Report.InvoicePaymentInformation.TransferBIC, \"\")+¤\") unter Angabe des Verwendungszwecks '\"+NullSafe(Report.InvoicePaymentInformation.TransferSubject, \"\")+\"'. ¶\"+¤\"Bei Zahlung bis zum \" + LocDate$(AddDays(Report.CreationDate, NullSafe(Report.CashDiscountValidity, 0)), JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤\" gewähren wir Ihnen ein Skonto in Höhe von \" + LocNumber$(NullSafe(Report.CashDiscount, 0)) + \" % des Rechnungsbetrages.¶\"+¤\"\" +¤\"Wir weisen darauf hin, dass die oben aufgeführten Artikel bis zur vollständigen Bezahlung in unserem Eigentum verbleiben.\""
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 10570,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Table",
+        "identifier": "Payment by PayPal",
+        "line": 10690,
+        "property": "Condition",
+        "before": "Report.OpenGrossPrice > 0 AND NOT IsNullOrEmpty (Report.InvoicePaymentInformation.PayPalId,true) AND Report.InvoicePaymentInformation.PaymentMethodType <> 'SEPA'",
+        "after": "False"
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Column",
+        "identifier": "",
+        "line": 11055,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "Table",
+        "identifier": "Payment by sold receivable",
+        "line": 11558,
+        "property": "Condition",
+        "before": "Report.OpenGrossPrice = 0 AND Report.InvoicePaymentInformation.PaymentMethodType = 'SoldReceivable'",
+        "after": "False"
+      },
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "section": "UserVariables",
+        "identifier": null,
+        "line": 12099,
+        "property": "User5",
+        "before": "@PositionsColumnWidthVAT;13",
+        "after": "@PositionsColumnWidthVAT;0"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 81,
+        "property": "Position/Left",
+        "before": "-1000",
+        "after": "20000"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 83,
+        "property": "Position/Width",
+        "before": "#Ceil(LL.Device.Page.Size.cx) + 2",
+        "after": "#LL.Device.Page.Size.cx - @BorderLeft - @BorderRight"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 84,
+        "property": "Position/Height",
+        "before": "#@FooterHeight + 1",
+        "after": "#@FooterHeight - 5"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 93,
+        "property": "bFrame",
+        "before": "1",
+        "after": "0"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 177,
+        "property": "Text",
+        "before": "\"Ust-IdNr: \" +Report.Company.ValueAddedTaxId",
+        "after": "\"Steuerfrei gemäß § 19 Abs. 1 UStG (Kleinunternehmer).\""
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 173,
+        "property": "Condition",
+        "before": "Not IsNullOrEmpty(Report.Company.ValueAddedTaxId)",
+        "after": "True"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Object",
+        "identifier": "",
+        "line": 1160,
+        "property": "Position/Height",
+        "before": "22000",
+        "after": "30000"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Foreground",
+        "line": 1243,
+        "property": "Color",
+        "before": "(97,80,81)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Foreground",
+        "line": 1244,
+        "property": "Color",
+        "before": "(202,138,84)",
+        "after": "(145,108,35)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Foreground",
+        "line": 1245,
+        "property": "Color",
+        "before": "(0,104,126)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Foreground",
+        "line": 1246,
+        "property": "Color",
+        "before": "(235,93,129)",
+        "after": "(64,64,64)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Foreground",
+        "line": 1247,
+        "property": "Color",
+        "before": "(75,152,184)",
+        "after": "(75,75,75)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Foreground",
+        "line": 1248,
+        "property": "Color",
+        "before": "(91,179,213)",
+        "after": "(90,90,90)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Foreground",
+        "line": 1249,
+        "property": "Color",
+        "before": "(171,214,226)",
+        "after": "(120,120,120)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Foreground",
+        "line": 1250,
+        "property": "Color",
+        "before": "(153,153,153)",
+        "after": "(153,153,153)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Foreground",
+        "line": 1251,
+        "property": "Color",
+        "before": "(102,102,102)",
+        "after": "(102,102,102)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Foreground",
+        "line": 1252,
+        "property": "Color",
+        "before": "(204,204,204)",
+        "after": "(204,204,204)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Background",
+        "line": 1256,
+        "property": "Color",
+        "before": "(251,251,251)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Background",
+        "line": 1257,
+        "property": "Color",
+        "before": "(245,231,220)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Background",
+        "line": 1258,
+        "property": "Color",
+        "before": "(77,77,77)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "section": "Background",
+        "line": 1259,
+        "property": "Color",
+        "before": "(51,51,51)",
+        "after": "(255,255,255)"
+      }
+    ],
+    "references": [
+      "A33504E9-742F-43CE-91BD-150670BFFECB",
+      "112980E1-89D3-4897-BF75-A4EBE3EC63EB"
+    ]
+  },
+  {
+    "original": "Rechnungskorrektur_Neue Vorlage_GlobaleVorgänge.vlg",
+    "output": "Rechnungskorrektur_Gefluegelzuchtbedarf_PRUEFVERSION.vlg",
+    "sha256_original": "289f0f6d0dfba00c26d73dc108a7bdad90ffb1ae31a9ffd52f719e9e843529f5",
+    "sha256_output": "2f43434e69a7b2cc4a3631d43ed86a88b06ee8fcb36bc9d24f2a8dad28179064",
+    "zip_integrity": "PASS",
+    "xml_and_descriptors": "PASS",
+    "repository_references": "PASS",
+    "lst_structure": "PASS",
+    "jtl_import": "NOT_TESTED",
+    "jtl_designer": "NOT_TESTED",
+    "preview": "NOT_TESTED",
+    "print": "NOT_TESTED",
+    "entries": [
+      {
+        "name": "index.xml",
+        "before_bytes": 4668,
+        "after_bytes": 4668,
+        "sha256_before": "b293c51043e5854153853aee6e8c179a912e48ee1d0cab76aa226c4eb51cf2ce",
+        "sha256_after": "b293c51043e5854153853aee6e8c179a912e48ee1d0cab76aa226c4eb51cf2ce",
+        "changed": false,
+        "crc32": "6c70d445"
+      },
+      {
+        "name": "10A0D79B-71D4-46F5-B382-0D9FF0768F4C.xml",
+        "before_bytes": 73423,
+        "after_bytes": 73423,
+        "sha256_before": "dcc561b3210ca0036e3020e37fe487358055b5aa5cc67cad11e2f16cba3ad1c1",
+        "sha256_after": "dcc561b3210ca0036e3020e37fe487358055b5aa5cc67cad11e2f16cba3ad1c1",
+        "changed": false,
+        "crc32": "8784b715"
+      },
+      {
+        "name": "A57828FA-7E79-4DDC-BF54-0DE58042E70F.xml",
+        "before_bytes": 1249,
+        "after_bytes": 1249,
+        "sha256_before": "082baf872b2f7c620b6cfed1650ce0c936b623caa53bdeba1e2d4b75edc0efde",
+        "sha256_after": "082baf872b2f7c620b6cfed1650ce0c936b623caa53bdeba1e2d4b75edc0efde",
+        "changed": false,
+        "crc32": "1e8d4473"
+      },
+      {
+        "name": "9E3603A5-A965-4B44-A79B-3AEA96520611.lst",
+        "before_bytes": 330310,
+        "after_bytes": 330118,
+        "sha256_before": "1d06dd8c5bfd69722c9829d07a90fd2ad2036e72c098ea792e2dc06d1a4ddefa",
+        "sha256_after": "d75fc98e4e6e6b17a477901267333ae884e0353bdff2a395a5c1e3c183b32582",
+        "changed": true,
+        "crc32": "6ef215bc"
+      },
+      {
+        "name": "88CB95FD-09AA-4612-B03E-650778366221.image",
+        "before_bytes": 760712,
+        "after_bytes": 393428,
+        "sha256_before": "9cfeb4fb46a55e8cae32564792e1a9c50cbf52ec53a49cc170f4269b42aa0178",
+        "sha256_after": "7826c1473c5814a16bbe34319e7fcff09709dd8a2ccc193d8c8929efb802901a",
+        "changed": true,
+        "crc32": "b28ffcd1"
+      },
+      {
+        "name": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "before_bytes": 46696,
+        "after_bytes": 46664,
+        "sha256_before": "bd28f301823dc6ae229c9f342753252f71eaeca0b2abe79be15dfbebbdd47e35",
+        "sha256_after": "00113549df8a6b1ee6d2437540b6d2037150d351ecb1bf0b477df474597e075c",
+        "changed": true,
+        "crc32": "5cb47445"
+      }
+    ],
+    "changes": [
+      {
+        "entry": "9E3603A5-A965-4B44-A79B-3AEA96520611.lst",
+        "section": "Table",
+        "identifier": "Total block",
+        "line": 6238,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "9E3603A5-A965-4B44-A79B-3AEA96520611.lst",
+        "section": "Table",
+        "identifier": "Vat block",
+        "line": 6892,
+        "property": "Condition",
+        "before": "True",
+        "after": "False"
+      },
+      {
+        "entry": "9E3603A5-A965-4B44-A79B-3AEA96520611.lst",
+        "section": "Table",
+        "identifier": "Note on intra-Community delivery",
+        "line": 8538,
+        "property": "Condition",
+        "before": "Report.ExemptFromVAT == 'IGL'",
+        "after": "False"
+      },
+      {
+        "entry": "9E3603A5-A965-4B44-A79B-3AEA96520611.lst",
+        "section": "Table",
+        "identifier": "Note on reverse charge",
+        "line": 8778,
+        "property": "Condition",
+        "before": "Report.ExemptFromVAT == 'ReverseCharge'",
+        "after": "False"
+      },
+      {
+        "entry": "9E3603A5-A965-4B44-A79B-3AEA96520611.lst",
+        "section": "Table",
+        "identifier": "Note on VAT-exempt outside EU",
+        "line": 9018,
+        "property": "Condition",
+        "before": "Report.ExemptFromVAT == 'ExemptFromVATnotEU'",
+        "after": "False"
+      },
+      {
+        "entry": "9E3603A5-A965-4B44-A79B-3AEA96520611.lst",
+        "section": "UserVariables",
+        "identifier": null,
+        "line": 9273,
+        "property": "User5",
+        "before": "@PositionsColumnWidthVAT;13",
+        "after": "@PositionsColumnWidthVAT;0"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 81,
+        "property": "Position/Left",
+        "before": "-1000",
+        "after": "20000"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 83,
+        "property": "Position/Width",
+        "before": "#Ceil(LL.Device.Page.Size.cx) + 2",
+        "after": "#LL.Device.Page.Size.cx - @BorderLeft - @BorderRight"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 84,
+        "property": "Position/Height",
+        "before": "#@FooterHeight + 1",
+        "after": "#@FooterHeight - 5"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Object",
+        "identifier": "Footer",
+        "line": 93,
+        "property": "bFrame",
+        "before": "1",
+        "after": "0"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 177,
+        "property": "Text",
+        "before": "\"Ust-IdNr: \" +Report.Company.ValueAddedTaxId",
+        "after": "\"Steuerfrei gemäß § 19 Abs. 1 UStG (Kleinunternehmer).\""
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Line",
+        "identifier": null,
+        "line": 173,
+        "property": "Condition",
+        "before": "Not IsNullOrEmpty(Report.Company.ValueAddedTaxId)",
+        "after": "True"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Object",
+        "identifier": "",
+        "line": 1160,
+        "property": "Position/Height",
+        "before": "22000",
+        "after": "30000"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Foreground",
+        "line": 1243,
+        "property": "Color",
+        "before": "(97,80,81)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Foreground",
+        "line": 1244,
+        "property": "Color",
+        "before": "(202,138,84)",
+        "after": "(145,108,35)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Foreground",
+        "line": 1245,
+        "property": "Color",
+        "before": "(0,104,126)",
+        "after": "(30,67,38)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Foreground",
+        "line": 1246,
+        "property": "Color",
+        "before": "(235,93,129)",
+        "after": "(64,64,64)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Foreground",
+        "line": 1247,
+        "property": "Color",
+        "before": "(75,152,184)",
+        "after": "(75,75,75)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Foreground",
+        "line": 1248,
+        "property": "Color",
+        "before": "(91,179,213)",
+        "after": "(90,90,90)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Foreground",
+        "line": 1249,
+        "property": "Color",
+        "before": "(171,214,226)",
+        "after": "(120,120,120)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Foreground",
+        "line": 1250,
+        "property": "Color",
+        "before": "(153,153,153)",
+        "after": "(153,153,153)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Foreground",
+        "line": 1251,
+        "property": "Color",
+        "before": "(102,102,102)",
+        "after": "(102,102,102)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Foreground",
+        "line": 1252,
+        "property": "Color",
+        "before": "(204,204,204)",
+        "after": "(204,204,204)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Background",
+        "line": 1256,
+        "property": "Color",
+        "before": "(251,251,251)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Background",
+        "line": 1257,
+        "property": "Color",
+        "before": "(245,231,220)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Background",
+        "line": 1258,
+        "property": "Color",
+        "before": "(77,77,77)",
+        "after": "(255,255,255)"
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "section": "Background",
+        "line": 1259,
+        "property": "Color",
+        "before": "(51,51,51)",
+        "after": "(255,255,255)"
+      }
+    ],
+    "references": [
+      "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D",
+      "88CB95FD-09AA-4612-B03E-650778366221"
+    ]
+  }
+]

@@ -1,0 +1,1071 @@
+<template type="mail/template/xml" version="1.0" id="f7a1e07f-6cb6-4bbe-be98-aa013756b606"><body><html>{% comment -%}
+JTL-Software Template für E-Mail "Rechnung (HTML-Format)", Stand: 201810101
+--------------------------------------------------------------------------------------------------------------
+Sie können das Template über folgende Variablen steuern:
+--------------------------------------------------------------------------------------------------------------
+{% endcomment -%}
+{% assign FirmenLogoUrl = '' %}{% comment %}Link zum Firmenlogo (600px breit), z.B: http://www.jtl-software.de/bilder/intern/shoplogo/jtlshoplogo.png{% endcomment -%}
+{% assign TwitterProfileUrl= '' %}{% comment %}Link zum Twitter-Profil, z.B: https://twitter.com/JTLSoftware{% endcomment -%}
+{% assign FacebookProfileUrl= '' %}{% comment %}Link zum Facebook-Profil, z.B: https://www.facebook.com/JTLSoftware{% endcomment -%}
+{% assign GoogleProfileUrl= '' %}{% comment %}Link zum Google+-Profil, z.B: https://plus.google.com/109750496801379835262{% endcomment -%}
+{% assign IncludeArtikelnummern = false %}{% comment %}Gibt an, ob die Artikelnummern ausgegeben werden{% endcomment -%}
+{% assign IncludeEinzelpreise = false %}{% comment %}Gibt an, ob die Einzelpreise ausgegeben werden{% endcomment -%}
+
+{% comment -%}
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+Unterhalb dieses Bereiches sollten nur erfahrene Anwender Änderungen vornehmen. Bei Fragen
+steht Ihnen unser Supportforum unter http://forum.jtl-software.de/formulardesigner-editor-open-beta-phase/
+zur Verfügung. Gerne helfen Ihnen auch unsere Servicepartner weiter. Einen qualifizierten Service-Partner
+finden Sie unter http://www.jtl-software.de/Servicepartner.
+Die mit @editable gekennzeichneten CSS-Eigenschaften sind für das Layout zuständig. Die anderen CSS-Eigenschaften
+dienen teilweise zur Kompatibilität und sollten nur mit großer Vorsicht verändert werden.
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+{% endcomment -%}
+{% assign NettoPreiseBenutzen = false -%}
+{% if Specification.UseNetPrices == true -%}
+{% assign NettoPreiseBenutzen = true -%}
+{% endif -%}
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+        &lt;!-- Lizenz für dieses Mailtemplate: CC BY-SA 3.0 --&gt;
+        &lt;!-- Quelle: https://github.com/mailchimp/Email-Blueprints, angepasst für JTL-Wawi --&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+        &lt;title&gt;Ihre Rechnung über "{{ Report.InvoicePosition[0].Name | Truncate: 20 }}"{% case Report.InvoicePosition.Size %}{% when 0%}{% when 1 %}{% when 2 %} und einem weiteren Artikeln{% else %} und {{ Report.InvoicePosition.Size | Minus: 1 }} weiteren Artikeln{% endcase%} bei {{ Report.Company.CompanyName }}&lt;/title&gt;
+        &lt;style type="text/css"&gt;      
+            /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+            #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+            .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+            body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+            table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+            img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+            /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+            body{margin:0; padding:0;}
+            img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+            table{border-collapse:collapse !important;}
+            body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+            /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+            /* ========== Page Styles ========== */
+
+            #bodyCell{padding:20px;}
+            #templateContainer{width:800px;}
+
+            /**
+            * @tab Page
+            * @section background style
+            * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+            * @theme page
+            */
+            body, #bodyTable{
+                /*@editable*/ background-color:#DEE0E2;
+            }
+
+            /**
+            * @tab Page
+            * @section background style
+            * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+            * @theme page
+            */
+            #bodyCell{
+                /*@editable*/ border-top:4px solid #BBBBBB;
+            }
+
+            /**
+            * @tab Page
+            * @section email border
+            * @tip Set the border for your email.
+            */
+            #templateContainer{
+                /*@editable*/ border:1px solid #BBBBBB;
+            }
+
+            /**
+            * @tab Page
+            * @section heading 1
+            * @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+            * @style heading 1
+            */
+            h1{
+                /*@editable*/ color:#202020 !important;
+                display:block;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:26px;
+                /*@editable*/ font-style:normal;
+                /*@editable*/ font-weight:bold;
+                /*@editable*/ line-height:100%;
+                /*@editable*/ letter-spacing:normal;
+                margin-top:0;
+                margin-right:0;
+                margin-bottom:10px;
+                margin-left:0;
+                /*@editable*/ text-align:right;
+            }
+
+            /**
+            * @tab Page
+            * @section heading 2
+            * @tip Set the styling for all second-level headings in your emails.
+            * @style heading 2
+            */
+            h2{
+                /*@editable*/ color:#404040 !important;
+                display:block;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:20px;
+                /*@editable*/ font-style:normal;
+                /*@editable*/ font-weight:bold;
+                /*@editable*/ line-height:100%;
+                /*@editable*/ letter-spacing:normal;
+                margin-top:0;
+                margin-right:0;
+                margin-bottom:10px;
+                margin-left:0;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Page
+            * @section heading 3
+            * @tip Set the styling for all third-level headings in your emails.
+            * @style heading 3
+            */
+            h3{
+                /*@editable*/ color:#606060 !important;
+                display:block;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:16px;
+                /*@editable*/ font-style:italic;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ line-height:100%;
+                /*@editable*/ letter-spacing:normal;
+                margin-top:0;
+                margin-right:0;
+                margin-bottom:10px;
+                margin-left:0;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Page
+            * @section heading 4
+            * @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+            * @style heading 4
+            */
+            h4{
+                /*@editable*/ color:#808080 !important;
+                display:block;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:14px;
+                /*@editable*/ font-style:italic;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ line-height:100%;
+                /*@editable*/ letter-spacing:normal;
+                margin-top:0;
+                margin-right:0;
+                margin-bottom:10px;
+                margin-left:0;
+                /*@editable*/ text-align:left;
+            }
+
+            /* ========== Header Styles ========== */
+
+            /**
+            * @tab Header
+            * @section preheader style
+            * @tip Set the background color and bottom border for your email's preheader area.
+            * @theme header
+            */
+            #templatePreheader{
+                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ border-bottom:1px solid #CCCCCC;
+            }
+
+            /**
+            * @tab Header
+            * @section preheader text
+            * @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+            */
+            .preheaderContent{
+                /*@editable*/ color:#808080;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:10px;
+                /*@editable*/ line-height:125%;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Header
+            * @section preheader link
+            * @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+            */
+            .preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
+                /*@editable*/ color:#606060;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ text-decoration:underline;
+            }
+
+            /**
+            * @tab Header
+            * @section header style
+            * @tip Set the background color and borders for your email's header area.
+            * @theme header
+            */
+            #templateHeader{
+                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ border-top:1px solid #FFFFFF;
+                /*@editable*/ border-bottom:1px solid #CCCCCC;
+            }
+
+            /**
+            * @tab Header
+            * @section header text
+            * @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+            */
+            .headerContent{
+                /*@editable*/ color:#505050;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:20px;
+                /*@editable*/ font-weight:bold;
+                /*@editable*/ line-height:100%;
+                /*@editable*/ padding-top:20px;
+                /*@editable*/ padding-right:20px;
+                /*@editable*/ padding-bottom:20px;
+                /*@editable*/ padding-left:20px;
+                /*@editable*/ text-align:left;
+                /*@editable*/ vertical-align:middle;
+            }
+
+            .headerLogo {
+
+            }
+
+            .headerSummary {
+                /*@editable*/ text-align: right;
+            }
+
+            /**
+            * @tab Header
+            * @section header link
+            * @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+            */
+            .headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+                /*@editable*/ color:#EB4102;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ text-decoration:underline;
+            }
+
+            .PositionImage {
+                width: 50px;
+                height: 50px;
+            }
+
+            .PositionPrice, .SumPosPrice, .PaymentsPrice {
+                /*@editable*/ vertical-align: top;
+                /*@editable*/ text-align: right;
+                /*@editable*/ width: 10em;
+            }
+
+            .SumPosDescription, .PaymentsDescription {
+                /*@editable*/ text-align: right;
+            }
+
+            .PositionProperties {
+                /*@editable*/ font-size: 80%;
+                border-collapse: collapse !important;
+                border-spacing: 50px 50px !important;
+            }
+
+            .PositionProperties .spacer div { 
+                /*@editable*/ width: 1em;
+            }            
+
+            .PositionProperties .name { 
+                /*@editable*/ font-style: italic;
+                /*@editable*/ vertical-align: top;              
+            }
+
+            .PositionProperties .content { 
+                /*@editable*/ width: 100%;
+            }
+
+            .PositionChildren {
+                /*@editable*/ font-size: 80%;
+            }
+
+            .PositionChildren .spacer div { 
+                /*@editable*/ width: 1em;
+            }
+
+            .PositionChildren .bullet { 
+                /*@editable*/ vertical-align: top;
+            }
+
+            .PositionChildren .content { 
+                /*@editable*/ width: 100%;
+                margin-left: 1em;
+            }
+
+            .PositionImage img {
+                padding: 5px;
+            }
+
+            #headerImage{
+                height:auto;
+                max-width:600px;
+            }
+
+            /* ========== Body Styles ========== */
+
+            /**
+            * @tab Body
+            * @section body style
+            * @tip Set the background color and borders for your email's body area.
+            */
+            #templateBody{
+                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ border-top:1px solid #FFFFFF;
+                /*@editable*/ border-bottom:1px solid #CCCCCC;
+            }
+
+            /**
+            * @tab Body
+            * @section body text
+            * @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+            * @theme main
+            */
+            .bodyContent{
+                /*@editable*/ color:#505050;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:14px;
+                /*@editable*/ line-height:150%;
+                padding-top:20px;
+                padding-right:20px;
+                padding-bottom:20px;
+                padding-left:20px;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Body
+            * @section body link
+            * @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+            */
+            .bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+                /*@editable*/ color:#EB4102;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ text-decoration:underline;
+            }
+
+            .bodyContent img{
+                display:inline;
+                height:auto;
+                max-width:560px;
+            }
+
+            /* ========== Footer Styles ========== */
+
+            /**
+            * @tab Footer
+            * @section footer style
+            * @tip Set the background color and borders for your email's footer area.
+            * @theme footer
+            */
+            #templateFooter{
+                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ border-top:1px solid #FFFFFF;
+            }
+
+            /**
+            * @tab Footer
+            * @section footer text
+            * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+            * @theme footer
+            */
+            .footerContent{
+                /*@editable*/ color:#808080;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:10px;
+                /*@editable*/ line-height:150%;
+                padding-top:20px;
+                padding-right:20px;
+                padding-bottom:20px;
+                padding-left:20px;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Footer
+            * @section footer link
+            * @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+            */
+            .footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+                /*@editable*/ color:#606060;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ text-decoration:underline;
+            }
+
+            /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+
+            @media only screen and (max-width: 480px){
+                /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+                body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+                /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+                #bodyCell{padding:10px !important;}
+
+                /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+
+                /* ======== Page Styles ======== */
+
+                /**
+                * @tab Mobile Styles
+                * @section template width
+                * @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+                */
+                #templateContainer{
+                    max-width:600px !important;
+                    /*@editable*/ width:100% !important;
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section heading 1
+                * @tip Make the first-level headings larger in size for better readability on small screens.
+                */
+                h1{
+                    /*@editable*/ font-size:24px !important;
+                    /*@editable*/ line-height:100% !important;                  
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section heading 2
+                * @tip Make the second-level headings larger in size for better readability on small screens.
+                */
+                h2{
+                    /*@editable*/ font-size:20px !important;
+                    /*@editable*/ line-height:100% !important;
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section heading 3
+                * @tip Make the third-level headings larger in size for better readability on small screens.
+                */
+                h3{
+                    /*@editable*/ font-size:18px !important;
+                    /*@editable*/ line-height:100% !important;
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section heading 4
+                * @tip Make the fourth-level headings larger in size for better readability on small screens.
+                */
+                h4{
+                    /*@editable*/ font-size:16px !important;
+                    /*@editable*/ line-height:100% !important;
+                }
+
+                /* ======== Header Styles ======== */
+
+                #templatePreheader{display:none !important;} /* Hide the template preheader to save space */
+
+                /**
+                * @tab Mobile Styles
+                * @section header image
+                * @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+                */
+                #headerImage{
+                    height:auto !important;
+                    /*@editable*/ max-width:600px !important;
+                    /*@editable*/ width:100% !important;
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section header text
+                * @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+                */
+                .headerContent{
+                    /*@editable*/ font-size:20px !important;
+                    /*@editable*/ line-height:125% !important;
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section header text
+                * @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+                */
+                .headerContentInfo{
+                    /*@editable*/ font-size:20px !important;
+                    /*@editable*/ line-height:125% !important;
+                    text-align: right;
+                }
+                /* ======== Body Styles ======== */
+
+                /**
+                * @tab Mobile Styles
+                * @section body text
+                * @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+                */
+                .bodyContent{
+                    /*@editable*/ font-size:18px !important;
+                    /*@editable*/ line-height:125% !important;
+                }
+
+                /* ======== Footer Styles ======== */
+
+                /**
+                * @tab Mobile Styles
+                * @section footer text
+                * @tip Make the body content text larger in size for better readability on small screens.
+                */
+                .footerContent{
+                    /*@editable*/ font-size:14px !important;
+                    /*@editable*/ line-height:115% !important;
+                }
+
+                .footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0"&gt;
+        &lt;center&gt;
+            &lt;table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable"&gt;
+                &lt;tr&gt;
+                    &lt;td align="center" valign="top" id="bodyCell"&gt;
+                        &lt;!-- BEGIN TEMPLATE // --&gt;
+                        &lt;table border="0" cellpadding="0" cellspacing="0" id="templateContainer"&gt;
+                            &lt;tr&gt;
+                                &lt;td align="center" valign="top"&gt;
+                                    &lt;!-- BEGIN PREHEADER // --&gt;
+                                    &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader"&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;"&gt;
+                                                Rechnung über "{{ Report.InvoicePosition[0].Name | Truncate: 20 }}"{% case Report.InvoicePosition.Size %}{% when 0%}{% when 1 %}{% when 2 %} und einem weiteren Artikel{% else %} und {{ Report.InvoicePosition.Size | Minus: 1 }} weiteren Artikeln{% endcase%} von {{ Report.Company.CompanyName }}
+                                            &lt;/td&gt;                                            
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                    &lt;!-- // END PREHEADER --&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="center" valign="top"&gt;
+                                    &lt;!-- BEGIN HEADER // --&gt;
+                                    &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader"&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="headerContent"&gt;
+                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%"&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="headerLogo"&gt;
+                                                            {% if FirmenLogoUrl != empty -%}
+                                                            &lt;img src="{{ FirmenLogoUrl }}" style="max-width:600px;" id="headerImage" alt="Firmenlogo"/&gt;
+                                                            {% endif -%}
+                                                        &lt;/td&gt;
+                                                        &lt;td valign="top" class="headerSummary"&gt;
+                                                            &lt;h1&gt;Rechnung&lt;/h1&gt;
+                                                            Rechnungsnummer: &lt;em&gt;{{ Report.InvoiceNumber }}&lt;/em&gt;&lt;br /&gt;
+                                                            Kundennummer: &lt;em&gt;{{ Report.MandateReference }}&lt;/em&gt;&lt;br /&gt;                                                       
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                &lt;/table&gt;                                                
+                                            &lt;/td&gt;
+                                            &lt;td valign="top" class="headerContentInfo"&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                    &lt;!-- // END HEADER --&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="center" valign="top"&gt;
+                                    &lt;!-- BEGIN BODY // --&gt;
+                                    &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody"&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                                &lt;!-- BEGIN BODYTEXT // --&gt;
+                                                {% if Report.InvoiceBillToAddress.Salutation != empty -%}
+                                                    {% case Report.InvoiceBillToAddress.Salutation -%}
+                                                        {% when 'Herr' -%}
+                                                            Sehr geehrter Herr\
+                                                        {% when 'Frau' -%}
+                                                            Sehr geehrte Frau\
+                                                        {% else -%}
+                                                            Sehr geehrte(r) {{ Report.InvoiceBillToAddress.Salutation }}\
+                                                    {% endcase -%}
+                                                    {% if Report.InvoiceBillToAddress.Title != empty %} {{ Report.InvoiceBillToAddress.Title }}{% endif %} {{ Report.InvoiceBillToAddress.LastName }},
+                                                {% else -%} 
+                                                    Sehr geehrte Damen und Herren,
+                                                {% endif -%}&lt;br /&gt;
+                                                &lt;br /&gt;
+                                                vielen Dank für Ihren Auftrag vom {{ Report.CreationDate | Datum: 'D' }}. Ihr Auftrag wurde bearbeitet und wird nun versendet.&lt;br /&gt;
+                                                Sollten Sie noch Fragen haben, stehen wir Ihnen gerne zur Verfügung.
+                                                &lt;!-- // END BODYTEXT --&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                                &lt;!-- BEGIN SUBHEADER // --&gt;
+                                                &lt;h2&gt;Einzelheiten zum Auftrag&lt;/h2&gt;
+                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="bodyData"&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="bodyDataLeft" width="100%"&gt;
+                                                            &lt;h3&gt;Rechnungsadresse:&lt;/h3&gt;
+                                                            {% if Report.InvoiceBillToAddress.Company != null and Report.InvoiceBillToAddress.Company != empty %}{{ Report.InvoiceBillToAddress.Company }}&lt;br /&gt;{% endif %}
+                                                            {% if Report.InvoiceBillToAddress.CompanySupplement != null and Report.InvoiceBillToAddress.CompanySupplement != empty != empty %}{{ Report.InvoiceBillToAddress.CompanySupplement }}&lt;br /&gt;{% endif %}
+                                                            {% if Report.InvoiceBillToAddress.Salutation != null and Report.InvoiceBillToAddress.Salutation != empty %}{{ Report.InvoiceBillToAddress.Salutation }} {% endif %}{% if Report.InvoiceBillToAddress.Title != null and Report.InvoiceBillToAddress.Title != empty %}{{ Report.InvoiceBillToAddress.Title }}{% else %}{{ Report.InvoiceBillToAddress.FirstName }}{% endif %} {%if Report.InvoiceBillToAddress.LastName != null and Report.InvoiceBillToAddress.LastName != empty %}{{ Report.InvoiceBillToAddress.LastName }}{% endif %}&lt;br /&gt;
+                                                            {% if Report.InvoiceBillToAddress.AddressSupplement != null and Report.InvoiceBillToAddress.AddressSupplement != empty %}{{ Report.InvoiceBillToAddress.AddressSupplement }}&lt;br /&gt;{% endif %}
+                                                            {{ Report.InvoiceBillToAddress.Address }}&lt;br /&gt;
+                                                            {{ Report.InvoiceBillToAddress.PostalCode }} {{ Report.InvoiceBillToAddress.City }}&lt;br /&gt;
+                                                            {% if Report.InvoiceBillToAddress.Country != null and Report.InvoiceBillToAddress.Country != empty %}{{ Report.InvoiceBillToAddress.Country }}&lt;br /&gt;{% endif %}
+                                                            {% if Report.InvoiceBillToAddress.ValueAddedTaxId &gt; 0 -%}
+                                                            &lt;br /&gt;
+                                                            USt-IdNr.: {{ Report.InvoiceBillToAddress.ValueAddedTaxId }}&lt;br /&gt;
+                                                            {% endif -%}
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;                                               
+                                                &lt;/table&gt;
+                                                &lt;!-- END SUBHEADER // --&gt;                                               
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                                &lt;!-- BEGIN POSITIONS // --&gt;
+                                                    &lt;h3&gt;Positionen&lt;/h3&gt;
+                                                    &lt;hr /&gt;
+                                                    &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="bodyPositions"&gt;
+                                                    &lt;thead&gt;
+                                                        &lt;tr&gt;
+                                                            &lt;th&gt;&lt;/th&gt;
+                                                            &lt;th width="100%"&gt;&lt;/th&gt;
+                                                            &lt;th&gt;&lt;/th&gt;
+                                                        &lt;/tr&gt;
+                                                    &lt;/thead&gt;
+                                                    &lt;tbody&gt;
+                                                        {% assign versandposition = 0 -%}
+                                                        {% for position in Report.InvoicePosition -%}
+                                                            {% if position.PositionType == 'ShippingPosition' -%}
+                                                            {% assign versandart = position.Name -%}
+                                                            {% if NettoPreiseBenutzen -%}
+                                                            {% assign versandkosten = position.TotalNetPrice -%}
+                                                            {% else -%}
+                                                            {% assign versandkosten = position.TotalGrossPrice -%}
+                                                            {% endif -%}
+                                                            {% else -%}
+                                                        &lt;tr&gt;       
+                                                            &lt;td width="80%" class="PositionDescription"&gt;
+                                                                {{ position.Quantity | Nummer : 'N2' }}{% if position.Unit != empty %}&amp;nbsp;{{ Position.Unit }}{% else %}x{% endif %}
+                                                                {{ position.Name }}&lt;br/&gt;
+                                                                {% if IncludeArtikelnummern == true -%}
+                                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="PositionProperties"&gt;
+                                                                &lt;tbody&gt;                                                                    
+                                                                    &lt;tr class="Artikelnummer"&gt;
+                                                                        &lt;td class="spacer"&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;/td&gt;
+                                                                        &lt;td class="name"&gt;
+                                                                            Artikelnummer:
+                                                                        &lt;/td&gt;&lt;td class="content"&gt;
+                                                                            {{ position.SKU }}
+                                                                        &lt;/td&gt;
+                                                                    &lt;/tr&gt;                                                                    
+                                                                &lt;/tbody&gt;
+                                                                &lt;/table&gt;
+                                                                {% endif -%} 
+                                                                {% if IncludeEinzelpreise == true -%}
+                                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="PositionProperties"&gt;
+                                                                &lt;tbody&gt;                                                                    
+                                                                    &lt;tr class="Einzelpreis"&gt;
+                                                                        &lt;td class="spacer"&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;/td&gt;
+                                                                        &lt;td class="name"&gt;
+                                                                            Einzelpreis:
+                                                                        &lt;/td&gt;&lt;td class="content"&gt;
+                                                                            {% if NettoPreiseBenutzen %}{{ position.NetPricePerUnit | Nummer : 'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}{% else %}{{ position.GrossPricePerUnit | Nummer : 'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}{% endif %}
+                                                                        &lt;/td&gt;
+                                                                    &lt;/tr&gt;                                                                    
+                                                                &lt;/tbody&gt;
+                                                                &lt;/table&gt;
+                                                                {% endif -%} 
+                                                            &lt;/td&gt;
+                                                            &lt;td width="20%" class="PositionPrice"&gt;
+                                                                {% if NettoPreiseBenutzen %}{{ position.TotalNetPrice | Nummer : 'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}{% else %}{{ position.TotalGrossPrice | Nummer : 'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}{% endif %}
+                                                            &lt;/td&gt;
+                                                            
+                                                        &lt;/tr&gt;
+                                                            {% endif %}
+                                                        {% endfor -%}
+                                                &lt;/tbody&gt;
+                                                &lt;/table&gt;
+                                                &lt;!-- END POSITIONS // --&gt;
+                                                &lt;!-- BEGIN SUMMEN // --&gt;
+                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="Sum"&gt;
+                                                &lt;tbody&gt;
+                                                    &lt;tr&gt;       
+                                                        &lt;td valign="top" class="SumPosDescription"&gt;
+                                                            Verpackung und Versand{% if versandart != null %} ({{ versandart }}){% endif %}:
+                                                        &lt;/td&gt;&lt;td valign="top" class="SumPosPrice" style="border-bottom: 1px solid black"&gt;
+                                                            {% if versandkosten != empty %}{{ versandkosten | Nummer : 'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}{% else %}{{ 0 | Nummer: 'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}{% endif %}
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;                                                    
+                                                    {% if Specification.RevealValueAddedTax %}
+                                                    {% for invoiceTotals in Report.TotalsInvoice -%}
+                                                    {% if invoiceTotals.GrossPriceTotal &gt; 0 -%}
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="SumPosDescription"&gt;
+                                                            Summe Netto ({{invoiceTotals.VATRate | Nummer : 'N' }}%):
+                                                        &lt;/td&gt;&lt;td valign="top" class="SumPosPrice"&gt;
+                                                            {{ invoiceTotals.NetPriceTotal | Nummer : 'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    {% endif -%}
+                                                    {% endfor -%}                                                   
+                                                    {% for invoiceTotals in Report.TotalsInvoice %}
+                                                    {% if invoiceTotals.VATRate &gt; 0 -%}
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="SumPosDescription"&gt;
+                                                            zzgl. USt. ({{invoiceTotals.VATRate | Nummer : 'N' }}%):
+                                                        &lt;/td&gt;&lt;td valign="top" class="SumPosPrice"&gt;
+                                                            {{ invoiceTotals.VATSum | Nummer:'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                    {% endif %}
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="SumPosDescription"&gt;
+                                                            &lt;em&gt;&lt;b&gt;Gesamtsumme:&lt;/b&gt;&lt;/em&gt;
+                                                        &lt;/td&gt;&lt;td valign="top" class="SumPosPrice" style="border-top: 1px solid black"&gt;
+                                                            &lt;em&gt;&lt;b&gt;{{ Report.TotalGrossPrice | Nummer : 'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}&lt;/b&gt;&lt;/em&gt;
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                &lt;/tbody&gt;
+                                                &lt;/table&gt;
+                                                &lt;!-- END SUMMEN // --&gt;                                              
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;!-- BEGIN ZAHLUNGEN // --&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                                &lt;h3&gt;Zahlung&lt;/h3&gt;
+                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="Payments"&gt;
+                                                &lt;tbody&gt;
+                                                    {% assign payments = false -%}
+                                                    {% for payment in Report.InvoicePayments -%}
+                                                        {% assign payments = true -%}
+                                                        &lt;tr&gt;
+                                                            &lt;td valign="top" class="PaymentsDescription"&gt;
+                                                                Zahlung ({{ payment.Name }}) vom {{ payment.PaymentDate | Datum: 'd' }}:
+                                                            &lt;/td&gt;&lt;td valign="top" class="PaymentsPrice"&gt;
+                                                                {{ payment.Value | Nummer: 'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}
+                                                            &lt;/td&gt;
+                                                        &lt;/tr&gt;
+                                                    {% endfor -%}
+                                                    {% if payments == true -%}
+                                                        &lt;tr&gt;
+                                                            &lt;td valign="top" class="PaymentsDescription"&gt;
+                                                                &lt;em&gt;offener Betrag:&lt;/em&gt;
+                                                            &lt;/td&gt;&lt;td valign="top" class="PaymentsPrice" style="border-top: 1px solid black"&gt;
+                                                                &lt;em&gt;{{ Report.OpenGrossPrice | Nummer: 'C', Report.CultureInfo | Replace: ' ','&amp;nbsp;' }}&lt;/em&gt;
+                                                            &lt;/td&gt;
+                                                        &lt;/tr&gt;                                                       
+                                                    {% endif -%}
+                                                &lt;/tbody&gt;
+                                                &lt;/table&gt;
+                                            &lt;/td&gt;       
+                                            &lt;!-- END ZAHLUNGEN // --&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;!-- BEGIN ANMERKUNGEN // --&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                                {% if Report.ExemptFromVAT == 'ExemptFromVATnotEU' -%}
+                                                    {{ Specification.TextsExemptFromValueAddedTax }}&lt;br /&gt;
+                                                {% endif -%}
+                                                {% if Report.ExemptFromVAT == 'IGL' -%}
+                                                  {{ Specification.TextsIGL }}&lt;br /&gt;
+                                                {% endif -%}
+                                                {% if Report.ExemptFromVAT == 'ReverseCharge' -%}
+                                                    {{ Specification.TextsReverseCharge }}&lt;br /&gt;
+                                                {% endif -%}                                             
+                                                {% if Report.InvoicePrintingText != empty -%}
+                                                    {{ Report.InvoicePrintingText }}&lt;br /&gt;
+                                                {% endif -%}
+                                            &lt;/td&gt;       
+                                            &lt;!-- END ANMERKUNGEN // --&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                            Mit freundlichen Grüßen&lt;br /&gt;&lt;br /&gt;
+                                            {{ Report.User.Name }}&lt;br /&gt;
+                                            {{ Report.Company.CompanyName }}
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                    &lt;!-- // END BODY --&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="center" valign="top"&gt;
+                                    &lt;!-- BEGIN FOOTER // --&gt;
+                                    &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter"&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="footerContent"&gt;
+                                                {% if Report.Company.WebsiteURL != empty %}Besuchen Sie uns auf unserer Homepage unter &lt;a href="{{Report.Company.WebsiteURL}}"&gt;{{Report.Company.WebsiteURL}}&lt;/a&gt;.&lt;br/&gt;{% endif %}
+                                                {% if TwitterProfileUrl != empty -%}
+                                                &lt;a href="{{ TwitterProfileUrl }}"&gt;Folgen Sie uns auf Twitter&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                {% endif -%}
+                                                {% if FacebookProfileUrl != empty -%}
+                                                &lt;a href="{{ FacebookProfileUrl }}"&gt;Besuchen Sie uns auf Facebook&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                {% endif -%}
+                                                {% if GoogleProfileUrl != empty -%}
+                                                &lt;a href="{{ GoogleProfileUrl }}"&gt;Besuchen Sie uns auf Google+&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                {% endif -%}
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="footerContent" style="padding-top:0;"&gt;
+                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" id="footerInfo"&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td valign="top" class="footerContent" width="33%"&gt;
+                                                        &lt;em&gt;Bankverbindung&lt;/em&gt;&lt;br/&gt;
+                                                        {{ Report.Company.AccountHolder }}&lt;br /&gt;
+                                                        Bank: {{ Report.Company.BankName }}&lt;br /&gt;
+                                                        BIC: {{ Report.Company.BIC }}&lt;br /&gt;
+                                                        IBAN: {{ Report.Company.IBAN }}&lt;br /&gt;
+                                                    &lt;/td&gt;
+                                                    &lt;td valign="top" class="footerContent" width="33%"&gt;
+                                                        &lt;em&gt;Anschrift:&lt;/em&gt;&lt;br /&gt;
+                                                        {{ Report.Company.CompanyName }}&lt;br /&gt;
+                                                        {% if Report.Company.ManagingDirector != empty %}{{ Report.Company.ManagingDirector }}&lt;br/&gt;{% endif %}
+                                                        {{ Report.Company.Address }}&lt;br /&gt;
+                                                        {{ Report.Company.PostalCode }} {{ Report.Company.City }}&lt;br /&gt;
+                                                        {% if Report.Company.Country != empty %}{{ Report.Company.Country }}&lt;br /&gt;{% endif %}
+                                                        Tel: {{ Report.Company.Phone }}&lt;br /&gt;
+                                                        {% if Report.Company.Fax != empty %}Fax: {{ Report.Company.Fax }}&lt;br /&gt;{% endif %}
+                                                    &lt;/td&gt;
+                                                    &lt;td valign="top" class="footerContent" width="33%"&gt;
+                                                        &lt;br /&gt;
+                                                        {% if Report.Company.ValueAddedTaxId != empty %}USt-IdNr.: {{ Report.Company.ValueAddedTaxId }}&lt;br /&gt;{% endif %}
+                                                        {% if Report.Company.FederalTaxId != empty %}St.Nr.: {{ Report.Company.FederalTaxId }}&lt;br /&gt;{% endif %}
+                                                        {% if Report.Company.CreditorId != empty %}Gläubiger-IdNr.: {{ Report.Company.CreditorId }}&lt;br /&gt;{% endif %} 
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;/table&gt;                                                
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                    &lt;!-- // END FOOTER --&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                        &lt;!-- // END TEMPLATE --&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/center&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</html><plain>{% comment -%}
+JTL-Software Template für E-Mail "Rechnung (Text-Format)", Stand: 20181009
+--------------------------------------------------------------------------------------------------------------
+Sie können das Template über folgende Variablen steuern:
+--------------------------------------------------------------------------------------------------------------
+{% endcomment -%}
+{% assign IncludeArtikelnummern = false %}{% comment %}Gibt an, ob die Artikelnummern ausgegeben werden{% endcomment -%}
+{% assign IncludeEinzelpreise = false %}{% comment %}Gibt an, ob die Einzelpreise ausgegeben werden{% endcomment -%}
+{% comment -%}
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+Unterhalb dieses Bereiches sollten nur erfahrene Anwender Änderungen vornehmen. Bei Fragen
+steht Ihnen unser Supportforum unter http://forum.jtl-software.de/formulardesigner-editor-open-beta-phase/
+zur Verfügung. Gerne helfen Ihnen auch unsere Servicepartner weiter. Einen qualifizierten Service-Partner
+finden Sie unter http://www.jtl-software.de/Servicepartner.
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+{% endcomment -%}
+{% assign NettoPreiseBenutzen = false -%}
+{% if Specification.UseNetPrices == true -%}
+{% assign NettoPreiseBenutzen = true -%}
+{% endif -%}
+{{ Report.Company.CompanyName }} Rechnung #{{ Report.InvoiceNumber }}
+_____________________________________________________________________________________
+
+{% if Report.InvoiceBillToAddress.Salutation != empty -%}
+{% case Report.InvoiceBillToAddress.Salutation -%}
+{% when 'Herr' -%}
+Sehr geehrter Herr\
+{% when 'Frau' -%}
+Sehr geehrte Frau\
+{% else -%}
+Sehr geehrte(r) {{ Report.InvoiceBillToAddress.Salutation }}\
+{% endcase -%}
+{% if Report.InvoiceBillToAddress.Title != empty %} {{ Report.InvoiceBillToAddress.Title }}{% endif %}{{ Report.InvoiceBillToAddress.LastName }},
+{% else -%} 
+Sehr geehrte Damen und Herren,
+{% endif -%}
+
+vielen Dank für Ihren Auftrag vom {{ Report.CreationDate | Datum: 'D' }}. Ihr Auftrag wurde bearbeitet und wird nun versendet.
+Sollten Sie noch Fragen haben, stehen wir Ihnen gerne zur Verfügung.
+
+Einzelheiten zum Auftrag
+------------------------
+
+Rechnungsadresse:
+{% if Report.InvoiceBillToAddress.Company != null and Report.InvoiceBillToAddress.Company != empty -%}
+  {{ Report.InvoiceBillToAddress.Company }}
+{% endif -%}
+{% if Report.InvoiceBillToAddress.CompanySupplement != null and Report.InvoiceBillToAddress.CompanySupplement != empty -%}
+  {{ Report.InvoiceBillToAddress.CompanySupplement }}
+{% endif -%}
+  {% if Report.InvoiceBillToAddress.Salutation != null and Report.InvoiceBillToAddress.Salutation != empty -%}
+{{ Report.InvoiceBillToAddress.Salutation }} \
+{% endif -%}
+{% if Report.InvoiceBillToAddress.Title != null and Report.InvoiceBillToAddress.Title != empty -%}
+{{ Report.InvoiceBillToAddress.Title }} \
+{% else -%}
+{{ Report.InvoiceBillToAddress.FirstName }} \
+{% endif -%}
+{% if Report.InvoiceBillToAddress.LastName != null and Report.InvoiceBillToAddress.LastName != empty -%}
+{{ Report.InvoiceBillToAddress.LastName }} \
+{% endif %}
+{% if Report.InvoiceBillToAddress.AddressSupplement != null and Report.InvoiceBillToAddress.AddressSupplement != empty -%}
+  {{ Report.InvoiceBillToAddress.AddressSupplement }}
+{% endif -%}
+  {{ Report.InvoiceBillToAddress.Address }}
+  {{ Report.InvoiceBillToAddress.PostalCode }} {{ Report.InvoiceBillToAddress.City }}
+{% if Report.InvoiceBillToAddress.Country != null and Report.InvoiceBillToAddress.Country != empty -%}
+  {{ Report.InvoiceBillToAddress.Country }}
+{% endif -%}
+{% if Report.InvoiceBillToAddress.ValueAddedTaxId &gt; 0 -%}
+
+  USt-IdNr.: {{ Report.InvoiceBillToAddress.ValueAddedTaxId }}
+{% endif -%}
+{% if Report.ServiceDate != null and Report.ServiceDate != empty -%}
+
+  Voraussichtliche Lieferung: {{Report.ServiceDate | Datum: 'd' }}
+{% endif -%}
+{% if Report.ShippingMethod.PrintingText != null and Report.ShippingMethod.PrintingText != empty -%}
+  {{ Report.ShippingMethod.PrintingText }}
+{% endif -%}
+
+Positionen:
+{% assign versandposition = 0 -%}
+{% for position in Report.InvoicePosition -%}
+{% if position.PositionType == 'ShippingPosition' -%}
+{% assign versandart = position.Name -%}
+{% if NettoPreiseBenutzen -%}
+{% assign versandkosten = position.TotalNetPrice -%}
+{% else -%}
+{% assign versandkosten = position.TotalGrossPrice -%}
+{% endif -%}
+{% else -%}
+{% capture menge -%}{{ position.Quantity | Nummer : 'N2' }}{% if position.Unit != empty %} {{ Position.Unit }}{% else %}x{% endif %} {{ position.Name }}{% endcapture -%}
+{% capture preis -%}{% if NettoPreiseBenutzen %}{{ position.TotalNetPrice | Nummer : 'C', Report.CultureInfo }}{% else %}{{ position.TotalGrossPrice | Nummer : 'C', Report.CultureInfo }}{% endif %}{% endcapture -%}
+  {{ menge | Truncate: 61 | Align: -61 }}{{Tabulator}}{{ preis | Truncate: 15 | Align: 15 }}
+{% if IncludeArtikelnummern == true -%}
+{% capture artnr %}Artikelnummer: {{ position.SKU }}{% endcapture -%}
+    {{ artnr | Truncate: 61 }}
+{% endif -%}
+{% if IncludeEinzelpreise == true -%}
+{% capture ez %}Einzelpreis: {% if NettoPreiseBenutzen %}{{ position.NetPricePerUnit | Nummer : 'C', Report.CultureInfo }}{% else %}{{ position.GrossPricePerUnit | Nummer : 'C', Report.CultureInfo }}{% endif -%}{% endcapture -%}
+    {{ ez | Truncate: 59 }}
+{% endif -%}
+{% endif -%}
+{% endfor -%}
+{% capture desc %}Verpackung und Versand{% if versandart != null %} ({{ versandart }}){% endif %}:{% endcapture -%}
+{% capture price %}{% if versandkosten != empty %}{{ versandkosten | Nummer : 'C', Report.CultureInfo }}{% else %}{{ 0 | Nummer: 'C', Report.CultureInfo }}{% endif %}{%endcapture -%}
+  {{ desc | Truncate: 61 | Align: 61 }}{{Tabulator}}{{ price | Truncate: 15 | Align: 15 }}
+{% if Specification.RevealValueAddedTax -%}
+  {{ ' ' | Align: 61 }}{{Tabulator}}---------------
+{% for invoiceTotals in Report.TotalsInvoice -%}
+{% if invoiceTotals.GrossPriceTotal &gt; 0 -%}
+{% capture desc %}Summe Netto ({{invoiceTotals.VATRate | Nummer : 'N' }}%):{% endcapture -%}
+{% capture price %}{{ invoiceTotals.NetPriceTotal | Nummer : 'C', Report.CultureInfo }}{% endcapture -%}
+  {{ desc | Truncate: 61 | Align: 61 }}{{Tabulator}}{{ price | Truncate: 15 | Align: 15 }}
+{% endif -%}
+{% endfor -%}
+{% for invoiceTotals in Report.TotalsInvoice -%}
+{% if invoiceTotals.GrossPriceTotal &gt; 0 -%}
+{% capture desc %}zzgl. USt. ({{invoiceTotals.VATRate | Nummer : 'N' }}%):{% endcapture -%}
+{% capture price %}{{ invoiceTotals.VATSum | Nummer:'C', Report.CultureInfo }}{% endcapture -%}
+  {{ desc | Truncate: 61 | Align: 61 }}{{Tabulator}}{{ price | Truncate: 15 | Align: 15 }}
+{% endif -%}
+{% endfor -%}
+{% endif -%}
+  {{ ' ' | Align: 61 }}{{Tabulator}}===============
+  {{ 'Gesamtsumme:' | Truncate: 61 | Align: 61}}{{ Tabulator }}{{ Report.TotalGrossPrice | Nummer : 'C', Report.CultureInfo | Truncate: 15 | Align: 15 }}
+  {{ ' ' | Align: 61 }}{{Tabulator}}===============
+
+Zahlung:
+{% assign payments = false -%}
+{% for payment in Report.InvoicePayments -%}
+{% assign payments = true -%}
+{% capture desc %}Zahlung ({{ payment.Name }}) vom {{ payment.PaymentDate | Datum: 'd' }}:{% endcapture -%}
+{% capture price %}{{ payment.Value | Nummer: 'C', Report.CultureInfo }}{% endcapture -%}
+  {{ desc | Truncate: 61 | Align: 61 }}{{Tabulator}}{{ price | Truncate: 15 | Align: 15 }}
+{% endfor -%}
+{% if payments == true -%}
+{% capture desc %}offener Betrag:{% endcapture -%}
+{% capture price %}{{ Report.OpenGrossPrice | Nummer: 'C', Report.CultureInfo }}{% endcapture -%}
+  {{ ' ' | Align: 61 }}{{Tabulator}}===============
+  {{ desc | Truncate: 61 | Align: 61 }}{{Tabulator}}{{ price | Truncate: 15 | Align: 15 }}
+{% endif -%}
+
+{% if Report.ExemptFromVAT == 'ExemptFromVATnotEU' -%}
+  {{ Specification.TextsExemptFromValueAddedTax }}
+{% endif -%}
+{% if Report.ExemptFromVAT == 'IGL' -%}
+  {{ Specification.TextsIGL }}
+{% endif -%}
+{% if Report.ExemptFromVAT == 'ReverseCharge' -%}
+    {{ Specification.TextsReverseCharge }}
+{% endif -%}
+{% if Report.InvoicePrintingText != empty -%}
+  {{ Report.InvoicePrintingText }}
+{% endif -%}
+
+Mit freundlichen Grüßen
+
+{{ Report.User.Name }}
+{{ Report.Company.CompanyName }}
+
+---
+{% if Report.Company.WebsiteURL != empty %}
+Besuchen Sie auf unserer Homepage unter {{ Report.Company.WebsiteURL }}.
+
+{% endif -%}
+{{ Report.Company.CompanyName }}
+{% if Report.Company.ManagingDirector != empty -%}
+{{ Report.Company.ManagingDirector }}
+{% endif -%}
+{{ Report.Company.Address }}
+{{ Report.Company.PostalCode }} {{ Report.Company.City }}
+{% if Report.Company.Country != empty -%}
+{{ Report.Company.Country }}
+{% endif -%}
+Tel: {{ Report.Company.Phone }}
+{% if Report.Company.Fax != empty -%}
+Fax: {{ Report.Company.Fax }}
+{% endif -%}             
+{% if Report.Company.ValueAddedTaxId != empty -%}
+USt-IdNr.: {{ Report.Company.ValueAddedTaxId }}
+{% endif -%}
+{% if Report.Company.FederalTaxId != empty -%}
+St.Nr.: {{ Report.Company.FederalTaxId }}
+{% endif -%}
+{% if Report.Company.CreditorId != empty -%}
+Gläubiger-IdNr.: {{ Report.Company.CreditorId }}
+{% endif %}   
+
+Bankverbindung:{{ Report.Company.AccountHolder }}
+Bank: {{ Report.Company.BankName }}
+BIC: {{ Report.Company.BIC }}
+IBAN: {{ Report.Company.IBAN }}</plain></body><subject>Rechnung über "{{ Report.InvoicePosition[0].Name | Truncate: 20 }}"{% case Report.InvoicePosition.Size %}{% when 0%}{% when 1 %}{% when 2 %} und einem weiteren Artikel{% else %} und {{ Report.InvoicePosition.Size | Minus: 1 }} weiteren Artikeln{% endcase%} von {{ Report.Company.CompanyName }}</subject></template>

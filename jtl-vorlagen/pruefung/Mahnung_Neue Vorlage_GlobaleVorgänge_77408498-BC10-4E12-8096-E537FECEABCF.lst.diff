@@ -1,0 +1,11 @@
+--- original/77408498-BC10-4E12-8096-E537FECEABCF.lst
++++ output/77408498-BC10-4E12-8096-E537FECEABCF.lst
+@@ -476,7 +476,7 @@
+  User2=@PositionsColumnWidthPosNr;8
+  User3=@PositionsColumnWidthQuantity;13
+  User4=@PositionsColumnWidthUnit;10
+- User5=@PositionsColumnWidthVAT;13
++ User5=@PositionsColumnWidthVAT;0
+  User6=@DecimalRetailPrices;2
+  User7=@DecimalQuantity;0
+  User8=@DecimalDiscount;2

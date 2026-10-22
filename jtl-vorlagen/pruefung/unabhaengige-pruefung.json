@@ -1,0 +1,187 @@
+[
+  {
+    "document": "Angebot",
+    "original_equals_supplied_bundle": true,
+    "projects": [
+      {
+        "entry": "43899D5A-44BF-4B9E-A9FA-97DD41048073.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 16,
+        "parsed_top_level_objects": 6,
+        "original_stored_object_count": 16,
+        "original_parsed_top_level_objects": 6,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      },
+      {
+        "entry": "40400370-7896-4CB4-8687-ED522C31B21B.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 10,
+        "parsed_top_level_objects": 10,
+        "original_stored_object_count": 10,
+        "original_parsed_top_level_objects": 10,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      }
+    ]
+  },
+  {
+    "document": "Auftrag",
+    "original_equals_supplied_bundle": true,
+    "projects": [
+      {
+        "entry": "9785D964-FC15-43BC-A707-3C5F9E9A5EC9.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 16,
+        "parsed_top_level_objects": 6,
+        "original_stored_object_count": 16,
+        "original_parsed_top_level_objects": 6,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      },
+      {
+        "entry": "A696120D-223D-495F-8062-1B7EB7D306D5.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 10,
+        "parsed_top_level_objects": 10,
+        "original_stored_object_count": 10,
+        "original_parsed_top_level_objects": 10,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      }
+    ]
+  },
+  {
+    "document": "Lieferantenbestellung",
+    "original_equals_supplied_bundle": true,
+    "projects": [
+      {
+        "entry": "C2D30876-F3E6-40F2-836C-3E83A8EE11DF.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 14,
+        "parsed_top_level_objects": 14,
+        "original_stored_object_count": 13,
+        "original_parsed_top_level_objects": 13,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      }
+    ]
+  },
+  {
+    "document": "Lieferschein",
+    "original_equals_supplied_bundle": true,
+    "projects": [
+      {
+        "entry": "92E9710F-F505-4177-B063-2CD97AB3CC1A.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 16,
+        "parsed_top_level_objects": 6,
+        "original_stored_object_count": 16,
+        "original_parsed_top_level_objects": 6,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      },
+      {
+        "entry": "405017F3-6F02-497D-9197-ABB78212427C.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 10,
+        "parsed_top_level_objects": 10,
+        "original_stored_object_count": 10,
+        "original_parsed_top_level_objects": 10,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      }
+    ]
+  },
+  {
+    "document": "Mahnung",
+    "original_equals_supplied_bundle": true,
+    "projects": [
+      {
+        "entry": "77408498-BC10-4E12-8096-E537FECEABCF.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 15,
+        "parsed_top_level_objects": 5,
+        "original_stored_object_count": 15,
+        "original_parsed_top_level_objects": 5,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      },
+      {
+        "entry": "FBDA485D-AA81-4B01-AFB1-B9348C8FBA42.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 10,
+        "parsed_top_level_objects": 10,
+        "original_stored_object_count": 10,
+        "original_parsed_top_level_objects": 10,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      }
+    ]
+  },
+  {
+    "document": "Rechnung",
+    "original_equals_supplied_bundle": true,
+    "projects": [
+      {
+        "entry": "E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 16,
+        "parsed_top_level_objects": 6,
+        "original_stored_object_count": 16,
+        "original_parsed_top_level_objects": 6,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      },
+      {
+        "entry": "A33504E9-742F-43CE-91BD-150670BFFECB.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 10,
+        "parsed_top_level_objects": 10,
+        "original_stored_object_count": 10,
+        "original_parsed_top_level_objects": 10,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      }
+    ]
+  },
+  {
+    "document": "Rechnungskorrektur",
+    "original_equals_supplied_bundle": true,
+    "projects": [
+      {
+        "entry": "9E3603A5-A965-4B44-A79B-3AEA96520611.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 16,
+        "parsed_top_level_objects": 6,
+        "original_stored_object_count": 16,
+        "original_parsed_top_level_objects": 6,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      },
+      {
+        "entry": "DC1AC1CB-389E-4F77-B0F8-1B602E39D25D.lst",
+        "encoding": "UTF-16LE BOM",
+        "file_version": 16,
+        "stored_object_count": 10,
+        "parsed_top_level_objects": 10,
+        "original_stored_object_count": 10,
+        "original_parsed_top_level_objects": 10,
+        "object_count_delta_matches": true,
+        "used_identifiers_unchanged": true
+      }
+    ]
+  }
+]

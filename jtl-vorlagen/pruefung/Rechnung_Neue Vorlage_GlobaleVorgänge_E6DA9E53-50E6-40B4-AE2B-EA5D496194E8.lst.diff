@@ -1,0 +1,119 @@
+--- original/E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst
++++ output/E6DA9E53-50E6-40B4-AE2B-EA5D496194E8.lst
+@@ -5781,7 +5781,7 @@
+ 	bFooterOnBottom=False
+ 	bFillBottom=False
+ 	Identifier=Total block
+-	Condition=True
++	Condition=False
+ 	DistanceTop=0
+ 	DistanceBottom=0
+ 	WrapBefore=False
+@@ -6435,7 +6435,7 @@
+ 	bFooterOnBottom=False
+ 	bFillBottom=False
+ 	Identifier=Vat block
+-	Condition=True
++	Condition=False
+ 	DistanceTop=0
+ 	DistanceBottom=0
+ 	WrapBefore=False
+@@ -8997,7 +8997,7 @@
+ 	bFooterOnBottom=False
+ 	bFillBottom=False
+ 	Identifier=Note on intra-Community delivery
+-	Condition=Report.ExemptFromVAT == 'IGL'
++	Condition=False
+ 	DistanceTop=2000
+ 	DistanceBottom=3000
+ 	WrapBefore=False
+@@ -9237,7 +9237,7 @@
+ 	bFooterOnBottom=False
+ 	bFillBottom=False
+ 	Identifier=Note on reverse charge
+-	Condition=Report.ExemptFromVAT == 'ReverseCharge'
++	Condition=False
+ 	DistanceTop=2000
+ 	DistanceBottom=3000
+ 	WrapBefore=False
+@@ -9477,7 +9477,7 @@
+ 	bFooterOnBottom=False
+ 	bFillBottom=False
+ 	Identifier=Note on VAT-exempt outside EU
+-	Condition=Report.ExemptFromVAT == 'ExemptFromVATnotEU'
++	Condition=False
+ 	DistanceTop=2000
+ 	DistanceBottom=3000
+ 	WrapBefore=False
+@@ -9886,7 +9886,7 @@
+ 		[Column]
+ 		 {
+ 		 Identifier=
+-		 Text="Bitte begleichen Sie den offenen Rechnungsbetrag in Höhe von " + LocCurrL$(Report.OpenGrossPrice, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤" bis zum " + LocDate$(Report.InvoicePaymentInformation.TransferDueDate, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + " auf unser Konto mit der IBAN: " +¤NullSafe(Report.InvoicePaymentInformation.TransferIBAN, "") + " bei der " + NullSafe(Report.InvoicePaymentInformation.TransferBank, "") + " (BIC: " + NullSafe(Report.InvoicePaymentInformation.TransferBIC, "")+¤") unter Angabe des Verwendungszwecks '"+ NullSafe(Report.InvoicePaymentInformation.TransferSubject, "") +"'. ¶"+¤"Sie können den QR-GiroCode auf der rechten Seite nutzen, um die Zahlung unkompliziert über Ihre Online-Banking-App durchzuführen.¶" +¤"Wir weisen darauf hin, dass die oben aufgeführten Artikel bis zur vollständigen Bezahlung in unserem Eigentum verbleiben."
++		 Text="Bitte begleichen Sie den offenen Rechnungsbetrag in Höhe von " + LocCurrL$(Report.OpenGrossPrice, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤" bis zum " + LocDate$(Report.InvoicePaymentInformation.TransferDueDate, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + " auf unser Konto mit der IBAN: " +¤NullSafe(Report.InvoicePaymentInformation.TransferIBAN, "") + " bei der " + NullSafe(Report.InvoicePaymentInformation.TransferBank, "") + " (BIC: " + NullSafe(Report.InvoicePaymentInformation.TransferBIC, "")+¤") unter Angabe des Verwendungszwecks '"+ NullSafe(Report.InvoicePaymentInformation.TransferSubject, "") +"'. ¶"+¤"" +¤"Wir weisen darauf hin, dass die oben aufgeführten Artikel bis zur vollständigen Bezahlung in unserem Eigentum verbleiben."
+ 		 Width=#LL.Device.Page.Size.cx - @BorderLeft - @BorderRight - 22
+ 		 Height=10000
+ 		 FixedHeight=0
+@@ -10082,7 +10082,7 @@
+ 		 BarRatio=0
+ 		 ExportAsPicture=False
+ 		 DwgSaveAsJPEG=0
+-		 Condition=True
++		 Condition=False
+ 		 Animation=""
+ 		 HTMLAnimation=""
+ 		 ObjectType=x10000000
+@@ -10371,7 +10371,7 @@
+ 		[Column]
+ 		 {
+ 		 Identifier=
+-		 Text="Bitte begleichen Sie den offenen Rechnungsbetrag in Höhe von " + LocCurrL$(Report.OpenGrossPrice, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤" bis zum " + LocDate$(Report.InvoicePaymentInformation.TransferDueDate, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + " auf unser Konto mit der IBAN: " +¤NullSafe(Report.InvoicePaymentInformation.TransferIBAN, "") + " bei der " + NullSafe(Report.InvoicePaymentInformation.TransferBank, "") + " (BIC: " + NullSafe(Report.InvoicePaymentInformation.TransferBIC, "")+¤") unter Angabe des Verwendungszwecks '"+NullSafe(Report.InvoicePaymentInformation.TransferSubject, "")+"'. ¶"+¤"Bei Zahlung bis zum " + LocDate$(AddDays(Report.CreationDate, NullSafe(Report.CashDiscountValidity, 0)), JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤" gewähren wir Ihnen ein Skonto in Höhe von " + LocNumber$(NullSafe(Report.CashDiscount, 0)) + " % des Rechnungsbetrages.¶"+¤"Sie können den QR-GiroCode auf der rechten Seite nutzen, um die Zahlung unkompliziert über Ihre Online-Banking-App durchzuführen.¶" +¤"Wir weisen darauf hin, dass die oben aufgeführten Artikel bis zur vollständigen Bezahlung in unserem Eigentum verbleiben."
++		 Text="Bitte begleichen Sie den offenen Rechnungsbetrag in Höhe von " + LocCurrL$(Report.OpenGrossPrice, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤" bis zum " + LocDate$(Report.InvoicePaymentInformation.TransferDueDate, JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + " auf unser Konto mit der IBAN: " +¤NullSafe(Report.InvoicePaymentInformation.TransferIBAN, "") + " bei der " + NullSafe(Report.InvoicePaymentInformation.TransferBank, "") + " (BIC: " + NullSafe(Report.InvoicePaymentInformation.TransferBIC, "")+¤") unter Angabe des Verwendungszwecks '"+NullSafe(Report.InvoicePaymentInformation.TransferSubject, "")+"'. ¶"+¤"Bei Zahlung bis zum " + LocDate$(AddDays(Report.CreationDate, NullSafe(Report.CashDiscountValidity, 0)), JTL_GetCulture(Report.CountryISO, Report.LanguageISO, Report.CurrencyISO)) + ¤" gewähren wir Ihnen ein Skonto in Höhe von " + LocNumber$(NullSafe(Report.CashDiscount, 0)) + " % des Rechnungsbetrages.¶"+¤"" +¤"Wir weisen darauf hin, dass die oben aufgeführten Artikel bis zur vollständigen Bezahlung in unserem Eigentum verbleiben."
+ 		 Width=#LL.Device.Page.Size.cx - @BorderLeft - @BorderRight - 22
+ 		 Height=10000
+ 		 FixedHeight=0
+@@ -10567,7 +10567,7 @@
+ 		 BarRatio=0
+ 		 ExportAsPicture=False
+ 		 DwgSaveAsJPEG=0
+-		 Condition=True
++		 Condition=False
+ 		 Animation=""
+ 		 HTMLAnimation=""
+ 		 ObjectType=x10000000
+@@ -10687,7 +10687,7 @@
+ 	bFooterOnBottom=False
+ 	bFillBottom=False
+ 	Identifier=Payment by PayPal
+-	Condition=Report.OpenGrossPrice > 0 AND NOT IsNullOrEmpty (Report.InvoicePaymentInformation.PayPalId,true) AND Report.InvoicePaymentInformation.PaymentMethodType <> 'SEPA'
++	Condition=False
+ 	DistanceTop=2000
+ 	DistanceBottom=3000
+ 	WrapBefore=False
+@@ -11052,7 +11052,7 @@
+ 		 BarRatio=0
+ 		 ExportAsPicture=False
+ 		 DwgSaveAsJPEG=0
+-		 Condition=True
++		 Condition=False
+ 		 Animation=""
+ 		 HTMLAnimation=""
+ 		 ObjectType=x10000000
+@@ -11555,7 +11555,7 @@
+ 	bFooterOnBottom=False
+ 	bFillBottom=False
+ 	Identifier=Payment by sold receivable
+-	Condition=Report.OpenGrossPrice = 0 AND Report.InvoicePaymentInformation.PaymentMethodType = 'SoldReceivable'
++	Condition=False
+ 	DistanceTop=2000
+ 	DistanceBottom=3000
+ 	WrapBefore=False
+@@ -12096,7 +12096,7 @@
+  User2=@PositionsColumnWidthPosNr;8
+  User3=@PositionsColumnWidthQuantity;13
+  User4=@PositionsColumnWidthUnit;10
+- User5=@PositionsColumnWidthVAT;13
++ User5=@PositionsColumnWidthVAT;0
+  User6=@DecimalRetailPrices;2
+  User7=@DecimalQuantity;2
+  User8=@DecimalDiscount;2

@@ -1,0 +1,13 @@
+{
+  "total": 193,
+  "added": 5,
+  "requested_already_present": 25,
+  "preserved_pages": 190,
+  "qr_decoded": 5,
+  "unique_names": true,
+  "unique_urls": true,
+  "finder_complete": true,
+  "alphabetical_groups": true,
+  "local_links": true,
+  "all_new_fields": true
+}

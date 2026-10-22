@@ -1,0 +1,1040 @@
+<template type="mail/template/xml" version="1.0" id="77fdd611-4e4e-4e3b-ad89-7c03900a1488"><body><html>{% comment -%}
+JTL-Software Template für E-Mail "Auftrag (HTML-Format)", Stand: 20160609
+--------------------------------------------------------------------------------------------------------------
+Sie können das Template über folgende Variablen steuern:
+--------------------------------------------------------------------------------------------------------------
+{% endcomment -%}
+{% assign FirmenLogoUrl = '' %}{% comment %}Link zum Firmenlogo (600px breit), z.B: http://www.jtl-software.de/bilder/intern/shoplogo/jtlshoplogo.png{% endcomment -%}
+{% assign TwitterProfileUrl= '' %}{% comment %}Link zum Twitter-Profil, z.B: https://twitter.com/JTLSoftware{% endcomment -%}
+{% assign FacebookProfileUrl= '' %}{% comment %}Link zum Facebook-Profil, z.B: https://www.facebook.com/JTLSoftware{% endcomment -%}
+{% assign GoogleProfileUrl= '' %}{% comment %}Link zum Google+-Profil, z.B: https://plus.google.com/109750496801379835262{% endcomment -%}
+{% assign NurAbweichendeLieferadresse = false %}{% comment %}Gibt an, ob die Lieferadresse nur ausgegeben wird, wenn diese von der Rechnungsadresse abweicht.{% endcomment -%}
+{% comment -%}
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+Unterhalb dieses Bereiches sollten nur erfahrene Anwender Änderungen vornehmen. Bei Fragen
+steht Ihnen unser Supportforum unter http://forum.jtl-software.de/formulardesigner-editor-open-beta-phase/
+zur Verfügung. Gerne helfen Ihnen auch unsere Servicepartner weiter. Einen qualifizierten Service-Partner
+finden Sie unter http://www.jtl-software.de/Servicepartner.
+Die mit @editable gekennzeichneten CSS-Eigenschaften sind für das Layout zuständig. Die anderen CSS-Eigenschaften
+dienen teilweise zur Kompatibilität und sollten nur mit großer Vorsicht verändert werden.
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+{% endcomment -%}
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+        &lt;!-- Lizenz für dieses Mailtemplate: CC BY-SA 3.0 --&gt;
+        &lt;!-- Quelle: https://github.com/mailchimp/Email-Blueprints, angepasst für JTL-Wawi --&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+        &lt;title&gt;Bestellung über "{{ Vorgang.Positionen[0].Bezeichnung | Truncate: 20 }}"{% case Vorgang.Positionen.Size %}{% when 0%}{% when 1 %}{% when 2 %} und einem weiteren Artikeln{% else %} und {{ Vorgang.Positionen.Size | Minus: 1 }} weiteren Artikeln{% endcase%} bei {{ Vorgang.Firma.Name }}&lt;/title&gt;
+        &lt;style type="text/css"&gt;      
+            /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+            #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+            .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+            body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+            table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+            img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+            /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+            body{margin:0; padding:0;}
+            img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+            table{border-collapse:collapse !important;}
+            body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+            /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+            /* ========== Page Styles ========== */
+
+            #bodyCell{padding:20px;}
+            #templateContainer{width:800px;}
+
+            /**
+            * @tab Page
+            * @section background style
+            * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+            * @theme page
+            */
+            body, #bodyTable{
+                /*@editable*/ background-color:#DEE0E2;
+            }
+
+            /**
+            * @tab Page
+            * @section background style
+            * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+            * @theme page
+            */
+            #bodyCell{
+                /*@editable*/ border-top:4px solid #BBBBBB;
+            }
+
+            /**
+            * @tab Page
+            * @section email border
+            * @tip Set the border for your email.
+            */
+            #templateContainer{
+                /*@editable*/ border:1px solid #BBBBBB;
+            }
+
+            /**
+            * @tab Page
+            * @section heading 1
+            * @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+            * @style heading 1
+            */
+            h1{
+                /*@editable*/ color:#202020 !important;
+                display:block;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:26px;
+                /*@editable*/ font-style:normal;
+                /*@editable*/ font-weight:bold;
+                /*@editable*/ line-height:100%;
+                /*@editable*/ letter-spacing:normal;
+                margin-top:0;
+                margin-right:0;
+                margin-bottom:10px;
+                margin-left:0;
+                /*@editable*/ text-align:right;
+            }
+
+            /**
+            * @tab Page
+            * @section heading 2
+            * @tip Set the styling for all second-level headings in your emails.
+            * @style heading 2
+            */
+            h2{
+                /*@editable*/ color:#404040 !important;
+                display:block;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:20px;
+                /*@editable*/ font-style:normal;
+                /*@editable*/ font-weight:bold;
+                /*@editable*/ line-height:100%;
+                /*@editable*/ letter-spacing:normal;
+                margin-top:0;
+                margin-right:0;
+                margin-bottom:10px;
+                margin-left:0;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Page
+            * @section heading 3
+            * @tip Set the styling for all third-level headings in your emails.
+            * @style heading 3
+            */
+            h3{
+                /*@editable*/ color:#606060 !important;
+                display:block;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:16px;
+                /*@editable*/ font-style:italic;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ line-height:100%;
+                /*@editable*/ letter-spacing:normal;
+                margin-top:0;
+                margin-right:0;
+                margin-bottom:10px;
+                margin-left:0;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Page
+            * @section heading 4
+            * @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+            * @style heading 4
+            */
+            h4{
+                /*@editable*/ color:#808080 !important;
+                display:block;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:14px;
+                /*@editable*/ font-style:italic;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ line-height:100%;
+                /*@editable*/ letter-spacing:normal;
+                margin-top:0;
+                margin-right:0;
+                margin-bottom:10px;
+                margin-left:0;
+                /*@editable*/ text-align:left;
+            }
+
+            /* ========== Header Styles ========== */
+
+            /**
+            * @tab Header
+            * @section preheader style
+            * @tip Set the background color and bottom border for your email's preheader area.
+            * @theme header
+            */
+            #templatePreheader{
+                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ border-bottom:1px solid #CCCCCC;
+            }
+
+            /**
+            * @tab Header
+            * @section preheader text
+            * @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+            */
+            .preheaderContent{
+                /*@editable*/ color:#808080;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:10px;
+                /*@editable*/ line-height:125%;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Header
+            * @section preheader link
+            * @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+            */
+            .preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
+                /*@editable*/ color:#606060;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ text-decoration:underline;
+            }
+
+            /**
+            * @tab Header
+            * @section header style
+            * @tip Set the background color and borders for your email's header area.
+            * @theme header
+            */
+            #templateHeader{
+                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ border-top:1px solid #FFFFFF;
+                /*@editable*/ border-bottom:1px solid #CCCCCC;
+            }
+
+            /**
+            * @tab Header
+            * @section header text
+            * @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+            */
+            .headerContent{
+                /*@editable*/ color:#505050;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:20px;
+                /*@editable*/ font-weight:bold;
+                /*@editable*/ line-height:100%;
+                /*@editable*/ padding-top:20px;
+                /*@editable*/ padding-right:20px;
+                /*@editable*/ padding-bottom:20px;
+                /*@editable*/ padding-left:20px;
+                /*@editable*/ text-align:left;
+                /*@editable*/ vertical-align:middle;
+            }
+
+            .headerLogo {
+            
+            }
+            
+            .headerSummary {
+                /*@editable*/ text-align: right;
+            }
+            
+            /**
+            * @tab Header
+            * @section header link
+            * @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+            */
+            .headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+                /*@editable*/ color:#EB4102;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ text-decoration:underline;
+            }
+            
+            .PositionImage {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .PositionPrice, .SumPosPrice, .PaymentsPrice {
+                /*@editable*/ vertical-align: top;
+                /*@editable*/ text-align: right;
+                /*@editable*/ width: 10em;
+            }
+            
+            .SumPosDescription, .PaymentsDescription {
+                /*@editable*/ text-align: right;
+            }
+
+            .PositionProperties {
+                /*@editable*/ font-size: 80%;
+                border-collapse: collapse !important;
+                border-spacing: 50px 50px !important;
+            }
+
+            .PositionProperties .spacer div { 
+                /*@editable*/ width: 1em;
+            }            
+
+            .PositionProperties .name { 
+                /*@editable*/ font-style: italic;
+                /*@editable*/ vertical-align: top;
+            }
+
+            .PositionProperties .content { 
+                /*@editable*/ width: 100%;
+            }
+
+            .PositionChildren {
+                /*@editable*/ font-size: 80%;
+            }
+
+            .PositionChildren .spacer div { 
+                /*@editable*/ width: 1em;
+            }
+
+            .PositionChildren .bullet { 
+                /*@editable*/ vertical-align: top;
+            }
+
+            .PositionChildren .content { 
+                /*@editable*/ width: 100%;
+                margin-left: 1em;
+            }
+                
+            .PositionImage img {
+                padding: 5px;
+            }
+            
+            #headerImage{
+                height:auto;
+                max-width:600px;
+            }
+
+            /* ========== Body Styles ========== */
+
+            /**
+            * @tab Body
+            * @section body style
+            * @tip Set the background color and borders for your email's body area.
+            */
+            #templateBody{
+                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ border-top:1px solid #FFFFFF;
+                /*@editable*/ border-bottom:1px solid #CCCCCC;
+            }
+
+            /**
+            * @tab Body
+            * @section body text
+            * @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+            * @theme main
+            */
+            .bodyContent{
+                /*@editable*/ color:#505050;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:14px;
+                /*@editable*/ line-height:150%;
+                padding-top:20px;
+                padding-right:20px;
+                padding-bottom:20px;
+                padding-left:20px;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Body
+            * @section body link
+            * @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+            */
+            .bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+                /*@editable*/ color:#EB4102;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ text-decoration:underline;
+            }
+
+            .bodyContent img{
+                display:inline;
+                height:auto;
+                max-width:560px;
+            }
+
+            /* ========== Footer Styles ========== */
+
+            /**
+            * @tab Footer
+            * @section footer style
+            * @tip Set the background color and borders for your email's footer area.
+            * @theme footer
+            */
+            #templateFooter{
+                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ border-top:1px solid #FFFFFF;
+            }
+
+            /**
+            * @tab Footer
+            * @section footer text
+            * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+            * @theme footer
+            */
+            .footerContent{
+                /*@editable*/ color:#808080;
+                /*@editable*/ font-family:Helvetica;
+                /*@editable*/ font-size:10px;
+                /*@editable*/ line-height:150%;
+                padding-top:20px;
+                padding-right:20px;
+                padding-bottom:20px;
+                padding-left:20px;
+                /*@editable*/ text-align:left;
+            }
+
+            /**
+            * @tab Footer
+            * @section footer link
+            * @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+            */
+            .footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+                /*@editable*/ color:#606060;
+                /*@editable*/ font-weight:normal;
+                /*@editable*/ text-decoration:underline;
+            }
+
+            /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+
+            @media only screen and (max-width: 480px){
+                /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+                body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+                /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+                #bodyCell{padding:10px !important;}
+
+                /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+
+                /* ======== Page Styles ======== */
+
+                /**
+                * @tab Mobile Styles
+                * @section template width
+                * @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+                */
+                #templateContainer{
+                    max-width:600px !important;
+                    /*@editable*/ width:100% !important;
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section heading 1
+                * @tip Make the first-level headings larger in size for better readability on small screens.
+                */
+                h1{
+                    /*@editable*/ font-size:24px !important;
+                    /*@editable*/ line-height:100% !important;                  
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section heading 2
+                * @tip Make the second-level headings larger in size for better readability on small screens.
+                */
+                h2{
+                    /*@editable*/ font-size:20px !important;
+                    /*@editable*/ line-height:100% !important;
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section heading 3
+                * @tip Make the third-level headings larger in size for better readability on small screens.
+                */
+                h3{
+                    /*@editable*/ font-size:18px !important;
+                    /*@editable*/ line-height:100% !important;
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section heading 4
+                * @tip Make the fourth-level headings larger in size for better readability on small screens.
+                */
+                h4{
+                    /*@editable*/ font-size:16px !important;
+                    /*@editable*/ line-height:100% !important;
+                }
+
+                /* ======== Header Styles ======== */
+
+                #templatePreheader{display:none !important;} /* Hide the template preheader to save space */
+
+                /**
+                * @tab Mobile Styles
+                * @section header image
+                * @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+                */
+                #headerImage{
+                    height:auto !important;
+                    /*@editable*/ max-width:600px !important;
+                    /*@editable*/ width:100% !important;
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section header text
+                * @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+                */
+                .headerContent{
+                    /*@editable*/ font-size:20px !important;
+                    /*@editable*/ line-height:125% !important;
+                }
+
+                /**
+                * @tab Mobile Styles
+                * @section header text
+                * @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+                */
+                .headerContentInfo{
+                    /*@editable*/ font-size:20px !important;
+                    /*@editable*/ line-height:125% !important;
+                    text-align: right;
+                }
+                /* ======== Body Styles ======== */
+
+                /**
+                * @tab Mobile Styles
+                * @section body text
+                * @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+                */
+                .bodyContent{
+                    /*@editable*/ font-size:18px !important;
+                    /*@editable*/ line-height:125% !important;
+                }
+
+                /* ======== Footer Styles ======== */
+
+                /**
+                * @tab Mobile Styles
+                * @section footer text
+                * @tip Make the body content text larger in size for better readability on small screens.
+                */
+                .footerContent{
+                    /*@editable*/ font-size:14px !important;
+                    /*@editable*/ line-height:115% !important;
+                }
+
+                .footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0"&gt;
+        &lt;center&gt;
+            &lt;table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable"&gt;
+                &lt;tr&gt;
+                    &lt;td align="center" valign="top" id="bodyCell"&gt;
+                        &lt;!-- BEGIN TEMPLATE // --&gt;
+                        &lt;table border="0" cellpadding="0" cellspacing="0" id="templateContainer"&gt;
+                            &lt;tr&gt;
+                                &lt;td align="center" valign="top"&gt;
+                                    &lt;!-- BEGIN PREHEADER // --&gt;
+                                    &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader"&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;"&gt;
+                                                Bestellung über "{{ Vorgang.Positionen[0].Bezeichnung | Truncate: 20 }}"{% case Vorgang.Positionen.Size %}{% when 0%}{% when 1 %}{% when 2 %} und einem weiteren Artikel{% else %} und {{ Vorgang.Positionen.Size | Minus: 1 }} weiteren Artikeln{% endcase%} von {{ Vorgang.Rechnungsadresse.Firma }}
+                                            &lt;/td&gt;                                            
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                    &lt;!-- // END PREHEADER --&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="center" valign="top"&gt;
+                                    &lt;!-- BEGIN HEADER // --&gt;
+                                    &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader"&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="headerContent"&gt;
+                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%"&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="headerLogo"&gt;
+                                                            {% if FirmenLogoUrl != empty -%}
+                                                            &lt;img src="{{ FirmenLogoUrl }}" style="max-width:600px;" id="headerImage" alt="Firmenlogo"/&gt;
+                                                            {% endif -%}
+                                                        &lt;/td&gt;
+                                                        &lt;td valign="top" class="headerSummary"&gt;
+                                                            &lt;h1&gt;Bestellung&lt;/h1&gt;
+                                                            Unsere Bestellnummer: &lt;em&gt;{{ Vorgang.Belegnummer }}&lt;/em&gt;&lt;br /&gt;
+                                                            {% if Vorgang.Fremdbelegnummer != empty -%}
+                                                            Ihre Referenznummer: &lt;em&gt;{{ Vorgang.Fremdbelegnummer }}&lt;/em&gt;&lt;br /&gt;
+                                                            {% endif -%}
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                &lt;/table&gt;                                                
+                                            &lt;/td&gt;
+                                            &lt;td valign="top" class="headerContentInfo"&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                    &lt;!-- // END HEADER --&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="center" valign="top"&gt;
+                                    &lt;!-- BEGIN BODY // --&gt;
+                                    &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody"&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                                &lt;!-- BEGIN BODYTEXT // --&gt;
+                                                {% if Vorgang.Rechnungsadresse.Anrede != empty -%}
+                                                    {% case Vorgang.Rechnungsadresse.Anrede -%}
+                                                        {% when 'Herr' -%}
+                                                            Sehr geehrter Herr\
+                                                        {% when 'Frau' -%}
+                                                            Sehr geehrte Frau\
+                                                        {% else -%}
+                                                            Sehr geehrte(r) {{ Vorgang.Rechnungsadresse.Anrede }}\
+                                                    {% endcase -%}
+                                                    {% if Vorgang.Rechnungsadresse.Titel != empty %} {{ Vorgang.Rechnungsadresse.Titel }}{% endif %} {{ Vorgang.Rechnungsadresse.Nachname }},
+                                                {% else -%} 
+                                                    Sehr geehrte Damen und Herren,
+                                                {% endif -%}&lt;br /&gt;
+                                                &lt;br /&gt;
+                                                hiermit bestellen wir bei Ihnen folgende Positionen.&lt;br /&gt;
+                                                Sollten Sie noch Fragen haben, stehen wir Ihnen gerne zur Verfügung.
+                                                &lt;!-- // END BODYTEXT --&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                                &lt;!-- BEGIN SUBHEADER // --&gt;
+                                                &lt;h2&gt;Einzelheiten zur Bestellung&lt;/h2&gt;
+                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="bodyData"&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="bodyDataLeft" width="50%"&gt;
+                                                            &lt;h3&gt;Rechnungsadresse:&lt;/h3&gt;
+                                                            {% if Vorgang.Rechnungsadresse.Firma != empty %}{{ Vorgang.Rechnungsadresse.Firma }}&lt;br /&gt;{% endif %}
+                                                            {% if Vorgang.Rechnungsadresse.Firmenzusatz != empty %}{{ Vorgang.Rechnungsadresse.Firmenzusatz }}&lt;br /&gt;{% endif %}
+                                                            {% if Vorgang.Rechnungsadresse.Anrede != empty %}{{ Vorgang.Rechnungsadresse.Anrede }} {% endif %}{% if Vorgang.Rechnungsadresse.Titel != empty %}{{ Vorgang.Rechnungsadresse.Titel }}{% else %}{{ Vorgang.Rechnungsadresse.Vorname }}{% endif %} {%if Vorgang.Rechnungsadresse.Nachname != empty %}{{ Vorgang.Rechnungsadresse.Nachname }}{% endif %}&lt;br /&gt;
+                                                            {% if Vorgang.Rechnungsadresse.Adresszusatz != empty %}{{ Vorgang.Rechnungsadresse.Adresszusatz }}&lt;br /&gt;{% endif %}
+                                                            {{ Vorgang.Rechnungsadresse.Straße }}&lt;br /&gt;
+                                                            {{ Vorgang.Rechnungsadresse.PLZ }} {{ Vorgang.Rechnungsadresse.Ort }}&lt;br /&gt;
+                                                            {% if Vorgang.Rechnungsadresse.Landname != empty %}{{ Vorgang.Rechnungsadresse.Landname }}&lt;br /&gt;{% endif %}
+                                                        &lt;/td&gt;
+                                                        &lt;td valign="top" class="bodyDataRight" width="50%"&gt;
+                                                            {% if Vorgang.AbweichendeAdressen == true or NurAbweichendeLieferadresse == false -%}
+                                                            &lt;h3&gt;Lieferung an:&lt;/h3&gt;
+                                                            {% if Vorgang.Lieferadresse.Firma != empty %}{{ Vorgang.Lieferadresse.Firma }}&lt;br /&gt;{% endif %}
+                                                            {% if Vorgang.Lieferadresse.Firmenzusatz != empty %}{{ Vorgang.Lieferadresse.Firmenzusatz }}&lt;br /&gt;{% endif %}
+                                                            {% if Vorgang.Lieferadresse.Anrede != empty %}{{ Vorgang.Lieferadresse.Anrede }} {% endif %}{% if Vorgang.Lieferadresse.Titel != empty %}{{ Vorgang.Lieferadresse.Titel }}{% else %}{{ Vorgang.Lieferadresse.Vorname }}{% endif %} {%if Vorgang.Lieferadresse.Nachname != empty %}{{ Vorgang.Lieferadresse.Nachname }}{% endif %}&lt;br /&gt;
+                                                            {% if Vorgang.Lieferadresse.Adresszusatz != empty %}{{ Vorgang.Lieferadresse.Adresszusatz }}&lt;br /&gt;{% endif %}
+                                                            {{ Vorgang.Lieferadresse.Straße }}&lt;br /&gt;
+                                                            {{ Vorgang.Lieferadresse.PLZ }} {{ Vorgang.Lieferadresse.Ort }}&lt;br /&gt;
+                                                            {% if Vorgang.Lieferadresse.Landname != empty %}{{ Vorgang.Lieferadresse.Landname }}&lt;br /&gt;{% endif %}
+                                                            {% endif -%}
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;                                               
+                                                &lt;/table&gt;
+                                                &lt;!-- END SUBHEADER // --&gt;                                               
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                                &lt;!-- BEGIN POSITIONS // --&gt;
+                                                    &lt;h3&gt;Positionen&lt;/h3&gt;
+                                                    &lt;hr /&gt;
+                                                    &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="bodyPositions"&gt;
+                                                    &lt;thead&gt;
+                                                        &lt;tr&gt;
+                                                            &lt;th width="100%"&gt;&lt;/th&gt;
+                                                            &lt;th&gt;&lt;/th&gt;
+                                                        &lt;/tr&gt;
+                                                    &lt;/thead&gt;
+                                                    &lt;tbody&gt;
+                                                        {% for position in Vorgang.Positionen -%}
+                                                        {% if position.MwStSatz != 0 or position.NettopreisGesamt &gt;= 0 -%}
+                                                        &lt;tr&gt;       
+                                                            &lt;td class="PositionDescription"&gt;                                                                
+                                                                {% if position.VPEEinheit != empty %}{{ position.Menge | DividedBy: position.VPEMenge | Nummer: 'N4' }}{% else %}{% if position.Artikel.IstTeilbar %}{{ position.Menge | Nummer : 'N2' }}{% else %}{{ position.Menge }}{% endif %}{% endif %} {% if position.VPEEinheit != empty %}{{ Position.VPEEinheit }}{% elsif position.Einheit != empty %}{{ Position.Einheit }}{% else -%}x{% endif %}
+                                                                {{ position.Bezeichnung }}&lt;br/&gt;
+                                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="PositionProperties"&gt;
+                                                                &lt;tbody&gt;                                                                    
+                                                                    &lt;tr class="Artikelnummer"&gt;
+                                                                        &lt;td class="spacer"&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;/td&gt;
+                                                                        &lt;td class="name"&gt;
+                                                                            Artikelnummer:
+                                                                        &lt;/td&gt;&lt;td class="content"&gt;
+                                                                            {{ position.Lieferantenartikelnummer }}
+                                                                        &lt;/td&gt;
+                                                                    &lt;/tr&gt;                                                                    
+                                                                &lt;/tbody&gt;
+                                                                &lt;/table&gt;
+                                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="PositionProperties"&gt;
+                                                                &lt;tbody&gt;                                                                    
+                                                                    &lt;tr class="Einzelpreis"&gt;
+                                                                        &lt;td class="spacer"&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;/td&gt;
+                                                                        &lt;td class="name"&gt;
+                                                                            Einzelpreis:
+                                                                        &lt;/td&gt;&lt;td class="content"&gt;
+                                                                            {{ position.NettopreisEinzel | Nummer : 'N' | Replace: ' ','&amp;nbsp;' }} {{ Vorgang.Währung }}
+                                                                        &lt;/td&gt;
+                                                                    &lt;/tr&gt;                                                                    
+                                                                &lt;/tbody&gt;
+                                                                &lt;/table&gt;
+                                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="PositionProperties"&gt;
+                                                                &lt;tbody&gt;                                                                    
+                                                                    &lt;tr class="UStSatz"&gt;
+                                                                        &lt;td class="spacer"&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;/td&gt;
+                                                                        &lt;td class="name"&gt;
+                                                                            USt:
+                                                                        &lt;/td&gt;&lt;td class="content"&gt;
+                                                                            {{ position.MwStSatz | Nummer : 'N' | Replace: ' ','&amp;nbsp;' }}%
+                                                                        &lt;/td&gt;
+                                                                    &lt;/tr&gt;                                                                    
+                                                                &lt;/tbody&gt;
+                                                                &lt;/table&gt;
+                                                                {% if position.Hinweis != empty -%}
+                                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="PositionProperties"&gt;
+                                                                &lt;tbody&gt;                                                                    
+                                                                    &lt;tr class="Hinweis"&gt;
+                                                                        &lt;td class="spacer"&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;/td&gt;
+                                                                        &lt;td class="name"&gt;
+                                                                            Hinweis:
+                                                                        &lt;/td&gt;&lt;td class="content"&gt;
+                                                                            {{ position.Hinweis | NewlineToBr }}
+                                                                        &lt;/td&gt;
+                                                                    &lt;/tr&gt;                                                                    
+                                                                &lt;/tbody&gt;
+                                                                &lt;/table&gt;
+                                                                {% endif -%}
+                                                            &lt;/td&gt;
+                                                            &lt;td class="PositionPrice"&gt;
+                                                                {{ position.NettopreisGesamt | Nummer : 'N' | Replace: ' ','&amp;nbsp;' }}{{ Vorgang.Währung }}
+                                                            &lt;/td&gt;
+                                                        &lt;/tr&gt;
+                                                        {% endif -%}
+                                                        {% endfor -%}
+                                                &lt;/tbody&gt;
+                                                &lt;/table&gt;
+                                                &lt;!-- END POSITIONS // --&gt;
+                                                &lt;!-- BEGIN SUMMEN // --&gt;
+                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" class="Sum"&gt;
+                                                &lt;tbody&gt;
+                                                    {% for summe in Vorgang.Summen -%}
+                                                    {% if summe.Brutto &gt; 0 or Vorgang.Summen.size == 1 -%}
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="SumPosDescription"&gt;
+                                                                Summe Netto ({{summe.UStSatz | Nummer : 'N' }}%):
+                                                        &lt;/td&gt;&lt;td valign="top" class="SumPosPrice"&gt;
+                                                            {{ summe.Netto | Nummer : 'N' | Replace: ' ','&amp;nbsp;' }} {{ Vorgang.Währung }}
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    {% endif -%}
+                                                    {% endfor -%}
+                                                    {% for summe in Vorgang.Summen %}
+                                                    {% if summe.Brutto &gt; 0 or Vorgang.Summen.size == 1 -%}
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="SumPosDescription"&gt;
+                                                                zzgl. USt. ({{summe.UStSatz | Nummer : 'N' }}%):
+                                                        &lt;/td&gt;&lt;td valign="top" class="SumPosPrice"&gt;
+                                                            {{ summe.USt | Nummer:'N' | Replace: ' ','&amp;nbsp;' }} {{ Vorgang.Währung }}
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                    {% for position in Vorgang.Positionen -%}
+                                                        {% if position.MwStSatz == 0 and position.NettopreisGesamt &lt; 0 -%}
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="SumPosDescription"&gt;
+                                                                abzgl. Rabatt.:
+                                                        &lt;/td&gt;&lt;td valign="top" class="SumPosPrice"&gt;
+                                                            {{ position.NettopreisGesamt | Nummer : 'N' | Replace: ' ','&amp;nbsp;'  }} {{ Vorgang.Währung }}
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;   
+                                                        {% endif -%}
+                                                    {% endfor -%}
+                                                    &lt;tr&gt;
+                                                        &lt;td valign="top" class="SumPosDescription"&gt;
+                                                            &lt;em&gt;Gesamtsumme:&lt;/em&gt;
+                                                        &lt;/td&gt;&lt;td valign="top" class="SumPosPrice" style="border-top: 1px solid black"&gt;
+                                                            &lt;em&gt;{{ Vorgang.Positionen.BruttopreisGesamt | Nummer : 'N'| Replace: ' ','&amp;nbsp;'  }} {{ Vorgang.Währung }}&lt;/em&gt;
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                &lt;/tbody&gt;
+                                                &lt;/table&gt;
+                                                &lt;!-- END SUMMEN // --&gt;                                              
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        {% if Vorgang.DruckAnmerkung != empty -%}
+                                        &lt;tr&gt;
+                                            &lt;!-- BEGIN ANMERKUNGEN // --&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                                &lt;h3&gt;Anmerkungen&lt;/h3&gt;                                                                                                
+                                                {{ Vorgang.DruckAnmerkung }}
+                                            &lt;/td&gt;       
+                                            &lt;!-- END ANMERKUNGEN // --&gt;
+                                        &lt;/tr&gt;
+                                        {% endif -%}
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="bodyContent"&gt;
+                                            Mit freundlichen Grüßen&lt;br /&gt;&lt;br /&gt;
+                                            {{ Vorgang.Benutzer.Name }}&lt;br /&gt;
+                                            {{ Vorgang.Firma.Name }}
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                    &lt;!-- // END BODY --&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="center" valign="top"&gt;
+                                    &lt;!-- BEGIN FOOTER // --&gt;
+                                    &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter"&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="footerContent"&gt;
+                                                {% if Vorgang.Firma.Homepage != empty %}Besuchen Sie uns auf unserer Homepage unter &lt;a href="{{Vorgang.Firma.Homepage}}"&gt;{{Vorgang.Firma.Homepage}}&lt;/a&gt;.&lt;br/&gt;{% endif %}
+                                                {% if TwitterProfileUrl != empty -%}
+                                                &lt;a href="{{ TwitterProfileUrl }}"&gt;Folgen Sie uns auf Twitter&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                {% endif -%}
+                                                {% if FacebookProfileUrl != empty -%}
+                                                &lt;a href="{{ FacebookProfileUrl }}"&gt;Besuchen Sie uns auf Facebook&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                {% endif -%}
+                                                {% if GoogleProfileUrl != empty -%}
+                                                &lt;a href="{{ GoogleProfileUrl }}"&gt;Besuchen Sie uns auf Google+&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                {% endif -%}
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td valign="top" class="footerContent" style="padding-top:0;"&gt;
+                                                &lt;table border="0" cellpadding="0" cellspacing="0" width="100%" id="footerInfo"&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td valign="top" class="footerContent" width="33%"&gt;
+                                                        &lt;em&gt;Bankverbindung&lt;/em&gt;&lt;br/&gt;
+                                                        {{ Vorgang.Firma.Bankverbindung.Kontoinhaber  }}&lt;br /&gt;
+                                                        Bank: {{ Vorgang.Firma.Bankverbindung.Bank }}&lt;br /&gt;
+                                                        BIC: {{ Vorgang.Firma.Bankverbindung.BIC  }}&lt;br /&gt;
+                                                        IBAN: {{ Vorgang.Firma.Bankverbindung.IBAN  }}&lt;br /&gt;
+                                                    &lt;/td&gt;
+                                                    &lt;td valign="top" class="footerContent" width="33%"&gt;
+                                                        &lt;em&gt;Anschrift:&lt;/em&gt;&lt;br /&gt;
+                                                        {{ Vorgang.Firma.Name }}&lt;br /&gt;
+                                                        {% if Vorgang.Firma.Unternehmer != empty %}{{ Vorgang.Firma.Unternehmer }}&lt;br/&gt;{% endif %}
+                                                        {{ Vorgang.Firma.Straße }}&lt;br /&gt;
+                                                        {{ Vorgang.Firma.PLZ }} {{ Vorgang.Firma.Ort }}&lt;br /&gt;
+                                                        {% if Vorgang.Firma.Landname != empty %}{{ Vorgang.Firma.Landname }}&lt;br /&gt;{% endif %}
+                                                        Tel: {{ Vorgang.Firma.Telefon }}&lt;br /&gt;
+                                                        {% if Vorgang.Firma.Fax != empty %}Fax: {{ Vorgang.Firma.Fax }}&lt;br /&gt;{% endif %}
+                                                    &lt;/td&gt;
+                                                    &lt;td valign="top" class="footerContent" width="33%"&gt;
+                                                        &lt;br /&gt;
+                                                        {% if Vorgang.Firma.UstID != empty %}USt-IdNr.: {{ Vorgang.Firma.UstID }}&lt;br /&gt;{% endif %}
+                                                        {% if Vorgang.Firma.Steuernummer != empty %}St.Nr.: {{ Vorgang.Firma.Steuernummer }}&lt;br /&gt;{% endif %}
+                                                        {% if Vorgang.Firma.GläubigerID != empty %}Gläubiger-IdNr.: {{ Vorgang.Firma.GläubigerID }}&lt;br /&gt;{% endif %} 
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;/table&gt;                                                
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                    &lt;!-- // END FOOTER --&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                        &lt;!-- // END TEMPLATE --&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/center&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</html><plain>{% comment -%}
+JTL-Software Template für E-Mail "Lieferantenbestellung (Text-Format)", Stand: 20140404
+--------------------------------------------------------------------------------------------------------------
+Sie können das Template über folgende Variablen steuern:
+--------------------------------------------------------------------------------------------------------------
+{% endcomment -%}
+{% assign NurAbweichendeLieferadresse = false %}{% comment %}Gibt an, ob die Lieferadresse nur ausgegeben wird, wenn diese von der Rechnungsadresse abweicht.{% endcomment -%}
+{% comment -%}
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+Unterhalb dieses Bereiches sollten nur erfahrene Anwender Änderungen vornehmen. Bei Fragen
+steht Ihnen unser Supportforum unter http://forum.jtl-software.de/formulardesigner-editor-open-beta-phase/
+zur Verfügung. Gerne helfen Ihnen auch unsere Servicepartner weiter. Einen qualifizierten Service-Partner
+finden Sie unter http://www.jtl-software.de/Servicepartner.
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+{% endcomment -%}
+{{ Vorgang.Firma.Name }} Bestellung #{{ Vorgang.Belegnummer }}
+_____________________________________________________________________________________
+
+{% if Vorgang.Rechnungsadresse.Anrede != empty -%}
+{% case Vorgang.Rechnungsadresse.Anrede -%}
+{% when 'Herr' -%}
+Sehr geehrter Herr\
+{% when 'Frau' -%}
+Sehr geehrte Frau\
+{% else -%}
+Sehr geehrte(r) {{ Vorgang.Rechnungsadresse.Anrede }}\
+{% endcase -%}
+{% if Vorgang.Rechnungsadresse.Titel != empty %} {{ Vorgang.Rechnungsadresse.Titel }}{% endif %} {{ Vorgang.Rechnungsadresse.Nachname }},
+{% else -%} 
+Sehr geehrte Damen und Herren,
+{% endif -%}
+
+hiermit bestellen wir bei Ihnen folgende Positionen.
+Sollten Sie noch Fragen haben, stehen wir Ihnen gerne zur Verfügung.
+
+Einzelheiten zur Bestellung
+---------------------------
+                                                
+Rechnungsadresse:
+{% if Vorgang.Rechnungsadresse.Firma != empty -%}
+  {{ Vorgang.Rechnungsadresse.Firma }}
+{% endif -%}
+{% if Vorgang.Rechnungsadresse.Firmenzusatz != empty -%}
+  {{ Vorgang.Rechnungsadresse.Firmenzusatz }}
+{% endif -%}
+  {% if Vorgang.Rechnungsadresse.Anrede != empty -%}
+{{ Vorgang.Rechnungsadresse.Anrede }} \
+{% endif -%}
+{% if Vorgang.Rechnungsadresse.Titel != empty -%}
+{{ Vorgang.Rechnungsadresse.Titel }} \
+{% else -%}
+{{ Vorgang.Rechnungsadresse.Vorname }} \
+{% endif -%}
+{% if Vorgang.Rechnungsadresse.Nachname != empty -%}
+{{ Vorgang.Rechnungsadresse.Nachname }} \
+{% endif %}
+{% if Vorgang.Rechnungsadresse.Adresszusatz != empty -%}
+{{ Vorgang.Rechnungsadresse.Adresszusatz }}
+{% endif -%}
+  {{ Vorgang.Rechnungsadresse.Straße }}
+  {{ Vorgang.Rechnungsadresse.PLZ }} {{ Vorgang.Rechnungsadresse.Ort }}
+{% if Vorgang.Rechnungsadresse.Landname != empty -%}
+  {{ Vorgang.Rechnungsadresse.Landname }}
+{% endif -%}
+{% if Vorgang.AbweichendeAdressen == true or NurAbweichendeLieferadresse == false -%}
+
+Lieferung an:
+{% if Vorgang.Lieferadresse.Firma != empty -%}
+  {{ Vorgang.Lieferadresse.Firma }}
+{% endif -%}
+{% if Vorgang.Lieferadresse.Firmenzusatz != empty -%}
+  {{ Vorgang.Lieferadresse.Firmenzusatz }}
+{% endif -%}
+  {% if Vorgang.Lieferadresse.Anrede != empty -%}
+{{ Vorgang.Lieferadresse.Anrede }} \
+{% endif -%}
+{% if Vorgang.Lieferadresse.Titel != empty -%}
+{{ Vorgang.Lieferadresse.Titel }} \
+{% else -%}
+{{ Vorgang.Lieferadresse.Vorname }} \
+{% endif -%}
+{% if Vorgang.Lieferadresse.Nachname != empty -%}
+{{ Vorgang.Lieferadresse.Nachname }}\
+{% endif %}
+{% if Vorgang.Lieferadresse.Adresszusatz != empty -%}
+{{ Vorgang.Lieferadresse.Adresszusatz }}
+{% endif -%}
+  {{ Vorgang.Lieferadresse.Straße }}
+  {{ Vorgang.Lieferadresse.PLZ }} {{ Vorgang.Lieferadresse.Ort }}
+{% if Vorgang.Lieferadresse.Landname != empty -%}
+  {{ Vorgang.Lieferadresse.Landname }}
+{% endif -%}
+{% endif -%}
+
+Positionen:
+{% for position in Vorgang.Positionen -%}
+{% if position.MwStSatz != 0 or position.NettopreisGesamt &gt;= 0 -%}
+{% capture menge -%}
+{% if position.VPEEinheit != empty -%}
+{{ position.Menge | DividedBy: position.VPEMenge | Nummer: 'N4' }}\
+{% else -%}
+{% if position.Artikel.IstTeilbar -%}
+{{ position.Menge | Nummer : 'N2' }}\
+{% else -%}
+{{ position.Menge }}\
+{% endif -%}
+{% endif -%}
+{% if position.VPEEinheit != empty -%}
+ {{ Position.VPEEinheit }}\
+{% elsif position.Einheit != empty -%}
+ {{ Position.Einheit }}\
+{% else -%}
+x\
+{% endif %} {{ position.Lieferantenartikelbezeichnung }}{% endcapture -%}
+  {{ menge | Truncate: 61 | Align: -61 }}{{Tabulator}}{{ position.NettopreisGesamt | Nummer: 'C2' | Align: 15 }}
+{% capture info %}Art.Nr.: {{ position.Lieferantenartikelnummer }}, EZ-Preis: {% if position.VPEEinheit != empty %}{{ position.NettopreisEinzel | Times: position.VPEMenge | Nummer: 'C2' }}{% else %}{{ position.NettopreisEinzel | Nummer : 'C2' }}{% endif %}, USt-Satz: {{ position.MwStSatz | Nummber : 'N'}}% {% endcapture -%}
+    {{ info | Truncate: 60 }}
+{% endif -%}
+{% endfor -%}
+  {{ ' ' | Align: 60 }}{{Tabulator}}---------------
+{% for summe in Vorgang.Summen -%}
+{% if summe.Brutto &gt; 0 or Vorgang.Summen.size == 1 -%}
+{% capture desc %}Summe Netto ({{summe.UStSatz | Nummer : 'N' }}%):{% endcapture -%}
+  {{ desc | Truncate: 60 | Align: 60 }}{{Tabulator}}{{ summe.Netto | Nummer : 'C2' | Align: 15 }}
+{% endif -%}
+{% endfor -%}
+{% for summe in Vorgang.Summen -%}
+{% if summe.Brutto &gt; 0 or Vorgang.Summen.size == 1 -%}
+{% capture desc %}zzgl. USt. ({{summe.UStSatz | Nummer : 'N' }}%):{% endcapture -%}
+  {{ desc | Truncate: 60 | Align: 60 }}{{Tabulator}}{{ summe.USt | Nummer:'C2' | Align: 15 }}
+{% endif -%}
+{% endfor -%}
+{% for position in Vorgang.Positionen -%}
+{% if position.MwStSatz == 0 and position.NettopreisGesamt &lt; 0 -%}
+  {{ 'abzgl. Rabatt.:' | Trunace: 60 | Align: 60 }}{{Tabulator}}{{ position.NettopreisGesamt | Nummer:'C2' | Align: 15 }}
+{% endif -%}
+{% endfor -%}
+  {{ ' ' | Align: 60 }}{{Tabulator}}===============
+  {{ 'Gesamtsumme:' | Truncate: 60 | Align: 60 }}{{ Tabulator }}{{ Vorgang.Positionen.BruttopreisGesamt | Nummer : 'C2' | Align: 15 }}
+
+{% if Vorgang.DruckAnmerkung != empty -%}
+Anmerkungen:
+  {{ Vorgang.DruckAnmerkung }}&lt;br /&gt;
+  
+{% endif -%}  
+
+Mit freundlichen Grüßen
+
+{{ Vorgang.Benutzer.Name }}
+{{ Vorgang.Firma.Name }}
+  
+---
+{% if Vorgang.Firma.Homepage != empty %}
+Besuchen Sie auf unserer Homepage unter {{Vorgang.Firma.Homepage}}.
+
+{% endif -%}
+{{ Vorgang.Firma.Name }}
+{% if Vorgang.Firma.Unternehmer != empty -%}
+{{ Vorgang.Firma.Unternehmer }}
+{% endif -%}
+{{ Vorgang.Firma.Straße }}
+{{ Vorgang.Firma.PLZ }} {{ Vorgang.Firma.Ort }}
+{% if Vorgang.Firma.Landname != empty -%}
+{{ Vorgang.Firma.Landname }}
+{% endif -%}
+Tel: {{ Vorgang.Firma.Telefon }}
+{% if Vorgang.Firma.Fax != empty -%}
+Fax: {{ Vorgang.Firma.Fax }}
+{% endif -%}             
+{% if Vorgang.Firma.UstID != empty -%}
+USt-IdNr.: {{ Vorgang.Firma.UstID }}
+{% endif -%}
+{% if Vorgang.Firma.Steuernummer != empty -%}
+St.Nr.: {{ Vorgang.Firma.Steuernummer }}
+{% endif -%}
+{% if Vorgang.Firma.GläubigerID != empty -%}
+Gläubiger-IdNr.: {{ Vorgang.Firma.GläubigerID }}
+{% endif %}   
+
+Bankverbindung:
+{{ Vorgang.Firma.Bankverbindung.Kontoinhaber  }}
+Bank: {{ Vorgang.Firma.Bankverbindung.Bank }}
+BIC: {{ Vorgang.Firma.Bankverbindung.BIC }}
+IBAN: {{ Vorgang.Firma.Bankverbindung.IBAN }}</plain></body><subject>Bestellung {{ Vorgang.EigeneBestellnummer}} über "{{ Vorgang.Positionen[0].Bezeichnung | Truncate: 20 }}"{% case Vorgang.Positionen.Size %}{% when 0%}{% when 1 %}{% when 2 %} und einem weiteren Artikel{% else %} und {{ Vorgang.Positionen.Size | Minus: 1 }} weiteren Artikeln{% endcase%} von {{ Vorgang.Rechnungsadresse.Firma }}</subject></template>

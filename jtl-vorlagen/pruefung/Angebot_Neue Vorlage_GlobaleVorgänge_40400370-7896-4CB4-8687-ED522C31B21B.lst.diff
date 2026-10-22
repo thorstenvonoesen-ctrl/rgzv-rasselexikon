@@ -1,0 +1,86 @@
+--- original/40400370-7896-4CB4-8687-ED522C31B21B.lst
++++ output/40400370-7896-4CB4-8687-ED522C31B21B.lst
+@@ -78,10 +78,10 @@
+  UserLocked=False
+  WrapBefore=False
+  ExportAsPicture=False
+- Position/Left=-1000
++ Position/Left=20000
+  Position/Top=#LL.Device.Page.Size.cy - @FooterHeight
+- Position/Width=#Ceil(LL.Device.Page.Size.cx) + 2
+- Position/Height=#@FooterHeight + 1
++ Position/Width=#LL.Device.Page.Size.cx - @BorderLeft - @BorderRight
++ Position/Height=#@FooterHeight - 5
+  Direction=0
+  PDFLevel=0
+  PDFText=
+@@ -90,7 +90,7 @@
+  IssueCondition=True
+  Link.URL=
+  Animation=""
+- bFrame=1
++ bFrame=0
+  FgColor=LL.Scheme.Color1
+  Width=10
+  LineType=0
+@@ -170,11 +170,11 @@
+ 	Spacing.Paragraph=2
+ 	Spacing.Line=0
+ 	OutputFormatter=
+-	Condition=Not IsNullOrEmpty(Report.Company.ValueAddedTaxId)
+-	[ConditionalFormatter]
+-	 {
+-	 }
+-	Text="Ust-IdNr: " +Report.Company.ValueAddedTaxId
++	Condition=True
++	[ConditionalFormatter]
++	 {
++	 }
++	Text="Steuerfrei gemäß § 19 Abs. 1 UStG (Kleinunternehmer)."
+ 	Tab=0
+ 	TabAlign=0
+ 	}
+@@ -1157,7 +1157,7 @@
+  Position/Left=#LL.Device.Page.Size.cx - @BorderRight - 60
+  Position/Top=10000
+  Position/Width=60000
+- Position/Height=22000
++ Position/Height=30000
+  Direction=0
+  Frame/Layout=0
+  Frame/Left/Spacing=0
+@@ -1240,23 +1240,23 @@
+    {
+    [Foreground]
+ 	{
+-	Color=(97,80,81)
+-	Color=(202,138,84)
+-	Color=(0,104,126)
+-	Color=(235,93,129)
+-	Color=(75,152,184)
+-	Color=(91,179,213)
+-	Color=(171,214,226)
++	Color=(30,67,38)
++	Color=(145,108,35)
++	Color=(30,67,38)
++	Color=(64,64,64)
++	Color=(75,75,75)
++	Color=(90,90,90)
++	Color=(120,120,120)
+ 	Color=(153,153,153)
+ 	Color=(102,102,102)
+ 	Color=(204,204,204)
+ 	}
+    [Background]
+ 	{
+-	Color=(251,251,251)
+-	Color=(245,231,220)
+-	Color=(77,77,77)
+-	Color=(51,51,51)
++	Color=(255,255,255)
++	Color=(255,255,255)
++	Color=(255,255,255)
++	Color=(255,255,255)
+ 	FillMode=1
+ 	}
+    }
