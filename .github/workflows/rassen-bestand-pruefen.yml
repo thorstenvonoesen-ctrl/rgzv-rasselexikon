@@ -11,6 +11,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/check_catalog.py
+      - run: python scripts/check_pdf_storage.py
       - run: python scripts/check_series5.py
       - uses: actions/setup-node@v4
         with:

@@ -28,7 +28,7 @@ def parse(path):
 def decode(im): return [r.text for r in zxingcpp.read_barcodes(im)]
 created=json.loads((ROOT/'scripts/series3-created.json').read_text(encoding='utf-8'))
 selected=[b for b in SERIES3 if b['slug'] in created]
-index=parse(ROOT/'index.html')
+index=parse(ROOT/'lexikon.html')
 previews=[]
 for b in selected:
     slug=b['slug']; target=slug+'.html'; url=BASE+target
@@ -39,11 +39,11 @@ for b in selected:
         path=unquote(urlsplit(link).path)
         assert not re.search(r'(^|/)(schilder|qr-codes|druckboegen)(/|$)',path,re.I),(slug,link)
     assert decode(Image.open(ROOT/'qr-codes'/f'{slug}.png'))==[url],slug
-    file=ROOT/'schilder'/f'{slug}.pdf'
+    file=ROOT/'output/pdf/a7'/f'{slug}.pdf'
     pdf=PdfReader(file); assert len(pdf.pages)==1
     page=pdf.pages[0]
-    assert abs(float(page.mediabox.width)/MM-90)<.001,slug
-    assert abs(float(page.mediabox.height)/MM-60)<.001,slug
+    assert abs(float(page.mediabox.width)/MM-74)<.001,slug
+    assert abs(float(page.mediabox.height)/MM-105)<.001,slug
     assert re.sub(r'\s','',b['name']) in re.sub(r'\s','',page.extract_text()),slug
     doc=pdfium.PdfDocument(file); im=doc[0].render(scale=150/72).to_pil()
     assert decode(im)==[url],slug
@@ -54,7 +54,7 @@ for start in range(0,len(previews),8):
     for i,im in enumerate(group):canvas.paste(im,((i%2)*450,(i//2)*310))
     canvas.save(ROOT/'tmp/pdfs'/f'series3-{start//8+1}.png')
 report=dict(new_html=len(selected),new_qr=len(selected),new_labels=len(selected),
-    qr_decoded=len(selected),pdf_qr_decoded=len(selected),label_mm=[90,60],
+    qr_decoded=len(selected),pdf_qr_decoded=len(selected),label_mm=[74,105],
     correct_page_titles=True,index_entries=True,public_print_links=0,
     public_deployment='Nicht Bestandteil dieses lokalen Prüflaufs.')
 (ROOT/'scripts/series3-results.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
