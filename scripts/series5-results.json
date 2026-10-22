@@ -1,0 +1,14 @@
+{
+  "before": 192,
+  "added": 50,
+  "after": 242,
+  "new_large_fowl": 1,
+  "new_bantams": 49,
+  "directly_requested": 8,
+  "replacements": 42,
+  "source_checks": 50,
+  "pdf_codes": 50,
+  "old_files_preserved": true,
+  "unique_texts": true,
+  "all_30_previous_requested_present": true
+}

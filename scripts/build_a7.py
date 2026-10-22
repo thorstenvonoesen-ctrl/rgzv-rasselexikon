@@ -81,6 +81,13 @@ def main():
     slugs=['ayam-cemani','deutsche-zwerg-lachshuehner','appenzeller-spitzhauben','bergische-schlotterkaemme','orientalische-roller','zwerg-kraienkoeppe','japanische-legewachtel','hollaender-haubenhuehner']
     example=[next(b for b in breeds if b['url']==s+'.html') for s in slugs]
     pdf(OUT/'beispiel-acht-rasseschilder-a4.pdf',example,True)
+    series5=ROOT/'scripts/series5-audit.json'
+    if series5.exists():
+        selected=set(json.loads(series5.read_text(encoding='utf-8'))['new_names'])
+        extension=[b for b in breeds if b['name'] in selected]
+        assert len(extension)==len(selected)
+        pdf(OUT/'erweiterung-50-a7.pdf',extension)
+        pdf(OUT/'erweiterung-50-a4.pdf',extension,True)
     assert before=={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (ROOT/'qr-codes').glob('*.png')}
     (ROOT/'scripts/a7-layout.json').write_text(json.dumps(dict(count=len(breeds),size_mm=[74,105],qr_mm=[7,22,60,60],a4_cells_mm=[105,74],rotation=-90,scale=1,example=slugs,qr_hashes=before),ensure_ascii=False,indent=2),encoding='utf-8')
     print(f'{len(breeds)} A7-Einzel-PDFs, zwei Gesamtausgaben und ein A4-Beispiel erstellt.')

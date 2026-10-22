@@ -9,10 +9,20 @@ ROOT = Path(__file__).resolve().parents[1]
 GROUPS = {'Großhuhn', 'Zwerghuhn', 'Taube', 'Wachtel', 'Gans', 'Ente'}
 
 def name_key(value):
-    value=value.strip().casefold().replace('ä','ae').replace('ö','oe').replace('ü','ue')
+    value=value.strip().casefold().replace('ä','ae').replace('ö','oe').replace('ü','ue').replace('œ','oe').replace('æ','ae')
     value=''.join(c for c in unicodedata.normalize('NFKD',value) if not unicodedata.combining(c))
     key=re.sub('[^a-z0-9]', '', value)
-    return {'kogunkei':'koshamo','twentsekrielen':'zwergkraienkoeppe'}.get(key,key)
+    aliases={'kogunkei':'koshamo','twentsekrielen':'zwergkraienkoeppe',
+        'malayen':'malaien','modernesenglischeskaempferhuhn':'moderneenglischekaempfer',
+        'zwergbielefelderkennhuehner':'bielefelderzwergkennhuehner',
+        'deutschezwergsperber':'zwergdeutschesperber',
+        'hollaendischeweisshauben':'hollaenderhaubenhuehner',
+        'faverollesfranzoesischertyp':'faverolles','franzoesischefaverolles':'faverolles',
+        'katalanier':'prat','araucanas':'araucana','zwergaraucanas':'zwergaraucana',
+        'croadlangshan':'croadlangschan','deutschelangshan':'deutschelangschan',
+        'zwergcroadlangshan':'zwergcroadlangschan','plymouthrock':'plymouthrocks',
+        'jerseygiant':'jerseygiants','dominique':'dominikaner','cornish':'indischekaempfer'}
+    return aliases.get(key,key)
 
 class BreedPage(HTMLParser):
     def __init__(self):

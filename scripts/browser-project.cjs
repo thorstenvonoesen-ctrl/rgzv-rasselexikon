@@ -22,7 +22,9 @@ const server=http.createServer((req,res)=>{
    }
   }
   await page.goto(base);await page.waitForLoadState('networkidle');
-  assert.equal(await page.locator('#rassen-gesamt').innerText(),'192');
+  const raw=fs.readFileSync('assets/finder-data.js','utf8');
+  const expected=JSON.parse(raw.split('window.FINDER_BREEDS = ')[1].trim().replace(/;$/,'')).filter(b=>['Großhuhn','Zwerghuhn','Taube','Wachtel','Gans','Ente'].includes(b.group)).length;
+  assert.equal(await page.locator('#rassen-gesamt').innerText(),String(expected));
   assert.deepEqual((await page.locator('main h2').allTextContents()).slice(0,6),['1. Offene Rassetaubenschau 2027','Rassen entdecken','Welche Rasse passt zu mir?','Willkommen in der Welt des Rassegeflügels','Mehr vom RGZV Hagen','Alle Rassen im Überblick']);
   assert.equal(await page.locator('main').innerText().then(t=>t.includes('Lokalschau 2026')),false);
   assert.equal(await page.locator('#ausstellung-start a').count(),0);
@@ -59,9 +61,33 @@ const server=http.createServer((req,res)=>{
    assert.match(await page.locator('#druck-status').innerText(),/8 Schildern erstellt/);
   }
   await page.screenshot({path:'tmp/project/drucken-mobile.png',fullPage:false});
-  await page.locator('#alle-waehlen').click();assert.equal(await page.locator('#auswahl-status').innerText(),'192 Schilder ausgewählt');
+  await page.locator('#alle-waehlen').click();assert.equal(await page.locator('#auswahl-status').innerText(),expected+' Schilder ausgewählt');
+  let newPages=0,newSearches=0;
+  if(fs.existsSync('scripts/breeds_series5.json')){
+   const newBreeds=JSON.parse(fs.readFileSync('scripts/breeds_series5.json','utf8'));
+   for(const b of newBreeds)assert.equal(await page.locator(`.print-row input[value="${b.slug}.html"]`).count(),1);
+   // Zusätzlich eine echte Auswahl ausschließlich neuer Rassen herunterladen.
+   await page.locator('#keine-waehlen').click();
+   for(const b of newBreeds.slice(0,8))await page.locator(`.print-row input[value="${b.slug}.html"]`).check();
+   for(const type of ['a7','a4']){
+    const download=page.waitForEvent('download');await page.locator('#auswahl-'+type).click();await (await download).saveAs('tmp/project/neue-rassen-'+type+'.pdf');
+    assert.match(await page.locator('#druck-status').innerText(),/8 Schildern erstellt/);
+   }
+   for(const width of [320,1280]){
+    await page.setViewportSize({width,height:900});
+    for(const b of newBreeds){
+     await page.goto(base+b.slug+'.html');assert.equal(await page.locator('h1').innerText(),b.name);
+     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,b.name+' '+width);newPages++;
+     if(width===320){
+      await page.locator('a.back').first().click();await page.locator('#lexikon-suche').fill(b.name);
+      assert.equal(await page.locator(`.cards a[href="${b.slug}.html"]`).isVisible(),true,b.name);newSearches++;
+     }
+    }
+   }
+   await page.goto(base+'bergische-zwerg-schlotterkaemme.html');await page.setViewportSize({width:390,height:844});await page.screenshot({path:'tmp/project/neue-rasse-mobile.png',fullPage:true});
+  }
   assert.deepEqual(errors,[]);
-  fs.writeFileSync('scripts/project-browser-results.json',JSON.stringify({layoutChecks,viewports:[320,390,768,1280],count:192,eventOrder:true,expiredHidden:true,notReleasedHidden:true,wrongEventBlocked:true,cageSearch:true,breedSearch:true,finder:true,selectionPDFs:['a7','a4'],errors},null,2));
+  fs.writeFileSync('scripts/project-browser-results.json',JSON.stringify({layoutChecks,viewports:[320,390,768,1280],count:expected,eventOrder:true,expiredHidden:true,notReleasedHidden:true,wrongEventBlocked:true,cageSearch:true,breedSearch:true,finder:true,selectionPDFs:['a7','a4'],newPages,newSearches,errors},null,2));
   console.log('Startseite, Ablauf/Freigabe, Käfigsuche, Finder und beide PDF-Auswahlen erfolgreich geprüft.');
  }finally{await browser.close();server.close();}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1;});

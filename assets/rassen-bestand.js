@@ -4,9 +4,20 @@
   'use strict';
   const groups = new Set(['Großhuhn', 'Zwerghuhn', 'Taube', 'Wachtel', 'Gans', 'Ente']);
   const key = value => value.trim().toLocaleLowerCase('de')
-    .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+    .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/œ/g, 'oe').replace(/æ/g, 'ae')
     .normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');
-  const aliases = new Map([['kogunkei', 'koshamo'], ['twentsekrielen', 'zwergkraienkoeppe']]);
+  const aliases = new Map([
+    ['kogunkei', 'koshamo'], ['twentsekrielen', 'zwergkraienkoeppe'],
+    ['malayen', 'malaien'], ['modernesenglischeskaempferhuhn', 'moderneenglischekaempfer'],
+    ['zwergbielefelderkennhuehner', 'bielefelderzwergkennhuehner'],
+    ['deutschezwergsperber', 'zwergdeutschesperber'],
+    ['hollaendischeweisshauben', 'hollaenderhaubenhuehner'],
+    ['faverollesfranzoesischertyp', 'faverolles'], ['franzoesischefaverolles', 'faverolles'],
+    ['katalanier', 'prat'], ['araucanas', 'araucana'], ['zwergaraucanas', 'zwergaraucana'],
+    ['croadlangshan', 'croadlangschan'], ['deutschelangshan', 'deutschelangschan'],
+    ['zwergcroadlangshan', 'zwergcroadlangschan'], ['plymouthrock', 'plymouthrocks'],
+    ['jerseygiant', 'jerseygiants'], ['dominique', 'dominikaner'], ['cornish', 'indischekaempfer']
+  ]);
   function validEntries(source) {
     const urls = new Set(), names = new Set();
     if (!Array.isArray(source)) return [];

@@ -1,0 +1,808 @@
+[
+  {
+    "name": "Amerikanische Zwerg-Leghorn",
+    "slug": "amerikanische-zwerg-leghorn",
+    "group": "Zwerghuhn",
+    "weights": [
+      "800 Gramm",
+      "700 Gramm"
+    ],
+    "laying": 180,
+    "egg_g": 38,
+    "shell": "Weiß",
+    "table_page": 53,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 7,
+    "origin_note": "Amerika (USA)."
+  },
+  {
+    "name": "Zwerg-Altsteirer",
+    "slug": "zwerg-altsteirer",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1100 Gramm",
+      "900 Gramm"
+    ],
+    "laying": 130,
+    "egg_g": 38,
+    "shell": "Elfenbeinweiß",
+    "table_page": 2,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 9,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Zwerg-Andalusier",
+    "slug": "zwerg-andalusier",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1000 Gramm",
+      "900 Gramm"
+    ],
+    "laying": 100,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 4,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 9,
+    "origin_note": "Deutschland und England. 1920 erstmals in Deutschland ausgestellt."
+  },
+  {
+    "name": "Zwerg-Dorking",
+    "slug": "zwerg-dorking",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1300 Gramm",
+      "1100 Gramm"
+    ],
+    "laying": 150,
+    "egg_g": 40,
+    "shell": "Weiß",
+    "table_page": 32,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "England."
+  },
+  {
+    "name": "Deutsche Zwerg-Langschan",
+    "slug": "deutsche-zwerg-langschan",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1200 Gramm",
+      "1000 Gramm"
+    ],
+    "laying": 160,
+    "egg_g": 40,
+    "shell": "Gelblich",
+    "table_page": 28,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 8,
+    "origin_note": "Deutsche Züchtung. 1910 zuerst ausgestellt.",
+    "metric_override": {
+      "egg_g": "https://sv-zwerg-langschan.de/standard/"
+    }
+  },
+  {
+    "name": "Zwerg-Minorka",
+    "slug": "zwerg-minorka",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1200 Gramm",
+      "1000 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 38,
+    "shell": "Weiß",
+    "table_page": 59,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Deutschland und England."
+  },
+  {
+    "name": "Zwerg-Paduaner",
+    "slug": "zwerg-paduaner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "900 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 100,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 69,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "England."
+  },
+  {
+    "name": "Zwerg-Plymouth-Rocks",
+    "slug": "zwerg-plymouth-rocks",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1200 Gramm",
+      "1100 Gramm"
+    ],
+    "laying": 140,
+    "egg_g": 35,
+    "shell": "Gelblich",
+    "table_page": 71,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Deutsche Züchtung. 1914 erstmalig gezeigt."
+  },
+  {
+    "name": "Appenzeller Zwerg-Barthühner",
+    "slug": "appenzeller-zwerg-barthuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1000 Gramm",
+      "900 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 35,
+    "shell": "Hell cremefarbig",
+    "table_page": 6,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 7,
+    "origin_note": "In der Schweiz erzüchtet und seit 1996 anerkannt."
+  },
+  {
+    "name": "Bassetten",
+    "slug": "bassetten",
+    "group": "Zwerghuhn",
+    "weights": [
+      "900 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 90,
+    "egg_g": 40,
+    "shell": "Weiß",
+    "table_page": 13,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 7,
+    "origin_note": "Belgien."
+  },
+  {
+    "name": "Bergische Zwerg-Kräher",
+    "slug": "bergische-zwerg-kraeher",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1300 Gramm",
+      "1100 Gramm"
+    ],
+    "laying": 180,
+    "egg_g": 40,
+    "shell": "Weiß",
+    "table_page": 14,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 7,
+    "origin_note": "Anfang des 20. Jahrhunderts aus der Großrasse in Deutschland erzüchtet, schon 1926 ausgestellt."
+  },
+  {
+    "name": "Bergische Zwerg-Schlotterkämme",
+    "slug": "bergische-zwerg-schlotterkaemme",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1000 Gramm",
+      "900 Gramm"
+    ],
+    "laying": 150,
+    "egg_g": 40,
+    "shell": "Weiß",
+    "table_page": 15,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 7,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Brügger Zwerg-Kämpfer",
+    "slug": "bruegger-zwerg-kaempfer",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1700 Gramm",
+      "1400 Gramm"
+    ],
+    "laying": 100,
+    "egg_g": 35,
+    "shell": "Weiß bis rahmgelb",
+    "table_page": 21,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 7,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Deutsche Zwerghühner",
+    "slug": "deutsche-zwerghuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "750 Gramm",
+      "600 Gramm"
+    ],
+    "laying": 90,
+    "egg_g": 30,
+    "shell": "Weiß bis cremefarbig",
+    "table_page": 26,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 8,
+    "origin_note": "Deutschland. Aus rasselosen Landzwerghühnern erzüchtet und 1917 erstmalig ausgestellt."
+  },
+  {
+    "name": "Deutsche Zwerg-Reichshühner",
+    "slug": "deutsche-zwerg-reichshuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1200 Gramm",
+      "1000 Gramm"
+    ],
+    "laying": 180,
+    "egg_g": 40,
+    "shell": "Gelblich bis bräunlich",
+    "table_page": 29,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 8,
+    "origin_note": "Anfang der dreißiger Jahre in Deutschland erzüchtet."
+  },
+  {
+    "name": "Frankfurter Zwerghühner",
+    "slug": "frankfurter-zwerghuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1000 Gramm",
+      "900 Gramm"
+    ],
+    "laying": 150,
+    "egg_g": 35,
+    "shell": "Hellbraun",
+    "table_page": 36,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 8,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Grübbe Bartzwerge",
+    "slug": "gruebbe-bartzwerge",
+    "group": "Zwerghuhn",
+    "weights": [
+      "700 Gramm",
+      "600 Gramm"
+    ],
+    "laying": 90,
+    "egg_g": 30,
+    "shell": "Weiß bis cremefarbig",
+    "table_page": 38,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 8,
+    "origin_note": "Belgien."
+  },
+  {
+    "name": "Indische Zwerg-Kämpfer",
+    "slug": "indische-zwerg-kaempfer",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1600 Gramm",
+      "1300 Gramm"
+    ],
+    "laying": 90,
+    "egg_g": 30,
+    "shell": "Hellbraun",
+    "table_page": 43,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 8,
+    "origin_note": "Gegen Ende des 19. Jahrhunderts in England entstanden."
+  },
+  {
+    "name": "Lütticher Zwerg-Kämpfer",
+    "slug": "luetticher-zwerg-kaempfer",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1700 Gramm",
+      "1400 Gramm"
+    ],
+    "laying": 90,
+    "egg_g": 35,
+    "shell": "Weiß bis bräunlich",
+    "table_page": 54,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 9,
+    "origin_note": "Belgien."
+  },
+  {
+    "name": "Ostfriesische Zwerg-Möwen",
+    "slug": "ostfriesische-zwerg-moewen",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1000 Gramm",
+      "900 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 68,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 9,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Ruhlaer Zwerg-Kaulhühner",
+    "slug": "ruhlaer-zwerg-kaulhuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "700 Gramm",
+      "600 Gramm"
+    ],
+    "laying": 140,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 74,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 9,
+    "origin_note": "Thüringen, besonders Ruhla und Umgebung."
+  },
+  {
+    "name": "Thüringer Zwerg-Barthühner",
+    "slug": "thueringer-zwerg-barthuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1000 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 37,
+    "shell": "Weiß",
+    "table_page": 85,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 9,
+    "origin_note": "Deutschland, um 1910 im Raum Thüringen erzüchtet."
+  },
+  {
+    "name": "Zwerg-Asil",
+    "slug": "zwerg-asil",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1000 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 80,
+    "egg_g": 30,
+    "shell": "Cremefarbig bis bräunlich schattiert",
+    "table_page": 8,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 9,
+    "origin_note": "In England entstanden und um 1880 ausgestellt."
+  },
+  {
+    "name": "Zwerg-Augsburger",
+    "slug": "zwerg-augsburger",
+    "group": "Zwerghuhn",
+    "weights": [
+      "900 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 38,
+    "shell": "Weiß",
+    "table_page": 9,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 9,
+    "origin_note": "In Augsburg und Umgebung um 1970 erzüchtet."
+  },
+  {
+    "name": "Zwerg-Brabanter",
+    "slug": "zwerg-brabanter",
+    "group": "Zwerghuhn",
+    "weights": [
+      "950 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 100,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 17,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 9,
+    "origin_note": "Holland."
+  },
+  {
+    "name": "Zwerg-Breda",
+    "slug": "zwerg-breda",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1100 Gramm",
+      "850 Gramm"
+    ],
+    "laying": 80,
+    "egg_g": 40,
+    "shell": "Weiß",
+    "table_page": 20,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "In den Niederlanden um 1935 entstanden."
+  },
+  {
+    "name": "Zwerg-Crèvecoeur",
+    "slug": "zwerg-crevecoeur",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1100 Gramm",
+      "900 Gramm"
+    ],
+    "laying": 100,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 24,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "In Deutschland aus der Großrasse erzüchtet."
+  },
+  {
+    "name": "Zwerg-Croad-Langschan",
+    "slug": "zwerg-croad-langschan",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1600 Gramm",
+      "1300 Gramm"
+    ],
+    "laying": 160,
+    "egg_g": 40,
+    "shell": "Braun",
+    "table_page": 25,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "Nordamerika und England."
+  },
+  {
+    "name": "Zwerg-Dominikaner",
+    "slug": "zwerg-dominikaner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "900 Gramm",
+      "700 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 35,
+    "shell": "Bräunlich",
+    "table_page": 31,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "In Deutschland vorgenommene Verzwergung der ältesten amerikanischen Rasse."
+  },
+  {
+    "name": "Zwerg-Dresdner",
+    "slug": "zwerg-dresdner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1200 Gramm",
+      "1000 Gramm"
+    ],
+    "laying": 180,
+    "egg_g": 40,
+    "shell": "Gelblich",
+    "table_page": 33,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Zwerg-Eulenbarthühner",
+    "slug": "zwerg-eulenbarthuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "800 Gramm",
+      "700 Gramm"
+    ],
+    "laying": 90,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 34,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "Holland."
+  },
+  {
+    "name": "Zwerg-Friesenhühner",
+    "slug": "zwerg-friesenhuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "700 Gramm",
+      "600 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 30,
+    "shell": "Weiß",
+    "table_page": 37,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "Niederlande, Provinz Friesland."
+  },
+  {
+    "name": "Zwerg-Holländer-Haubenhühner",
+    "slug": "zwerg-hollaender-haubenhuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "900 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 100,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 40,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "Holland und Deutschland."
+  },
+  {
+    "name": "Zwerg-Houdan",
+    "slug": "zwerg-houdan",
+    "group": "Zwerghuhn",
+    "weights": [
+      "bis 1100 Gramm",
+      "bis 900 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 42,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "In England aus Kreuzungen von Houdan mit ZwergSussex und Zwerg-Ankona entstanden."
+  },
+  {
+    "name": "Zwerg-Kastilianer",
+    "slug": "zwerg-kastilianer",
+    "group": "Zwerghuhn",
+    "weights": [
+      "850 Gramm",
+      "750 Gramm"
+    ],
+    "laying": 150,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 46,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Zwerg-Kaulhühner",
+    "slug": "zwerg-kaulhuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "700 Gramm",
+      "600 Gramm"
+    ],
+    "laying": 90,
+    "egg_g": 30,
+    "shell": "Weiß",
+    "table_page": 47,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "Seit Jahrhunderten bei Landhuhnzwerghühnern aufgetreten."
+  },
+  {
+    "name": "Zwerg-Krüper",
+    "slug": "zwerg-krueper",
+    "group": "Zwerghuhn",
+    "weights": [
+      "900 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 35,
+    "shell": "Weiß",
+    "table_page": 50,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Zwerg-La Flèche",
+    "slug": "zwerg-la-fleche",
+    "group": "Zwerghuhn",
+    "weights": [
+      "900 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 35,
+    "shell": "Weiß bis weiß mit rosa Schimmer",
+    "table_page": 51,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 10,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Zwerg-Marans",
+    "slug": "zwerg-marans",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1000 bis 1100 Gramm",
+      "900 bis 1000 Gramm"
+    ],
+    "laying": 140,
+    "egg_g": 45,
+    "shell": "Dunkel rotbraun",
+    "table_page": 56,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Um die Stadt Marans nahe La Rochelle in der französischen Atlantikregion erzüchtet."
+  },
+  {
+    "name": "Zwerg-Nackthalshühner",
+    "slug": "zwerg-nackthalshuehner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1100 Gramm",
+      "900 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 30,
+    "shell": "Weiß bis gelblich",
+    "table_page": 61,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Zwerg-Rhodeländer",
+    "slug": "zwerg-rhodelaender",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1500 Gramm",
+      "1200 Gramm"
+    ],
+    "laying": 180,
+    "egg_g": 45,
+    "shell": "Hellbraun",
+    "table_page": 73,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Zwerg-Sundheimer",
+    "slug": "zwerg-sundheimer",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1200 Gramm",
+      "1000 Gramm"
+    ],
+    "laying": 160,
+    "egg_g": 45,
+    "shell": "Bräunlich, auch punktiert",
+    "table_page": 83,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Prat",
+    "slug": "prat",
+    "group": "Großhuhn",
+    "weights": [
+      "3,5 kg",
+      "2,5 kg"
+    ],
+    "laying": 180,
+    "egg_g": 58,
+    "shell": "Weiß bis rötlich gelb",
+    "table_page": 73,
+    "table_file": "bdrg-huehner",
+    "registry_page": 6,
+    "origin_note": "Spanien; aus Landhühnern spanischen Ursprungs herausgezüchtet. Im Jahre 1990 unter dem Namen Katalanier in Deutschland zugelassen."
+  },
+  {
+    "name": "Zwerg-Niederrheiner",
+    "slug": "zwerg-niederrheiner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1200 Gramm",
+      "1000 Gramm"
+    ],
+    "laying": 180,
+    "egg_g": 40,
+    "shell": "Gelb bis hellbraun",
+    "table_page": 63,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "In Deutschland aus der Großrasse erzüchtet."
+  },
+  {
+    "name": "Zwerg-Orloff",
+    "slug": "zwerg-orloff",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1200 g",
+      "1000 g"
+    ],
+    "laying": 120,
+    "egg_g": 35,
+    "shell": "Cremeweiß bis bräunlich",
+    "table_page": 66,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Deutsche Züchtung, begonnen um 1920.",
+    "metric_override": {
+      "weights": "https://www.sv-orloff.com/%C3%BCber-orloffs/zwerg-orloff-rassestandard/"
+    }
+  },
+  {
+    "name": "Zwerg-Spanier",
+    "slug": "zwerg-spanier",
+    "group": "Zwerghuhn",
+    "weights": [
+      "900 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 120,
+    "egg_g": 40,
+    "shell": "Weiß",
+    "table_page": 79,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Seit Anfang dieses Jahrhunderts in England, Holland und Deutschland bekannt. Ab 1983 mit Hilfe von Importtieren in Deutschland wieder erzüchtet."
+  },
+  {
+    "name": "Zwerg-Sulmtaler",
+    "slug": "zwerg-sulmtaler",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1200 Gramm",
+      "1000 Gramm"
+    ],
+    "laying": 160,
+    "egg_g": 40,
+    "shell": "Rahmweiß",
+    "table_page": 81,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Zwerg-Sumatra",
+    "slug": "zwerg-sumatra",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1000 Gramm",
+      "800 Gramm"
+    ],
+    "laying": 100,
+    "egg_g": 30,
+    "shell": "Weiß oder gelblich",
+    "table_page": 82,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Zwergform der sehr alten Rasse der Sunda-Inseln; 1989 in Deutschland anerkannt."
+  },
+  {
+    "name": "Zwerg-Yokohama",
+    "slug": "zwerg-yokohama",
+    "group": "Zwerghuhn",
+    "weights": [
+      "900 Gramm",
+      "700 Gramm"
+    ],
+    "laying": 90,
+    "egg_g": 30,
+    "shell": "Gelblich",
+    "table_page": 91,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Deutschland."
+  },
+  {
+    "name": "Zwerg-Mechelner",
+    "slug": "zwerg-mechelner",
+    "group": "Zwerghuhn",
+    "weights": [
+      "1700 Gramm",
+      "1400 Gramm"
+    ],
+    "laying": 130,
+    "egg_g": 45,
+    "shell": "Cremefarbig",
+    "table_page": 58,
+    "table_file": "bdrg-zwerghuehner",
+    "registry_page": 11,
+    "origin_note": "Belgien."
+  }
+]

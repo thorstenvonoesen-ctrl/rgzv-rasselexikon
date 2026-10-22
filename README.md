@@ -1,5 +1,8 @@
 # Digitales Rasselexikon – RGZV Hagen
 
+Die Erweiterung um 50 BDRG-Rassen einschließlich aller Ersetzungen und Prüfungen
+ist in [ERWEITERUNG-50-RASSEN.md](ERWEITERUNG-50-RASSEN.md) dokumentiert.
+
 Der aktuelle Gesamtauftrag (Startseite, Taubenschau 2027, Veranstaltungsfreigabe,
 A7-Druck und Abschlussprüfungen) ist in [ERGEBNISBERICHT.md](ERGEBNISBERICHT.md)
 dokumentiert. Druckauswahl: `schilder-drucken.html`. Veranstaltungspflege:
