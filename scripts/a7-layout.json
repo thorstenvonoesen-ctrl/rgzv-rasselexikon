@@ -1,5 +1,5 @@
 {
-  "count": 242,
+  "count": 573,
   "size_mm": [
     74,
     105
@@ -27,62 +27,144 @@
     "hollaender-haubenhuehner"
   ],
   "qr_hashes": {
+    "aachener-bandkroepfer.png": "ce65196a3b063b454b48f4e33c0b7140b27c33701c74a4a7714fee16edf25c69",
+    "aachener-lackschildmoevchen.png": "1afa7044f996640c6d7f742de436c8af71434b40b01388804c273e7d1baf31ea",
+    "aargauer-weissschwaenze.png": "fac43ebba82479d40bdfb640e1d00ba144d47ceb1d5edea3ae5c2d85be05d543",
+    "abu-abse-wammentauben.png": "19d2691f9c7fba0ba51dbb0ba445a2fbd643d30b3a465c9a8b0eb47b65c4bfd8",
+    "aegyptische-segler.png": "d45dd0c7295bf280616b6cacf6ce7fd80391e4bcace3fe2db44ede3159ed8574",
+    "afghanische-rassetauben.png": "151f355dc9961fa5668ea3b6231ae41f6f97d0a0159f8582a84cc93889b901fe",
     "afrikanische-hoeckergaense.png": "33b644822a1c46a87992e4a6d49f366ce6344534903d399acbd7a83c7b9c3a4f",
+    "agarantauben.png": "48209d653a8953d6549a1ab917f45993dd11b845840373f7e55c7e4f3e3a2097",
+    "altdeutsche-kroepfer.png": "90fbea6c8fbd2c10f7ee5b7932fd7cc8688d2f10205f398952751046a4bc7ef1",
+    "altdeutsche-moevchen.png": "d09002ed741db5a192ee1bbc7b3b2cd6587ba8a0d390e0811f3056b0d466cfb8",
+    "altdeutsche-mohrenkoepfe.png": "f43c1fe21c098ebb8b55addae0ee9b69397e746c106083f8669cc4d292c1447a",
+    "altenburger-trommeltauben.png": "c4bdee7c483b942c188e8bfe8174c80f27077c756cdbd3bd7f26140a8958027e",
     "altenglische-kaempfer.png": "01481108079c6fb93b51a76eeabc86e8eb2b878da685655690ae9e8d21610190",
     "altenglische-zwerg-kaempfer.png": "70fd4f149b36e08f68cc5426cfc4bac9935e7f3398af8a49f0e27c2d7c24a4ee",
+    "althollaendische-kapuziner.png": "70b2b099adbabc6dd9f8409b4564773cccfa01afcdae96d11622bb5428617d5c",
+    "althollaendische-moevchen.png": "3d44e965e76ec8c267aed8f3992b9b626bcf2c0bfc06a891ce5cbefeefb7d0e7",
+    "althollaendische-tuemmler.png": "8e0a4c1332be64484bfcca07f423473c37182bb5cd3ba5d24331d5d612ebd98a",
+    "altoesterreichische-tuemmler.png": "23bab12e26213b628e89d807fe66171a4b134a88ce788d57fce9731519408513",
+    "altorientalische-moevchen.png": "eaa1e17a2513345eb17d37c29764c9904f0b543ec85c0a3cfdbf0a2146620b27",
+    "altstaemmer.png": "7b18800a6f45cf7abd6e567841d23425a2f8ae898120c3be02f26b9ec1bacf0d",
     "altsteirer.png": "cea4d0606aa3f91e4f51733fc0044b38b94a77f2dcec4bc740930f197cec347f",
+    "amerikanische-kalotten.png": "3692919a18f5f5f5d070ccb2666f73ec2a032d929cf5236a7604aa22903e5272",
     "amerikanische-leghorn.png": "3fad821b67582d4ca05c1ac13aea0d63878e0e0e1105c43ceac84be4ec257ebf",
     "amerikanische-pekingenten.png": "219d21316cdccb1fbfe979a86c5f906c73a8e45d5e50e7c8ed3afca4a311f742",
     "amerikanische-zwerg-leghorn.png": "fc2d1dfaa7ff3464854d1f3e61730c649f057c20a92381b045d9b3efb9d55585",
     "amrocks.png": "e84163d1c3351c11c972235e631f1c0396c1ea28308e29914e6d157e0f431e7c",
+    "amsterdamer-baertchentuemmler.png": "5562090cc71654d2f82cd21cef05676067b7c7ac65cd09e5d8644cc1f444ef86",
+    "amsterdamer-kroepfer.png": "ed3d575aaaf7e01f92721e7c03269f46aa48005bee1b1180a1bf46d50c305d39",
+    "anatolische-moevchen.png": "b4299fb05f3bf3bcd49c6df1f824c84827ee6ef9d86f288386b8f2158b2af0c5",
+    "anatolische-ringschlaeger.png": "844a9dd0263dae64949267b9d2b5b5aa1c8ea451b8c312d9dad55739ea72a43f",
     "andalusier.png": "392c022e59b1a7f3f275ca3198c5d65167e1c0a76c37124813fab7976d6d769d",
     "annaberger-haubenstrupphuehner.png": "68505c4b464200c5f459ce26ef3522f4c2a1e3a83536562c3fb49d0a022909c7",
     "antwerpener-bartzwerge.png": "f074c0b92962bb779115d04385153f34ea175b7b3400e9958e417f828b1b8320",
+    "antwerpener-smerlen.png": "f06c6d1d96caed9ecdc50fad46246786c88148ea0a3bab5a5a711fa5610f6635",
     "appenzeller-barthuehner.png": "1f46ffa805d9344fd65df0f7887e2f9dc91444aa5a04d7147e26362a4062222d",
     "appenzeller-spitzhauben.png": "09c514e982c1b2ea161452d303c32c0f31ab514f0f70daa4e6303ff04c8195bd",
     "appenzeller-zwerg-barthuehner.png": "38c87ac20f357719334588c589a92acdcb9d07a71f89afa82019a42d2e78247c",
+    "arabische-trommeltauben.png": "11e320107bd8d388281fc6d2d7ebee4fee58f6064db70a81efa1e400aeacc68f",
+    "arader-tuemmler.png": "13698ad07d58a55d853992d46673d8eb687c9151d23b27a7b774f96969f49e6d",
     "araucana.png": "6490953997da06acda24b7482aac7440c091c9e7a8082f445c702d894f389b90",
     "ardenner.png": "2caad9919f5c5f206ae23f5270b2319e24ad713590bafe7af4e7c58b2288516e",
+    "armavirer-kurzschnaeblige-tuemmler.png": "5019ddd9031cf8b9e9017b0ad940dc5f42078ae66a021fb9ecce7a23d7522b46",
     "asil.png": "0c540836cfd1696a165cb0ea75d1082e8fbd55583d0b10a3232b4f846bda7961",
     "augsburger.png": "4a89c236ee0a35502c29dd557ffd5981d5e52a8689ef1eb660575ce25736d567",
     "australorps.png": "888835fbb8a57ecef0a5a33df280f6e9aa564bbb15ca43c77df21b75d6babdbb",
     "ayam-cemani.png": "64af50873a5d466840054b53a0ce2cd225997c046524601f918bd84455f43fd4",
     "aylesburyenten.png": "4f0eb4d3bb1f0ebf63053e2f81a1e0ce7df55d38f512de2773346821f4474fd9",
+    "bakuer-tuemmler.png": "b4519859769249b8371bb805caf8ec5f6094f5ea6dc1cbcc41d01f2a4dd2b7bc",
     "bali-enten.png": "213f51e42f1f7e4ae9737e437786f96b2ec160c47884166430481b3c8e6fcf63",
     "bantam.png": "63dec781220ff16d02f928f6830264d07973814d8f22f3ce6ae9deeae6fa65b7",
+    "barbarisi-moevchen.png": "26508b1506c0b6967bbdb913fa8a16e4342d789647e7c1270e705b29b34009cd",
     "barbezieux.png": "c371e2944e9f4e8633a3a60f3748d8415966585bb120e62514cdc7748bb0c244",
     "barnevelder.png": "3b1fba375a08709326031bbec59177b3018013ae96fe635bdabf4f8ae20d0a90",
+    "basraer-wammentauben.png": "2c8020c4a04e876f7c8c93aa3e9a1bb86f286a490478d308df7b62821bc872a6",
     "bassetten.png": "f4ab1639e3722a99471e813d93ef684fdf8fce0189b34367dd317bb61544c38b",
+    "batschkaer-langschnaeblige-tuemmler.png": "cc6571633daf0edd99c475e44f63b4643569119fee92bb1614a9522bf2cbac71",
+    "bayerische-hochflieger.png": "aa6f03d6316e2953668272ff5fbd530c9f7fd4cc05f4bb0a0731ffa6613b6e59",
+    "bayerische-kroepfer.png": "abb475b63da92d59203d3abc61c77c1667d60c4b25ee3c48c6c3dee8845b2232",
+    "belgische-ringschlaeger.png": "d4cfd69c37c201d4f10d05a35e2bb2941e5c24b889ebc5969e31cc68ad64b4b7",
+    "beneschauer-tauben.png": "f614b3e1b7dffa96a4d8df2d24a62776f5a24c9b172ddcb35c856b873e84f0ff",
     "bergische-kraeher.png": "b688e2cf283c4b4ca429223e54e22437a0263fda24c985c48685f13b2dbfa797",
     "bergische-schlotterkaemme.png": "169114db011517b7eef52311ca3248816f4f887082aca02cbf5bfccda38323b0",
     "bergische-zwerg-kraeher.png": "32b5c2f2159771d4432f61ee5138f7e97193deb5bab7c7028bda5525803034d1",
     "bergische-zwerg-schlotterkaemme.png": "feae9a52c49acb8d272266dd0b82a015d6be80977b27b1bb5206651e1f9786ca",
+    "berliner-kurze.png": "de79934c81d7ec05c7a3f669fa0386d421b729df5240dfa28d9d30fe3b826c3d",
+    "berliner-lange.png": "517b8a4314611b88b96e54334218a885c792ea3a71f3079654505a4334a7e15d",
+    "berliner-langlatschige-tuemmler.png": "9499cfa2ddef98929ea20d357d5414442175f6e7e1536326afb4ff6d4cdf0635",
+    "bernburger-trommeltauben.png": "6d28053e01e2654b0b4743386443898362189ac22e1d5c0caab413e0479b8667",
+    "berner-gugger.png": "0bcec893589bdf34582987ea68cdc5c7799a6343221eb1b10fe9c357f95e1b12",
+    "berner-halbschnaebler.png": "db3b98f55cf7bdc891215f35bd16aa760ee50df72e408b73693b070c92f153cb",
+    "berner-lerchen.png": "2dcf77c1d43a73a1308733fbdc0be5cf8d2d201779c5acbf8456d4183f2b7017",
+    "berner-rieselkoepfe.png": "8bce935fa82556098b04c5aeff1315fcfe4b13c7f1f648deff01293c3fb45743",
+    "berner-spiegelschwaenze.png": "6406689b6e901b87e08bc6af06a15d64bbd1e6cd4a079ad83512f50a91085b02",
+    "berner-weissschwaenze.png": "5408986bbbc0104f111b9b397c709c6d92451771411cd767e0343f58c3a31cb8",
+    "bernhardiner-schecken.png": "1c04dbffe077051826dffa73154b7863c67e5c100c04b726f118917e9a0cb540",
+    "bialostocka-kalotten.png": "e79d6fcbfbf76373b53c0d64b2fbbdb1d89dbee3723dc4d1140874507a62a41c",
     "bielefelder-kennhuehner.png": "5ccd95b2003b467bfa87c9298d4b06cdd799053decb0afbef50674988b7f9aaa",
     "bielefelder-zwerg-kennhuehner.png": "312ed6b98eba035e26956955cec179ab0bf470bc2c47ba4dec4cf58af9749859",
+    "blagodarer-tuemmler.png": "df0530ec5dd8e9ff576121dafb857f5b9a6be6ac95ebd4e5beac4fb13f3bbd16",
+    "boehmentauben.png": "37629a8ae9eedb728c8eac72f6f7255750d63b7fe4115ba231530493e20b79dc",
+    "boehmische-fluegelschecken.png": "cf0d38d4bf0aa4a9c4867e0a80e30ed13852e28a99bcacca25153adc453016c0",
     "boehmische-gaense.png": "223037f4d356b136f68cf00b22e3e3791cceaa8a47e8af04e4113bf29167cdc1",
+    "botoschaner-tuemmler.png": "8e50a599a9ea3da42dab29a0f1d98a9671b71857c9ab5d70e4b6bf747eede0dd",
     "brabanter-bauernhuehner.png": "baaeb53a35d99db087e060c0d1d1e35058601afe92ff7c064d975facc46d9361",
     "brabanter.png": "30e07e3cae8f353649aea8ee53e2821a9ae0dac2ad11128522e712036fca0c10",
     "brahma.png": "cc726d734bb76ba3a9d38ef2e82d1bdb29a54bffda25f00c2c39abf19bb5364d",
     "brakel.png": "dab5d5a60369e6daeb448711ed76d4915607117aadecdeb572cf60ddf8114dfe",
     "breda.png": "0828ecf21bcfa41e08fbab36bb6f411fa7654ffb9cfce911e10d5e8e96f83957",
+    "bremer-tuemmler.png": "fc01318c6de7069811bfc97de8502fee7cde2b11dc4bdee9f8ca5adc52f38459",
+    "breslauer-tuemmler.png": "88e2598d0a2600f253e838a8f3dcbec6911bee37f01f06432d3e6482ebc34cd4",
+    "briver-farbenkoepfe.png": "02f6de3817b1fe587b702e39fe122db317ae162923ce2820b4e68b2783813ab3",
+    "broder-purzler.png": "1c7c73db6fd8e06aceb5e7255d4dc982a9b1c6919533dcd2c2dc7566698a1d2f",
     "bruegger-kaempfer.png": "8b6ab89ee9e7ec2b481d42bf33e7e02248b38ed4ca7e385fced4019289a9c96f",
     "bruegger-zwerg-kaempfer.png": "cbf6c251ac14a8f4bd2246c22b54734053d699a66d00410b6f7fc6e2c5e5fed3",
+    "bruenner-kroepfer.png": "78c8d5c994a74bdac1312e7d40fd9e897580bf7cb2b20b744e7dcb2eee1d6d50",
+    "bucharische-trommeltauben.png": "09dcb76cf9a65589ae27986dec474c70eaedbb130bbbbbd73f2e48487bf2bb27",
+    "budapester-hochflieger.png": "2854ca6602f8f371ef63a39663429d0a5fade28e75578b1e86fdf04f5915a145",
+    "budapester-kiebitze.png": "4364601a8266202e3015f2565666810382ff941dba91a6b4b2b57eefad6aa17a",
+    "budapester-kurze.png": "657f7fa2bc1b147e58d49da2b43108cc3c14962800f06ae11b45fed258abe7d2",
+    "bursa-tuemmler.png": "7cca2564c188b4051a89d137064f49855edc6b582d0dfe15f9c95d977fd95b97",
+    "cakalroller.png": "cd8c68567cdda9c33bb0bb82451484b8cfcd79bfc913ef4ca7efc5c2d88e4911",
+    "canariokroepfer.png": "9d40dd44376b472013363d433f5e2d98ebdff8e13c03b43f22b6968263303356",
+    "carneau.png": "dd62add8fd4f86301747ef50b88e0a67115507cc283c06b9e1013165f447ccdd",
+    "carrier.png": "02834bf92b4280e6acbf889d40103cc3e30e6b767866518e0b7e9811ca102b59",
+    "cauchois.png": "83f6b1d1e455207a3eefbdccb87d7c305ff0078618ec8647bb357a8bb92c9532",
     "cayugaenten.png": "c2a9c533fcfdf905d23149f9b0fcd1db99ea920d934d403f1ffbc57f8067d00c",
     "celler-gaense.png": "4d098a558f53a2fa13efa8c67f841a4bbdc52fa9e857b3276464e226a0f5afbc",
     "chabo.png": "2cbd4407bdf848ad8f2381dd52a74ac7515248542460cb9025da4f06c0a36b64",
     "challansenten.png": "d1fd56739326a1ad4f3b3b52e16a0ca6b466fd1086e7cdc5c4638d1ed46ea160",
+    "chinesentauben.png": "754ed48feac9b88277363c15f2884b23296f58dafe2e697d955c28fcfc735e59",
+    "chinesische-tuemmler.png": "4e75b230b7313ad6730c67cba324345640f8c7b4a1a3b643e91b00dd193c6c0d",
+    "coburger-lerchen.png": "2be76222db28a3339fc84d4d2ff485de11dee7e3256b0a9dfd8ba4e2cc645334",
     "cochin.png": "5e7a8ab8bdfc2bf8d4b1f93c04d1c0a36a7c2d9d0c824d323e4a6f784a357141",
     "crevecoeur.png": "4ee5b761586d9637fbde135b302dd3853555fea718ddeef9fac1e98d9c92c287",
     "croad-langschan.png": "6a2584d73b6ef28f640fff7fa9340915b96ab4f765188956a29b124f680b266f",
     "cubalaya.png": "708f236805605a4e7b07eb8cc129bd1fca323de39a13f7b3152e67b4b59f0909",
     "daenische-landhuehner.png": "36f90be7bb1f8f0efb30ddc6af06b4112a71923351b4814fdeaf345bd613f87f",
+    "daenische-stieglitze.png": "fbd559165db05777f2efd105a919e71252e69bfbd420a52477d5ba579e3608ab",
+    "daenische-tuemmler.png": "04d40bd096de148b04a6c67ca17414257fc3da78e651184eba6371a81b1cbc3f",
+    "damascener.png": "e0273dfec7ced52d92fcf1ae944279f93d9f0284831bb71b8e7df47d8d59fdf6",
+    "danziger-hochflieger.png": "f8d59dc871ffe57f7b76cdf119de0b6cfd68f82a98af67883f9d88c127ac79b3",
+    "debreciner-roller.png": "5ba7bc78990ec331cd169144a96944eeb5d2b3613ced55903c07b35917c08297",
     "denizli-kraeher.png": "8ac1c1044374e41048bceab0877b97ea6c9a42da7ad87d9cbc1aa2c0f2dd520b",
     "deutsche-campbellenten.png": "b37856341705b75e6a5a13219deeb409a0cd3123dd3cd58bceebdd8f848c01b4",
+    "deutsche-doppelkuppige-trommeltauben.png": "31f7d2388f82e44def6dd78dc984887b83b1261c1fba08f982d4918e2fd8677d",
+    "deutsche-farbenschwanzmoevchen.png": "47a6f61697027ba4519c3dc39b3fcda8d39edc97e8f295ba173811763f394ebb",
+    "deutsche-gabelschwanz-trommeltauben.png": "08311d58c45860817614c0d6c2577ca63e1bdc48f1025592fc21ce436793521a",
     "deutsche-lachshuehner.png": "ab6ef204e0aea037e9d7fc8e8a9bbb6d7032f39d9ed1153f33c0a164bc0f9343",
     "deutsche-langschan.png": "579a1d66597dab7f42477fec20d7d2b1c37e403243b1a68fb4746494564d7dde",
+    "deutsche-langschnaeblige-tuemmler.png": "6118fab994addf099ea4509f8a1e57a20a71c16e4bea9c81a284a3b929ecced8",
     "deutsche-legegaense.png": "5ebdd9a5f547a64029377cade1613f02615e18d9c4ef7f216f86d9b388f826ad",
     "deutsche-modeneser.png": "e31a551ad3bb21ac986f13fd39e4c3390d083e2774adcc7633187cbdb3074601",
+    "deutsche-noennchen.png": "f45f6d8de2b84bd53cfd86af3885bc2bd4317549bdcd462e13e29fd646d6c2ed",
     "deutsche-pekingenten.png": "9e302ed0e624aa9fb546191cfecebdb6982e9e04a174f9ffaba5dd1230d4fb4a",
+    "deutsche-schautauben.png": "cb3e60ea17a2e0a7a6e79de7b40a3499525246086db8bdffc8ea401a9deec076",
+    "deutsche-schautippler.png": "07f32aa694071d4eea023dadc0a88bc69b5d7153d28e7dc572eed5e727a39977",
+    "deutsche-schildmoevchen.png": "8fb7ab83052ec98780ce7350bb425793f75955a19d181ee5f3416e11d81f3a99",
+    "deutsche-schnabelkuppige-trommeltauben.png": "851a45319cc5ae770ec11572bd5d333cc1d6d4923fbeb455728693c99d727285",
     "deutsche-sperber.png": "7db8be7b36cec6354134d15753b0ffd1e1482082f1fac1e35066cff5afdae03d",
     "deutsche-zwerg-lachshuehner.png": "eee2ffed8499a8ac0fe000e0f36a8a215efddb5440968ad045ebef31c425d5d1",
     "deutsche-zwerg-langschan.png": "f40df6bcb8d86290b2238df9324763ed0d018b56cfd3103d63c71508a5ff8ca5",
@@ -92,129 +174,378 @@
     "deutsche-zwerghuehner.png": "f301ebc7e643763b5cbe9699c276208b392e9315f6760cd8b467b54a964266cb",
     "deutsches-reichshuhn.png": "f5d458c31d6999aee96b933c82b67dc91fbe9fcb39098c4d2cb771200863742e",
     "diepholzer-gaense.png": "4845f3868ad6c3424f147d34d111ca85a220f945eb7a2ac00557fea64e74eaec",
+    "domestic-show-flight.png": "e63b2db1c516a47154624f7178353078896feb7aff25e6a61575cde0906bd42a",
     "dominikaner.png": "73a95280b931660c9c6d2563a95ae495e61db7fa1780a305980cdcf0eec7cc21",
+    "dominomoevchen.png": "3f3bbc72571d143b2ef32c0f21715db261c3b3a53b182a9d16e379912f750386",
     "dorking.png": "bd74a610ae6ea88df9218148695e92de0c0fd2f8eb97d405ca75ff66a02e50c2",
+    "dragoon.png": "ba780ad44f4eb237c97bcbb400d6dcb52d4378277137b60c87901d03eab58acb",
+    "dresdener-trommeltauben.png": "ab2cc56da9525c9619eda7c59a166b484d68eae1ccb1b69b5c3d906d611ba1a6",
     "dresdner.png": "c426a7e49a5dd90e93af8c3146b88b787512715b98594b364dde17e80d027b5b",
     "duclairenten.png": "b29d13488f1951b3ebd077874a7bb24af132626348589b3a691a142873536b3b",
+    "echterdinger-farbentauben.png": "de3684805d64a6de53c8e04032431b4816a03c3f4a04d68c8b1c8636a640627f",
+    "eichbuehler.png": "53d8f13e3466f8de154f88a0a9737acabc406f9862b5fb0a04d1b76d4e60af00",
     "eiderenten.png": "59bd9229860cf76e8e9a29fb307be0deaee038ae21955159a85b679cd8fcabb2",
+    "einfarbige-moevchen.png": "7c8f766d177aa2c9a61088170f112b702477dd9d2943c1334fd8fab257cb74b3",
+    "einfarbige-schweizertauben.png": "3692fad720f005df7ee45b921d0369e8e2d29acd7ed90157de824e1dd31cdd24",
+    "eisker-doppelkuppige-positurtuemmler.png": "d2fa7ea95de56ddbc0ae299f6fa43b2a59da698d6ccbd495ad2f2234850acf69",
+    "eistauben.png": "137387c0b3398cc165d19b00a8d1f50ef5a2c43b41ef3cbf7cf10f99b37273fe",
+    "elbinger-weisskoepfe.png": "4eab942dbde707ae8c7aa0bb521d4e3988229a1294539faef6cb629153b0764e",
     "elsaesser-gaense.png": "09f010f62ca80921c62ae3451ca55dfd742250350adda1de97a3c7aa60126fb6",
+    "elsaesser-kroepfer.png": "f037067dd1898a146a215ebb39056c53177b7b10e86f5391be548102c7a32a43",
     "elsaesser.png": "21cb921742adb15ebd1693661b3c4acfd2fa15981161843d9f3a70696caa981a",
     "elsterenten.png": "deb0fd184c8ce6f5ca27dd4c383fcc1d190db74f0922ab39d7f6d1cef5014389",
+    "elsterkroepfer.png": "482dec76c21745f036592b53fe93bfa0dbc3b7da632cdca225c338dbdd3bbc03",
+    "elsterpurzler.png": "cba0a3001d442bb0b65126fdbb59e3c7c64274a26189d57c3e00ff254e52ebe1",
     "emdener-gaense.png": "99e0e25e40739f744f484a7379b7550da9ac2f110ab6d3656226c082891e2d14",
     "empordagaense.png": "15bdfb06b38ac9cb68f97ea9f77aac41021a83451b9fe90657a759c2468b03fd",
     "empordanesa.png": "119d75fd4c69b7eee906aa9fe6531921c15492b5c1cca8cbc8162ba638c3a8b2",
+    "englische-kroepfer.png": "c8bc9dc3181a87ad9d3d937a33fcd3fba2c78ded6014dea565781f93f0ef1a4b",
+    "englische-long-faced-tuemmler.png": "2af223ea27491acf818b9e5d6338c07dc94a40d84ddfcaf4c6159d04b568032d",
+    "englische-nonnen.png": "02aee93648965d8a11859bfba8b8b7bd3633a89b7a3fb0696e23b152dd8b39b1",
+    "englische-owlmoevchen.png": "c3182445932d65196acf6fb620dc7fc6145f3a2bc957e95f369ee60e5105b0f0",
+    "englische-short-faced-tuemmler.png": "2fd7e4a5ab6f1350c81b2fe4118b871fb91a6d9480bf88cbe35551e853fc7548",
+    "englische-trommeltauben.png": "5f3d45a5a3fc5043b0731552d390cd58ba6c4e7ed9ddb527b7c0b478e08129d6",
+    "englische-zwergkroepfer.png": "f15de32bd87eafb562d71bbe790acd3de778d6dbd3fd32e790898d850cb5f814",
+    "erlauer-tuemmler.png": "54f057f2663617b34f07e37253ffec72dd49005e3f4497a563ea8f5bf3e17a55",
     "eulenbarthuehner.png": "09bed70442c508e1254f7637885518b9f9fd9f349e145f6453f0748105d2184d",
+    "exhibition-homer.png": "c2d1980d4e51802fa4d7ad39b2639735aee6d6779aa0761998e4e95ee69b370e",
     "faverolles.png": "a07acede6233f0b5a6591e7d1bd08961f83c1e850631b95450b8364784fdb92f",
     "federfuessige-zwerghuehner.png": "e623dc28639b7e615a699cf2cb3f76801bb10cefdedaf909ee7149b196614b43",
+    "feldfarbentauben-glattfuessig.png": "a0c9372b08cde71e01451efe3efee04378bb27277a2d8793f9bf9600d0acdf23",
+    "felegyhazaer-tuemmler.png": "18671f2c7e21b7248be29425fc90bc536f19902303d0853eeb0d27b1279a80f7",
+    "figurita-moevchen.png": "4db7c7920ed9650d89e3a03e6140e34882bc3d41e3448f1f29639fcf59c91a5d",
+    "florentiner.png": "923e34d9b22fa6aa5e0185483d61baf2fa7ff2c56fdbafe49bfb0df72fdd071f",
+    "fraenkische-bagdetten.png": "f0209e4da3dd8be188a5ec010972260d525108b41615678306a97c1a30d4b3c8",
+    "fraenkische-feldtauben.png": "f0678d133982c40c334f65d3075df1da01c190420bcb30b57d688c06c2cf126f",
+    "fraenkische-herzschecken.png": "429b8286244a6706416c415069e4f2fe70ed83a4849af199133c3eb85df30496",
     "fraenkische-landgaense.png": "b4e8c737a5434bc5620df1b7e1d01ef37aa015cff871df80839b234e71dfe132",
+    "fraenkische-samtschildtauben.png": "fe500ac37690c2d4aa32162cdd51bc869179a72078ae9c7fd2bf8f84ae39945b",
+    "fraenkische-trommeltauben.png": "7b8f972b14eb54ac499a0697f90dbdec7fde8d7487f94bf697258b93c53b6727",
     "frankfurter-zwerghuehner.png": "b3a2ff86248be19047046bc6b35e52baa7c7cc6123ca07d73e12949e195bfc2c",
+    "franzoesische-bagdetten.png": "1a34a785495252d94832f43539474819bc14d3c1813fcbe6f9ee8e05ba42ae7f",
+    "franzoesische-kroepfer.png": "ce3f7737a2bdf3fb20be5ad4f8f8aca047236919af357411ca651f573602f368",
+    "franzoesische-sottobanca.png": "3623bc59361d10f5559cb1e72dedb7bc961f2e13d3fd6248bc0b2663d1f519fe",
     "friesenhuehner.png": "ce1f02873e25e8968bb10c6288d28aa417ece88b5d3360d8f2172eb4acaebcbd",
+    "gelockte-wammentauben.png": "57d79ca883037b2e947c877b66e807c9920b0c26e03f7e99c711d37cb4f043e8",
+    "genter-kroepfer.png": "35710821ab2141c4ae8cbd0141cea54d5d560de10638d1e758969fdd56b49b7a",
+    "genuine-homer.png": "aa947164650b95a75b7cf39b9cdbde7cc4ece44bf7cd5090126cc6789966b3a2",
+    "giant-homer.png": "b309653a61f963bf01439d4b1e81bfbea8bed98cd468de36d0bc47c43d1b374b",
+    "giertauben.png": "c0d70a5529a532949c4e72b031375eb34a7085938ebe2b7310cee33f6845a4c7",
     "gimbsheimer-enten.png": "90f542d70a885e2352bef070aa167e8d9bc1dc3fdbdace284d067cb99e75d067",
+    "gimpeltauben.png": "cace76286cf6f6cdbd53bc82f02434c4ba72c7d143a390152bfa7aa668a727e0",
+    "glanztauben.png": "5cf4a2cb1ace0d5bb6565c1d20efd300779b545eca69579f25de24e2de10c03a",
+    "goeteborg-tuemmler.png": "20783ce7497625a4e504c261cae2e0a0a36088bbff3cf6de7c4c152fafe705b8",
+    "granadino-kroepfer.png": "78f5bd5816a245502de1c76568c38a2e00c1ca535609a0a476ad493f84928177",
+    "griwun-tuemmler.png": "20c1eb97c4f06d5433a2d75190c22de427d263c672b9f5360bbcc8a3b911ae69",
+    "groninger-slenken.png": "318dd23eadde9c3cd16e3e06a429f0dfeae21f3bbbe296275eb450618e3bdaed",
     "gruebbe-bartzwerge.png": "528072beae1093c1fd6e52a24da41e60e650dd2f9fb6771f2d95f81b96828ce9",
+    "gumbinner-weisskoepfe.png": "a5732503ce6e95f305ab44c2bc6c2fadfbfa114ded128b528d94dcaaefadca4b",
+    "habul-ruman-moevchen.png": "b34c5de865ac30975bfd15eda5853d4dd1a7c03c74b5475940a7081c9df01e85",
     "hagener-goldhals-langhuhn.png": "a2a6cd012234c7f932ead4b327f03b1ae40a08753ffb9930c29740116da8f84c",
+    "hamburger-schimmel.png": "7f45a976dbe3acd2a39f79938cefc7b93bb4d374dcc5f0595a097a3bace2d0e7",
+    "hamburger-sticken.png": "a2a892f168dfe3610c9889d6902e48b689f47fed136c8a2aa1b35950e854676b",
+    "hamburger-tuemmler.png": "4b79b79cb1d6b8044829a83f707a6d026c35ce691ce8a77017e625c3a7ee5166",
     "hamburger.png": "373a666bd528cc138b38faea352304a744fd6976be2316c6ff2564424d78d333",
+    "hanakroepfer.png": "5c45fbf4cac341a0f8656cf56f5dcfad9a89c04b7f89511b304bfab1e2ee53f2",
+    "hannoversche-tuemmler.png": "4dd987053b3db70ee2b4a457e173dd0d8f640b846f934be574ece4258de5deeb",
+    "harzburger-trommeltauben.png": "a90e6002980ecf05848420adb8d01c48ac42ed46a4a42eff50b8612c52d6872d",
+    "hessische-kroepfer.png": "a2316736d7f7f587a14c5aef211674881e982930138f0a5aa4efb44868a32aee",
     "hochbrutflugenten.png": "67189c0c9b8e36815e4b5faed50e07e510f914352558bebc21121fffa498a045",
     "hoeckergaense.png": "5ab49697a05d8c9c63b006b099eccf213b259f877134581e5e6db7fe0f90bfcb",
     "hollaender-haubenhuehner.png": "028ee17204bbac93dee941ad4fe6a9c98872e66fa6ebea18b153278b16fb423d",
+    "hollaendische-kroepfer.png": "fbbf7116fe5e44b55a8bee2bf6a4062b4cadd1f229e9cc2d89d64a908ac6f5aa",
     "hollaendische-zwerghuehner.png": "e1d68ab47d59aa0748a60c2924c150f0d8d9daa002b2cd10bc5fbf1b4e1436e8",
     "houdan.png": "0c792f0d05da26cc4b2f0deffa38e2bd0f9db8b415b465023a84050130930714",
+    "huhnschecken.png": "c94848523f14eff49a7bf0f6331ef29bd46128ec6236b512c47e564c3c894c91",
+    "indianer.png": "cb149231e0777f39b799b9be44bd72dbf99a05265e967601380ce124c9bec8c8",
     "indische-kaempfer.png": "c29eaa9c8e3972b3beac2938e480468d3324899ec8042931c336028771bfe4e4",
+    "indische-pfautauben.png": "59d93da8b0966f486871132cd3c80d73e6ef3686a131407e74778f7aed6863a3",
     "indische-zwerg-kaempfer.png": "c8818da1cc242d2e2e9ef60ff9beafc16757890e03ff59d95165291db9756ffc",
     "italiener.png": "d9def4b6a4dee82ad15fe6b205e0cc58a723818aca92e0b73ca8cd30f3ec1068",
+    "italienische-moevchen.png": "6aae6dcc982d499fbfc5cda9e3426abcc285c06970c219deb879e514807ecc87",
     "japanische-legewachtel.png": "9b6bdacf941ed3b920d49edf0f3366a95988a53fac71f2975056e8ed85148140",
+    "jassyer-tuemmler.png": "6eba337c563ceacd0c7c1aaa379bf332b387bd505a4af7bc151231dd7b2ea5bc",
     "jersey-giants.png": "2eed09677c1822d697cba1e4059c607f6fc660a2a690892c4e994642c971b6ea",
+    "jiennensekroepfer.png": "57666c11c5298b6f93d972b8bcc6a30738de83c69f5cf555d8387cb202e10314",
+    "kalotten.png": "46853927bcd5789f4d5b4db52d989077d4c443db756233b2b7df60af235358e6",
+    "kasaner-tuemmler.png": "7e32efc8b6849b521247b19847c15370b03f4cdd24ea62472942a80aacc2bc50",
+    "kasseler-tuemmler.png": "b600f8c105ea38f81a384c677648383671ad863224f0c25846b23c9a49d92c16",
     "kastilianer.png": "5a0a3ef06c1a40fbe0186913d39b82cf4cf7ae6ca28dfb4c4f34e14683fdb3e6",
+    "katalanische-tuemmler.png": "5f3424ae4cdad0af7b6e3efca2010f511b944ab7555f2abefd9a3752dfd01a37",
     "kaulhuehner.png": "977e95720d7d0bb03e481197d90eadc0fe83bd141e5bd0b958804ad2e6480b30",
+    "kiewer-tuemmler.png": "2706e3e4df281b54a9ce3e95582d00b71087d7731efb88fd2f6bb376c98ba3a5",
+    "kingtauben.png": "31b6aa01581c9cd50b7d5cfb7cf086cc9f432f112e201eee3e242d448bcd3318",
     "ko-shamo.png": "b7f393add3bdcadb1092b6f3d52b3b8e36669fce014473511ece0ae53d8a3833",
+    "koelner-tuemmler.png": "9da2610b058e4c58830bbf350fd2447803ba7df3ffd64abe9984c0d57ccc1414",
+    "koenigsberger-farbenkoepfe.png": "fee9afc3b49ba6bd218f64ac217b25e2934446d6c42309be7641b08124f141c3",
+    "koenigsberger-reinaugen.png": "29a2b5b44630af87a262941bcae16c6c2c6ded9ddeeb9de96b2380209d6a38ac",
+    "koeroeser-tuemmler.png": "dc15ce43283cadfbdf4961ebddd9fb51bd9e8901cd9be77c0acef468dd296e95",
     "koeyoshi.png": "b82b8f5d7a9e1d11edc24092866b8a901ad63ab790452cc6b611b90f81e30455",
+    "komorner-tuemmler.png": "8c933275e2ea02bc1e42531a71903acc990d772702d50925f00d298620b5bc1b",
     "kraienkoeppe.png": "8f323add851715d98772dd3a4b6d2f6042a5a3adeac077796d53297c51396638",
+    "krasnodarer-mittelschnaebelige-tuemmler.png": "9aa73ddcd12486e316ba39088b0701ff599707d420c6a72a69e0a26bbbc1e0ff",
     "krueper.png": "130f319bad5dc740f69c33bed6a7454167c13d31f1fe0d9906e0d9b03e0e7d37",
     "krummschnabelenten.png": "855a2fb614b1a5d9b8b7721b6be706ab3998284f085219aa74c05aec13baa66d",
     "la-fleche.png": "2b1e322942b477cb480000e2ef0baa728d58520cac9b0468f45db82221a752e4",
+    "lahore.png": "7de4a6a70758753f935875a768fd0dd66db7b9a7b71a86388d07ba564d899d5a",
     "lakenfelder.png": "5a4106e72290abb6f4a380e020097e83d1823bc9dfb3a254e2654f19966fe6c6",
     "landenten.png": "a913b609e36a4889e9fc2475714ff5216758096095317574597cf3e8fdd5bf56",
     "laufenten.png": "49eddf006c0c38b82696c9dbf9309779b54553645328a89aa67f1b7893cccbda",
+    "lausitzer-purzler.png": "b4c996508e650674380214603db76b644ef52e45584286bd9bb89526add58e83",
+    "libanontauben.png": "e77d99356cc7f8dc542a0b4e88b18a2001d042b1c49e59bd71f52ea3237dfe91",
+    "liller-kroepfer.png": "c57621c5de18c311c2dcb678585af04384c44b061fcc5692460f16497e14f976",
+    "limerick-tuemmler.png": "b203c2c65b689b1c57de3bd8f2ea062a0b647f653838c03890a5fb683bc6e17f",
     "lippegaense.png": "bb1179d48eadeef23727c74d505a2e4b04c0f6f38ad0837ac29fa8639414e902",
     "lockengaense.png": "98794c6188d35e0f896f2616f5dabcf73fd17a48c9dd58214ab387bb1f8eae0a",
+    "lockentauben.png": "b7d4a6a77f0840e74e8dfe0f0a9afd5ace2c072cfa11eb76bd2161f7fa3befd1",
+    "luchstauben.png": "34e7f3ef7aa10d43f23e0b1d7959fbef2d7ac5bc59fb328c8c89a2a00ebaf339",
+    "luetticher-barbet.png": "17ee6bf5bc5277bdae3b8b5912b8509ae9e34c7d2ef23b1485ed8852853f5894",
     "luetticher-kaempfer.png": "4c9fbbabb6ac1aa0aa3e49bf71c872480305f08b16734a63339f83593f28e9ee",
     "luetticher-zwerg-kaempfer.png": "f0095770d3e5a2782124793f84b030e5e37fe97fcb8b82e4d3bbb474ac5498c1",
+    "luzerner-einfarbige.png": "d096cc1f7b6c88667169bde9aa7d7cf508e1284374f3fa10c62d66ef9cdbdd66",
+    "luzerner-elmer.png": "88c52b60b1b1111ffdf58209cad9555a392971e11607b039a79fbae357b1988e",
+    "luzerner-goldkragen.png": "696d84d5d7e8ab0e5f6d83ed546e72e0cd536bd4dab45eb35b792fcc789949a8",
+    "luzerner-kupferkragen.png": "a0d16ec5d2f4d2707ae3fe091bc7b3dfdb2152ecfb160ea10eaeeef246e78f36",
+    "luzerner-rieselkoepfe.png": "32c3859c039201061c7002dac6b3d93d9f7d70d3b0844852bfc4a4e2fcf4aaad",
+    "luzerner-schildtauben.png": "52040588c293029a9af0d5597491b4a6419c5c81d3244320964c93cddee058c1",
+    "luzerner-weissschwaenze.png": "77f932f3abdb86c0a44453e91aa5f0f8b96ee0b2e36e8b8e8cd2ef99429d616c",
     "madras.png": "c774b23c192574e8a1234564f2315ef1aecb2045a3ff8158156d352159eca6e0",
+    "maehrische-strasser.png": "d0857681e5336dfe3149f553a369593e7488f3d6b0675e2cf74608657cc258ae",
+    "maehrische-weisskopfkroepfer.png": "1e5b429ebac8c841f6238529cd06b957c95971de4b30ff9b6d444bfa0aa47a8c",
+    "maerkische-elstern.png": "096e94b85933e0267098e174822368f2e8c734ed3eb14c5d4b88d36ea006ceea",
     "malaien.png": "788b80480478b69465e631247a93de3f06c14475bfdfb8ef5105f8eed24a793a",
+    "malteser.png": "f485d80c104c328b9213039c16942b0a95eb6c6305d5cf12b116419bbf957d91",
     "marans.png": "5096c80d46cd68ee3536d3e893595520819f3dcb1f9f532d1882dd514e18d2aa",
+    "marchenerokroepfer.png": "2b98c05e576a87940bb92aa8cc5ef6d74aa6972b4a58290e134001ce0ee61139",
+    "mariolinha.png": "ef051c27a24e4407024e54266b79fd8a9595a24d334d2a3a2fb23d7265b8e94a",
     "mechelner.png": "54c8cdf154993165df066618181427146f2edbea2b2648830c387e9c0b955ca5",
     "mecklenburger-gaense.png": "90052efab5a19eaaf9d7465a623d1674a84c166ee1f325a14bf6061bf8fc7a56",
+    "memeler-hochflieger.png": "0de8f221e3c5a524f6e84e86e23882f68193113225fe3f197ebd8c604943bdda",
     "minorka.png": "bd5fc370209286b27cc5363be903e21ac3a8404ca3a77eb5ea00bb17275c31f0",
+    "mittelhaeuser.png": "6e9b796f0fc19cc952fd8a226ffa778a863e7ac587ae6bf7b0ce5a2c0d1ed0f2",
+    "modena.png": "6c6e5116366e4636b76f15ff2b93dc1b7bf8bc13cb070c9a77d836256ab7cccd",
     "moderne-englische-kaempfer.png": "af974ff4f0996985cdcb56cfb0ed85dd602687c72f8bc36d95cd497eac8ea6d6",
     "moderne-englische-zwergkaempfer.png": "3a786a100327ab771fbeeb2ec9bbca4c334da74c48fbf683076dc806468b59a4",
+    "mondain.png": "a825f6649894b917b5b8be30c2e0762b5d9ed62d8a768b3ebfc44736dd3d5539",
+    "montauban.png": "3b412ecf9c72c5414e868063debecd7bc4eae4b1de8b06ca1d88b60970e283fe",
+    "mookeetauben.png": "235201372ef6579ada93189cd41975db97bfe02866170da3734516de3d6fbcf5",
+    "moskauer-schwarzgeelsterte-tuemmler.png": "163f2286ef517aeb26d54e5230285c35f2aa7544c22859f0e50c2b098e7004c9",
+    "muensterlaender-feldtauben.png": "fd2999288b49872760628d1faf646e1376cabe5040e6793538d93ede1ce59f5a",
     "nackthalshuehner.png": "4c07f86830379f60be7fd4477d00ae56ef1d893f5540b73cc58ccf8a5c563f8c",
     "new-hampshire.png": "8323ae568ecc4edb1eb8f65624aefc80700aeab628520a2ad8d88d5010a05fbb",
+    "niederbayerische-kroepfer.png": "817d4696ecd8ff97446fb5818112f755ddd61194f62bc7c2b179a9362dee7a06",
+    "niederlaendische-hochflieger.png": "c128f2591bf5fcd3519fe616cc07c89626e3ff3faf1014d26c3bdc767fa2a815",
+    "niederlaendische-schoenheitsbrieftauben.png": "795dff2c9f8d52e6e91c8eb3cba66ebae2dbb1ec5ac104f06b0d7a12e9f1d67a",
     "niederrheiner.png": "47d2f3e8477069dec8c40821ffa57f507d086fa620212f0ff9429d50f72efc24",
+    "nordkaukasische-positurtuemmler.png": "8aba14f5790ca27801cf3f77892f534a0f521eeb0ba93face49e2093bd06d201",
     "norwegische-jaerhuehner.png": "379b9d6d87c7eedd0204f6c8d05a33c1f2d1e79f2c5f0701486f5c20e6344a2f",
+    "norwegische-tuemmler.png": "341e1c20ef57738e4515a92f0f8e904520972659caa609b4e6572ad52821fb30",
+    "norwichkroepfer.png": "6ff6d1a8eba7a7b4fc73ccba2944c8245642814e227872990677e909dd506b32",
+    "nuernberger-bagdetten.png": "a8d3540ad4a8caaba5dfbb04ded5a085ab7069a5887053c579b02932b24a17a2",
+    "nuernberger-lerchen.png": "d0f056eaca64ddd07b56c36e540b10a5ebe68578eca06afeb87eaa07404dc2f9",
+    "nuernberger-schwalben.png": "ba69b43e1d101623844b46f563cc75467f019c7ec501934caa6625cd6d89e702",
     "ohiki.png": "8b51ce1832fe7cd1c417ae66fcbd1316ade572fc514cd108267aaf234bdf4291",
     "onagadori.png": "8330e44f7d1c7478b9e083d3f552aaa29a403a33364e9ffb0473ffc82951ac9a",
+    "orientalische-moevchen.png": "70ad26eaabbdc6c0f16f7439f180529a5377ce598151c30703bb1a23d5ba23af",
     "orientalische-roller.png": "9c026c80a1f1905066f9b7907bbd7109651b8b7ee9ef36699c23da4beba812ce",
     "orloff.png": "cfc1d550fb4fb005c6a5e3628f1601c8c7569d117c644c9d4cfe8ff3e2c91c94",
     "orpington.png": "f6b327099eac5408f7a0bfeb1d8eb53e97a3d8e0a8799748310df398e68f6522",
     "orpingtonenten.png": "3bae7e8e8cd7b4f028eabee9ef07883f28a07a8a780270eaa25941c32b065ebe",
     "ostfriesische-moewen.png": "ce38645bbfb5bf1d367de477e5001a925a42905535bbb80e25a58f7a76c52a31",
     "ostfriesische-zwerg-moewen.png": "16c12ccc24d098418fe30d34cb7aaa856738774325d2cabc9ccc4919b32823a5",
+    "ostpreussische-werfer.png": "d1518d9b0504e30394dfdaa9a78ef52e72a1022c38cb3647bac87c233f97a664",
+    "ostrowietzer-warzentauben.png": "a89028e80315ab6691928043453ac7cfc8a2d314ec58c0fadadd59a9d02e9400",
     "overberger-enten.png": "9f079a60a9331b8815eaa6d7a511db83097a89b1ef85bffea02553cd0a988def",
     "paduaner.png": "ac765889e9e8fdbe8be90fb1636df8d2f436d803eefdb911f5f6a1fbef189fe5",
     "penedesenca.png": "235459200982ad10131869ba87a82b058a6093a25e3bb40fb8138da7a4823e11",
+    "persische-roller.png": "eb818740b1a42b01c8a5de0bbd8630740d0974b6a64945e40a5d472d6a7f9fc1",
+    "perueckentauben.png": "f66723ae152b2e6fd15c2df58e9683d10740ba47ce9360235ebaf026e3123822",
     "pfaelzer-kampfhuehner.png": "a19c6df46fcf911377f1cdad6827592e4451e499613d5fa0bd89267984407ad8",
+    "pfautauben.png": "9bbe5aabcdd1ef656e650187752d4aab64ff25c6cf216c41bd52cdf1e1aad154",
     "phoenix.png": "88223059453c47601efb5ddabd27cce4f97b6275d7d10030d26c78cc1fe1d1b8",
     "pilgrimgaense.png": "d39aa6b7c43ca5e8d4109186928fe0144936a6f4ecd5ec6d1b2013a0a77d0668",
     "plymouth-rocks.png": "7f6162e48cbbbb8b0d84a82dfeccb74e26cc869a93a843dfaa76db6c558848ce",
+    "polnische-ausstellungsbrieftauben.png": "75dce12565a7b796d0f2ffbd2c7194649f1a4b37572c9ebcdc228f71978f7442",
+    "polnische-kalotten.png": "e8ecf790913d190434d0585e2e5120b72f2f3ab373f989dd4c9c6e575d878037",
+    "polnische-langschnaeblige-tuemmler.png": "edf75237315a0616b8570e2ac76dd59c7b3563e11023680a028bb21f52e8a4f3",
+    "polnische-moevchen.png": "024bf27abf8a7a2887af731ea5d4e01d1749b43b571e6d1ff045c82029dcc9be",
+    "polnische-warzentauben.png": "03c59f88dd6b52a8b25b3f0dcc49069923fd3a9fc8be5030d52f76a225fa8577",
     "pommernenten.png": "7ec84644eceb2875cdb9f6499ac709526673af60db074ff2b89b712ed2f20131",
     "pommerngaense.png": "0c5ca8c2baafdb5f5d1b66c6a8e345fb4aaf6d08f1ac39a90aa1e1ab9175a2f6",
+    "pommersche-kroepfer.png": "723700153e62d1a4dbded2f4b5a51b7e9381fb41e15ea17b43901fe37c2a8af7",
+    "pommersche-schaukappen.png": "1bebfe3aea7433f88f313bd8105d483116827c6aa8e9d5e291790e2929c7f407",
+    "portugiesische-tuemmler.png": "1a1050e9eb45589cfd44d7078ac9cb61eb8476877eeb3d6bd31af63358a950e9",
+    "posener-farbenkoepfe.png": "fd8069afed0fb99ad1e02543722cda8c174e259cb90cbb8d5063c6d1973e387b",
+    "poster.png": "7772062c11104402a194fad666bab6bdb485594bd6b996eedce769f69eb19247",
+    "prachener-kanik.png": "d0d3769a4b0dd4854c7455514a00149095103c41fdfb315a2e7be5e3928282a4",
+    "prager-tuemmler.png": "f88f29d9ba310d667a2ad75a6b5e25093c24856c8026fe3ac8b1c637b67fddb4",
     "prat.png": "3ac1a2e18810a639f6c907d9ba56f90cd8bc1d5c65f50c23e4b85f022e6fda53",
+    "rafenokroepfer.png": "4efee5911467f18f3367e40a22fd244b63ca8dad6075671b718572e5bcf7aa27",
+    "rakonitzer-roller.png": "b6673ca4bb86d4e52a95b07f871a38919edf2df3215b7059e643dfc97a14c58d",
     "ramelsloher.png": "83a7143d23a6c5a4c6f700dc24da0b4bb77da4c97046291c76f3f135ac3817b4",
     "redcaps.png": "62d4c53a3634f4a7b96a307ac9cda748a4f4b2dcb697e2b5af9c2a8dad8b292a",
+    "regensburger-tuemmler.png": "115141b391be2f7fd90351aec75f595b1e22068b024fb43d1658394e69b22267",
+    "rheinische-ringschlaeger.png": "1a142ea29739be30794a50dc5517d7225af758958248453c6bf9c5fe5e5fa98f",
     "rheinlaender.png": "0b2346d81353d4f68b685fcb924c5cf0ea92ab3e26711face89900c74809a18e",
     "rhodelaender.png": "83fedb7318d3ba692eb73f027fbbf6051c0a6a5f18563bc76eb671e8ef5db320",
+    "roemer.png": "95341bcaee4989d822b47bc768c9fdfff343b0d4496e320c4741f74e2fc46c19",
+    "romagnoli.png": "2918bfef87d46d600242484199b7295b45a38de72094865bf4b0ad0aefd90e35",
+    "rostocker-tuemmler.png": "a05fd951867e23d41b5e2466ca66e554049e7138919d3dc91563908548aa483e",
+    "rostower-positurtuemmler.png": "29b85563f97f7625e6ab3aed469a1223740a5f9f672ee2ea0f5bd7ac44585df8",
     "rouen-clair-enten.png": "c464c2ea8f03abb714b4baaed46919fcdea93df22f6c174b519f1b7414633676",
     "rouenenten.png": "99d21f77814703dc3cc721020e22f84d8be60c4d7dad7f3d3b290b0325d56c1e",
+    "rschewer-sternschwanztuemmler.png": "b46fa5cc4c673daed46e1fe870218158e1e7a7742c93b63cdac862dc91536e2a",
     "ruhlaer-zwerg-kaulhuehner.png": "3df519743100c41788e8543aa381f4c81a4cb69f03e3163e49352d3219891e40",
+    "rumaenische-geelsterte-baertchentuemmler.png": "64b43556c60541aa7820125e4502cae1e4e1f8a3c398204d6e0255d383964990",
+    "rumaenische-nackthalstuemmler.png": "f7cb248202529ea6af3f07bc0bca2ef72cdb827531936ee8f975f15f10982f97",
+    "rumaenische-weissschwanztuemmler.png": "135098364c7f92453b09e95bf085dc05f4f2e671095befd04e70a18e30ffb54b",
     "russische-gaense.png": "2c0698c5eac8024a71783e2b9604b04c07fd5dc1a79829013e26e5962677f6df",
+    "saarlandtauben.png": "7e71d7d5dd9da8681688659d6c5e262b76b90b8374b049f824ac20eb9e781e74",
     "sachsenenten.png": "910669d40db839a94a30d746572ef147ae3328b60759a971a4793dce93cb7ead",
     "sachsenhuehner.png": "0ba933b7b3fd06122ef673f2d80f75a995cbe80b840078c8cf45d7addc80ca50",
+    "saechsische-bruester.png": "3c9977c9d03a98ec73a58076d614229829cd5654035d7c85e85e9c979eadae9d",
+    "saechsische-feldfarbentauben.png": "5caee5a2bee691c2aa98c04d1c52155e91d608cca23984d6f7a1d084385d8980",
+    "saechsische-fluegeltauben.png": "37ca65e66a43dc700b32ef4659ca1e25aca82100b48a90218473d162b35906c6",
+    "saechsische-kroepfer.png": "7b1f88871577e3b56aeb77d2188e7907675832693dc36c092eec1b8d3f3846ca",
+    "saechsische-moenchtauben.png": "f27774ca77f41daaa21cc0f51deeff33054f03efec74647530c87090c7d316d0",
+    "saechsische-mondtauben.png": "163c4a835629fb2a95f5357a1edac8d03b3d7d64ef06073ddfac4fb052f20b84",
+    "saechsische-pfaffentauben.png": "004d2d4b62882712efb9f6b71a6586177893d517029f31fcbc94622ee83f9519",
+    "saechsische-schildtauben.png": "97e5dba676b163835f2c55a9d9ee81cb5d8e2cbc3131389da69f0a1bbedb41a7",
+    "saechsische-schnippen.png": "2528444314b5f53002100486fd9e29c1b02bb478f41d993566ed74c4eb3d46f5",
+    "saechsische-schwalbentauben.png": "18850911beacfc7136c94f79c4833ad88bfccc51617d52a18792c946ee4c843d",
+    "saechsische-storchtauben.png": "4550e12c53c7a0738598b0009bd53389eb701847ad494b7dc2eb2b3d0a2b8cc6",
+    "saechsische-verkehrtfluegelfarbentauben.png": "80bc5cbf613b5cdfe805e0e71a067e16fb6fdcfca8f2ec51728be6813a0c236a",
+    "saechsische-weissschwaenze.png": "cf4188e4e0aa11c3332a838a29d6137da7284543d020e2af2e3fe4ee310c75bb",
     "satsumadori.png": "1a1a4150ed72c8ef37e348e25dc0860f81dc7a35da7038c495cdf64c793d33a9",
+    "schirastuemmler.png": "af48a82c286359b9a183378d8ce6122608dbad2ca53a9ded9dcd584759833fde",
+    "schlesische-farbenkoepfe.png": "9daf9489a14b9739639f78d3b4de94608953da4474ed4881158828e9466c74c8",
+    "schlesische-kroepfer.png": "cfa38ebe499f8bc2f96cbabee50028ede8b2febcb463b37d4f50b9b49cc27ee6",
+    "schlesische-mohrenkoepfe.png": "4fe875a2cca412f09255823499b911cbfdc179762fd4e90e14e5d7845ef6ebf2",
+    "schmalkaldener-mohrenkoepfe.png": "9f2a31fd9b273e4d2f3475e2b2dad0d01ef4a3522677eb1cc31adc98f76037d6",
+    "schmoellner-trommeltauben.png": "51b7e63decca6a44271185d567bc56478b4302dde53bae371a68007a5823019c",
+    "schoeneberger-streifige.png": "d5e3827ff0298af1604b59a671858d51d7a4a856c13fe8ad1fec0b1d58eff91d",
     "schwedenenten.png": "463686c062ffb21d27cfa2b61f4ccdfb88e81a9f695a7e20bb5ef2302bca2604",
+    "schwedische-tuemmler.png": "4e21fc264f3f073b0359b014d315c3eb69a5f526319131a3f027101ab8e6e80c",
+    "schweizer-kroepfer.png": "70cc710b8d67dbee31e582357695355d5196cad9af43ee945ebc03332049127d",
     "sebright.png": "a513ccd85cb18b509af9f2d31fe4cef650f0635bb1ee9e52c184fe453df8abeb",
     "seidenhuehner.png": "62a0f12589318d4750aa2d1049e556355126386970b0021f832f93e6d60f9d60",
+    "seldschukentauben.png": "86e4b52bd50ba69734149a6379a71b3f0f3e0abb28dcfa81b4e150fba8886c7a",
     "serama.png": "9d07677bffa86ecbfa9e7328e249c32c67167cb7e8ff930b9f06b69d94a4303a",
+    "serbische-hochflieger.png": "9050b7e0213b87b712dc846c21f4b83458c18c0731019cb311c0329873fc4329",
+    "sevillanokroepfer.png": "b83e9e6406df026a742aa53b87674e92d22f6f7024ea286216fa77ae8df3780a",
     "shamo.png": "e466a312d9319fe96c513b91fb6a0998afb81d6e438747c8a4772643c2d775c9",
+    "show-antwerp.png": "bac85cb16bb2743f197fbae87370b0f367f9971cfeed3b128c4a9b333fbebec4",
+    "show-homer.png": "da88b044af092052aaedbedb6262b16f90db16e49d95f8c03f2f91411a58ef4a",
+    "show-racer.png": "5be35aa05c6de292db98ea891bbeecdc1f3ad23b89545284c5beff43f99fd895",
+    "sibirische-positurtuemmler.png": "6c58faea435213a93fb0fdb161a2228e523a2fcba5ac59a6c512936759c9839e",
+    "siebenbuerger-doppelkuppige-tuemmler.png": "a54832ab74ea6f1b35f9e839d0f1424d64607d3f0a2566df3eadb56431f19012",
+    "sisaker-roller.png": "2dc7ab1f0587831df9751a47b14be9ae6cf121b12e5d496ca221e31ba251ced3",
+    "slowakische-kroepfer.png": "d6e38d486e3a823648219275e4b73426e784af366c728036617a89bfd5500447",
     "smaragdenten.png": "9c317ec6743341aea72e6a83aebe14b37368a92591e91e9cddae5b4d41f7be21",
+    "soultzer-hauben.png": "b7ef9c890830415c72e435aa29d7102676d34b6bae85054acb4f7cf411af5b26",
     "spanier.png": "7c49debbc995ae6dba49d6b16e2140644feadae2630797dec5b93b4297ecca53",
+    "spaniertauben.png": "ad309629f6f551e64ec6191fc71263588f292eacbb73681b8b2a71a165b2ca39",
+    "spanische-erdbeeraugen.png": "b2d9d8afd2acde08d343b4d9e581d04d3ff45507410a5e06154722fbd0e208cd",
+    "speelderken.png": "1d792d0309aa5f8b54ce247f01065cd61149f68cab9983087484cf5eb95a8c31",
+    "st-galler-fluegeltauben.png": "d862e97f629c276a0de14adbc60e4fd63a6620034da5a15ab5013d60d1160d19",
+    "staparer-tuemmler.png": "556a186d6003d9307c96671d94da7b0b5cb19d5e345987d0f8f20e9eed15d1cd",
+    "stargarder-tuemmler.png": "d7d67cda6dd57eeb4a0fa2f564b2c511a4ac7f5ff86340e8df43976e6078f62a",
+    "startauben.png": "74e7a60f61254d47aef411b2dbc0efc4cc28a499ac25ed5a88f6a07e1fdbc62b",
+    "starwitzer-fluegelsteller-kroepfer.png": "0c1f14f0f10421b2826ec66baf7db5ea9aa4edbfab9d936d2d6af31164e23f29",
+    "steigerkroepfer.png": "a6c0cc99606130ca536ad24d12d739529a31d61b4b08a14dd995ddb182fe887f",
     "steinbacher-kampfgaense.png": "f9881e78cb7618b4164486be6f24caf9aaa5698a2ee82e3543ae5b290d310750",
+    "steinheimer-bagdetten.png": "47aa198e98be64bdf87e822140c61612ce14a4b2bbb331cc9f4a73d22bfa6d1b",
+    "stellerkroepfer.png": "2275d688d46e759909e8ae2d00217738a2156eefa154f20be35bc2a9f98bcb9b",
+    "stettiner-tuemmler.png": "6efb992b704f1bdfe5886fee15692248a051343572981add732b5974c87563c2",
+    "stralsunder-hochflieger.png": "d987ea9c9e46e202e0113a25a22eb1118f6654b1f72f99d1d8cff4ffa98b503e",
+    "strasser.png": "bda4fb948a850c63537bb6d073ce8e67daddb025f1f6971f21b872ec873f30ea",
     "streicherenten.png": "57538585784bb708cde5f8760bb5437339039aee91d5ff4d18c484ae088db2be",
     "strupphuehner.png": "04412c5e5937af422ba245ddcb694748934354061863ddbac6a4a9739b098de5",
+    "suedbatschkaer-tuemmler.png": "15a6b3ae376dd82a9c511b408be43f24e0b0f6a08c4f028fb4fa4950796c0764",
+    "sueddeutsche-blassen.png": "f6fe893ab7161e6c26c680ffc137ab5a5b1969ac73933a4e9474f2a12a9bd258",
+    "sueddeutsche-kohllerchen.png": "da00b37498f5ee3afe9bf9dbc9313c7639b678b1ae113792ece3b434ae000263",
+    "sueddeutsche-latztauben.png": "daad9e1bcc2053c1b5fdbd3053644f21e34a80afdea11b4d71280f553a6cb9f3",
+    "sueddeutsche-moenchtauben-belatscht.png": "1f6e71304bd47b6bc380d88004d9d4690648969495a102fe09673045d3ee94e6",
+    "sueddeutsche-moenchtauben-glattfuessig.png": "137586204244f2c80b281197d3cee565eb6d47f538b5c7390b5cc9f4f4a43f6e",
+    "sueddeutsche-mohrenkoepfe.png": "45e52538d94837510cfd88dca035372983a556553cb21fe4246282e725d9d659",
+    "sueddeutsche-schildtauben.png": "b174e78842810f61a20f9a6cb4ee0011dda71bd889d82676f812976c97f8a20b",
+    "sueddeutsche-schnippen.png": "7991daeee33b1466dea98b487a0345c45e6f5c27296a747dc12b80f7ea74fec8",
+    "sueddeutsche-tigermohren.png": "6f3ded78bf91efc566358ae39dcf9a3ab8cc184b2fef3ceb4403da4402ed7c21",
+    "sueddeutsche-weissschwaenze.png": "89058a89ec10043b99c0fd16829700b6722b7186cd0088a8a9e25737d17dad5c",
     "sulmtaler.png": "65ae1a1a0993d4cc637661ae7759bea0a24487335fc41b1ab60718296739a231",
     "sultanhuehner.png": "7cbee960f02b0d8faebc10122fa96478b7adb57dcb74864cd8f0ab0a6d0c1d80",
     "sumatra.png": "47ad83c8109c0769a46379a89b7c9083f6495b841f004aa65dfb8810b17911e7",
     "sundanesische-kaempfer.png": "393d0ee7df96928b28f8ced2599f2fa3c88fcce74d9f26cf956ee6a371a82722",
     "sundheimer.png": "fed2e3179b0df7b0ec665d4a53088ef78594a0ccea73c6e24fc142da473ceea5",
     "sussex.png": "80ee285141e89a839bf90aa3d259c1dde87f1d043ecd2926b1ebd8c76d7ce818",
+    "syrische-segler.png": "a99fe2e8df19e2eae50fec46cfb4a2c0174e004232e90f71e4ebed717e54596d",
+    "syrische-wammentauben.png": "9163c63a80a767c6838d9654a6fd686c7140154ec64c38b2e7f2fe9e5152a40a",
+    "szegediner-hochflieger.png": "6f94a027713f14131a4960dd7c3651ebca7459d048da78671c9ddb6a85c0c9e7",
+    "szolnoker-tuemmler.png": "4d2a837263baf8ac376cf9f6bfbd2f434e3d588e7c60d7c0dfe7a7f6b5d4fa02",
+    "taganroger-tuemmler.png": "4182640cbc19789bdd19449c46bbb32fdb5acdc7e7d508f075aba36ecf448d01",
+    "temeschburger-schecken.png": "190e041edb6f708b02bca29bdc2695f56d75321e8c2e3dbf70451bebe5b1c045",
+    "texaner.png": "40273c8228ec9a62dd4bd01e6d03264bcfc9f6ed3a8ecfc8edf71c8f1d0f05f9",
     "thueringer-barthuehner.png": "53cec50fb1da5bce59b1813f5f159f2e4007860805501c48d3bd24a4b587cc3e",
+    "thueringer-bruester.png": "f3d157f7e677584f8ca688e5bc6a25e46e1666bc9ac39f85b771d8ff263b7043",
+    "thueringer-einfarbige.png": "685610ae2b5e20db54354077ad16fcb4df06d9f694be29a635382cbe2c20404c",
+    "thueringer-fluegeltauben.png": "80772abf7b553c4b1ebd42647ae875cb682ffb3666fd5fdde2b3a5a17cfb4c50",
+    "thueringer-goldkaefertauben.png": "6b1196396880260e64031dc282a86d33f5254f3e8575c996dd598e7b456e9f78",
+    "thueringer-kroepfer.png": "c4256ef9c5e92cefe15143b2fbdd0ceda75dd32eeb4bc6d87ef27ae16bdef77c",
+    "thueringer-maeusertauben.png": "4b4fd9f0809c4842c52269ba9482f2c7e5d435fb431095990cb6824b343166f1",
+    "thueringer-moenchtauben.png": "12039880580643a5f49aa2b8e5c7f2ab4c15db4cae80b0e5a39e09d3f1a82b32",
+    "thueringer-mondtauben.png": "3c98ba67d30d12701f1cc7d7de54b202ba13eb76938f220d855025b18e07eb5f",
+    "thueringer-schildtauben.png": "2095fdf94cde458b62cf21e9478838190a4321e7d9393306980771972ac0fc93",
+    "thueringer-schnippen.png": "d433fe9de46d0eda7235c4fb53064db01b1f9747ca8c1172cf40b0fca37f702d",
+    "thueringer-schwalben.png": "d084ae14ec4f07005d20e1156c72da1c0d90d200a3b9cdb1ab15717675ee125a",
+    "thueringer-storchtauben.png": "d91716dd07184ba58badea3a4473d8032ecead005473f9631b1e5fdc5596d4cb",
+    "thueringer-weisskoepfe.png": "861c67d00f19f43ce29887b8b9abe422ab6115e67713b62f6cdcdfd6e2ee2ed2",
+    "thueringer-weisslaetze.png": "44eeb6e762f15382126c9c39238ffc163795018eb14086875dec07d36e268ee4",
+    "thueringer-weissschwaenze.png": "0252b11ed7419e87586c3bf535c7d47087bda41d9c0c3f6aa13493320579703f",
     "thueringer-zwerg-barthuehner.png": "c915aaba70c3cfc00f71e6671fe0343843bd3218f608b0037c19d02c21cf6806",
+    "thurgauer-elmer.png": "49e6dfbf0d9b8d1983e97aaf642924a6ff08f290d4f0739d45b2dd4ff5bc5c63",
+    "thurgauer-mehlfarbige.png": "07934ff54781afe8b261898ad761af649ea738f056c4a74627d3db5b2b612740",
+    "thurgauer-moenche.png": "1a91cc259111b240e9e8504c823dc508997ac602be1a38bf4a4d1fe3b5e0b2dd",
+    "thurgauer-schildtauben.png": "15df259ff66e1c9988fcec0efc51157b73589000e4d6198467557ce60d8f2e2f",
+    "thurgauer-weissschwaenze.png": "e6a09f595811f392100fc0a5234fd5793d922eec1b5d54d9070cd3d29121a861",
     "tomaru.png": "ba7b1f866477fee1c230f27e53338a161e8d3f863b43682323a853a81a108a14",
     "totenko.png": "6afaee4d25523b882b5808412063cdfabe3a4bafbe0f09f6dd2ac76c390aa6a3",
     "toulouser-gaense.png": "2c661934cc98c1f3b452c5dbdd9f180a1cc3f11251c0b3e86ef13417a99c27ae",
+    "triganino-modenese.png": "cb9330e3ecab8fa5e84b4393c0017dabdd64d54bbe3c87d7db14e163d2bccd25",
+    "tschechische-eiskroepfer.png": "9621df7c9144f173092ca9f84fc6d5d6c7ef5afc083437fd2d1f33e2212ca254",
+    "tulaer-sternschwanztuemmler.png": "426ed05d8b5b4d6dbbdad83a39aec89f4e1278a17ed58710963b743d0dfe0321",
+    "turbiteenmoevchen.png": "a6a67f3d23b7923be2563f597a0dfdc16585703098c0573256f60e0a1c69e6c8",
+    "turbitmoevchen.png": "001855d8078df087e36348fa4a403dbd4d54810fd2a261496852d4da5906dfc0",
     "tuzo.png": "68f4dc6be6b74800db89fca441b054f7d49edd75795645f4df467b4f731f7384",
     "twenter-landgaense.png": "b6853e4254566f336f3dbac77fdfd89e067cd762dcc41a64a5f056858ecc1ace",
     "uekkeler-bartzwerge.png": "c334404e9b0395eb2d44878ce4b4eb48b365d6dbff9c36b2012cc778bbb3099f",
+    "ungarische-riesentauben.png": "0ce55a872cdb120e906d2d90f571a8de0a5b89aba7c356f8d148eb570fb5b2e7",
+    "usbekische-tuemmler.png": "606897f0dd77aa23d45eae91240d9b5294f0cb40a2191be1f0b41f3a2b6504c0",
+    "valencianokroepfer-niederlaendische-zuchtrichtung.png": "a83835a2b345f7d9daae033054c0b199a49a3b79078650e5667bf134db5c5c2e",
+    "verkehrtfluegelkroepfer.png": "675ecfb6b249431387f59c9767303cc4d5161c2decfcf2d157d07d9a1092da6c",
     "vogtlaender.png": "82cd59d5ff1b32a6b3366b4c3d002eec9d2583179356e240ec20a9d712ea5fe9",
+    "vogtlaendische-trommeltauben.png": "507f569dfba931180daba0167a03a550baf02f0ce05bbdc70ea32f296dc7c1df",
+    "voorburger-schildkroepfer.png": "ebabe01178bbc0bea25e7f445b5bad2516d0d9bb5faae55134f0e1ce7fbf9edd",
     "vorster-enten.png": "adac6e285ccec08776b1e205f8b3143247e6276210ab98058441ce861c38a7cb",
     "vorwerkhuehner.png": "31234faa18a5c1eb0df61e2b738a85592b4d62c51c304bc1b8f7f1e298f746cd",
+    "warschauer-schmetterlinge.png": "11b4b648857e6bb84899182b076f021524f33d00ce60b587688cec62582f16f7",
     "warzenenten.png": "ba1e879d5bddb8b8700483a40eac3d341fac650c57c7ca6e745628b3b6ff93c0",
     "watermaalsche-bartzwerge.png": "26f6d07d8a4f3ab78d26b75e902eb1c1ded3d0ea7e7761ce38d09760d27174ba",
     "welsh-harlekin-enten.png": "9528ddefbe4375f803c831cb8ddd78d38c7c7d466c6151fadee44b40f25e20d7",
     "welsumer.png": "84d86c0a335b7ae0022f75775e4aa04c3f5de59966f01d1c64f9be76bf1a3def",
+    "west-of-england-tuemmler.png": "8ea7ba2c72551b4e534f6bed054a352ffa1c2aeb1f5bddcc2d7ed1d42e95405a",
     "westfaelische-totleger.png": "409370f47860e1c3e82529931726053687bb23d0372b54d6c79c95e6e7c1852c",
+    "wiener-gansel.png": "58385056a8ce1251212e034f18caeed05e6ceeb2fba56213d403b7afc94ec4fd",
+    "wiener-kurze.png": "6994932a0c93cb422c564c64559a49d8efb5fa4f5a8e7e59fd88805b39f57f87",
+    "wiener-tuemmler.png": "0bee9712c1055c69dfc0381c96752d0b5acedec885bc33f0ea747f96750392dc",
+    "wiener-weissschilder.png": "b119e1af2a065fb90310c1c18d9e05b02ef79ebac9b3ad60f0144b93e31ac50f",
+    "wiggertaler-farbenschwaenze.png": "058138fce60c6d1d7863648514466751c5deaa2b24623d37b8a615e45a58d84c",
+    "wolga-positurtuemmler.png": "b12742e3e9d88503b70f61731c42a47c51be43a560a964db1f205f89099be85b",
+    "wuerttemberger-mohrenkoepfe.png": "5f6ab6d502d20dd56bce87154c7f0ac1488baf5ec5756e47e886f4af377e863f",
     "wyandotten.png": "caa6ce169dd35dbfa3f96592f02dd35c792d90e5f3ef1403b06a595182702f73",
     "yakidos.png": "ab2d8cc78543ff937a008c0c6f4dc1be81786075d8f804c95cf93e5b3d24ad26",
     "yamato-gunkei.png": "95c8623ab1c28b1c6889fdad4536884f1523b2ddc260d5b90211b85aeaa6b8e0",
     "yokohama.png": "626f16fd25da391b1bcc245d60d8815520e6fddb31d5ae6ae2aaec35e5fdbd10",
+    "zuercher-weissschwaenze.png": "c2aad64dda3f4b0ebd24e9d66f5627cc7aa0ca3863a41087f0ef93d47b64a74e",
     "zwerg-altsteirer.png": "76c24035697a6fe17b0c8df70cdc44f36e40fc43e7dfbd9e770276d460c9a6c4",
     "zwerg-amrocks.png": "3dfc1af2bbae460e1d6236fa70b612ff985afd6be42be3bbab1313ff5b06698c",
     "zwerg-andalusier.png": "48176b2fc8676096af91c9f327bae8b2ef39348065bbb211a7d3fbe57636eef2",
@@ -272,10 +603,65 @@
     "zwerg-yokohama.png": "d20be33a69906d78fcaac809c7b678cc52662f601fc0a47fa839b33e1adce30c"
   },
   "entries": {
+    "aachener-bandkroepfer.html": [
+      "Aachener Bandkröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "aachener-lackschildmoevchen.html": [
+      "Aachener Lackschildmövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "aargauer-weissschwaenze.html": [
+      "Aargauer Weißschwänze",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "abu-abse-wammentauben.html": [
+      "Abu Abse-Wammentauben",
+      "Taube",
+      "Formentauben"
+    ],
+    "afghanische-rassetauben.html": [
+      "Afghanische Rassetauben",
+      "Taube",
+      "Formentauben"
+    ],
     "afrikanische-hoeckergaense.html": [
       "Afrikanische Höckergänse",
       "Gans",
       "Asien"
+    ],
+    "agarantauben.html": [
+      "Agarantauben",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "aegyptische-segler.html": [
+      "Ägyptische Segler (Egyptian Swift)",
+      "Taube",
+      "Formentauben"
+    ],
+    "altdeutsche-kroepfer.html": [
+      "Altdeutsche Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "altdeutsche-mohrenkoepfe.html": [
+      "Altdeutsche Mohrenköpfe",
+      "Taube",
+      "Farbentauben"
+    ],
+    "altdeutsche-moevchen.html": [
+      "Altdeutsche Mövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "altenburger-trommeltauben.html": [
+      "Altenburger Trommeltauben",
+      "Taube",
+      "Trommeltauben"
     ],
     "altenglische-kaempfer.html": [
       "Altenglische Kämpfer",
@@ -287,10 +673,45 @@
       "Zwerghuhn",
       "England"
     ],
+    "althollaendische-kapuziner.html": [
+      "Altholländische Kapuziner",
+      "Taube",
+      "Strukturtauben"
+    ],
+    "althollaendische-moevchen.html": [
+      "Altholländische Mövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "althollaendische-tuemmler.html": [
+      "Altholländische Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "altorientalische-moevchen.html": [
+      "Altorientalische Mövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "altoesterreichische-tuemmler.html": [
+      "Altösterreichische Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "altstaemmer.html": [
+      "Altstämmer",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "altsteirer.html": [
       "Altsteirer",
       "Großhuhn",
       "Österreich"
+    ],
+    "amerikanische-kalotten.html": [
+      "Amerikanische Kalotten",
+      "Taube",
+      "Tümmlertauben"
     ],
     "amerikanische-leghorn.html": [
       "Amerikanische Leghorn",
@@ -312,6 +733,26 @@
       "Großhuhn",
       "USA"
     ],
+    "amsterdamer-baertchentuemmler.html": [
+      "Amsterdamer Bärtchentümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "amsterdamer-kroepfer.html": [
+      "Amsterdamer Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "anatolische-moevchen.html": [
+      "Anatolische Mövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "anatolische-ringschlaeger.html": [
+      "Anatolische Ringschläger",
+      "Taube",
+      "Spielflugtauben"
+    ],
     "andalusier.html": [
       "Andalusier",
       "Großhuhn",
@@ -326,6 +767,11 @@
       "Antwerpener Bartzwerge",
       "Zwerghuhn",
       "Belgien"
+    ],
+    "antwerpener-smerlen.html": [
+      "Antwerpener Smerlen",
+      "Taube",
+      "Mövchentauben"
     ],
     "appenzeller-barthuehner.html": [
       "Appenzeller Barthühner",
@@ -342,6 +788,16 @@
       "Zwerghuhn",
       "Schweiz"
     ],
+    "arabische-trommeltauben.html": [
+      "Arabische Trommeltauben",
+      "Taube",
+      "Trommeltauben"
+    ],
+    "arader-tuemmler.html": [
+      "Arader Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "araucana.html": [
       "Araucana",
       "Großhuhn",
@@ -351,6 +807,11 @@
       "Ardenner",
       "Großhuhn",
       "Belgien / Frankreich"
+    ],
+    "armavirer-kurzschnaeblige-tuemmler.html": [
+      "Armavirer Kurzschnäblige Tümmler",
+      "Taube",
+      "Tümmlertauben"
     ],
     "asil.html": [
       "Asil",
@@ -377,6 +838,11 @@
       "Ente",
       "England"
     ],
+    "bakuer-tuemmler.html": [
+      "Bakuer Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "bali-enten.html": [
       "Bali-Enten",
       "Ente",
@@ -386,6 +852,11 @@
       "Bantam",
       "Zwerghuhn",
       "Herkunft nicht abschließend geklärt"
+    ],
+    "barbarisi-moevchen.html": [
+      "Barbarisi-Mövchen",
+      "Taube",
+      "Mövchentauben"
     ],
     "barbezieux.html": [
       "Barbezieux",
@@ -397,10 +868,40 @@
       "Großhuhn",
       "Niederlande"
     ],
+    "basraer-wammentauben.html": [
+      "Basraer Wammentauben",
+      "Taube",
+      "Formentauben"
+    ],
     "bassetten.html": [
       "Bassetten",
       "Zwerghuhn",
       "Belgien"
+    ],
+    "batschkaer-langschnaeblige-tuemmler.html": [
+      "Batschkaer Langschnäblige Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "bayerische-hochflieger.html": [
+      "Bayerische Hochflieger",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "bayerische-kroepfer.html": [
+      "Bayerische Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "belgische-ringschlaeger.html": [
+      "Belgische Ringschläger",
+      "Taube",
+      "Spielflugtauben"
+    ],
+    "beneschauer-tauben.html": [
+      "Beneschauer Tauben",
+      "Taube",
+      "Formentauben"
     ],
     "bergische-kraeher.html": [
       "Bergische Kräher",
@@ -422,6 +923,66 @@
       "Zwerghuhn",
       "Deutschland"
     ],
+    "berliner-kurze.html": [
+      "Berliner Kurze",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "berliner-lange.html": [
+      "Berliner Lange",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "berliner-langlatschige-tuemmler.html": [
+      "Berliner Langlatschige Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "bernburger-trommeltauben.html": [
+      "Bernburger Trommeltauben",
+      "Taube",
+      "Trommeltauben"
+    ],
+    "berner-gugger.html": [
+      "Berner Gugger",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "berner-halbschnaebler.html": [
+      "Berner Halbschnäbler",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "berner-lerchen.html": [
+      "Berner Lerchen",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "berner-rieselkoepfe.html": [
+      "Berner Rieselköpfe",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "berner-spiegelschwaenze.html": [
+      "Berner Spiegelschwänze",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "berner-weissschwaenze.html": [
+      "Berner Weißschwänze",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "bernhardiner-schecken.html": [
+      "Bernhardiner Schecken",
+      "Taube",
+      "Farbentauben"
+    ],
+    "bialostocka-kalotten.html": [
+      "Bialostocka Kalotten",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "bielefelder-kennhuehner.html": [
       "Bielefelder Kennhühner",
       "Großhuhn",
@@ -432,10 +993,30 @@
       "Zwerghuhn",
       "Deutschland"
     ],
+    "blagodarer-tuemmler.html": [
+      "Blagodarer Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "boehmentauben.html": [
+      "Böhmentauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "boehmische-fluegelschecken.html": [
+      "Böhmische Flügelschecken",
+      "Taube",
+      "Farbentauben"
+    ],
     "boehmische-gaense.html": [
       "Böhmische Gänse",
       "Gans",
       "Böhmen"
+    ],
+    "botoschaner-tuemmler.html": [
+      "Botoschaner Tümmler",
+      "Taube",
+      "Tümmlertauben"
     ],
     "brabanter.html": [
       "Brabanter",
@@ -462,6 +1043,26 @@
       "Großhuhn",
       "Niederlande"
     ],
+    "bremer-tuemmler.html": [
+      "Bremer Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "breslauer-tuemmler.html": [
+      "Breslauer Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "briver-farbenkoepfe.html": [
+      "Briver Farbenköpfe",
+      "Taube",
+      "Formentauben"
+    ],
+    "broder-purzler.html": [
+      "Broder Purzler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "bruegger-kaempfer.html": [
       "Brügger Kämpfer",
       "Großhuhn",
@@ -471,6 +1072,61 @@
       "Brügger Zwerg-Kämpfer",
       "Zwerghuhn",
       "Deutschland"
+    ],
+    "bruenner-kroepfer.html": [
+      "Brünner Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "bucharische-trommeltauben.html": [
+      "Bucharische Trommeltauben",
+      "Taube",
+      "Trommeltauben"
+    ],
+    "budapester-hochflieger.html": [
+      "Budapester Hochflieger",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "budapester-kiebitze.html": [
+      "Budapester Kiebitze",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "budapester-kurze.html": [
+      "Budapester Kurze",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "bursa-tuemmler.html": [
+      "Bursa-Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "cakalroller.html": [
+      "Cakalroller",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "canariokroepfer.html": [
+      "Canariokröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "carneau.html": [
+      "Carneau",
+      "Taube",
+      "Formentauben"
+    ],
+    "carrier.html": [
+      "Carrier",
+      "Taube",
+      "Warzentauben"
+    ],
+    "cauchois.html": [
+      "Cauchois",
+      "Taube",
+      "Formentauben"
     ],
     "cayugaenten.html": [
       "Cayugaenten",
@@ -492,6 +1148,21 @@
       "Ente",
       "Frankreich"
     ],
+    "chinesentauben.html": [
+      "Chinesentauben",
+      "Taube",
+      "Strukturtauben"
+    ],
+    "chinesische-tuemmler.html": [
+      "Chinesische Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "coburger-lerchen.html": [
+      "Coburger Lerchen",
+      "Taube",
+      "Formentauben"
+    ],
     "cochin.html": [
       "Cochin",
       "Großhuhn",
@@ -512,10 +1183,35 @@
       "Großhuhn",
       "Kuba"
     ],
+    "damascener.html": [
+      "Damascener",
+      "Taube",
+      "Formentauben"
+    ],
     "daenische-landhuehner.html": [
       "Dänische Landhühner",
       "Großhuhn",
       "Dänemark"
+    ],
+    "daenische-stieglitze.html": [
+      "Dänische Stieglitze",
+      "Taube",
+      "Farbentauben"
+    ],
+    "daenische-tuemmler.html": [
+      "Dänische Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "danziger-hochflieger.html": [
+      "Danziger Hochflieger",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "debreciner-roller.html": [
+      "Debreciner Roller",
+      "Taube",
+      "Tümmlertauben"
     ],
     "denizli-kraeher.html": [
       "Denizli-Kräher",
@@ -527,6 +1223,21 @@
       "Ente",
       "England / Deutschland"
     ],
+    "deutsche-doppelkuppige-trommeltauben.html": [
+      "Deutsche Doppelkuppige Trommeltauben",
+      "Taube",
+      "Trommeltauben"
+    ],
+    "deutsche-farbenschwanzmoevchen.html": [
+      "Deutsche Farbenschwanzmövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "deutsche-gabelschwanz-trommeltauben.html": [
+      "Deutsche Gabelschwanz-Trommeltauben",
+      "Taube",
+      "Trommeltauben"
+    ],
     "deutsche-lachshuehner.html": [
       "Deutsche Lachshühner",
       "Großhuhn",
@@ -536,6 +1247,11 @@
       "Deutsche Langschan",
       "Großhuhn",
       "Deutschland"
+    ],
+    "deutsche-langschnaeblige-tuemmler.html": [
+      "Deutsche Langschnäblige Tümmler",
+      "Taube",
+      "Tümmlertauben"
     ],
     "deutsche-legegaense.html": [
       "Deutsche Legegänse",
@@ -547,10 +1263,35 @@
       "Taube",
       "Deutschland / Italien"
     ],
+    "deutsche-noennchen.html": [
+      "Deutsche Nönnchen",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "deutsche-pekingenten.html": [
       "Deutsche Pekingenten",
       "Ente",
       "China / Deutschland"
+    ],
+    "deutsche-schautauben.html": [
+      "Deutsche Schautauben",
+      "Taube",
+      "Formentauben"
+    ],
+    "deutsche-schautippler.html": [
+      "Deutsche Schautippler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "deutsche-schildmoevchen.html": [
+      "Deutsche Schildmövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "deutsche-schnabelkuppige-trommeltauben.html": [
+      "Deutsche Schnabelkuppige Trommeltauben",
+      "Taube",
+      "Trommeltauben"
     ],
     "deutsche-sperber.html": [
       "Deutsche Sperber",
@@ -597,15 +1338,35 @@
       "Gans",
       "Deutschland"
     ],
+    "domestic-show-flight.html": [
+      "Domestic Show Flight",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "dominikaner.html": [
       "Dominikaner",
       "Großhuhn",
       "USA"
     ],
+    "dominomoevchen.html": [
+      "Dominomövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
     "dorking.html": [
       "Dorking",
       "Großhuhn",
       "England"
+    ],
+    "dragoon.html": [
+      "Dragoon",
+      "Taube",
+      "Warzentauben"
+    ],
+    "dresdener-trommeltauben.html": [
+      "Dresdener Trommeltauben",
+      "Taube",
+      "Trommeltauben"
     ],
     "dresdner.html": [
       "Dresdner",
@@ -617,10 +1378,45 @@
       "Ente",
       "Frankreich"
     ],
+    "echterdinger-farbentauben.html": [
+      "Echterdinger Farbentauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "eichbuehler.html": [
+      "Eichbühler",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
     "eiderenten.html": [
       "Eiderenten",
       "Ente",
       "Nördliche Küstenregionen"
+    ],
+    "einfarbige-moevchen.html": [
+      "Einfarbige Mövchen (African Owls)",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "einfarbige-schweizertauben.html": [
+      "Einfarbige Schweizertauben",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "eisker-doppelkuppige-positurtuemmler.html": [
+      "Eisker Doppelkuppige Positurtümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "eistauben.html": [
+      "Eistauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "elbinger-weisskoepfe.html": [
+      "Elbinger Weißköpfe",
+      "Taube",
+      "Tümmlertauben"
     ],
     "elsaesser.html": [
       "Elsässer",
@@ -632,10 +1428,25 @@
       "Gans",
       "Frankreich"
     ],
+    "elsaesser-kroepfer.html": [
+      "Elsässer Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
     "elsterenten.html": [
       "Elsterenten",
       "Ente",
       "Großbritannien"
+    ],
+    "elsterkroepfer.html": [
+      "Elsterkröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "elsterpurzler.html": [
+      "Elsterpurzler",
+      "Taube",
+      "Tümmlertauben"
     ],
     "emdener-gaense.html": [
       "Emdener Gänse",
@@ -652,10 +1463,55 @@
       "Großhuhn",
       "Spanien"
     ],
+    "englische-kroepfer.html": [
+      "Englische Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "englische-long-faced-tuemmler.html": [
+      "Englische Long Faced Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "englische-nonnen.html": [
+      "Englische Nonnen",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "englische-owlmoevchen.html": [
+      "Englische Owlmövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "englische-short-faced-tuemmler.html": [
+      "Englische Short Faced Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "englische-trommeltauben.html": [
+      "Englische Trommeltauben",
+      "Taube",
+      "Trommeltauben"
+    ],
+    "englische-zwergkroepfer.html": [
+      "Englische Zwergkröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "erlauer-tuemmler.html": [
+      "Erlauer Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "eulenbarthuehner.html": [
       "Eulenbarthühner",
       "Großhuhn",
       "Niederlande"
+    ],
+    "exhibition-homer.html": [
+      "Exhibition Homer",
+      "Taube",
+      "Formentauben"
     ],
     "faverolles.html": [
       "Faverolles",
@@ -667,35 +1523,195 @@
       "Zwerghuhn",
       "Europa"
     ],
+    "feldfarbentauben-glattfuessig.html": [
+      "Feldfarbentauben, glattfüßig",
+      "Taube",
+      "Farbentauben"
+    ],
+    "felegyhazaer-tuemmler.html": [
+      "Felegyhazaer Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "figurita-moevchen.html": [
+      "Figurita-Mövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "florentiner.html": [
+      "Florentiner",
+      "Taube",
+      "Huhntauben"
+    ],
     "frankfurter-zwerghuehner.html": [
       "Frankfurter Zwerghühner",
       "Zwerghuhn",
       "Deutschland"
+    ],
+    "fraenkische-bagdetten.html": [
+      "Fränkische Bagdetten",
+      "Taube",
+      "Warzentauben"
+    ],
+    "fraenkische-feldtauben.html": [
+      "Fränkische Feldtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "fraenkische-herzschecken.html": [
+      "Fränkische Herzschecken",
+      "Taube",
+      "Farbentauben"
     ],
     "fraenkische-landgaense.html": [
       "Fränkische Landgänse",
       "Gans",
       "Deutschland"
     ],
+    "fraenkische-samtschildtauben.html": [
+      "Fränkische Samtschildtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "fraenkische-trommeltauben.html": [
+      "Fränkische Trommeltauben",
+      "Taube",
+      "Trommeltauben"
+    ],
+    "franzoesische-bagdetten.html": [
+      "Französische Bagdetten",
+      "Taube",
+      "Warzentauben"
+    ],
+    "franzoesische-kroepfer.html": [
+      "Französische Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "franzoesische-sottobanca.html": [
+      "Französische Sottobanca",
+      "Taube",
+      "Formentauben"
+    ],
     "friesenhuehner.html": [
       "Friesenhühner",
       "Großhuhn",
       "Niederlande"
+    ],
+    "gelockte-wammentauben.html": [
+      "Gelockte Wammentauben",
+      "Taube",
+      "Formentauben"
+    ],
+    "genter-kroepfer.html": [
+      "Genter Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "genuine-homer.html": [
+      "Genuine Homer",
+      "Taube",
+      "Formentauben"
+    ],
+    "giant-homer.html": [
+      "Giant Homer",
+      "Taube",
+      "Formentauben"
+    ],
+    "giertauben.html": [
+      "Giertauben",
+      "Taube",
+      "Formentauben"
     ],
     "gimbsheimer-enten.html": [
       "Gimbsheimer Enten",
       "Ente",
       "Deutschland"
     ],
+    "gimpeltauben.html": [
+      "Gimpeltauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "glanztauben.html": [
+      "Glanztauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "goeteborg-tuemmler.html": [
+      "Göteborg-Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "granadino-kroepfer.html": [
+      "Granadino-Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "griwun-tuemmler.html": [
+      "Griwun-Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "groninger-slenken.html": [
+      "Groninger Slenken",
+      "Taube",
+      "Spielflugtauben"
+    ],
     "gruebbe-bartzwerge.html": [
       "Grübbe Bartzwerge",
       "Zwerghuhn",
       "Belgien"
     ],
+    "gumbinner-weisskoepfe.html": [
+      "Gumbinner Weißköpfe",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "habul-ruman-moevchen.html": [
+      "Habul-Ruman-Mövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
     "hamburger.html": [
       "Hamburger",
       "Großhuhn",
       "Nordwesteuropa / England"
+    ],
+    "hamburger-schimmel.html": [
+      "Hamburger Schimmel",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "hamburger-sticken.html": [
+      "Hamburger Sticken",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "hamburger-tuemmler.html": [
+      "Hamburger Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "hanakroepfer.html": [
+      "Hanakröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "hannoversche-tuemmler.html": [
+      "Hannoversche Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "harzburger-trommeltauben.html": [
+      "Harzburger Trommeltauben",
+      "Taube",
+      "Trommeltauben"
+    ],
+    "hessische-kroepfer.html": [
+      "Hessische Kröpfer",
+      "Taube",
+      "Kropftauben"
     ],
     "hochbrutflugenten.html": [
       "Hochbrutflugenten",
@@ -712,6 +1728,11 @@
       "Großhuhn",
       "Niederlande"
     ],
+    "hollaendische-kroepfer.html": [
+      "Holländische Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
     "hollaendische-zwerghuehner.html": [
       "Holländische Zwerghühner",
       "Zwerghuhn",
@@ -722,10 +1743,25 @@
       "Großhuhn",
       "Frankreich"
     ],
+    "huhnschecken.html": [
+      "Huhnschecken",
+      "Taube",
+      "Huhntauben"
+    ],
+    "indianer.html": [
+      "Indianer",
+      "Taube",
+      "Warzentauben"
+    ],
     "indische-kaempfer.html": [
       "Indische Kämpfer",
       "Großhuhn",
       "England"
+    ],
+    "indische-pfautauben.html": [
+      "Indische Pfautauben",
+      "Taube",
+      "Strukturtauben"
     ],
     "indische-zwerg-kaempfer.html": [
       "Indische Zwerg-Kämpfer",
@@ -737,25 +1773,70 @@
       "Großhuhn",
       "Italien / europäische Zucht"
     ],
+    "italienische-moevchen.html": [
+      "Italienische Mövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
     "japanische-legewachtel.html": [
       "Japanische Legewachtel",
       "Wachtel",
       "Japan / Ostasien"
+    ],
+    "jassyer-tuemmler.html": [
+      "Jassyer Tümmler",
+      "Taube",
+      "Tümmlertauben"
     ],
     "jersey-giants.html": [
       "Jersey Giants",
       "Großhuhn",
       "USA"
     ],
+    "jiennensekroepfer.html": [
+      "Jiennensekröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "kalotten.html": [
+      "Kalotten",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "kasaner-tuemmler.html": [
+      "Kasaner Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "kasseler-tuemmler.html": [
+      "Kasseler Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "kastilianer.html": [
       "Kastilianer",
       "Großhuhn",
       "Spanien"
     ],
+    "katalanische-tuemmler.html": [
+      "Katalanische Tümmler (Weißplatten)",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "kaulhuehner.html": [
       "Kaulhühner",
       "Großhuhn",
       "Europäischer Landhuhntyp"
+    ],
+    "kiewer-tuemmler.html": [
+      "Kiewer Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "kingtauben.html": [
+      "Kingtauben",
+      "Taube",
+      "Huhntauben"
     ],
     "ko-shamo.html": [
       "Ko Shamo",
@@ -767,10 +1848,40 @@
       "Großhuhn",
       "Japan"
     ],
+    "koelner-tuemmler.html": [
+      "Kölner Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "komorner-tuemmler.html": [
+      "Komorner Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "koenigsberger-farbenkoepfe.html": [
+      "Königsberger Farbenköpfe",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "koenigsberger-reinaugen.html": [
+      "Königsberger Reinaugen",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "koeroeser-tuemmler.html": [
+      "Köröser Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "kraienkoeppe.html": [
       "Kraienköppe",
       "Großhuhn",
       "Niederlande / Deutschland"
+    ],
+    "krasnodarer-mittelschnaebelige-tuemmler.html": [
+      "Krasnodarer Mittelschnäbelige Tümmler",
+      "Taube",
+      "Tümmlertauben"
     ],
     "krummschnabelenten.html": [
       "Krummschnabelenten",
@@ -787,6 +1898,11 @@
       "Großhuhn",
       "Frankreich"
     ],
+    "lahore.html": [
+      "Lahore",
+      "Taube",
+      "Formentauben"
+    ],
     "lakenfelder.html": [
       "Lakenfelder",
       "Großhuhn",
@@ -802,6 +1918,26 @@
       "Ente",
       "Südostasien"
     ],
+    "lausitzer-purzler.html": [
+      "Lausitzer Purzler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "libanontauben.html": [
+      "Libanontauben",
+      "Taube",
+      "Formentauben"
+    ],
+    "liller-kroepfer.html": [
+      "Liller Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "limerick-tuemmler.html": [
+      "Limerick-Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "lippegaense.html": [
       "Lippegänse",
       "Gans",
@@ -811,6 +1947,21 @@
       "Lockengänse",
       "Gans",
       "Südosteuropa"
+    ],
+    "lockentauben.html": [
+      "Lockentauben",
+      "Taube",
+      "Strukturtauben"
+    ],
+    "luchstauben.html": [
+      "Luchstauben",
+      "Taube",
+      "Formentauben"
+    ],
+    "luetticher-barbet.html": [
+      "Lütticher Barbet",
+      "Taube",
+      "Mövchentauben"
     ],
     "luetticher-kaempfer.html": [
       "Lütticher Kämpfer",
@@ -822,20 +1973,85 @@
       "Zwerghuhn",
       "Belgien"
     ],
+    "luzerner-einfarbige.html": [
+      "Luzerner Einfarbige",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "luzerner-elmer.html": [
+      "Luzerner Elmer",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "luzerner-goldkragen.html": [
+      "Luzerner Goldkragen",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "luzerner-kupferkragen.html": [
+      "Luzerner Kupferkragen",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "luzerner-rieselkoepfe.html": [
+      "Luzerner Rieselköpfe",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "luzerner-schildtauben.html": [
+      "Luzerner Schildtauben",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "luzerner-weissschwaenze.html": [
+      "Luzerner Weißschwänze",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
     "madras.html": [
       "Madras",
       "Großhuhn",
       "Indien"
+    ],
+    "maehrische-strasser.html": [
+      "Mährische Strasser",
+      "Taube",
+      "Formentauben"
+    ],
+    "maehrische-weisskopfkroepfer.html": [
+      "Mährische Weißkopfkröpfer",
+      "Taube",
+      "Kropftauben"
     ],
     "malaien.html": [
       "Malaien",
       "Großhuhn",
       "Indien / Malaiischer Archipel"
     ],
+    "malteser.html": [
+      "Malteser",
+      "Taube",
+      "Huhntauben"
+    ],
     "marans.html": [
       "Marans",
       "Großhuhn",
       "Frankreich"
+    ],
+    "marchenerokroepfer.html": [
+      "Marchenerokröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "mariolinha.html": [
+      "Mariolinha",
+      "Taube",
+      "Portugal"
+    ],
+    "maerkische-elstern.html": [
+      "Märkische Elstern",
+      "Taube",
+      "Tümmlertauben"
     ],
     "mechelner.html": [
       "Mechelner",
@@ -847,10 +2063,25 @@
       "Gans",
       "USA / Deutschland"
     ],
+    "memeler-hochflieger.html": [
+      "Memeler Hochflieger",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "minorka.html": [
       "Minorka",
       "Großhuhn",
       "Spanien / England"
+    ],
+    "mittelhaeuser.html": [
+      "Mittelhäuser",
+      "Taube",
+      "Formentauben"
+    ],
+    "modena.html": [
+      "Modena",
+      "Taube",
+      "Huhntauben"
     ],
     "moderne-englische-kaempfer.html": [
       "Moderne Englische Kämpfer",
@@ -862,6 +2093,31 @@
       "Zwerghuhn",
       "England"
     ],
+    "mondain.html": [
+      "Mondain",
+      "Taube",
+      "Formentauben"
+    ],
+    "montauban.html": [
+      "Montauban",
+      "Taube",
+      "Formentauben"
+    ],
+    "mookeetauben.html": [
+      "Mookeetauben",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "moskauer-schwarzgeelsterte-tuemmler.html": [
+      "Moskauer Schwarzgeelsterte Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "muensterlaender-feldtauben.html": [
+      "Münsterländer Feldtauben",
+      "Taube",
+      "Farbentauben"
+    ],
     "nackthalshuehner.html": [
       "Nackthalshühner",
       "Großhuhn",
@@ -872,15 +2128,60 @@
       "Großhuhn",
       "USA"
     ],
+    "niederbayerische-kroepfer.html": [
+      "Niederbayerische Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "niederlaendische-hochflieger.html": [
+      "Niederländische Hochflieger",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "niederlaendische-schoenheitsbrieftauben.html": [
+      "Niederländische Schönheitsbrieftauben",
+      "Taube",
+      "Formentauben"
+    ],
     "niederrheiner.html": [
       "Niederrheiner",
       "Großhuhn",
       "Deutschland"
     ],
+    "nordkaukasische-positurtuemmler.html": [
+      "Nordkaukasische Positurtümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "norwegische-jaerhuehner.html": [
       "Norwegische Jaerhühner",
       "Großhuhn",
       "Norwegen"
+    ],
+    "norwegische-tuemmler.html": [
+      "Norwegische Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "norwichkroepfer.html": [
+      "Norwichkröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "nuernberger-bagdetten.html": [
+      "Nürnberger Bagdetten",
+      "Taube",
+      "Warzentauben"
+    ],
+    "nuernberger-lerchen.html": [
+      "Nürnberger Lerchen",
+      "Taube",
+      "Farbentauben"
+    ],
+    "nuernberger-schwalben.html": [
+      "Nürnberger Schwalben",
+      "Taube",
+      "Farbentauben"
     ],
     "ohiki.html": [
       "Ohiki",
@@ -891,6 +2192,11 @@
       "Onagadori",
       "Großhuhn",
       "Japan"
+    ],
+    "orientalische-moevchen.html": [
+      "Orientalische Mövchen",
+      "Taube",
+      "Mövchentauben"
     ],
     "orientalische-roller.html": [
       "Orientalische Roller",
@@ -922,6 +2228,16 @@
       "Zwerghuhn",
       "Deutschland"
     ],
+    "ostpreussische-werfer.html": [
+      "Ostpreußische Werfer",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "ostrowietzer-warzentauben.html": [
+      "Ostrowietzer Warzentauben",
+      "Taube",
+      "Warzentauben"
+    ],
     "overberger-enten.html": [
       "Overberger Enten",
       "Ente",
@@ -937,10 +2253,25 @@
       "Großhuhn",
       "Spanien / Katalonien"
     ],
+    "persische-roller.html": [
+      "Persische Roller",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "perueckentauben.html": [
+      "Perückentauben",
+      "Taube",
+      "Strukturtauben"
+    ],
     "pfaelzer-kampfhuehner.html": [
       "Pfälzer Kampfhühner",
       "Großhuhn",
       "Deutschland / Rheinland-Pfalz"
+    ],
+    "pfautauben.html": [
+      "Pfautauben",
+      "Taube",
+      "Strukturtauben"
     ],
     "phoenix.html": [
       "Phönix",
@@ -957,6 +2288,31 @@
       "Großhuhn",
       "USA"
     ],
+    "polnische-ausstellungsbrieftauben.html": [
+      "Polnische Ausstellungsbrieftauben",
+      "Taube",
+      "Formentauben"
+    ],
+    "polnische-kalotten.html": [
+      "Polnische Kalotten",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "polnische-langschnaeblige-tuemmler.html": [
+      "Polnische Langschnäblige Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "polnische-moevchen.html": [
+      "Polnische Mövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "polnische-warzentauben.html": [
+      "Polnische Warzentauben",
+      "Taube",
+      "Warzentauben"
+    ],
     "pommernenten.html": [
       "Pommernenten",
       "Ente",
@@ -967,10 +2323,55 @@
       "Gans",
       "Deutschland"
     ],
+    "pommersche-kroepfer.html": [
+      "Pommersche Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "pommersche-schaukappen.html": [
+      "Pommersche Schaukappen",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "portugiesische-tuemmler.html": [
+      "Portugiesische Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "posener-farbenkoepfe.html": [
+      "Posener Farbenköpfe",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "poster.html": [
+      "Poster",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "prachener-kanik.html": [
+      "Prachener Kanik",
+      "Taube",
+      "Formentauben"
+    ],
+    "prager-tuemmler.html": [
+      "Prager Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "prat.html": [
       "Prat",
       "Großhuhn",
       "Spanien"
+    ],
+    "rafenokroepfer.html": [
+      "Rafenokröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "rakonitzer-roller.html": [
+      "Rakonitzer Roller",
+      "Taube",
+      "Tümmlertauben"
     ],
     "ramelsloher.html": [
       "Ramelsloher",
@@ -982,6 +2383,16 @@
       "Großhuhn",
       "England"
     ],
+    "regensburger-tuemmler.html": [
+      "Regensburger Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "rheinische-ringschlaeger.html": [
+      "Rheinische Ringschläger",
+      "Taube",
+      "Spielflugtauben"
+    ],
     "rheinlaender.html": [
       "Rheinländer",
       "Großhuhn",
@@ -991,6 +2402,26 @@
       "Rhodeländer",
       "Großhuhn",
       "USA"
+    ],
+    "romagnoli.html": [
+      "Romagnoli",
+      "Taube",
+      "Formentauben"
+    ],
+    "roemer.html": [
+      "Römer",
+      "Taube",
+      "Formentauben"
+    ],
+    "rostocker-tuemmler.html": [
+      "Rostocker Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "rostower-positurtuemmler.html": [
+      "Rostower Positurtümmler",
+      "Taube",
+      "Tümmlertauben"
     ],
     "rouen-clair-enten.html": [
       "Rouen-Clair-Enten",
@@ -1002,15 +2433,40 @@
       "Ente",
       "Frankreich"
     ],
+    "rschewer-sternschwanztuemmler.html": [
+      "Rschewer Sternschwanztümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "ruhlaer-zwerg-kaulhuehner.html": [
       "Ruhlaer Zwerg-Kaulhühner",
       "Zwerghuhn",
       "Deutschland, Thüringen"
     ],
+    "rumaenische-geelsterte-baertchentuemmler.html": [
+      "Rumänische Geelsterte Bärtchentümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "rumaenische-nackthalstuemmler.html": [
+      "Rumänische Nackthalstümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "rumaenische-weissschwanztuemmler.html": [
+      "Rumänische Weißschwanztümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "russische-gaense.html": [
       "Russische Gänse",
       "Gans",
       "Russland"
+    ],
+    "saarlandtauben.html": [
+      "Saarlandtauben",
+      "Taube",
+      "Formentauben"
     ],
     "sachsenenten.html": [
       "Sachsenenten",
@@ -1022,15 +2478,125 @@
       "Großhuhn",
       "Deutschland"
     ],
+    "saechsische-bruester.html": [
+      "Sächsische Brüster",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-feldfarbentauben.html": [
+      "Sächsische Feldfarbentauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-fluegeltauben.html": [
+      "Sächsische Flügeltauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-kroepfer.html": [
+      "Sächsische Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "saechsische-moenchtauben.html": [
+      "Sächsische Mönchtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-mondtauben.html": [
+      "Sächsische Mondtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-pfaffentauben.html": [
+      "Sächsische Pfaffentauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-schildtauben.html": [
+      "Sächsische Schildtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-schnippen.html": [
+      "Sächsische Schnippen",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-schwalbentauben.html": [
+      "Sächsische Schwalbentauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-storchtauben.html": [
+      "Sächsische Storchtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-verkehrtfluegelfarbentauben.html": [
+      "Sächsische Verkehrtflügelfarbentauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "saechsische-weissschwaenze.html": [
+      "Sächsische Weißschwänze",
+      "Taube",
+      "Farbentauben"
+    ],
     "satsumadori.html": [
       "Satsumadori",
       "Großhuhn",
       "Japan"
     ],
+    "schirastuemmler.html": [
+      "Schirastümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "schlesische-farbenkoepfe.html": [
+      "Schlesische Farbenköpfe",
+      "Taube",
+      "Farbentauben"
+    ],
+    "schlesische-kroepfer.html": [
+      "Schlesische Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "schlesische-mohrenkoepfe.html": [
+      "Schlesische Mohrenköpfe",
+      "Taube",
+      "Farbentauben"
+    ],
+    "schmalkaldener-mohrenkoepfe.html": [
+      "Schmalkaldener Mohrenköpfe",
+      "Taube",
+      "Strukturtauben"
+    ],
+    "schmoellner-trommeltauben.html": [
+      "Schmöllner Trommeltauben",
+      "Taube",
+      "Trommeltauben"
+    ],
+    "schoeneberger-streifige.html": [
+      "Schöneberger Streifige",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "schwedenenten.html": [
       "Schwedenenten",
       "Ente",
       "Schweden"
+    ],
+    "schwedische-tuemmler.html": [
+      "Schwedische Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "schweizer-kroepfer.html": [
+      "Schweizer Kröpfer",
+      "Taube",
+      "Kropftauben"
     ],
     "sebright.html": [
       "Sebright",
@@ -1042,30 +2608,155 @@
       "Großhuhn",
       "Ostasien"
     ],
+    "seldschukentauben.html": [
+      "Seldschukentauben",
+      "Taube",
+      "Strukturtauben"
+    ],
     "serama.html": [
       "Serama",
       "Zwerghuhn",
       "Malaysia"
+    ],
+    "serbische-hochflieger.html": [
+      "Serbische Hochflieger",
+      "Taube",
+      "Serbien"
+    ],
+    "sevillanokroepfer.html": [
+      "Sevillanokröpfer",
+      "Taube",
+      "Kropftauben"
     ],
     "shamo.html": [
       "Shamo",
       "Großhuhn",
       "Japan / südostasiatische Vorfahren"
     ],
+    "show-antwerp.html": [
+      "Show Antwerp",
+      "Taube",
+      "Formentauben"
+    ],
+    "show-homer.html": [
+      "Show Homer",
+      "Taube",
+      "Formentauben"
+    ],
+    "show-racer.html": [
+      "Show Racer",
+      "Taube",
+      "Formentauben"
+    ],
+    "sibirische-positurtuemmler.html": [
+      "Sibirische Positurtümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "siebenbuerger-doppelkuppige-tuemmler.html": [
+      "Siebenbürger Doppelkuppige Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "sisaker-roller.html": [
+      "Sisaker Roller",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "slowakische-kroepfer.html": [
+      "Slowakische Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
     "smaragdenten.html": [
       "Smaragdenten",
       "Ente",
       "USA"
+    ],
+    "soultzer-hauben.html": [
+      "Soultzer Hauben",
+      "Taube",
+      "Formentauben"
     ],
     "spanier.html": [
       "Spanier",
       "Großhuhn",
       "Spanien"
     ],
+    "spaniertauben.html": [
+      "Spaniertauben",
+      "Taube",
+      "Formentauben"
+    ],
+    "spanische-erdbeeraugen.html": [
+      "Spanische Erdbeeraugen",
+      "Taube",
+      "Warzentauben"
+    ],
+    "speelderken.html": [
+      "Speelderken",
+      "Taube",
+      "Spielflugtauben"
+    ],
+    "st-galler-fluegeltauben.html": [
+      "St. Galler Flügeltauben",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "staparer-tuemmler.html": [
+      "Staparer Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "stargarder-tuemmler.html": [
+      "Stargarder Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "startauben.html": [
+      "Startauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "starwitzer-fluegelsteller-kroepfer.html": [
+      "Starwitzer Flügelsteller-Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "steigerkroepfer.html": [
+      "Steigerkröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
     "steinbacher-kampfgaense.html": [
       "Steinbacher Kampfgänse",
       "Gans",
       "Deutschland"
+    ],
+    "steinheimer-bagdetten.html": [
+      "Steinheimer Bagdetten",
+      "Taube",
+      "Warzentauben"
+    ],
+    "stellerkroepfer.html": [
+      "Stellerkröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "stettiner-tuemmler.html": [
+      "Stettiner Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "stralsunder-hochflieger.html": [
+      "Stralsunder Hochflieger",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "strasser.html": [
+      "Strasser",
+      "Taube",
+      "Formentauben"
     ],
     "streicherenten.html": [
       "Streicherenten",
@@ -1076,6 +2767,61 @@
       "Strupphühner",
       "Großhuhn",
       "Südliches Asien"
+    ],
+    "suedbatschkaer-tuemmler.html": [
+      "Südbatschkaer Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "sueddeutsche-blassen.html": [
+      "Süddeutsche Blassen",
+      "Taube",
+      "Farbentauben"
+    ],
+    "sueddeutsche-kohllerchen.html": [
+      "Süddeutsche Kohllerchen",
+      "Taube",
+      "Farbentauben"
+    ],
+    "sueddeutsche-latztauben.html": [
+      "Süddeutsche Latztauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "sueddeutsche-mohrenkoepfe.html": [
+      "Süddeutsche Mohrenköpfe",
+      "Taube",
+      "Farbentauben"
+    ],
+    "sueddeutsche-moenchtauben-belatscht.html": [
+      "Süddeutsche Mönchtauben belatscht",
+      "Taube",
+      "Farbentauben"
+    ],
+    "sueddeutsche-moenchtauben-glattfuessig.html": [
+      "Süddeutsche Mönchtauben glattfüßig",
+      "Taube",
+      "Farbentauben"
+    ],
+    "sueddeutsche-schildtauben.html": [
+      "Süddeutsche Schildtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "sueddeutsche-schnippen.html": [
+      "Süddeutsche Schnippen",
+      "Taube",
+      "Farbentauben"
+    ],
+    "sueddeutsche-tigermohren.html": [
+      "Süddeutsche Tigermohren",
+      "Taube",
+      "Farbentauben"
+    ],
+    "sueddeutsche-weissschwaenze.html": [
+      "Süddeutsche Weißschwänze",
+      "Taube",
+      "Farbentauben"
     ],
     "sulmtaler.html": [
       "Sulmtaler",
@@ -1107,10 +2853,145 @@
       "Großhuhn",
       "England"
     ],
+    "syrische-segler.html": [
+      "Syrische Segler (Syrian Swift)",
+      "Taube",
+      "Formentauben"
+    ],
+    "syrische-wammentauben.html": [
+      "Syrische Wammentauben",
+      "Taube",
+      "Formentauben"
+    ],
+    "szegediner-hochflieger.html": [
+      "Szegediner Hochflieger",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "szolnoker-tuemmler.html": [
+      "Szolnoker Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "taganroger-tuemmler.html": [
+      "Taganroger Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "temeschburger-schecken.html": [
+      "Temeschburger Schecken",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "texaner.html": [
+      "Texaner",
+      "Taube",
+      "Formentauben"
+    ],
+    "thurgauer-elmer.html": [
+      "Thurgauer Elmer",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "thurgauer-mehlfarbige.html": [
+      "Thurgauer Mehlfarbige",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "thurgauer-moenche.html": [
+      "Thurgauer Mönche",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "thurgauer-schildtauben.html": [
+      "Thurgauer Schildtauben",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "thurgauer-weissschwaenze.html": [
+      "Thurgauer Weißschwänze",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
     "thueringer-barthuehner.html": [
       "Thüringer Barthühner",
       "Großhuhn",
       "Deutschland"
+    ],
+    "thueringer-bruester.html": [
+      "Thüringer Brüster",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-einfarbige.html": [
+      "Thüringer Einfarbige",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-fluegeltauben.html": [
+      "Thüringer Flügeltauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-goldkaefertauben.html": [
+      "Thüringer Goldkäfertauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-kroepfer.html": [
+      "Thüringer Kröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "thueringer-maeusertauben.html": [
+      "Thüringer Mäusertauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-moenchtauben.html": [
+      "Thüringer Mönchtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-mondtauben.html": [
+      "Thüringer Mondtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-schildtauben.html": [
+      "Thüringer Schildtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-schnippen.html": [
+      "Thüringer Schnippen",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-schwalben.html": [
+      "Thüringer Schwalben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-storchtauben.html": [
+      "Thüringer Storchtauben",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-weisskoepfe.html": [
+      "Thüringer Weißköpfe",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-weisslaetze.html": [
+      "Thüringer Weißlätze",
+      "Taube",
+      "Farbentauben"
+    ],
+    "thueringer-weissschwaenze.html": [
+      "Thüringer Weißschwänze",
+      "Taube",
+      "Farbentauben"
     ],
     "thueringer-zwerg-barthuehner.html": [
       "Thüringer Zwerg-Barthühner",
@@ -1132,6 +3013,31 @@
       "Gans",
       "Frankreich"
     ],
+    "triganino-modenese.html": [
+      "Triganino Modenese",
+      "Taube",
+      "Huhntauben"
+    ],
+    "tschechische-eiskroepfer.html": [
+      "Tschechische Eiskröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
+    "tulaer-sternschwanztuemmler.html": [
+      "Tulaer Sternschwanztümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "turbiteenmoevchen.html": [
+      "Turbiteenmövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
+    "turbitmoevchen.html": [
+      "Turbitmövchen",
+      "Taube",
+      "Mövchentauben"
+    ],
     "tuzo.html": [
       "Tuzo",
       "Großhuhn",
@@ -1147,10 +3053,40 @@
       "Zwerghuhn",
       "Belgien"
     ],
+    "ungarische-riesentauben.html": [
+      "Ungarische Riesentauben",
+      "Taube",
+      "Formentauben"
+    ],
+    "usbekische-tuemmler.html": [
+      "Usbekische Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "valencianokroepfer-niederlaendische-zuchtrichtung.html": [
+      "Valencianokröpfer – Niederländische Zuchtrichtung",
+      "Taube",
+      "Kropftauben"
+    ],
+    "verkehrtfluegelkroepfer.html": [
+      "Verkehrtflügelkröpfer",
+      "Taube",
+      "Kropftauben"
+    ],
     "vogtlaender.html": [
       "Vogtländer",
       "Großhuhn",
       "Deutschland"
+    ],
+    "vogtlaendische-trommeltauben.html": [
+      "Vogtländische Trommeltauben",
+      "Taube",
+      "Trommeltauben"
+    ],
+    "voorburger-schildkroepfer.html": [
+      "Voorburger Schildkröpfer",
+      "Taube",
+      "Kropftauben"
     ],
     "vorster-enten.html": [
       "Vorster Enten",
@@ -1161,6 +3097,11 @@
       "Vorwerkhühner",
       "Großhuhn",
       "Deutschland"
+    ],
+    "warschauer-schmetterlinge.html": [
+      "Warschauer Schmetterlinge",
+      "Taube",
+      "Tümmlertauben"
     ],
     "warzenenten.html": [
       "Warzenenten",
@@ -1182,10 +3123,50 @@
       "Großhuhn",
       "Niederlande"
     ],
+    "west-of-england-tuemmler.html": [
+      "West-of-England-Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
     "westfaelische-totleger.html": [
       "Westfälische Totleger",
       "Großhuhn",
       "Deutschland"
+    ],
+    "wiener-gansel.html": [
+      "Wiener Gansel",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "wiener-kurze.html": [
+      "Wiener Kurze",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "wiener-tuemmler.html": [
+      "Wiener Tümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "wiener-weissschilder.html": [
+      "Wiener Weißschilder",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "wiggertaler-farbenschwaenze.html": [
+      "Wiggertaler Farbenschwänze",
+      "Taube",
+      "Schweizer Farbentauben"
+    ],
+    "wolga-positurtuemmler.html": [
+      "Wolga-Positurtümmler",
+      "Taube",
+      "Tümmlertauben"
+    ],
+    "wuerttemberger-mohrenkoepfe.html": [
+      "Württemberger Mohrenköpfe",
+      "Taube",
+      "Farbentauben"
     ],
     "wyandotten.html": [
       "Wyandotten",
@@ -1206,6 +3187,11 @@
       "Yokohama",
       "Großhuhn",
       "Deutschland / japanischer Ursprung"
+    ],
+    "zuercher-weissschwaenze.html": [
+      "Zürcher Weißschwänze",
+      "Taube",
+      "Schweizer Farbentauben"
     ],
     "zwerg-altsteirer.html": [
       "Zwerg-Altsteirer",

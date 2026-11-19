@@ -31,7 +31,9 @@ def catalog():
         if breed['group'] in GROUPS:
             page=(ROOT/breed['url']).read_text(encoding='utf-8')
             match=re.search(r'<strong>Herkunft[^<]*</strong>(.*?)</div>',page,re.S)
-            breed['origin']=' '.join(unescape(re.sub(r'<[^>]+>',' ',match[1])).split()) if match else ''
+            if match is None and breed['group']=='Taube':
+                match=re.search(r'<strong>Sparte</strong>(.*?)</div>',page,re.S)
+            breed['detail']=' '.join(unescape(re.sub(r'<[^>]+>',' ',match[1])).split()) if match else ''
     return sorted((b for b in data if b['group'] in GROUPS),key=lambda b:alphabetical(b['name']))
 
 def alphabetical(name):
@@ -66,7 +68,7 @@ def draw_label(c,b):
     lines,size=fit(b['name'],'A7Bold',15,10,3)
     for i,line in enumerate(lines):
         caption(c,line,(97-i*5.8 if len(lines)==3 else 95-i*6.5),size,'A7Bold')
-    facts=' · '.join(filter(None,(b['group'],b['origin'])))
+    facts=' · '.join(filter(None,(b['group'],b['detail'])))
     lines,size=fit(facts,'A7Regular',10,8,2)
     for i,line in enumerate(lines):
         caption(c,line,81-i*4.2,size)
@@ -115,7 +117,7 @@ def main():
     (ROOT/'tmp/pdfs').mkdir(parents=True,exist_ok=True)
     layout_path=ROOT/'scripts/a7-layout.json'
     previous=json.loads(layout_path.read_text(encoding='utf-8')) if layout_path.exists() else {}
-    entries={b['url']:[b['name'],b['group'],b['origin']] for b in breeds}
+    entries={b['url']:[b['name'],b['group'],b['detail']] for b in breeds}
     layout_changed=previous.get('version')!=LAYOUT_VERSION
     expected={url.replace('.html','.pdf') for url in entries}
     existing={p.name for p in OUT.glob('*.pdf')}-set(COLLECTIONS)

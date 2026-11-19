@@ -32,7 +32,7 @@ def main():
         assert b['name'].replace(' ','') in text,b['name']
         assert 'RGZVHagenundUmgebung' in text and 'seit1903e.V.' in text
         assert 'Rasseentdecken' in text and 'DigitalesRasselexikon' in text
-        facts=' · '.join(filter(None,(b['group'],b['origin'])))
+        facts=' · '.join(filter(None,(b['group'],b['detail'])))
         assert facts.replace(' ','') in text,b['url']
         assert reader.pages[0]['/Annots'][0].get_object()['/A']['/URI']==BASE+b['url']
         assert decode(scan(path))==[BASE+b['url']],path.name

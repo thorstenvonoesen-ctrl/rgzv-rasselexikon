@@ -1,9 +1,9 @@
 {
-  "races": 242,
-  "existing_pngs": 243,
+  "races": 573,
+  "existing_pngs": 574,
   "existing_sign_pdfs": 0,
-  "new_a7_pdfs": 242,
-  "a4_pages": 31,
+  "new_a7_pdfs": 573,
+  "a4_pages": 72,
   "a4_example_codes": 8,
   "qr_decode_dpi": 200,
   "example_dpi": 300,
