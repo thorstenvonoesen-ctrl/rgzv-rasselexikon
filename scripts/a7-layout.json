@@ -5,10 +5,10 @@
     105
   ],
   "qr_mm": [
-    7,
-    22,
-    60,
-    60
+    16,
+    18,
+    42,
+    42
   ],
   "a4_cells_mm": [
     105,
@@ -272,247 +272,1216 @@
     "zwerg-yokohama.png": "d20be33a69906d78fcaac809c7b678cc52662f601fc0a47fa839b33e1adce30c"
   },
   "entries": {
-    "afrikanische-hoeckergaense.html": "Afrikanische Höckergänse",
-    "altenglische-kaempfer.html": "Altenglische Kämpfer",
-    "altenglische-zwerg-kaempfer.html": "Altenglische Zwerg-Kämpfer",
-    "altsteirer.html": "Altsteirer",
-    "amerikanische-leghorn.html": "Amerikanische Leghorn",
-    "amerikanische-pekingenten.html": "Amerikanische Pekingenten",
-    "amerikanische-zwerg-leghorn.html": "Amerikanische Zwerg-Leghorn",
-    "amrocks.html": "Amrocks",
-    "andalusier.html": "Andalusier",
-    "annaberger-haubenstrupphuehner.html": "Annaberger Haubenstrupphühner",
-    "antwerpener-bartzwerge.html": "Antwerpener Bartzwerge",
-    "appenzeller-barthuehner.html": "Appenzeller Barthühner",
-    "appenzeller-spitzhauben.html": "Appenzeller Spitzhauben",
-    "appenzeller-zwerg-barthuehner.html": "Appenzeller Zwerg-Barthühner",
-    "araucana.html": "Araucana",
-    "ardenner.html": "Ardenner",
-    "asil.html": "Asil",
-    "augsburger.html": "Augsburger",
-    "australorps.html": "Australorps",
-    "ayam-cemani.html": "Ayam Cemani",
-    "aylesburyenten.html": "Aylesburyenten",
-    "bali-enten.html": "Bali-Enten",
-    "bantam.html": "Bantam",
-    "barbezieux.html": "Barbezieux",
-    "barnevelder.html": "Barnevelder",
-    "bassetten.html": "Bassetten",
-    "bergische-kraeher.html": "Bergische Kräher",
-    "bergische-schlotterkaemme.html": "Bergische Schlotterkämme",
-    "bergische-zwerg-kraeher.html": "Bergische Zwerg-Kräher",
-    "bergische-zwerg-schlotterkaemme.html": "Bergische Zwerg-Schlotterkämme",
-    "bielefelder-kennhuehner.html": "Bielefelder Kennhühner",
-    "bielefelder-zwerg-kennhuehner.html": "Bielefelder Zwerg-Kennhühner",
-    "brabanter.html": "Brabanter",
-    "brabanter-bauernhuehner.html": "Brabanter Bauernhühner",
-    "brahma.html": "Brahma",
-    "brakel.html": "Brakel",
-    "breda.html": "Breda",
-    "bruegger-kaempfer.html": "Brügger Kämpfer",
-    "bruegger-zwerg-kaempfer.html": "Brügger Zwerg-Kämpfer",
-    "boehmische-gaense.html": "Böhmische Gänse",
-    "cayugaenten.html": "Cayugaenten",
-    "celler-gaense.html": "Celler Gänse",
-    "chabo.html": "Chabo",
-    "challansenten.html": "Challansenten",
-    "cochin.html": "Cochin",
-    "croad-langschan.html": "Croad-Langschan",
-    "crevecoeur.html": "Crèvecoeur",
-    "cubalaya.html": "Cubalaya",
-    "denizli-kraeher.html": "Denizli-Kräher",
-    "deutsche-campbellenten.html": "Deutsche Campbellenten",
-    "deutsche-lachshuehner.html": "Deutsche Lachshühner",
-    "deutsche-langschan.html": "Deutsche Langschan",
-    "deutsche-legegaense.html": "Deutsche Legegänse",
-    "deutsche-modeneser.html": "Deutsche Modeneser",
-    "deutsche-pekingenten.html": "Deutsche Pekingenten",
-    "deutsche-sperber.html": "Deutsche Sperber",
-    "deutsche-zwerg-lachshuehner.html": "Deutsche Zwerg-Lachshühner",
-    "deutsche-zwerg-langschan.html": "Deutsche Zwerg-Langschan",
-    "deutsche-zwerg-reichshuehner.html": "Deutsche Zwerg-Reichshühner",
-    "deutsche-zwerg-wyandotten.html": "Deutsche Zwerg-Wyandotten",
-    "deutsche-zwergenten.html": "Deutsche Zwergenten",
-    "deutsche-zwerghuehner.html": "Deutsche Zwerghühner",
-    "deutsches-reichshuhn.html": "Deutsches Reichshuhn",
-    "diepholzer-gaense.html": "Diepholzer Gänse",
-    "dominikaner.html": "Dominikaner",
-    "dorking.html": "Dorking",
-    "dresdner.html": "Dresdner",
-    "duclairenten.html": "Duclairenten",
-    "daenische-landhuehner.html": "Dänische Landhühner",
-    "eiderenten.html": "Eiderenten",
-    "elsterenten.html": "Elsterenten",
-    "elsaesser.html": "Elsässer",
-    "elsaesser-gaense.html": "Elsässer Gänse",
-    "emdener-gaense.html": "Emdener Gänse",
-    "empordagaense.html": "Empordagänse",
-    "empordanesa.html": "Empordanesa",
-    "eulenbarthuehner.html": "Eulenbarthühner",
-    "faverolles.html": "Faverolles",
-    "federfuessige-zwerghuehner.html": "Federfüßige Zwerghühner",
-    "frankfurter-zwerghuehner.html": "Frankfurter Zwerghühner",
-    "friesenhuehner.html": "Friesenhühner",
-    "fraenkische-landgaense.html": "Fränkische Landgänse",
-    "gimbsheimer-enten.html": "Gimbsheimer Enten",
-    "gruebbe-bartzwerge.html": "Grübbe Bartzwerge",
-    "hamburger.html": "Hamburger",
-    "hochbrutflugenten.html": "Hochbrutflugenten",
-    "hollaender-haubenhuehner.html": "Holländer Haubenhühner",
-    "hollaendische-zwerghuehner.html": "Holländische Zwerghühner",
-    "houdan.html": "Houdan",
-    "hoeckergaense.html": "Höckergänse",
-    "indische-kaempfer.html": "Indische Kämpfer",
-    "indische-zwerg-kaempfer.html": "Indische Zwerg-Kämpfer",
-    "italiener.html": "Italiener",
-    "japanische-legewachtel.html": "Japanische Legewachtel",
-    "jersey-giants.html": "Jersey Giants",
-    "kastilianer.html": "Kastilianer",
-    "kaulhuehner.html": "Kaulhühner",
-    "ko-shamo.html": "Ko Shamo",
-    "koeyoshi.html": "Koeyoshi",
-    "kraienkoeppe.html": "Kraienköppe",
-    "krummschnabelenten.html": "Krummschnabelenten",
-    "krueper.html": "Krüper",
-    "la-fleche.html": "La Flèche",
-    "lakenfelder.html": "Lakenfelder",
-    "landenten.html": "Landenten",
-    "laufenten.html": "Laufenten",
-    "lippegaense.html": "Lippegänse",
-    "lockengaense.html": "Lockengänse",
-    "luetticher-kaempfer.html": "Lütticher Kämpfer",
-    "luetticher-zwerg-kaempfer.html": "Lütticher Zwerg-Kämpfer",
-    "madras.html": "Madras",
-    "malaien.html": "Malaien",
-    "marans.html": "Marans",
-    "mechelner.html": "Mechelner",
-    "mecklenburger-gaense.html": "Mecklenburger Gänse",
-    "minorka.html": "Minorka",
-    "moderne-englische-kaempfer.html": "Moderne Englische Kämpfer",
-    "moderne-englische-zwergkaempfer.html": "Moderne Englische Zwerg-Kämpfer",
-    "nackthalshuehner.html": "Nackthalshühner",
-    "new-hampshire.html": "New Hampshire",
-    "niederrheiner.html": "Niederrheiner",
-    "norwegische-jaerhuehner.html": "Norwegische Jaerhühner",
-    "ohiki.html": "Ohiki",
-    "onagadori.html": "Onagadori",
-    "orientalische-roller.html": "Orientalische Roller",
-    "orloff.html": "Orloff",
-    "orpington.html": "Orpington",
-    "orpingtonenten.html": "Orpingtonenten",
-    "ostfriesische-moewen.html": "Ostfriesische Möwen",
-    "ostfriesische-zwerg-moewen.html": "Ostfriesische Zwerg-Möwen",
-    "overberger-enten.html": "Overberger Enten",
-    "paduaner.html": "Paduaner",
-    "penedesenca.html": "Penedesenca",
-    "pfaelzer-kampfhuehner.html": "Pfälzer Kampfhühner",
-    "phoenix.html": "Phönix",
-    "pilgrimgaense.html": "Pilgrimgänse",
-    "plymouth-rocks.html": "Plymouth Rocks",
-    "pommernenten.html": "Pommernenten",
-    "pommerngaense.html": "Pommerngänse",
-    "prat.html": "Prat",
-    "ramelsloher.html": "Ramelsloher",
-    "redcaps.html": "Redcaps",
-    "rheinlaender.html": "Rheinländer",
-    "rhodelaender.html": "Rhodeländer",
-    "rouen-clair-enten.html": "Rouen-Clair-Enten",
-    "rouenenten.html": "Rouenenten",
-    "ruhlaer-zwerg-kaulhuehner.html": "Ruhlaer Zwerg-Kaulhühner",
-    "russische-gaense.html": "Russische Gänse",
-    "sachsenenten.html": "Sachsenenten",
-    "sachsenhuehner.html": "Sachsenhühner",
-    "satsumadori.html": "Satsumadori",
-    "schwedenenten.html": "Schwedenenten",
-    "sebright.html": "Sebright",
-    "seidenhuehner.html": "Seidenhühner",
-    "serama.html": "Serama",
-    "shamo.html": "Shamo",
-    "smaragdenten.html": "Smaragdenten",
-    "spanier.html": "Spanier",
-    "steinbacher-kampfgaense.html": "Steinbacher Kampfgänse",
-    "streicherenten.html": "Streicherenten",
-    "strupphuehner.html": "Strupphühner",
-    "sulmtaler.html": "Sulmtaler",
-    "sultanhuehner.html": "Sultanhühner",
-    "sumatra.html": "Sumatra",
-    "sundanesische-kaempfer.html": "Sundanesische Kämpfer",
-    "sundheimer.html": "Sundheimer",
-    "sussex.html": "Sussex",
-    "thueringer-barthuehner.html": "Thüringer Barthühner",
-    "thueringer-zwerg-barthuehner.html": "Thüringer Zwerg-Barthühner",
-    "tomaru.html": "Tomaru",
-    "totenko.html": "Totenko",
-    "toulouser-gaense.html": "Toulouser Gänse",
-    "tuzo.html": "Tuzo",
-    "twenter-landgaense.html": "Twenter Landgänse",
-    "vogtlaender.html": "Vogtländer",
-    "vorster-enten.html": "Vorster Enten",
-    "vorwerkhuehner.html": "Vorwerkhühner",
-    "warzenenten.html": "Warzenenten",
-    "watermaalsche-bartzwerge.html": "Watermaalsche Bartzwerge",
-    "welsh-harlekin-enten.html": "Welsh-Harlekin-Enten",
-    "welsumer.html": "Welsumer",
-    "westfaelische-totleger.html": "Westfälische Totleger",
-    "wyandotten.html": "Wyandotten",
-    "yakidos.html": "Yakidos",
-    "yamato-gunkei.html": "Yamato Gunkei",
-    "yokohama.html": "Yokohama",
-    "zwerg-altsteirer.html": "Zwerg-Altsteirer",
-    "zwerg-amrocks.html": "Zwerg-Amrocks",
-    "zwerg-andalusier.html": "Zwerg-Andalusier",
-    "zwerg-araucana.html": "Zwerg-Araucana",
-    "zwerg-asil.html": "Zwerg-Asil",
-    "zwerg-augsburger.html": "Zwerg-Augsburger",
-    "zwerg-australorps.html": "Zwerg-Australorps",
-    "zwerg-barnevelder.html": "Zwerg-Barnevelder",
-    "zwerg-brabanter.html": "Zwerg-Brabanter",
-    "zwerg-brahma.html": "Zwerg-Brahma",
-    "zwerg-brakel.html": "Zwerg-Brakel",
-    "zwerg-breda.html": "Zwerg-Breda",
-    "zwerg-cochin.html": "Zwerg-Cochin",
-    "zwerg-croad-langschan.html": "Zwerg-Croad-Langschan",
-    "zwerg-crevecoeur.html": "Zwerg-Crèvecoeur",
-    "zwerg-deutsche-sperber.html": "Zwerg-Deutsche Sperber",
-    "zwerg-dominikaner.html": "Zwerg-Dominikaner",
-    "zwerg-dorking.html": "Zwerg-Dorking",
-    "zwerg-dresdner.html": "Zwerg-Dresdner",
-    "zwerg-eulenbarthuehner.html": "Zwerg-Eulenbarthühner",
-    "zwerg-friesenhuehner.html": "Zwerg-Friesenhühner",
-    "zwerg-hamburger.html": "Zwerg-Hamburger",
-    "zwerg-hollaender-haubenhuehner.html": "Zwerg-Holländer-Haubenhühner",
-    "zwerg-houdan.html": "Zwerg-Houdan",
-    "zwerg-italiener.html": "Zwerg-Italiener",
-    "zwerg-kastilianer.html": "Zwerg-Kastilianer",
-    "zwerg-kaulhuehner.html": "Zwerg-Kaulhühner",
-    "zwerg-kraienkoeppe.html": "Zwerg-Kraienköppe",
-    "zwerg-krueper.html": "Zwerg-Krüper",
-    "zwerg-la-fleche.html": "Zwerg-La Flèche",
-    "zwerg-lakenfelder.html": "Zwerg-Lakenfelder",
-    "zwerg-marans.html": "Zwerg-Marans",
-    "zwerg-mechelner.html": "Zwerg-Mechelner",
-    "zwerg-minorka.html": "Zwerg-Minorka",
-    "zwerg-nackthalshuehner.html": "Zwerg-Nackthalshühner",
-    "zwerg-new-hampshire.html": "Zwerg-New-Hampshire",
-    "zwerg-niederrheiner.html": "Zwerg-Niederrheiner",
-    "zwerg-orloff.html": "Zwerg-Orloff",
-    "zwerg-orpington.html": "Zwerg-Orpington",
-    "zwerg-paduaner.html": "Zwerg-Paduaner",
-    "zwerg-phoenix.html": "Zwerg-Phönix",
-    "zwerg-plymouth-rocks.html": "Zwerg-Plymouth-Rocks",
-    "zwerg-ramelsloher.html": "Zwerg-Ramelsloher",
-    "zwerg-rheinlaender.html": "Zwerg-Rheinländer",
-    "zwerg-rhodelaender.html": "Zwerg-Rhodeländer",
-    "zwerg-sachsenhuehner.html": "Zwerg-Sachsenhühner",
-    "zwerg-seidenhuehner.html": "Zwerg-Seidenhühner",
-    "zwerg-spanier.html": "Zwerg-Spanier",
-    "zwerg-sulmtaler.html": "Zwerg-Sulmtaler",
-    "zwerg-sumatra.html": "Zwerg-Sumatra",
-    "zwerg-sundheimer.html": "Zwerg-Sundheimer",
-    "zwerg-sussex.html": "Zwerg-Sussex",
-    "zwerg-vorwerkhuehner.html": "Zwerg-Vorwerkhühner",
-    "zwerg-welsumer.html": "Zwerg-Welsumer",
-    "zwerg-yokohama.html": "Zwerg-Yokohama",
-    "uekkeler-bartzwerge.html": "Ükkeler Bartzwerge"
-  }
+    "afrikanische-hoeckergaense.html": [
+      "Afrikanische Höckergänse",
+      "Gans",
+      "Asien"
+    ],
+    "altenglische-kaempfer.html": [
+      "Altenglische Kämpfer",
+      "Großhuhn",
+      "Großbritannien"
+    ],
+    "altenglische-zwerg-kaempfer.html": [
+      "Altenglische Zwerg-Kämpfer",
+      "Zwerghuhn",
+      "England"
+    ],
+    "altsteirer.html": [
+      "Altsteirer",
+      "Großhuhn",
+      "Österreich"
+    ],
+    "amerikanische-leghorn.html": [
+      "Amerikanische Leghorn",
+      "Großhuhn",
+      "USA / Italien"
+    ],
+    "amerikanische-pekingenten.html": [
+      "Amerikanische Pekingenten",
+      "Ente",
+      "USA / chinesische Vorfahren"
+    ],
+    "amerikanische-zwerg-leghorn.html": [
+      "Amerikanische Zwerg-Leghorn",
+      "Zwerghuhn",
+      "USA"
+    ],
+    "amrocks.html": [
+      "Amrocks",
+      "Großhuhn",
+      "USA"
+    ],
+    "andalusier.html": [
+      "Andalusier",
+      "Großhuhn",
+      "Spanien / europäische Zucht"
+    ],
+    "annaberger-haubenstrupphuehner.html": [
+      "Annaberger Haubenstrupphühner",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "antwerpener-bartzwerge.html": [
+      "Antwerpener Bartzwerge",
+      "Zwerghuhn",
+      "Belgien"
+    ],
+    "appenzeller-barthuehner.html": [
+      "Appenzeller Barthühner",
+      "Großhuhn",
+      "Schweiz"
+    ],
+    "appenzeller-spitzhauben.html": [
+      "Appenzeller Spitzhauben",
+      "Großhuhn",
+      "Schweiz"
+    ],
+    "appenzeller-zwerg-barthuehner.html": [
+      "Appenzeller Zwerg-Barthühner",
+      "Zwerghuhn",
+      "Schweiz"
+    ],
+    "araucana.html": [
+      "Araucana",
+      "Großhuhn",
+      "Chile"
+    ],
+    "ardenner.html": [
+      "Ardenner",
+      "Großhuhn",
+      "Belgien / Frankreich"
+    ],
+    "asil.html": [
+      "Asil",
+      "Großhuhn",
+      "Südasien"
+    ],
+    "augsburger.html": [
+      "Augsburger",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "australorps.html": [
+      "Australorps",
+      "Großhuhn",
+      "Australien"
+    ],
+    "ayam-cemani.html": [
+      "Ayam Cemani",
+      "Großhuhn",
+      "Indonesien"
+    ],
+    "aylesburyenten.html": [
+      "Aylesburyenten",
+      "Ente",
+      "England"
+    ],
+    "bali-enten.html": [
+      "Bali-Enten",
+      "Ente",
+      "Indonesien"
+    ],
+    "bantam.html": [
+      "Bantam",
+      "Zwerghuhn",
+      "Herkunft nicht abschließend geklärt"
+    ],
+    "barbezieux.html": [
+      "Barbezieux",
+      "Großhuhn",
+      "Frankreich"
+    ],
+    "barnevelder.html": [
+      "Barnevelder",
+      "Großhuhn",
+      "Niederlande"
+    ],
+    "bassetten.html": [
+      "Bassetten",
+      "Zwerghuhn",
+      "Belgien"
+    ],
+    "bergische-kraeher.html": [
+      "Bergische Kräher",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "bergische-schlotterkaemme.html": [
+      "Bergische Schlotterkämme",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "bergische-zwerg-kraeher.html": [
+      "Bergische Zwerg-Kräher",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "bergische-zwerg-schlotterkaemme.html": [
+      "Bergische Zwerg-Schlotterkämme",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "bielefelder-kennhuehner.html": [
+      "Bielefelder Kennhühner",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "bielefelder-zwerg-kennhuehner.html": [
+      "Bielefelder Zwerg-Kennhühner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "boehmische-gaense.html": [
+      "Böhmische Gänse",
+      "Gans",
+      "Böhmen"
+    ],
+    "brabanter.html": [
+      "Brabanter",
+      "Großhuhn",
+      "Niederlande"
+    ],
+    "brabanter-bauernhuehner.html": [
+      "Brabanter Bauernhühner",
+      "Großhuhn",
+      "Belgien"
+    ],
+    "brahma.html": [
+      "Brahma",
+      "Großhuhn",
+      "Asien / USA"
+    ],
+    "brakel.html": [
+      "Brakel",
+      "Großhuhn",
+      "Belgien"
+    ],
+    "breda.html": [
+      "Breda",
+      "Großhuhn",
+      "Niederlande"
+    ],
+    "bruegger-kaempfer.html": [
+      "Brügger Kämpfer",
+      "Großhuhn",
+      "Belgien"
+    ],
+    "bruegger-zwerg-kaempfer.html": [
+      "Brügger Zwerg-Kämpfer",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "cayugaenten.html": [
+      "Cayugaenten",
+      "Ente",
+      "USA"
+    ],
+    "celler-gaense.html": [
+      "Celler Gänse",
+      "Gans",
+      "Deutschland"
+    ],
+    "chabo.html": [
+      "Chabo",
+      "Zwerghuhn",
+      "Japan"
+    ],
+    "challansenten.html": [
+      "Challansenten",
+      "Ente",
+      "Frankreich"
+    ],
+    "cochin.html": [
+      "Cochin",
+      "Großhuhn",
+      "China"
+    ],
+    "crevecoeur.html": [
+      "Crèvecoeur",
+      "Großhuhn",
+      "Frankreich"
+    ],
+    "croad-langschan.html": [
+      "Croad-Langschan",
+      "Großhuhn",
+      "China / England"
+    ],
+    "cubalaya.html": [
+      "Cubalaya",
+      "Großhuhn",
+      "Kuba"
+    ],
+    "daenische-landhuehner.html": [
+      "Dänische Landhühner",
+      "Großhuhn",
+      "Dänemark"
+    ],
+    "denizli-kraeher.html": [
+      "Denizli-Kräher",
+      "Großhuhn",
+      "Türkei"
+    ],
+    "deutsche-campbellenten.html": [
+      "Deutsche Campbellenten",
+      "Ente",
+      "England / Deutschland"
+    ],
+    "deutsche-lachshuehner.html": [
+      "Deutsche Lachshühner",
+      "Großhuhn",
+      "Deutschland / Frankreich"
+    ],
+    "deutsche-langschan.html": [
+      "Deutsche Langschan",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "deutsche-legegaense.html": [
+      "Deutsche Legegänse",
+      "Gans",
+      "Deutschland"
+    ],
+    "deutsche-modeneser.html": [
+      "Deutsche Modeneser",
+      "Taube",
+      "Deutschland / Italien"
+    ],
+    "deutsche-pekingenten.html": [
+      "Deutsche Pekingenten",
+      "Ente",
+      "China / Deutschland"
+    ],
+    "deutsche-sperber.html": [
+      "Deutsche Sperber",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "deutsche-zwerg-lachshuehner.html": [
+      "Deutsche Zwerg-Lachshühner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "deutsche-zwerg-langschan.html": [
+      "Deutsche Zwerg-Langschan",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "deutsche-zwerg-reichshuehner.html": [
+      "Deutsche Zwerg-Reichshühner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "deutsche-zwerg-wyandotten.html": [
+      "Deutsche Zwerg-Wyandotten",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "deutsche-zwergenten.html": [
+      "Deutsche Zwergenten",
+      "Ente",
+      "Europäische Zucht"
+    ],
+    "deutsche-zwerghuehner.html": [
+      "Deutsche Zwerghühner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "deutsches-reichshuhn.html": [
+      "Deutsches Reichshuhn",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "diepholzer-gaense.html": [
+      "Diepholzer Gänse",
+      "Gans",
+      "Deutschland"
+    ],
+    "dominikaner.html": [
+      "Dominikaner",
+      "Großhuhn",
+      "USA"
+    ],
+    "dorking.html": [
+      "Dorking",
+      "Großhuhn",
+      "England"
+    ],
+    "dresdner.html": [
+      "Dresdner",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "duclairenten.html": [
+      "Duclairenten",
+      "Ente",
+      "Frankreich"
+    ],
+    "eiderenten.html": [
+      "Eiderenten",
+      "Ente",
+      "Nördliche Küstenregionen"
+    ],
+    "elsaesser.html": [
+      "Elsässer",
+      "Großhuhn",
+      "Frankreich"
+    ],
+    "elsaesser-gaense.html": [
+      "Elsässer Gänse",
+      "Gans",
+      "Frankreich"
+    ],
+    "elsterenten.html": [
+      "Elsterenten",
+      "Ente",
+      "Großbritannien"
+    ],
+    "emdener-gaense.html": [
+      "Emdener Gänse",
+      "Gans",
+      "Deutschland"
+    ],
+    "empordagaense.html": [
+      "Empordagänse",
+      "Gans",
+      "Spanien"
+    ],
+    "empordanesa.html": [
+      "Empordanesa",
+      "Großhuhn",
+      "Spanien"
+    ],
+    "eulenbarthuehner.html": [
+      "Eulenbarthühner",
+      "Großhuhn",
+      "Niederlande"
+    ],
+    "faverolles.html": [
+      "Faverolles",
+      "Großhuhn",
+      "Frankreich"
+    ],
+    "federfuessige-zwerghuehner.html": [
+      "Federfüßige Zwerghühner",
+      "Zwerghuhn",
+      "Europa"
+    ],
+    "frankfurter-zwerghuehner.html": [
+      "Frankfurter Zwerghühner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "fraenkische-landgaense.html": [
+      "Fränkische Landgänse",
+      "Gans",
+      "Deutschland"
+    ],
+    "friesenhuehner.html": [
+      "Friesenhühner",
+      "Großhuhn",
+      "Niederlande"
+    ],
+    "gimbsheimer-enten.html": [
+      "Gimbsheimer Enten",
+      "Ente",
+      "Deutschland"
+    ],
+    "gruebbe-bartzwerge.html": [
+      "Grübbe Bartzwerge",
+      "Zwerghuhn",
+      "Belgien"
+    ],
+    "hamburger.html": [
+      "Hamburger",
+      "Großhuhn",
+      "Nordwesteuropa / England"
+    ],
+    "hochbrutflugenten.html": [
+      "Hochbrutflugenten",
+      "Ente",
+      "Deutschland"
+    ],
+    "hoeckergaense.html": [
+      "Höckergänse",
+      "Gans",
+      "Nordostasien"
+    ],
+    "hollaender-haubenhuehner.html": [
+      "Holländer Haubenhühner",
+      "Großhuhn",
+      "Niederlande"
+    ],
+    "hollaendische-zwerghuehner.html": [
+      "Holländische Zwerghühner",
+      "Zwerghuhn",
+      "Niederlande"
+    ],
+    "houdan.html": [
+      "Houdan",
+      "Großhuhn",
+      "Frankreich"
+    ],
+    "indische-kaempfer.html": [
+      "Indische Kämpfer",
+      "Großhuhn",
+      "England"
+    ],
+    "indische-zwerg-kaempfer.html": [
+      "Indische Zwerg-Kämpfer",
+      "Zwerghuhn",
+      "England"
+    ],
+    "italiener.html": [
+      "Italiener",
+      "Großhuhn",
+      "Italien / europäische Zucht"
+    ],
+    "japanische-legewachtel.html": [
+      "Japanische Legewachtel",
+      "Wachtel",
+      "Japan / Ostasien"
+    ],
+    "jersey-giants.html": [
+      "Jersey Giants",
+      "Großhuhn",
+      "USA"
+    ],
+    "kastilianer.html": [
+      "Kastilianer",
+      "Großhuhn",
+      "Spanien"
+    ],
+    "kaulhuehner.html": [
+      "Kaulhühner",
+      "Großhuhn",
+      "Europäischer Landhuhntyp"
+    ],
+    "ko-shamo.html": [
+      "Ko Shamo",
+      "Zwerghuhn",
+      "Japan"
+    ],
+    "koeyoshi.html": [
+      "Koeyoshi",
+      "Großhuhn",
+      "Japan"
+    ],
+    "kraienkoeppe.html": [
+      "Kraienköppe",
+      "Großhuhn",
+      "Niederlande / Deutschland"
+    ],
+    "krummschnabelenten.html": [
+      "Krummschnabelenten",
+      "Ente",
+      "Niederlande"
+    ],
+    "krueper.html": [
+      "Krüper",
+      "Großhuhn",
+      "Europa / Deutschland"
+    ],
+    "la-fleche.html": [
+      "La Flèche",
+      "Großhuhn",
+      "Frankreich"
+    ],
+    "lakenfelder.html": [
+      "Lakenfelder",
+      "Großhuhn",
+      "Deutschland / Niederlande"
+    ],
+    "landenten.html": [
+      "Landenten",
+      "Ente",
+      "Europa"
+    ],
+    "laufenten.html": [
+      "Laufenten",
+      "Ente",
+      "Südostasien"
+    ],
+    "lippegaense.html": [
+      "Lippegänse",
+      "Gans",
+      "Deutschland"
+    ],
+    "lockengaense.html": [
+      "Lockengänse",
+      "Gans",
+      "Südosteuropa"
+    ],
+    "luetticher-kaempfer.html": [
+      "Lütticher Kämpfer",
+      "Großhuhn",
+      "Belgien"
+    ],
+    "luetticher-zwerg-kaempfer.html": [
+      "Lütticher Zwerg-Kämpfer",
+      "Zwerghuhn",
+      "Belgien"
+    ],
+    "madras.html": [
+      "Madras",
+      "Großhuhn",
+      "Indien"
+    ],
+    "malaien.html": [
+      "Malaien",
+      "Großhuhn",
+      "Indien / Malaiischer Archipel"
+    ],
+    "marans.html": [
+      "Marans",
+      "Großhuhn",
+      "Frankreich"
+    ],
+    "mechelner.html": [
+      "Mechelner",
+      "Großhuhn",
+      "Belgien"
+    ],
+    "mecklenburger-gaense.html": [
+      "Mecklenburger Gänse",
+      "Gans",
+      "USA / Deutschland"
+    ],
+    "minorka.html": [
+      "Minorka",
+      "Großhuhn",
+      "Spanien / England"
+    ],
+    "moderne-englische-kaempfer.html": [
+      "Moderne Englische Kämpfer",
+      "Großhuhn",
+      "England"
+    ],
+    "moderne-englische-zwergkaempfer.html": [
+      "Moderne Englische Zwerg-Kämpfer",
+      "Zwerghuhn",
+      "England"
+    ],
+    "nackthalshuehner.html": [
+      "Nackthalshühner",
+      "Großhuhn",
+      "Europa; Zucht in Rumänien und Deutschland"
+    ],
+    "new-hampshire.html": [
+      "New Hampshire",
+      "Großhuhn",
+      "USA"
+    ],
+    "niederrheiner.html": [
+      "Niederrheiner",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "norwegische-jaerhuehner.html": [
+      "Norwegische Jaerhühner",
+      "Großhuhn",
+      "Norwegen"
+    ],
+    "ohiki.html": [
+      "Ohiki",
+      "Zwerghuhn",
+      "Japan"
+    ],
+    "onagadori.html": [
+      "Onagadori",
+      "Großhuhn",
+      "Japan"
+    ],
+    "orientalische-roller.html": [
+      "Orientalische Roller",
+      "Taube",
+      "Kleinasien / Zentralasien"
+    ],
+    "orloff.html": [
+      "Orloff",
+      "Großhuhn",
+      "Russland"
+    ],
+    "orpington.html": [
+      "Orpington",
+      "Großhuhn",
+      "England"
+    ],
+    "orpingtonenten.html": [
+      "Orpingtonenten",
+      "Ente",
+      "England"
+    ],
+    "ostfriesische-moewen.html": [
+      "Ostfriesische Möwen",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "ostfriesische-zwerg-moewen.html": [
+      "Ostfriesische Zwerg-Möwen",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "overberger-enten.html": [
+      "Overberger Enten",
+      "Ente",
+      "Deutschland"
+    ],
+    "paduaner.html": [
+      "Paduaner",
+      "Großhuhn",
+      "Europa"
+    ],
+    "penedesenca.html": [
+      "Penedesenca",
+      "Großhuhn",
+      "Spanien / Katalonien"
+    ],
+    "pfaelzer-kampfhuehner.html": [
+      "Pfälzer Kampfhühner",
+      "Großhuhn",
+      "Deutschland / Rheinland-Pfalz"
+    ],
+    "phoenix.html": [
+      "Phönix",
+      "Großhuhn",
+      "Deutschland / japanische Vorfahren"
+    ],
+    "pilgrimgaense.html": [
+      "Pilgrimgänse",
+      "Gans",
+      "Europa / USA"
+    ],
+    "plymouth-rocks.html": [
+      "Plymouth Rocks",
+      "Großhuhn",
+      "USA"
+    ],
+    "pommernenten.html": [
+      "Pommernenten",
+      "Ente",
+      "Pommern"
+    ],
+    "pommerngaense.html": [
+      "Pommerngänse",
+      "Gans",
+      "Deutschland"
+    ],
+    "prat.html": [
+      "Prat",
+      "Großhuhn",
+      "Spanien"
+    ],
+    "ramelsloher.html": [
+      "Ramelsloher",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "redcaps.html": [
+      "Redcaps",
+      "Großhuhn",
+      "England"
+    ],
+    "rheinlaender.html": [
+      "Rheinländer",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "rhodelaender.html": [
+      "Rhodeländer",
+      "Großhuhn",
+      "USA"
+    ],
+    "rouen-clair-enten.html": [
+      "Rouen-Clair-Enten",
+      "Ente",
+      "Frankreich"
+    ],
+    "rouenenten.html": [
+      "Rouenenten",
+      "Ente",
+      "Frankreich"
+    ],
+    "ruhlaer-zwerg-kaulhuehner.html": [
+      "Ruhlaer Zwerg-Kaulhühner",
+      "Zwerghuhn",
+      "Deutschland, Thüringen"
+    ],
+    "russische-gaense.html": [
+      "Russische Gänse",
+      "Gans",
+      "Russland"
+    ],
+    "sachsenenten.html": [
+      "Sachsenenten",
+      "Ente",
+      "Deutschland"
+    ],
+    "sachsenhuehner.html": [
+      "Sachsenhühner",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "satsumadori.html": [
+      "Satsumadori",
+      "Großhuhn",
+      "Japan"
+    ],
+    "schwedenenten.html": [
+      "Schwedenenten",
+      "Ente",
+      "Schweden"
+    ],
+    "sebright.html": [
+      "Sebright",
+      "Zwerghuhn",
+      "England"
+    ],
+    "seidenhuehner.html": [
+      "Seidenhühner",
+      "Großhuhn",
+      "Ostasien"
+    ],
+    "serama.html": [
+      "Serama",
+      "Zwerghuhn",
+      "Malaysia"
+    ],
+    "shamo.html": [
+      "Shamo",
+      "Großhuhn",
+      "Japan / südostasiatische Vorfahren"
+    ],
+    "smaragdenten.html": [
+      "Smaragdenten",
+      "Ente",
+      "USA"
+    ],
+    "spanier.html": [
+      "Spanier",
+      "Großhuhn",
+      "Spanien"
+    ],
+    "steinbacher-kampfgaense.html": [
+      "Steinbacher Kampfgänse",
+      "Gans",
+      "Deutschland"
+    ],
+    "streicherenten.html": [
+      "Streicherenten",
+      "Ente",
+      "England / Deutschland"
+    ],
+    "strupphuehner.html": [
+      "Strupphühner",
+      "Großhuhn",
+      "Südliches Asien"
+    ],
+    "sulmtaler.html": [
+      "Sulmtaler",
+      "Großhuhn",
+      "Österreich"
+    ],
+    "sultanhuehner.html": [
+      "Sultanhühner",
+      "Großhuhn",
+      "Ursprung nicht sicher geklärt"
+    ],
+    "sumatra.html": [
+      "Sumatra",
+      "Großhuhn",
+      "Indonesien"
+    ],
+    "sundanesische-kaempfer.html": [
+      "Sundanesische Kämpfer",
+      "Großhuhn",
+      "Indonesien / Westjava"
+    ],
+    "sundheimer.html": [
+      "Sundheimer",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "sussex.html": [
+      "Sussex",
+      "Großhuhn",
+      "England"
+    ],
+    "thueringer-barthuehner.html": [
+      "Thüringer Barthühner",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "thueringer-zwerg-barthuehner.html": [
+      "Thüringer Zwerg-Barthühner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "tomaru.html": [
+      "Tomaru",
+      "Großhuhn",
+      "Japan"
+    ],
+    "totenko.html": [
+      "Totenko",
+      "Großhuhn",
+      "Japan"
+    ],
+    "toulouser-gaense.html": [
+      "Toulouser Gänse",
+      "Gans",
+      "Frankreich"
+    ],
+    "tuzo.html": [
+      "Tuzo",
+      "Großhuhn",
+      "Japan"
+    ],
+    "twenter-landgaense.html": [
+      "Twenter Landgänse",
+      "Gans",
+      "Niederlande"
+    ],
+    "uekkeler-bartzwerge.html": [
+      "Ükkeler Bartzwerge",
+      "Zwerghuhn",
+      "Belgien"
+    ],
+    "vogtlaender.html": [
+      "Vogtländer",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "vorster-enten.html": [
+      "Vorster Enten",
+      "Ente",
+      "Belgien"
+    ],
+    "vorwerkhuehner.html": [
+      "Vorwerkhühner",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "warzenenten.html": [
+      "Warzenenten",
+      "Ente",
+      "Mittel- und Südamerika"
+    ],
+    "watermaalsche-bartzwerge.html": [
+      "Watermaalsche Bartzwerge",
+      "Zwerghuhn",
+      "Belgien"
+    ],
+    "welsh-harlekin-enten.html": [
+      "Welsh-Harlekin-Enten",
+      "Ente",
+      "Wales"
+    ],
+    "welsumer.html": [
+      "Welsumer",
+      "Großhuhn",
+      "Niederlande"
+    ],
+    "westfaelische-totleger.html": [
+      "Westfälische Totleger",
+      "Großhuhn",
+      "Deutschland"
+    ],
+    "wyandotten.html": [
+      "Wyandotten",
+      "Großhuhn",
+      "USA / deutsche Zucht"
+    ],
+    "yakidos.html": [
+      "Yakidos",
+      "Großhuhn",
+      "Japan"
+    ],
+    "yamato-gunkei.html": [
+      "Yamato Gunkei",
+      "Großhuhn",
+      "Japan"
+    ],
+    "yokohama.html": [
+      "Yokohama",
+      "Großhuhn",
+      "Deutschland / japanischer Ursprung"
+    ],
+    "zwerg-altsteirer.html": [
+      "Zwerg-Altsteirer",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-amrocks.html": [
+      "Zwerg-Amrocks",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-andalusier.html": [
+      "Zwerg-Andalusier",
+      "Zwerghuhn",
+      "Deutschland und England"
+    ],
+    "zwerg-araucana.html": [
+      "Zwerg-Araucana",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-asil.html": [
+      "Zwerg-Asil",
+      "Zwerghuhn",
+      "England"
+    ],
+    "zwerg-augsburger.html": [
+      "Zwerg-Augsburger",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-australorps.html": [
+      "Zwerg-Australorps",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-barnevelder.html": [
+      "Zwerg-Barnevelder",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-brabanter.html": [
+      "Zwerg-Brabanter",
+      "Zwerghuhn",
+      "Niederlande"
+    ],
+    "zwerg-brahma.html": [
+      "Zwerg-Brahma",
+      "Zwerghuhn",
+      "England / Deutschland"
+    ],
+    "zwerg-brakel.html": [
+      "Zwerg-Brakel",
+      "Zwerghuhn",
+      "Deutschland; Großrasse aus Belgien"
+    ],
+    "zwerg-breda.html": [
+      "Zwerg-Breda",
+      "Zwerghuhn",
+      "Niederlande"
+    ],
+    "zwerg-cochin.html": [
+      "Zwerg-Cochin",
+      "Zwerghuhn",
+      "China"
+    ],
+    "zwerg-crevecoeur.html": [
+      "Zwerg-Crèvecoeur",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-croad-langschan.html": [
+      "Zwerg-Croad-Langschan",
+      "Zwerghuhn",
+      "Nordamerika und England"
+    ],
+    "zwerg-deutsche-sperber.html": [
+      "Zwerg-Deutsche Sperber",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-dominikaner.html": [
+      "Zwerg-Dominikaner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-dorking.html": [
+      "Zwerg-Dorking",
+      "Zwerghuhn",
+      "England"
+    ],
+    "zwerg-dresdner.html": [
+      "Zwerg-Dresdner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-eulenbarthuehner.html": [
+      "Zwerg-Eulenbarthühner",
+      "Zwerghuhn",
+      "Niederlande"
+    ],
+    "zwerg-friesenhuehner.html": [
+      "Zwerg-Friesenhühner",
+      "Zwerghuhn",
+      "Niederlande"
+    ],
+    "zwerg-hamburger.html": [
+      "Zwerg-Hamburger",
+      "Zwerghuhn",
+      "England / Niederlande"
+    ],
+    "zwerg-hollaender-haubenhuehner.html": [
+      "Zwerg-Holländer-Haubenhühner",
+      "Zwerghuhn",
+      "Niederlande und Deutschland"
+    ],
+    "zwerg-houdan.html": [
+      "Zwerg-Houdan",
+      "Zwerghuhn",
+      "England"
+    ],
+    "zwerg-italiener.html": [
+      "Zwerg-Italiener",
+      "Zwerghuhn",
+      "Deutschland / England"
+    ],
+    "zwerg-kastilianer.html": [
+      "Zwerg-Kastilianer",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-kaulhuehner.html": [
+      "Zwerg-Kaulhühner",
+      "Zwerghuhn",
+      "Europäische Landhuhnzucht"
+    ],
+    "zwerg-kraienkoeppe.html": [
+      "Zwerg-Kraienköppe",
+      "Zwerghuhn",
+      "Niederlande"
+    ],
+    "zwerg-krueper.html": [
+      "Zwerg-Krüper",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-la-fleche.html": [
+      "Zwerg-La Flèche",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-lakenfelder.html": [
+      "Zwerg-Lakenfelder",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-marans.html": [
+      "Zwerg-Marans",
+      "Zwerghuhn",
+      "Frankreich; europäische Zwergzucht"
+    ],
+    "zwerg-mechelner.html": [
+      "Zwerg-Mechelner",
+      "Zwerghuhn",
+      "Belgien und Deutschland"
+    ],
+    "zwerg-minorka.html": [
+      "Zwerg-Minorka",
+      "Zwerghuhn",
+      "Deutschland und England"
+    ],
+    "zwerg-nackthalshuehner.html": [
+      "Zwerg-Nackthalshühner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-new-hampshire.html": [
+      "Zwerg-New-Hampshire",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-niederrheiner.html": [
+      "Zwerg-Niederrheiner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-orloff.html": [
+      "Zwerg-Orloff",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-orpington.html": [
+      "Zwerg-Orpington",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-paduaner.html": [
+      "Zwerg-Paduaner",
+      "Zwerghuhn",
+      "England"
+    ],
+    "zwerg-phoenix.html": [
+      "Zwerg-Phönix",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-plymouth-rocks.html": [
+      "Zwerg-Plymouth-Rocks",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-ramelsloher.html": [
+      "Zwerg-Ramelsloher",
+      "Zwerghuhn",
+      "Deutschland; Vorbild Ramelsloh"
+    ],
+    "zwerg-rheinlaender.html": [
+      "Zwerg-Rheinländer",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-rhodelaender.html": [
+      "Zwerg-Rhodeländer",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-sachsenhuehner.html": [
+      "Zwerg-Sachsenhühner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-seidenhuehner.html": [
+      "Zwerg-Seidenhühner",
+      "Zwerghuhn",
+      "Niederlande"
+    ],
+    "zwerg-spanier.html": [
+      "Zwerg-Spanier",
+      "Zwerghuhn",
+      "England, Niederlande und Deutschland"
+    ],
+    "zwerg-sulmtaler.html": [
+      "Zwerg-Sulmtaler",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-sumatra.html": [
+      "Zwerg-Sumatra",
+      "Zwerghuhn",
+      "Europäische Zwergzucht nach Sumatra-Vorbild"
+    ],
+    "zwerg-sundheimer.html": [
+      "Zwerg-Sundheimer",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-sussex.html": [
+      "Zwerg-Sussex",
+      "Zwerghuhn",
+      "England / Deutschland"
+    ],
+    "zwerg-vorwerkhuehner.html": [
+      "Zwerg-Vorwerkhühner",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-welsumer.html": [
+      "Zwerg-Welsumer",
+      "Zwerghuhn",
+      "Deutschland"
+    ],
+    "zwerg-yokohama.html": [
+      "Zwerg-Yokohama",
+      "Zwerghuhn",
+      "Deutschland"
+    ]
+  },
+  "version": 2
 }

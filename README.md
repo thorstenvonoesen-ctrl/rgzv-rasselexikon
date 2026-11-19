@@ -6,8 +6,19 @@ ist in [ERWEITERUNG-50-RASSEN.md](ERWEITERUNG-50-RASSEN.md) dokumentiert.
 Der aktuelle Gesamtauftrag (Startseite, Taubenschau 2027, Veranstaltungsfreigabe,
 A7-Druck und Abschlussprüfungen) ist in [ERGEBNISBERICHT.md](ERGEBNISBERICHT.md)
 dokumentiert. Druckauswahl: `schilder-drucken.html`. Veranstaltungspflege:
-GitHub Actions → **Ausstellung verwalten**. Die neuen A7-Ausgaben liegen unter
-`output/pdf/`; die bisherigen QR-Codes und Druckdateien bleiben unverändert.
+GitHub Actions → **Ausstellung verwalten**.
+
+## A7-Rasseschilder
+
+Im Ordner [A7-Rasseschilder](A7-Rasseschilder) liegen die Einzel-PDFs unter ihrem
+Rassennamen in URL-Schreibweise sowie die alphabetischen Gesamt-PDFs für A7 und A4.
+Die [Druckauswahl](schilder-drucken.html) zeigt die vollständigen Rassennamen und
+bietet Einzel- und Sammeldownloads. Bei tatsächlicher Größe (100 %) drucken.
+
+Nach einer Katalogerweiterung auf dem Standardbranch erzeugt die GitHub Action
+**A7-Rasseschilder aktualisieren** automatisch die neuen Einzeldateien und
+aktualisiert die Sammeldateien. Bestehende PDF-Adressen werden mit derselben
+Ausgabe weiter bedient.
 
 ## Automatische Rasseanzahl
 

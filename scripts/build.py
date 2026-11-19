@@ -77,14 +77,13 @@ def wrap(text, font, size, width):
 
 def label(b):
     """Kompatibilität: ausschließlich die zentrale A7-Sammlung verwenden."""
-    from build_a7 import OUT,pdf
+    from build_a7 import main
     qrpath=ROOT/'qr-codes'/(b['slug']+'.png')
     if not qrpath.exists():
         qr=qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_Q,box_size=12,border=4)
         qr.add_data(BASE+b['slug']+'.html');qr.make(fit=True)
         qr.make_image(fill_color='black',back_color='white').save(qrpath)
-    target=OUT/'a7'/(b['slug']+'.pdf');target.parent.mkdir(parents=True,exist_ok=True)
-    if not target.exists():pdf(target,[dict(name=b['name'],url=b['slug']+'.html')])
+    main()
 
 def sheets(selection=None,prefix=None,layout_name=None):
     """Alte Aufrufe erzeugen keine weiteren PDF-Sammlungen mehr."""

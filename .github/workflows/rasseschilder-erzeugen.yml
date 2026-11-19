@@ -3,6 +3,12 @@ on:
   push:
     paths:
       - assets/finder-data.js
+      - '*.html'
+      - qr-codes/**
+      - scripts/check_catalog.py
+      - scripts/breeds_series5.json
+      - scripts/check_a7.py
+      - scripts/a7-layout.json
       - scripts/build_a7.py
       - scripts/build.py
       - scripts/check_pdf_storage.py
@@ -25,9 +31,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install reportlab==4.4.9 qrcode==8.2 pillow==12.3.0 pypdf
+      - run: python -m pip install reportlab==4.4.9 qrcode==8.2 pypdf pypdfium2 zxing-cpp
       - run: python scripts/build_a7.py
-      - run: python scripts/check_pdf_storage.py
+      - run: python scripts/check_a7.py
       - name: Aktualisierte Druckdateien speichern
         shell: pwsh
         env:
@@ -36,7 +42,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- output/pdf scripts/a7-layout.json
+          git add -- A7-Rasseschilder output/pdf/a7 scripts/a7-layout.json scripts/a7-results.json
+          git add -u -- output/pdf
           git diff --cached --quiet
           if ($LASTEXITCODE -eq 0) { exit 0 }
           git commit -m 'A7-Rasseschilder automatisch aktualisiert'

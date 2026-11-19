@@ -13,7 +13,7 @@
       const row=document.createElement('div');row.className='print-row';
       const label=document.createElement('label'),input=document.createElement('input');input.type='checkbox';input.checked=selected.has(b.url);input.value=b.url;
       input.addEventListener('change',()=>{input.checked?selected.add(b.url):selected.delete(b.url);update();});label.append(input,document.createTextNode(b.name));
-      const link=document.createElement('a');link.href='output/pdf/a7/'+b.url.replace(/\.html$/,'.pdf');link.textContent='A7-PDF';link.download='';link.setAttribute('aria-label',b.name+': A7-PDF herunterladen');
+      const link=document.createElement('a');link.href='A7-Rasseschilder/'+b.url.replace(/\.html$/,'.pdf');link.textContent='A7-PDF';link.download='';link.setAttribute('aria-label',b.name+': A7-PDF herunterladen');
       row.append(label,link);list.append(row);
     }
     if(!list.children.length)list.textContent='Keine passende Rasse gefunden.';
@@ -25,7 +25,7 @@
       const selection=breeds.filter(b=>selected.has(b.url));
       let sheet;
       for(let i=0;i<selection.length;i++){
-        const response=await fetch('output/pdf/a7/'+selection[i].url.replace(/\.html$/,'.pdf'));
+        const response=await fetch('A7-Rasseschilder/'+selection[i].url.replace(/\.html$/,'.pdf'));
         if(!response.ok)throw Error('Ein Schild konnte nicht geladen werden.');
         const source=await PDFDocument.load(await response.arrayBuffer());
         if(a4){
